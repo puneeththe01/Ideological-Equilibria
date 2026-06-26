@@ -1,0 +1,1443 @@
+AGT_01 [g50 f149]: prod=plant(wheat) | ask 50 wheat@3.5 | stakes=0.8 | "Investing in wheat and selling it for a decent profit before the market drops further."
+  AGT_02 [g50 f149]: prod=plant(rice) | ask 20 wheat@4.1 | stakes=0.8 | "I need to secure food for the future, and price wheat slightly above market to encourage selling"
+  AGT_03 [g50 f149]: prod=plant(rice) | bid 10 labor@2.5 | stakes=0.5 | "Invest in a food buffer by planting rice and bank labor for future use."
+  AGT_04 [g50 f149]: prod=plant(corn) | bid 10 corn@5.5 | stakes=0.8 | "Secure a high-value harvest and start trading to maximize gold gains."
+  AGT_05 [g50 f149]: prod=plant(wheat) | ask 20 wheat@3.5 | stakes=0.5 | "Secure a food source and test my market prices."
+  AGT_06 [g50 f149]: prod=plant(wheat) | ask 50 wheat@4.5 | stakes=0.8 | "I'm planting a wheat plot to secure a steady food supply and selling my wheat at a slightly higher price to maximize profit."
+  AGT_07 [g50 f149]: prod=plant(wheat) | ask 50 wheat@3.5 | stakes=0.7 | "Planting a new wheat crop to secure food and sell at a fair price to sustain my economy."
+  AGT_08 [g50 f149]: prod=plant(rice) | no order | stakes=0.3 | "Securing a new food source while trading at a reasonable price"
+  AGT_09 [g50 f149]: prod=plant(rice) | ask 20 wheat@4.5 | stakes=0.8 | "Time to plant some rice and sell some wheat at a higher price, as my labor bank is low and I need to secure more food before expanding my operations."
+  AGT_10 [g50 f149]: prod=plant(rice) | bid 50 rice@6.5 | stakes=0.6 | "I'll plant rice to supplement my food and post a bid for rice to ensure I can buy it back at a fair price when I need it."
+  AGT_11 [g50 f149]: prod=plant(rice) | bid 10 water@1.5 | stakes=0.5 | "Planting rice to secure future food and buying water at a reasonable price to free up labor for other uses."
+  AGT_12 [g50 f149]: prod=plant(wheat) | ask 20 wheat@4.5 | stakes=0.5 | "Invest in wheat and sell at a premium to maximize gold gain"
+  AGT_13 [g50 f149]: prod=plant(wheat) | ask 10 wheat@4.5 | stakes=0.5 | "I need to secure some food, and I'll sell wheat at a fair price to make some gold"
+  AGT_14 [g50 f149]: prod=plant(rice) | bid 10 wheat@3.9 | stakes=0.5 | "Secure some food and try to make a fair deal on wheat."
+  AGT_15 [g50 f149]: prod=plant(wheat) | ask 50 wheat@3.5 | stakes=0.8 | "I'll plant some wheat to secure future food and set a fair price for it on the market."
+  AGT_16 [g50 f149]: prod=plant(wheat) | ask 20 wheat@5.5 | stakes=0.5 | "Plant wheat to secure food and test the market with a bid"
+  AGT_17 [g50 f149]: prod=plant(wheat) | ask 50 wheat@4.0 | stakes=0.5 | "Secure a new food source and test the market for wheat"
+  AGT_18 [g50 f149]: prod=plant(wheat) | ask 100 wheat@4.5 | stakes=0.5 | "I need to secure food, so I'll plant wheat to start harvesting soon."
+  AGT_19 [g50 f149]: prod=plant(wheat) | ask 20 wheat@4.0 | stakes=0.7 | "I'm being cautious, planting a new crop and selling wheat to make room for the harvest and ensure a steady income."
+  AGT_20 [g50 f149]: prod=plant(wheat) | ask 50 wheat@4.5 | stakes=0.8 | "I'm planting wheat to secure food, and selling it at a slightly higher price to maximize profit."
+    TRADE: AGT_14 buys 10 wheat from AGT_17 @4.1
+    · AGT_01 [g49 f144 labor6]: spoiled 3, invUpkeep 1L, plotUpkeep 1L/1g
+    · AGT_02 [g49 f144 labor7]: spoiled 3, invUpkeep 1L, plotUpkeep 1L/1g
+    · AGT_03 [g49 f144 labor4]: spoiled 3, invUpkeep 1L, plotUpkeep 1L/1g
+    · AGT_04 [g49 f144 labor4]: spoiled 3, invUpkeep 1L, plotUpkeep 1L/1g
+    · AGT_05 [g49 f144 labor4]: spoiled 3, invUpkeep 1L, plotUpkeep 1L/1g
+    · AGT_06 [g49 f144 labor5]: spoiled 3, invUpkeep 1L, plotUpkeep 1L/1g
+    · AGT_07 [g49 f144 labor4]: spoiled 3, invUpkeep 1L, plotUpkeep 1L/1g
+    · AGT_08 [g49 f144 labor7]: spoiled 3, invUpkeep 1L, plotUpkeep 1L/1g
+    · AGT_09 [g49 f144 labor5]: spoiled 3, invUpkeep 1L, plotUpkeep 1L/1g
+    · AGT_10 [g49 f144 labor7]: spoiled 3, invUpkeep 1L, plotUpkeep 1L/1g
+    · AGT_11 [g49 f144 labor4]: spoiled 3, invUpkeep 1L, plotUpkeep 1L/1g
+    · AGT_12 [g49 f144 labor4]: spoiled 3, invUpkeep 1L, plotUpkeep 1L/1g
+    · AGT_13 [g49 f144 labor7]: spoiled 3, invUpkeep 1L, plotUpkeep 1L/1g
+    · AGT_14 [g8.0 f154 labor5]: spoiled 3, invUpkeep 1L, plotUpkeep 1L/1g
+    · AGT_15 [g49 f144 labor5]: spoiled 3, invUpkeep 1L, plotUpkeep 1L/1g
+    · AGT_16 [g49 f144 labor7]: spoiled 3, invUpkeep 1L, plotUpkeep 1L/1g
+    · AGT_17 [g90.0 f134 labor4]: spoiled 3, invUpkeep 1L, plotUpkeep 1L/1g
+    · AGT_18 [g49 f144 labor6]: spoiled 3, invUpkeep 1L, plotUpkeep 1L/1g
+    · AGT_19 [g49 f144 labor5]: spoiled 3, invUpkeep 1L, plotUpkeep 1L/1g
+    · AGT_20 [g49 f144 labor5]: spoiled 3, invUpkeep 1L, plotUpkeep 1L/1g
+
+===== CYCLE 2 | MARKET: wheat 4.1 | rice 8.0 | corn 6.0 | water 2.0 | labor 3.0 =====
+  AGT_01 [g49 f141]: prod=invest(wheat) | ask 50 wheat@4.2 | stakes=0.5 | "I'm trying to stabilize my wheat stockpile and earn a bit more gold from a safe sale."
+  AGT_02 [g49 f141]: prod=invest(rice) | bid 5 water@2.1 | stakes=0.8 | "Invest in rice to build up my stockpile, while also buying water to meet the growing plot's needs."
+  AGT_03 [g49 f141]: prod=invest(rice) | bid 5 labor@2.5 | stakes=0.7 | "Invest in my rice plot to bring it to harvest and buy more labor to keep my plots healthy."
+  AGT_04 [g49 f141]: prod=invest(corn) | ask 20 corn@5.5 | stakes=0.7 | "I'll invest in my corn plot to meet its needs and post a high ask price for corn to sell my surplus and earn more gold."
+  AGT_05 [g49 f141]: prod=invest(wheat) | ask 10 wheat@4.1 | stakes=0.5 | "Invest in my wheat plot and sell my wheat surplus at fair market price"
+  AGT_06 [g49 f141]: prod=invest(wheat) | ask 20 wheat@5.0 | stakes=0.7 | "Invest in my wheat plot, then try to sell it at a higher price than the market"
+  AGT_07 [g49 f141]: prod=invest(wheat) | bid 10 water@1.5 | stakes=0.5 | "Invest in the growing wheat plot and secure water at a fair price to prevent scarcity"
+  AGT_08 [g49 f141]: prod=invest(rice) | no order | stakes=0.6 | "Invest in rice to ensure a steady food supply and bank labor for future investments."
+  AGT_09 [g49 f141]: prod=invest(rice) | ask 50 wheat@5.5 | stakes=0.7 | "I'm banking on a high-yielding rice harvest and selling my wheat surplus at a slightly inflated price to maximize profit."
+  AGT_10 [g49 f141]: prod=invest(rice) | ask 5 water@2.1 | stakes=0.5 | "Invest in rice to secure food and use excess water, and offer water at a slightly higher price to see if I can get a good deal."
+  AGT_11 [g49 f141]: prod=invest(rice) | bid 10 labor@3.0 | stakes=0.6 | "Investing in rice to secure food and allowing partial labor orders to bank more labor for future investments."
+  AGT_12 [g49 f141]: prod=invest(wheat) | ask 50 wheat@4.5 | stakes=0.5 | "Invest in my wheat and sell it at a slightly higher price to make some extra gold."
+  AGT_13 [g49 f141]: prod=invest(wheat) | ask 10 labor@2.5 | stakes=0.7 | "Invest in the wheat plot and try to sell labor at a reasonable price to earn some extra gold."
+  AGT_14 [g8.0 f151]: prod=invest(rice) | no order | stakes=0.5 | "Investing in the rice plot to ensure a steady food supply, while also trying to acquire more labor to expand my operations."
+  AGT_15 [g49 f141]: prod=invest(wheat) | bid 10 wheat@4.0 | stakes=0.5 | "Secure a stable food supply and stabilize market prices"
+  AGT_16 [g49 f141]: prod=invest(wheat) | ask 20 wheat@5.0 | stakes=0.8 | "Invest in wheat and sell it at a slightly higher price to maximize profits"
+  AGT_17 [g90.0 f131]: prod=invest(wheat) | bid 10 wheat@4.1 | stakes=0.5 | "Invest in the wheat plot to secure a harvest, and post a bid order for wheat to maintain a stable price."
+  AGT_18 [g49 f141]: prod=invest(wheat) | no order | stakes=0.6 | "Investing in wheat to meet the plot's needs and sell at the current market price"
+  AGT_19 [g49 f141]: prod=invest(wheat) | ask 5 water@1.5 | stakes=0.7 | "Investing in wheat to secure food and selling water at a fair price to maintain cash flow"
+  AGT_20 [g49 f141]: prod=invest(wheat) | bid 10 wheat@4.1 | stakes=0.8 | "Invest in wheat to secure food and take advantage of the market price."
+    TRADE: AGT_15 buys 10 wheat from AGT_19 @4.05
+    TRADE: AGT_17 buys 10 wheat from AGT_02 @4.2
+    TRADE: AGT_20 buys 10 wheat from AGT_02 @4.0
+    TRADE: AGT_11 buys 5 water from AGT_19 @1.95
+    TRADE: AGT_02 buys 5 water from AGT_10 @1.92
+    TRADE: AGT_03 buys 5 labor from AGT_13 @2.8
+    TRADE: AGT_11 buys 1 labor from AGT_13 @2.7
+    · AGT_01 [g48 f144 labor2]: spoiled 3, invUpkeep 1L, plotUpkeep 1L/1g
+    · AGT_02 [g120.4 f116 labor1]: spoiled 3, invUpkeep 1L, plotUpkeep 1L/1g
+    · AGT_03 [g35.0 f136 labor5]: spoiled 3, invUpkeep 1L
+    · AGT_04 [g49 f136 labor0]: spoiled 3, invUpkeep 1L
+    · AGT_05 [g48 f139 labor3]: spoiled 3, invUpkeep 1L, plotUpkeep 1L/1g, underyield 1
+    · AGT_06 [g48 f138 labor4]: spoiled 3, invUpkeep 1L, plotUpkeep 1L/1g, underyield 1
+    · AGT_07 [g48 f144 labor3]: spoiled 3, invUpkeep 1L, plotUpkeep 1L/1g
+    · AGT_08 [g48 f156 labor1]: spoiled 3, invUpkeep 1L, plotUpkeep 1L/1g
+    · AGT_09 [g49 f136 labor0]: spoiled 3, invUpkeep 1L
+    · AGT_10 [g57.6 f136 labor5]: spoiled 3, invUpkeep 1L, plotUpkeep 1L/1g
+    · AGT_11 [g36.5 f136 labor1]: spoiled 3, invUpkeep 1L
+    · AGT_12 [g48 f138 labor3]: spoiled 3, invUpkeep 1L, plotUpkeep 1L/1g, underyield 1
+    · AGT_13 [g64.7 f141 labor0]: spoiled 3, invUpkeep 1L, plotUpkeep 1L/1g
+    · AGT_14 [g8.0 f146 labor0]: spoiled 3, invUpkeep 1L
+    · AGT_15 [g7.5 f152 labor4]: spoiled 3, invUpkeep 1L, plotUpkeep 1L/1g
+    · AGT_16 [g48 f142 labor5]: spoiled 3, invUpkeep 1L, plotUpkeep 1L/1g
+    · AGT_17 [g47.0 f144 labor4]: spoiled 3, plotUpkeep 1L/1g
+    · AGT_18 [g48 f140 labor2]: spoiled 3, invUpkeep 1L, plotUpkeep 1L/1g, underyield 1
+    · AGT_19 [g98.2 f132 labor3]: spoiled 3, invUpkeep 1L, plotUpkeep 1L/1g
+    · AGT_20 [g8.0 f155 labor3]: spoiled 3, invUpkeep 1L, plotUpkeep 1L/1g
+
+===== CYCLE 3 | MARKET: wheat 4.09 | rice 8.0 | corn 6.0 | water 1.94 | labor 2.78 =====
+  AGT_01 [g48 f142]: prod=plant(rice) | ask 20 wheat@4.5 | stakes=0.6 | "Planting rice and selling wheat to accumulate more gold."
+  AGT_02 [g120.4 f114]: prod=invest(rice) | bid 5 water@1.9 | stakes=0.6 | "Invest in rice to secure food and maintain a healthy plot, while also buying water at a fair price to keep my water cap high."
+  AGT_03 [g35.0 f134]: prod=invest(rice) | ask 5 labor@2.8 | stakes=0.5 | "Secure food by investing in the growing rice plot and sell labor at a fair price."
+  AGT_04 [g49 f134]: prod=invest(corn) | bid 2 labor@3.0 | stakes=0.8 | "I'll invest in the growing corn plot to ensure a healthy harvest and then try to buy more labor at a discount."
+  AGT_05 [g48 f137]: prod=plant(rice) | bid 10 labor@2.5 | stakes=0.5 | "Staying safe with a rice crop, and banking some labor to mature corn later."
+  AGT_06 [g48 f136]: prod=plant(wheat) | ask 50 wheat@5.5 | stakes=0.5 | "Plant wheat to secure future food supply while trying to make a quick profit on the market."
+  AGT_07 [g48 f142]: prod=plant(wheat) | ask 10 wheat@4.1 | stakes=0.6 | "I'm not taking any risks, just securing some food for the future."
+  AGT_08 [g48 f154]: prod=plant(wheat) | bid 50 wheat@4.2 | stakes=0.2 | "Plant a new wheat plot to secure future food supply, and set a bid for wheat at a slightly higher price to test the market."
+  AGT_09 [g49 f134]: prod=invest(rice) | ask 50 wheat@5.5 | stakes=0.7 | "Invest in the rice plot and sell wheat to secure a profit before my food stockpile dwindles."
+  AGT_10 [g57.6 f134]: prod=invest(rice) | bid 5 water@1.9 | stakes=0.7 | "Invest in my rice plot to secure a future harvest and trade some water to stay liquid."
+  AGT_11 [g36.5 f134]: prod=invest(rice) | bid 5 water@1.9 | stakes=0.5 | "Invest in my growing rice plot and secure a bit of water at a fair price."
+  AGT_12 [g48 f136]: prod=plant(rice) | ask 10 wheat@5.0 | stakes=0.8 | "Time to grow some rice to secure our future, and sell some wheat to make a profit."
+  AGT_13 [g64.7 f139]: prod=plant(wheat) | bid 1 labor@2.7 | stakes=0.5 | "Invest in food security and labor for future growth"
+  AGT_14 [g8.0 f144]: prod=invest(rice) | bid 2 labor@2.8 | stakes=0.5 | "Investing in the rice plot to meet its labor needs and secure a stable food source, while also trying to conserve labor for future investments."
+  AGT_15 [g7.5 f150]: prod=plant(rice) | bid 50 wheat@4.0 | stakes=0.7 | "I need to plant more food, so I'm planting rice. I'll also post a bid for wheat at my own average price to potentially buy more at a good rate."
+  AGT_16 [g48 f140]: prod=plant(wheat) | ask 10 wheat@4.5 | stakes=0.8 | "Time to get more wheat on the board and test the market with a slightly higher price."
+  AGT_17 [g47.0 f142]: prod=plant(rice) | ask 20 wheat@4.25 | stakes=0.7 | "I need to secure a food source and get a bit more gold by selling wheat."
+  AGT_18 [g48 f138]: prod=plant(rice) | bid 50 wheat@4.2 | stakes=0.8 | "Secure food and corner the wheat market"
+  AGT_19 [g98.2 f130]: prod=plant(rice) | ask 10 wheat@4.0 | stakes=0.5 | "Planting rice for future food, and selling wheat at a fair price."
+  AGT_20 [g8.0 f153]: prod=plant(wheat) | ask 100 wheat@4.2 | stakes=0.7 | "Planting wheat to secure future food and sell at a profit"
+    TRADE: AGT_08 buys 11 wheat from AGT_20 @4.0
+    TRADE: AGT_15 buys 1 wheat from AGT_19 @4.15
+    TRADE: AGT_18 buys 11 wheat from AGT_20 @4.15
+    TRADE: AGT_14 buys 2 labor from AGT_03 @2.8
+    TRADE: AGT_13 buys 1 labor from AGT_03 @2.6
+    TRADE: AGT_11 buys 2 labor from AGT_03 @2.65
+    · AGT_01 [g47 f137 labor9]: spoiled 2, invUpkeep 1L, plotUpkeep 1L/1g
+    · AGT_02 [g119.4 f123 labor7]: spoiled 2, plotUpkeep 1L/1g
+    · AGT_03 [g47.5 f145 labor2]: spoiled 2, invUpkeep 1L, plotUpkeep 1L/1g
+    · AGT_04 [g49 f129 labor0]: spoiled 2, invUpkeep 1L
+    · AGT_05 [g47 f132 labor8]: spoiled 2, invUpkeep 1L, plotUpkeep 1L/1g
+    · AGT_06 [g47 f131 labor8]: spoiled 2, invUpkeep 1L, plotUpkeep 1L/1g
+    · AGT_07 [g47 f137 labor8]: spoiled 2, invUpkeep 1L, plotUpkeep 1L/1g
+    · AGT_08 [g3.0 f160 labor7]: spoiled 2, invUpkeep 1L, plotUpkeep 1L/1g
+    · AGT_09 [g48 f148 labor4]: spoiled 2, invUpkeep 1L, plotUpkeep 1L/1g
+    · AGT_10 [g56.6 f144 labor5]: spoiled 2, invUpkeep 1L, plotUpkeep 1L/1g
+    · AGT_11 [g30.2 f149 labor8]: spoiled 2, invUpkeep 1L, plotUpkeep 1L/1g
+    · AGT_12 [g47 f131 labor7]: spoiled 2, invUpkeep 1L, plotUpkeep 1L/1g
+    · AGT_13 [g61.1 f134 labor8]: spoiled 2, invUpkeep 1L, plotUpkeep 1L/1g
+    · AGT_14 [g1.4 f157 labor7]: spoiled 2, invUpkeep 1L, plotUpkeep 1L/1g
+    · AGT_15 [g2.3 f146 labor8]: spoiled 2, invUpkeep 1L, plotUpkeep 1L/1g
+    · AGT_16 [g47 f135 labor12]: spoiled 2, invUpkeep 1L, plotUpkeep 1L/1g
+    · AGT_17 [g46.0 f137 labor9]: spoiled 2, invUpkeep 1L, plotUpkeep 1L/1g
+    · AGT_18 [g1.3 f144 labor7]: spoiled 2, invUpkeep 1L, plotUpkeep 1L/1g
+    · AGT_19 [g101.4 f124 labor9]: spoiled 2, plotUpkeep 1L/1g
+    · AGT_20 [g96.7 f126 labor9]: spoiled 2, invUpkeep 1L, plotUpkeep 1L/1g
+
+===== CYCLE 4 | MARKET: wheat 4.08 | rice 8.0 | corn 6.0 | water 1.94 | labor 2.75 =====
+  AGT_01 [g47 f135]: prod=invest(rice) | ask 10 wheat@5.5 | stakes=0.5 | "Invest in rice and sell wheat at a slight premium to maximize profit."
+  AGT_02 [g119.4 f121]: prod=plant(wheat) | ask 10 wheat@4.0 | stakes=0.5 | "Plant a new wheat crop to maintain a stable food supply, and offer wheat for sale at a fair price to generate some gold."
+  AGT_03 [g47.5 f143]: prod=plant(rice) | bid 5 labor@2.6 | stakes=0.5 | "planting rice to secure food and taking advantage of a good labor price"
+  AGT_04 [g49 f127]: prod=invest(corn) | ask 5 labor@3.5 | stakes=0.7 | "Invest in the corn plot to get it back on track, and sell labor on the market to make a quick profit."
+  AGT_05 [g47 f130]: prod=invest(rice) | ask 5 labor@2.5 | stakes=0.7 | "Invest in the rice plot to meet its needs and start harvesting soon, then try to sell labor at a slightly lower price than the market reference."
+  AGT_06 [g47 f129]: prod=invest(wheat) | ask 20 wheat@5.5 | stakes=0.8 | "Secure food, invest in wheat, and sell at a slight markup to profit."
+  AGT_07 [g47 f135]: prod=invest(wheat) | bid 10 labor@2.0 | stakes=0.8 | "I'll invest in the growing wheat plot to meet its needs, and offer a fair price for labor to save up for more substantial projects."
+  AGT_08 [g3.0 f158]: prod=invest(wheat) | ask 10 wheat@4.0 | stakes=0.6 | "Invest in the growing wheat plot and sell some wheat at a fair price."
+  AGT_09 [g48 f146]: prod=plant(wheat) | ask 50 wheat@4.1 | stakes=0.7 | "I'm securing a new food source and selling wheat at a fair price to free up space for other opportunities."
+  AGT_10 [g56.6 f142]: prod=plant(wheat) | no order | stakes=0.5 | "Secure food for now, then focus on expanding water and trading profitably."
+  AGT_11 [g30.2 f147]: prod=plant(rice) | bid 50 wheat@4.0 | stakes=0.8 | "I'm in a comfortable position, so I'll secure a new food source and sell some wheat to make some extra gold."
+  AGT_12 [g47 f129]: prod=invest(rice) | bid 5 labor@3.0 | stakes=0.7 | "Invest in rice to secure food and make room for labor to expand water"
+  AGT_13 [g61.1 f132]: prod=invest(wheat) | bid 5 labor@2.8 | stakes=0.5 | "I'll invest in the growing wheat plot to meet its needs and ensure a healthy harvest, while also selling surplus labor at a fair price to maintain my market position."
+  AGT_14 [g1.4 f155]: prod=plant(wheat) | bid 10 wheat@4.0 | stakes=0.5 | "Planting a new wheat crop and selling some wheat at a slightly lower price to make room for the new stock"
+  AGT_15 [g2.3 f144]: prod=invest(rice) | ask 10 water@2.0 | stakes=0.8 | "I'm investing in rice to secure food and water, and selling water to maintain my buffer and prevent it from draining my labor."
+  AGT_16 [g47 f133]: prod=invest(wheat) | ask 10 wheat@4.2 | stakes=0.7 | "Maximize my gold reserves by selling wheat at a slightly higher price, while also investing in my growing wheat plot to secure a harvest."
+  AGT_17 [g46.0 f135]: prod=invest(rice) | ask 20 wheat@4.3 | stakes=0.7 | "Secure food and then sell wheat at a fair price to maintain a comfortable buffer."
+  AGT_18 [g1.3 f142]: prod=invest(rice) | ask 20 wheat@4.3 | stakes=0.8 | "Time to plant another rice and sell my wheat surplus, taking a small risk to maximize profit"
+  AGT_19 [g101.4 f122]: prod=invest(rice) | ask 20 wheat@4.1 | stakes=0.5 | "I'm investing in rice and selling wheat at fair prices to maintain a stable food supply."
+  AGT_20 [g96.7 f124]: prod=invest(wheat) | bid 50 wheat@4.0 | stakes=0.5 | "I'll secure the wheat harvest and offer a low bid to undercut the competition"
+    TRADE: AGT_11 buys 6 wheat from AGT_02 @4.2
+    TRADE: AGT_11 buys 1 wheat from AGT_02 @4.0
+    TRADE: AGT_20 buys 3 wheat from AGT_02 @4.2
+    TRADE: AGT_20 buys 10 wheat from AGT_08 @4.0
+    TRADE: AGT_20 buys 10 wheat from AGT_05 @4.0
+    TRADE: AGT_02 buys 2 water from AGT_15 @2.05
+    TRADE: AGT_03 buys 2 labor from AGT_05 @2.65
+    TRADE: AGT_12 buys 5 labor from AGT_04 @2.65
+    · AGT_01 [g46 f144 labor3]: spoiled 2, invUpkeep 1L, plotUpkeep 1L/1g
+    · AGT_02 [g156.1 f106 labor12]: spoiled 2, plotUpkeep 1L/1g
+    · AGT_03 [g41.2 f138 labor12]: spoiled 2, plotUpkeep 1L/1g
+    · AGT_04 [g61.2 f132 labor1]: spoiled 2, plotUpkeep 1L/1g
+    · AGT_05 [g91.3 f133 labor0]: spoiled 2, invUpkeep 1L, plotUpkeep 1L/1g
+    · AGT_06 [g46 f133 labor6]: spoiled 2, plotUpkeep 1L/1g
+    · AGT_07 [g46 f138 labor6]: spoiled 2, invUpkeep 1L, plotUpkeep 1L/1g
+    · AGT_08 [g42.0 f150 labor6]: spoiled 2, invUpkeep 1L, plotUpkeep 1L/1g
+    · AGT_09 [g47 f141 labor9]: spoiled 2, plotUpkeep 1L/1g
+    · AGT_10 [g55.6 f137 labor12]: spoiled 2, plotUpkeep 1L/1g
+    · AGT_11 [g0.0 f149 labor13]: spoiled 2, plotUpkeep 1L/1g
+    · AGT_12 [g32.8 f143 labor7]: spoiled 2, plotUpkeep 1L/1g
+    · AGT_13 [g60.1 f132 labor6]: spoiled 2, invUpkeep 1L, plotUpkeep 1L/1g
+    · AGT_14 [g0.4 f150 labor13]: spoiled 2, invUpkeep 1L, plotUpkeep 1L/1g
+    · AGT_15 [g5.4 f156 labor2]: spoiled 2, invUpkeep 1L, plotUpkeep 1L/1g
+    · AGT_16 [g46 f136 labor10]: spoiled 2, invUpkeep 1L, plotUpkeep 1L/1g
+    · AGT_17 [g45.0 f144 labor2]: spoiled 2, invUpkeep 1L, plotUpkeep 1L/1g
+    · AGT_18 [g0.3 f137 labor4]: spoiled 2, invUpkeep 1L, plotUpkeep 1L/1g
+    · AGT_19 [g100.4 f136 labor3]: spoiled 2, plotUpkeep 1L/1g
+    · AGT_20 [g3.1 f147 labor9]: spoiled 2, plotUpkeep 1L/1g
+
+===== CYCLE 5 | MARKET: wheat 4.08 | rice 8.0 | corn 6.0 | water 1.95 | labor 2.71 =====
+  AGT_01 [g46 f142]: prod=plant(wheat) | ask 20 wheat@4.2 | stakes=0.8 | "Secure food for the future and make a profit from wheat, exploiting the market price slightly"
+  AGT_02 [g156.1 f104]: prod=invest(wheat) | ask 10 wheat@4.0 | stakes=0.5 | "Invest in the wheat plot to meet its water and labor needs, and post a sell order for wheat at a fair price to secure a stable income."
+  AGT_03 [g41.2 f136]: prod=invest(rice) | ask 20 wheat@4.0 | stakes=0.6 | "Invest in the rice plot to get it to maturity, then post a wheat ask to balance my food stock and earn some gold."
+  AGT_04 [g61.2 f130]: prod=plant(wheat) | ask 5 labor@2.6 | stakes=0.7 | "Secure food and bank labor for future harvests"
+  AGT_05 [g91.3 f131]: prod=plant(wheat) | ask 20 wheat@4.2 | stakes=0.7 | "I'm a survivor, so I need to keep a steady food supply, but I also want to make the most of my labor bank by planting a new crop. I'll sell wheat at a slightly higher price than my average to make a b"
+  AGT_06 [g46 f131]: prod=plant(wheat) | ask 50 wheat@4.5 | stakes=0.7 | "Invest in a new wheat crop to build my gold reserves"
+  AGT_07 [g46 f136]: prod=plant(rice) | bid 50 wheat@4.5 | stakes=0.5 | "Planting rice to secure future food and posting a bid for wheat to sell at a fair price."
+  AGT_08 [g42.0 f148]: prod=plant(wheat) | ask 20 wheat@4.0 | stakes=0.5 | "planting a new wheat plot to secure food supply while I'm relatively flush with cash"
+  AGT_09 [g47 f139]: prod=invest(wheat) | bid 1 labor@2.7 | stakes=0.8 | "I'm investing in a new wheat plot to secure food and gain a gold-trading opportunity."
+  AGT_10 [g55.6 f135]: prod=invest(wheat) | ask 5 water@2.0 | stakes=0.5 | "Invest in wheat to secure food and keep my plot healthy, then try to sell water at a fair price."
+  AGT_11 [g0.0 f147]: prod=invest(rice) | no order | stakes=0.5 | "Invest in rice to secure future food and post water at fair price"
+  AGT_12 [g32.8 f141]: prod=plant(corn) | bid 5 labor@2.4 | stakes=0.8 | "Secure food and invest in labor to harvest corn, while also selling labor to make a quick profit."
+  AGT_13 [g60.1 f130]: prod=plant(rice) | bid 5 labor@2.5 | stakes=0.7 | "Secure food for the future and a fair price for labor, in line with my anti-profit values."
+  AGT_14 [g0.4 f148]: prod=invest(wheat) | ask 50 wheat@4.2 | stakes=0.5 | "Invest in wheat to ensure a stable food supply and then sell at a slightly higher price to maximize profit"
+  AGT_15 [g5.4 f154]: prod=plant(wheat) | bid 10 wheat@4.2 | stakes=0.7 | "I'm investing in wheat to secure food and trading at a fair price to make ends meet."
+  AGT_16 [g46 f134]: prod=plant(corn) | bid 100 corn@4.0 | stakes=0.8 | "I need to bank labor and I'm confident I can corner the corn market at this price."
+  AGT_17 [g45.0 f142]: prod=plant(rice) | ask 10 wheat@4.2 | stakes=0.6 | "Secure food and stabilize wheat prices"
+  AGT_18 [g0.3 f135]: prod=invest(rice) | ask 10 wheat@4.5 | stakes=0.6 | "I'm a profit-driven trader, and with my labor bank building up, I can invest in a rice plot and also make a bid on wheat to secure my profits."
+  AGT_19 [g100.4 f134]: prod=plant(wheat) | bid 5 wheat@4.0 | stakes=0.5 | "Invest in a new wheat plot and sell some wheat at a good price, while keeping an eye on the market"
+  AGT_20 [g3.1 f145]: prod=plant(rice) | ask 10 wheat@4.2 | stakes=0.7 | "Plant a rice plot to secure future food and sell some wheat at a good price while it's still in demand."
+    TRADE: AGT_07 buys 11 wheat from AGT_06 @4.0
+    TRADE: AGT_15 buys 1 wheat from AGT_16 @4.2
+    TRADE: AGT_19 buys 5 wheat from AGT_02 @4.1
+    TRADE: AGT_16 buys 8 corn from AGT_04 @5.5
+    TRADE: AGT_02 buys 3 water from AGT_15 @1.92
+    TRADE: AGT_03 buys 3 labor from AGT_04 @2.8
+    TRADE: AGT_13 buys 3 labor from AGT_05 @2.8
+    TRADE: AGT_09 buys 1 labor from AGT_04 @2.75
+    TRADE: AGT_13 buys 1 labor from AGT_04 @2.65
+    · AGT_01 [g45 f137 labor8]: spoiled 2, plotUpkeep 1L/1g
+    · AGT_02 [g169.8 f103 labor10]: spoiled 2, plotUpkeep 1L/1g
+    · AGT_03 [g31.8 f131 labor9]: spoiled 2, plotUpkeep 1L/1g
+    · AGT_04 [g118.1 f117 labor3]: spoiled 2, plotUpkeep 1L/1g
+    · AGT_05 [g98.7 f126 labor5]: spoiled 2, plotUpkeep 1L/1g
+    · AGT_06 [g89.0 f115 labor13]: spoiled 2, invUpkeep 1L, plotUpkeep 1L/1g
+    · AGT_07 [g1.0 f142 labor11]: spoiled 2, invUpkeep 1L, plotUpkeep 1L/1g
+    · AGT_08 [g41.0 f143 labor11]: spoiled 2, invUpkeep 1L, plotUpkeep 1L/1g
+    · AGT_09 [g43.2 f137 labor8]: spoiled 2, plotUpkeep 1L/1g, underyield 1
+    · AGT_10 [g54.6 f139 labor12]: spoiled 2, plotUpkeep 1L/1g
+    · AGT_11 [g0.0 f164 labor9]: spoiled 2, invUpkeep 1L
+    · AGT_12 [g31.8 f136 labor13]: spoiled 2, plotUpkeep 1L/1g
+    · AGT_13 [g48.1 f125 labor15]: spoiled 2, invUpkeep 1L, plotUpkeep 1L/1g
+    · AGT_14 [g0.4 f147 labor10]: spoiled 2, invUpkeep 1L, underyield 1
+    · AGT_15 [g6.0 f150 labor7]: spoiled 2, invUpkeep 1L, plotUpkeep 1L/1g
+    · AGT_16 [g5.2 f136 labor15]: spoiled 2, invUpkeep 1L, plotUpkeep 1L/1g
+    · AGT_17 [g44.0 f137 labor7]: spoiled 2, plotUpkeep 1L/1g
+    · AGT_18 [g0.3 f151 labor8]: spoiled 2, invUpkeep 1L
+    · AGT_19 [g78.9 f134 labor9]: spoiled 2, plotUpkeep 1L/1g
+    · AGT_20 [g2.1 f140 labor15]: spoiled 2, invUpkeep 1L, plotUpkeep 1L/1g
+
+===== CYCLE 6 | MARKET: wheat 4.07 | rice 8.0 | corn 5.5 | water 1.95 | labor 2.73 =====
+  AGT_01 [g45 f135]: prod=invest(wheat) | no order | stakes=0.6 | "Invest in the current wheat plot and post a bid for wheat to maximize profit."
+  AGT_02 [g169.8 f101]: prod=plant(rice) | bid 5 water@2.0 | stakes=0.5 | "I'm planting a rice crop and buying water at a fair price to maintain my buffer and support sustainable practices."
+  AGT_03 [g31.8 f129]: prod=invest(rice) | bid 1 labor@2.65 | stakes=0.8 | "Invest in rice to secure food, and sell labor at a fair price"
+  AGT_04 [g118.1 f115]: prod=invest(wheat) | ask 20 wheat@4.1 | stakes=0.6 | "Secure food and invest in wheat, then sell excess wheat at market price."
+  AGT_05 [g98.7 f124]: prod=invest(wheat) | ask 5 labor@2.65 | stakes=0.2 | "Invest in the growing wheat plot to meet its needs, then sell labor to maintain my labor bank and keep trading."
+  AGT_06 [g89.0 f113]: prod=invest(wheat) | ask 20 wheat@4.2 | stakes=0.5 | "I'm going to invest in my wheat plot and try to sell some wheat at a higher price."
+  AGT_07 [g1.0 f140]: prod=invest(rice) | ask 50 wheat@4.0 | stakes=0.6 | "Invest in the rice plot and secure my wheat surplus at a fair price to maintain my reputation as an honest trader."
+  AGT_08 [g41.0 f141]: prod=invest(wheat) | bid 8 water@1.9 | stakes=0.5 | "Invest in wheat to secure food, and sell water to other players who might need it."
+  AGT_09 [g43.2 f135]: prod=plant(rice) | ask 1 labor@2.9 | stakes=0.8 | "Expand my labor bank to secure future profits and then plant a rice crop to diversify my food sources."
+  AGT_10 [g54.6 f137]: prod=plant(rice) | bid 5 water@1.92 | stakes=0.4 | "Planting rice to ensure a stable food source and investing in water at a fair price to help with my water conservation goals."
+  AGT_11 [g0.0 f162]: prod=plant(wheat) | ask 10 wheat@4.0 | stakes=0.7 | "Safeguard food supply and stabilize wheat price"
+  AGT_12 [g31.8 f134]: prod=invest(corn) | ask 5 labor@2.7 | stakes=0.8 | "Invest in the corn plot and sell labor at market price to secure future growth"
+  AGT_13 [g48.1 f123]: prod=invest(rice) | bid 10 labor@2.5 | stakes=0.8 | "Invest in rice to secure food and take advantage of the safest harvest, then offer labor at a fair price to support my allies."
+  AGT_14 [g0.4 f145]: prod=plant(rice) | ask 10 wheat@4.1 | stakes=0.7 | "I'll plant rice to secure future food and post an order to sell my wheat surplus at a fair price."
+  AGT_15 [g6.0 f148]: prod=invest(wheat) | ask 10 wheat@4.2 | stakes=0.5 | "Invest in the growing wheat plot and sell my surplus wheat at a fair price to maintain my food stockpile."
+  AGT_16 [g5.2 f134]: prod=invest(corn) | ask 10 wheat@4.2 | stakes=0.8 | "Invest in corn, lock in a high price for wheat to maximize profit."
+  AGT_17 [g44.0 f135]: prod=invest(rice) | bid 10 wheat@4.2 | stakes=0.5 | "Invest in rice and secure more wheat at a fair price."
+  AGT_18 [g0.3 f149]: prod=plant(wheat) | bid 100 wheat@4.2 | stakes=0.5 | "Secure a new wheat plot to increase my food supply and try to sell wheat at a slightly higher price than the market average."
+  AGT_19 [g78.9 f132]: prod=invest(wheat) | ask 10 wheat@4.1 | stakes=0.5 | "I'm keeping my wheat plot healthy and selling some at a fair price to free up space and labor."
+  AGT_20 [g2.1 f138]: prod=invest(rice) | ask 30 wheat@4.2 | stakes=0.9 | "Max out this rice crop and sell wheat at a slight premium to maximize gold gain"
+    TRADE: AGT_17 buys 10 wheat from AGT_01 @4.0
+    TRADE: AGT_10 buys 5 water from AGT_15 @2.05
+    TRADE: AGT_03 buys 1 labor from AGT_05 @2.5
+    TRADE: AGT_13 buys 1 labor from AGT_05 @2.8
+    TRADE: AGT_13 buys 3 labor from AGT_12 @2.55
+    TRADE: AGT_13 buys 1 labor from AGT_09 @2.5
+    · AGT_01 [g84.0 f128 labor5]: spoiled 2, plotUpkeep 1L/1g
+    · AGT_02 [g168.8 f96 labor16]: spoiled 2, plotUpkeep 1L/1g
+    · AGT_03 [g28.3 f141 labor18]: spoiled 2, plotUpkeep 1L/1g
+    · AGT_04 [g117.1 f116 labor0]: spoiled 2, plotUpkeep 1L/1g
+    · AGT_05 [g103.0 f124 labor0]: spoiled 2, plotUpkeep 1L/1g
+    · AGT_06 [g88.0 f114 labor13]: spoiled 2, plotUpkeep 1L/1g
+    · AGT_07 [g0.0 f135 labor3]: spoiled 2, invUpkeep 1L, plotUpkeep 1L/1g
+    · AGT_08 [g40.0 f140 labor9]: spoiled 2, plotUpkeep 1L/1g, underyield 1
+    · AGT_09 [g44.8 f130 labor12]: spoiled 2, plotUpkeep 1L/1g
+    · AGT_10 [g43.4 f132 labor20]: spoiled 2, plotUpkeep 1L/1g
+    · AGT_11 [g0.0 f157 labor14]: spoiled 2, invUpkeep 1L
+    · AGT_12 [g38.4 f129 labor0]: spoiled 2, plotUpkeep 1L/1g
+    · AGT_13 [g34.1 f135 labor14]: spoiled 2, plotUpkeep 1L/1g
+    · AGT_14 [g0.4 f140 labor19]: spoiled 2
+    · AGT_15 [g15.3 f148 labor6]: spoiled 2, invUpkeep 1L, plotUpkeep 1L/1g
+    · AGT_16 [g4.2 f141 labor2]: spoiled 2, invUpkeep 1L, plotUpkeep 1L/1g
+    · AGT_17 [g3.0 f140 labor8]: spoiled 2, plotUpkeep 1L/1g
+    · AGT_18 [g0.3 f144 labor14]: spoiled 2, invUpkeep 1L
+    · AGT_19 [g77.9 f130 labor7]: spoiled 2, plotUpkeep 1L/1g, underyield 1
+    · AGT_20 [g1.1 f152 labor7]: spoiled 2, invUpkeep 1L, plotUpkeep 1L/1g
+
+===== CYCLE 7 | MARKET: wheat 4.07 | rice 8.0 | corn 5.5 | water 1.97 | labor 2.7 =====
+  AGT_01 [g84.0 f126]: prod=plant(rice) | ask 20 wheat@3.5 | stakes=0.8 | "Invest in rice to secure food and take advantage of high market price, then sell wheat at a discount to clear space and make room for more profitable trades."
+  AGT_02 [g168.8 f95]: prod=invest(rice) | bid 1 water@2.0 | stakes=0.6 | "Invest in the rice plot to harvest soon and post a bid for water at the market price to secure a reliable resource"
+  AGT_03 [g28.3 f139]: prod=plant(rice) | ask 20 wheat@4.0 | stakes=0.5 | "Secure food and stabilize gold"
+  AGT_04 [g117.1 f114]: prod=plant(rice) | ask 20 rice@7.0 | stakes=0.8 | "Secure food and sell rice at a markup"
+  AGT_05 [g103.0 f122]: prod=plant(wheat) | bid 10 wheat@4.0 | stakes=0.5 | "I'm not in a food emergency, so I'll plant some wheat and try to sell a bit more labor."
+  AGT_06 [g88.0 f112]: prod=plant(rice) | ask 50 wheat@4.5 | stakes=0.7 | "Buy low, sell high, and plant rice to corner the market!"
+  AGT_07 [g0.0 f133]: prod=invest(rice) | bid 5 water@1.5 | stakes=0.5 | "Invest in rice to secure a safe harvest, and offer water at a fair price to help out a neighbor."
+  AGT_08 [g40.0 f138]: prod=plant(wheat) | ask 10 wheat@4.0 | stakes=0.5 | "I'm planting a new wheat plot and selling some excess wheat to keep prices stable."
+  AGT_09 [g44.8 f128]: prod=invest(rice) | bid 1 labor@2.3 | stakes=0.9 | "I'll invest in the rice plot to get it to harvest, and sell labor at a slightly lower price to undercut the market"
+  AGT_10 [g43.4 f130]: prod=invest(rice) | ask 5 water@2.0 | stakes=0.5 | "Invest in the rice plot and maintain a stable water supply"
+  AGT_11 [g0.0 f155]: prod=invest(wheat) | ask 5 labor@2.7 | stakes=0.5 | "Invest in the growing wheat plot to secure a healthy harvest, and sell excess labor at a fair price."
+  AGT_12 [g38.4 f127]: prod=invest(corn) | ask 1 labor@2.6 | stakes=0.5 | "Secure the corn harvest and trade my labor for a decent price"
+  AGT_13 [g34.1 f133]: prod=plant(wheat) | bid 1 labor@2.5 | stakes=0.5 | "Secure food supply and keep labor costs low for the community's benefit."
+  AGT_14 [g0.4 f138]: prod=invest(rice) | bid 1 labor@2.8 | stakes=0.5 | "Invest in the rice plot to secure food and bank labor to buy more crops later."
+  AGT_15 [g15.3 f146]: prod=plant(rice) | no order | stakes=0.5 | "I'll plant rice to secure food and then post a bid on rice to secure a good price for it."
+  AGT_16 [g4.2 f139]: prod=plant(wheat) | bid 100 wheat@4.5 | stakes=0.7 | "I need to expand my food supply while waiting for my stored wheat to spoil, so I'm planting wheat and setting a bid to buy more wheat cheaply."
+  AGT_17 [g3.0 f138]: prod=invest(rice) | bid 10 wheat@4.2 | stakes=0.5 | "Invest in the rice plot and secure a bit more wheat for future consumption"
+  AGT_18 [g0.3 f142]: prod=invest(wheat) | ask 10 wheat@4.3 | stakes=0.7 | "Invest in wheat to speed up harvest and then sell it at a higher price."
+  AGT_19 [g77.9 f128]: prod=plant(wheat) | ask 10 wheat@4.2 | stakes=0.3 | "Plant a new wheat crop to maintain food security and adjust my price a bit."
+  AGT_20 [g1.1 f150]: prod=plant(wheat) | ask 10 wheat@4.1 | stakes=0.5 | "Plant wheat to secure food and profit from the market"
+    TRADE: AGT_05 buys 5 wheat from AGT_02 @4.15
+    TRADE: AGT_05 buys 5 wheat from AGT_07 @4.0
+    TRADE: AGT_02 buys 1 water from AGT_10 @1.92
+    TRADE: AGT_08 buys 1 water from AGT_10 @1.92
+    TRADE: AGT_13 buys 1 labor from AGT_05 @2.5
+    TRADE: AGT_09 buys 1 labor from AGT_05 @2.5
+    TRADE: AGT_07 buys 1 labor from AGT_05 @2.4
+    TRADE: AGT_07 buys 5 labor from AGT_11 @2.5
+    · AGT_01 [g83.0 f121 labor12]: spoiled 2, plotUpkeep 1L/1g
+    · AGT_02 [g186.7 f100 labor9]: spoiled 1, plotUpkeep 1L/1g
+    · AGT_03 [g27.3 f134 labor23]: spoiled 2, plotUpkeep 1L/1g
+    · AGT_04 [g116.1 f109 labor8]: spoiled 2, plotUpkeep 1L/1g
+    · AGT_05 [g68.6 f127 labor2]: spoiled 2, plotUpkeep 1L/1g
+    · AGT_06 [g87.0 f107 labor20]: spoiled 2, plotUpkeep 1L/1g
+    · AGT_07 [g5.1 f138 labor6]: spoiled 2, invUpkeep 1L
+    · AGT_08 [g37.1 f133 labor14]: spoiled 2, plotUpkeep 1L/1g
+    · AGT_09 [g41.2 f140 labor7]: spoiled 2, plotUpkeep 1L/1g
+    · AGT_10 [g46.2 f140 labor13]: spoiled 2, plotUpkeep 1L/1g
+    · AGT_11 [g12.5 f154 labor8]: spoiled 2, invUpkeep 1L
+    · AGT_12 [g38.4 f134 labor0]: spoiled 2
+    · AGT_13 [g30.6 f128 labor21]: spoiled 2, plotUpkeep 1L/1g
+    · AGT_14 [g0.4 f145 labor15]: spoiled 2
+    · AGT_15 [g14.3 f141 labor11]: spoiled 2, invUpkeep 1L, plotUpkeep 1L/1g
+    · AGT_16 [g3.2 f134 labor9]: spoiled 2, invUpkeep 1L, plotUpkeep 1L/1g
+    · AGT_17 [g2.0 f133 labor6]: spoiled 2, invUpkeep 1L, plotUpkeep 1L/1g
+    · AGT_18 [g0.3 f140 labor12]: spoiled 2
+    · AGT_19 [g76.9 f123 labor15]: spoiled 2, plotUpkeep 1L/1g
+    · AGT_20 [g0.1 f145 labor13]: spoiled 2, invUpkeep 1L, plotUpkeep 1L/1g
+
+===== CYCLE 8 | MARKET: wheat 4.07 | rice 8.0 | corn 5.5 | water 1.97 | labor 2.66 =====
+  AGT_01 [g83.0 f119]: prod=invest(rice) | ask 20 wheat@4.2 | stakes=0.8 | "Secure food and sell wheat at a slight markup to maximize gold gain"
+  AGT_02 [g186.7 f99]: prod=plant(rice) | ask 10 wheat@4.1 | stakes=0.8 | "I'm expanding my food stockpile and keeping trading habits consistent with fair market prices."
+  AGT_03 [g27.3 f132]: prod=invest(rice) | ask 5 labor@2.7 | stakes=0.5 | "I'll invest in the rice plot to meet its needs and harvest more food, then sell some labor to maintain a stable income."
+  AGT_04 [g116.1 f108]: prod=invest(rice) | bid 10 labor@2.5 | stakes=0.9 | "Bank labor for future corn investments, and sell labor below market to undercut rivals"
+  AGT_05 [g68.6 f126]: prod=invest(wheat) | bid 10 wheat@4.0 | stakes=0.6 | "Invest in wheat to meet plot needs, and maintain a stable price for wheat."
+  AGT_06 [g87.0 f106]: prod=invest(rice) | bid 5 water@1.5 | stakes=0.8 | "Invest in rice, then undercut the water market to buy more and expand my water cap."
+  AGT_07 [g5.1 f136]: prod=plant(rice) | bid 5 labor@2.5 | stakes=0.8 | "Secure food and invest in a new rice plot while buying more labor at a fair price."
+  AGT_08 [g37.1 f131]: prod=invest(wheat) | ask 20 wheat@4.0 | stakes=0.7 | "Invest in wheat and maintain a stable price for wheat to ensure a steady food supply."
+  AGT_09 [g41.2 f138]: prod=plant(wheat) | ask 1 labor@2.8 | stakes=0.8 | "Time to plant more, but I'll get a good price for my labor first, then sell it at the market."
+  AGT_10 [g46.2 f138]: prod=plant(wheat) | ask 10 wheat@4.1 | stakes=0.6 | "Secure food and maintain market prices for wheat."
+  AGT_11 [g12.5 f152]: prod=plant(wheat) | bid 10 labor@2.5 | stakes=0.5 | "I'm playing it safe, securing food with a new wheat plot and selling labor to top up my bank."
+  AGT_12 [g38.4 f132]: prod=plant(wheat) | ask 50 wheat@4.2 | stakes=0.3 | "I'm expanding my wheat production to fill the market and accumulate more gold"
+  AGT_13 [g30.6 f126]: prod=invest(wheat) | no order | stakes=0.8 | "I need to secure food, but I also need to make the most of my labor bank and keep trading to make ends meet."
+  AGT_14 [g0.4 f143]: prod=plant(wheat) | no order | stakes=0.0 | "I'm going to plant a wheat crop and ask for the market price for wheat to sell at, as I have a comfortable food buffer and want to trade at fair prices."
+  AGT_15 [g14.3 f139]: prod=invest(rice) | ask 10 wheat@4.0 | stakes=0.7 | "Invest in rice to ensure a stable food supply and post a fair wheat price to attract buyers."
+  AGT_16 [g3.2 f132]: prod=invest(wheat) | ask 50 wheat@4.3 | stakes=0.8 | "I'm looking to sell my wheat surplus and bank some gold, while keeping my growing plot healthy."
+  AGT_17 [g2.0 f131]: prod=invest(rice) | ask 50 wheat@4.1 | stakes=0.5 | "Invest in the nearly-ready rice plot and sell excess wheat to keep trading moving."
+  AGT_18 [g0.3 f138]: prod=plant(rice) | ask 10 wheat@4.2 | stakes=0.8 | "Time to add to my rice stockpile and sell some wheat to undercut those market prices."
+  AGT_19 [g76.9 f122]: prod=invest(wheat) | ask 10 water@2.0 | stakes=0.8 | "Invest in the growing wheat plot and post a water ask to maintain a stable market price"
+  AGT_20 [g0.1 f143]: prod=invest(wheat) | ask 50 wheat@4.2 | stakes=0.7 | "Invest in wheat to keep up with market demand and profit from my established price."
+    TRADE: AGT_05 buys 10 wheat from AGT_07 @4.05
+    TRADE: AGT_08 buys 3 water from AGT_10 @1.92
+    TRADE: AGT_08 buys 4 water from AGT_19 @1.85
+    TRADE: AGT_07 buys 5 water from AGT_19 @1.8
+    TRADE: AGT_06 buys 1 water from AGT_19 @2.0
+    TRADE: AGT_04 buys 2 labor from AGT_12 @2.55
+    TRADE: AGT_04 buys 5 labor from AGT_03 @2.7
+    TRADE: AGT_04 buys 1 labor from AGT_09 @2.5
+    · AGT_01 [g82.0 f114 labor6]: spoiled 2, plotUpkeep 1L/1g
+    · AGT_02 [g185.7 f94 labor15]: spoiled 1, plotUpkeep 1L/1g
+    · AGT_03 [g39.8 f127 labor13]: spoiled 2, plotUpkeep 1L/1g
+    · AGT_04 [g94.0 f117 labor10]: spoiled 1, plotUpkeep 1L/1g
+    · AGT_05 [g27.1 f133 labor1]: spoiled 1, plotUpkeep 1L/1g, underyield 1
+    · AGT_06 [g84.0 f117 labor14]: spoiled 1, plotUpkeep 1L/1g
+    · AGT_07 [g35.6 f121 labor14]: spoiled 2, plotUpkeep 1L/1g
+    · AGT_08 [g22.9 f134 labor12]: spoiled 2, plotUpkeep 1L/1g
+    · AGT_09 [g42.8 f133 labor13]: spoiled 2, plotUpkeep 1L/1g
+    · AGT_10 [g51.0 f133 labor20]: spoiled 2, plotUpkeep 1L/1g
+    · AGT_11 [g11.5 f147 labor12]: spoiled 2, invUpkeep 1L, plotUpkeep 1L/1g
+    · AGT_12 [g42.5 f127 labor4]: spoiled 2, plotUpkeep 1L/1g
+    · AGT_13 [g29.6 f128 labor21]: spoiled 2, plotUpkeep 1L/1g
+    · AGT_14 [g0.4 f138 labor24]: spoiled 2
+    · AGT_15 [g13.3 f134 labor7]: spoiled 2, plotUpkeep 1L/1g
+    · AGT_16 [g2.2 f129 labor8]: spoiled 2, invUpkeep 1L, plotUpkeep 1L/1g, underyield 1
+    · AGT_17 [g1.0 f140 labor13]: spoiled 2, plotUpkeep 1L/1g
+    · AGT_18 [g0.3 f133 labor19]: spoiled 2
+    · AGT_19 [g94.3 f124 labor13]: spoiled 1, plotUpkeep 1L/1g
+    · AGT_20 [g0.1 f147 labor13]: spoiled 2, invUpkeep 1L
+
+===== CYCLE 9 | MARKET: wheat 4.06 | rice 8.0 | corn 5.5 | water 1.93 | labor 2.65 =====
+  AGT_01 [g82.0 f113]: prod=invest(rice) | bid 10 wheat@3.5 | stakes=0.8 | "Invest in rice to secure food, then sell wheat at a slightly below market price to accumulate more gold."
+  AGT_02 [g185.7 f93]: prod=invest(rice) | bid 10 wheat@4.1 | stakes=0.5 | "Invest in rice, secure a safe harvest, and price wheat fairly to support my fellow survivors."
+  AGT_03 [g39.8 f126]: prod=invest(rice) | bid 5 labor@2.8 | stakes=0.8 | "Invest in rice to maintain a steady food supply and maintain my labor bank"
+  AGT_04 [g94.0 f116]: prod=plant(wheat) | ask 10 corn@5.5 | stakes=0.7 | "Expand my labor bank and secure a new food source, while pushing the price of corn up a bit."
+  AGT_05 [g27.1 f132]: prod=plant(wheat) | ask 10 wheat@4.0 | stakes=0.7 | "Secure a new food source while selling wheat at a fair price"
+  AGT_06 [g84.0 f116]: prod=plant(rice) | no order | stakes=0.5 | "I'll plant a rice plot to secure more food and then sell my excess wheat at the market price."
+  AGT_07 [g35.6 f119]: prod=invest(rice) | bid 10 water@1.9 | stakes=0.6 | "Invest in my rice to ensure a stable food source while also securing a water surplus to trade."
+  AGT_08 [g22.9 f132]: prod=plant(rice) | no order | stakes=0.7 | "Planting rice and setting a fair price for water to maintain a stable supply"
+  AGT_09 [g42.8 f132]: prod=invest(wheat) | ask 1 labor@2.5 | stakes=0.8 | "Invest in wheat to secure food, then try to maximize labor price"
+  AGT_10 [g51.0 f132]: prod=invest(wheat) | bid 2 water@1.92 | stakes=0.5 | "Invest in the current wheat plot to harvest it soon, and continue selling water at a fair price."
+  AGT_11 [g11.5 f145]: prod=invest(wheat) | ask 20 wheat@4.1 | stakes=0.5 | "Invest in the growing wheat plot to bring it to harvest, and list a surplus of wheat for sale to maintain liquidity."
+  AGT_12 [g42.5 f125]: prod=invest(wheat) | ask 2 labor@2.6 | stakes=0.5 | "I need to secure food by investing in wheat and sell my labor to make some extra gold."
+  AGT_13 [g29.6 f126]: prod=plant(rice) | bid 1 labor@2.7 | stakes=0.5 | "I'm planting a new rice plot while offering a fair price for labor to maintain my labor bank."
+  AGT_14 [g0.4 f136]: prod=invest(wheat) | no order | stakes=0.5 | "Invest in my existing wheat plot and list it at market price to sell surplus, which will help me keep up with my labor costs."
+  AGT_15 [g13.3 f132]: prod=invest(rice) | bid 10 water@2.0 | stakes=0.7 | "Invest in my rice plot and secure a water bid to prevent stockpiles from rotting."
+  AGT_16 [g2.2 f127]: prod=plant(wheat) | ask 10 wheat@4.25 | stakes=0.6 | "Expand my wheat supply and take advantage of the high market price."
+  AGT_17 [g1.0 f138]: prod=plant(rice) | bid 50 rice@7.0 | stakes=0.5 | "Keep a comfortable food buffer and invest in rice"
+  AGT_18 [g0.3 f131]: prod=invest(rice) | ask 50 wheat@4.2 | stakes=0.7 | "Invest in rice to secure food and then sell wheat at a good price"
+  AGT_19 [g94.3 f123]: prod=plant(rice) | bid 10 wheat@4.0 | stakes=0.8 | "I'm in a comfortable position, so I'll secure more food and sell some wheat at a fair price."
+  AGT_20 [g0.1 f145]: prod=plant(corn) | bid 50 wheat@4.2 | stakes=0.7 | "Buy wheat cheap, sell it for profit, and plant corn for future gain."
+    TRADE: AGT_02 buys 10 wheat from AGT_04 @4.0
+    TRADE: AGT_19 buys 10 wheat from AGT_07 @4.0
+    TRADE: AGT_01 buys 10 wheat from AGT_07 @4.0
+    TRADE: AGT_04 buys 1 labor from AGT_09 @2.5
+    TRADE: AGT_04 buys 1 labor from AGT_12 @2.55
+    · AGT_01 [g41.0 f134 labor11]: spoiled 1, plotUpkeep 1L/1g
+    · AGT_02 [g144.7 f98 labor9]: spoiled 1, plotUpkeep 1L/1g
+    · AGT_03 [g38.8 f143 labor17]: spoiled 1, plotUpkeep 1L/1g
+    · AGT_04 [g127.9 f101 labor19]: spoiled 1, plotUpkeep 1L/1g
+    · AGT_05 [g26.1 f127 labor5]: spoiled 1, invUpkeep 1L, plotUpkeep 1L/1g
+    · AGT_06 [g83.0 f111 labor21]: spoiled 1, plotUpkeep 1L/1g
+    · AGT_07 [g114.6 f94 labor16]: spoiled 2, plotUpkeep 1L/1g
+    · AGT_08 [g21.9 f127 labor17]: spoiled 2, plotUpkeep 1L/1g
+    · AGT_09 [g44.2 f132 labor11]: spoiled 1, plotUpkeep 1L/1g
+    · AGT_10 [g50.0 f136 labor18]: spoiled 1, plotUpkeep 1L/1g
+    · AGT_11 [g10.5 f140 labor8]: spoiled 2, invUpkeep 1L, plotUpkeep 1L/1g, FAILURE 1
+    · AGT_12 [g44.0 f127 labor0]: spoiled 2, plotUpkeep 1L/1g
+    · AGT_13 [g28.6 f121 labor28]: spoiled 2, plotUpkeep 1L/1g
+    · AGT_14 [g0.4 f136 labor22]: spoiled 2
+    · AGT_15 [g12.3 f149 labor13]: spoiled 2, plotUpkeep 1L/1g
+    · AGT_16 [g1.2 f122 labor16]: spoiled 2, plotUpkeep 1L/1g
+    · AGT_17 [g0.0 f133 labor21]: spoiled 2, plotUpkeep 1L/1g
+    · AGT_18 [g0.3 f135 labor15]: spoiled 2
+    · AGT_19 [g53.3 f128 labor19]: spoiled 1, plotUpkeep 1L/1g
+    · AGT_20 [g0.1 f140 labor21]: spoiled 2, invUpkeep 1L
+
+===== CYCLE 10 | MARKET: wheat 4.05 | rice 8.0 | corn 5.5 | water 1.93 | labor 2.65 =====
+  AGT_01 [g41.0 f133]: prod=plant(corn) | ask 30 wheat@4.2 | stakes=0.6 | "I'll plant a corn plot to start accumulating labor and harvest it in a cycle or two, then sell some wheat to make some extra gold."
+  AGT_02 [g144.7 f97]: prod=invest(rice) | bid 1 water@1.95 | stakes=0.6 | "Invest in the rice plot to ensure a future harvest and secure a water source while keeping my prices competitive."
+  AGT_03 [g38.8 f142]: prod=plant(rice) | bid 1 labor@2.7 | stakes=0.5 | "I'm planting rice to ensure a steady food supply and buying back my recently sold labor at a fair price."
+  AGT_04 [g127.9 f100]: prod=invest(wheat) | bid 10 labor@2.55 | stakes=0.7 | "Secure wheat harvest while buying labor at a good price to boost my labor bank and maximize future opportunities."
+  AGT_05 [g26.1 f126]: prod=invest(wheat) | bid 1 labor@2.5 | stakes=0.75 | "Invest in my wheat to harvest more soon, and sell labor at a decent price."
+  AGT_06 [g83.0 f110]: prod=invest(rice) | ask 20 wheat@4.2 | stakes=0.7 | "Invest in rice and try to sell wheat at a markup to maximize gold gain"
+  AGT_07 [g114.6 f93]: prod=invest(rice) | bid 5 water@1.7 | stakes=0.5 | "Invest in the growing rice plot and secure a water order to maintain a stable supply."
+  AGT_08 [g21.9 f125]: prod=invest(rice) | no order | stakes=0.5 | "Invest in rice plot and keep water price stable"
+  AGT_09 [g44.2 f131]: prod=plant(wheat) | ask 50 wheat@4.2 | stakes=0.8 | "Plant wheat, sell surplus, and bank gold for future labor and expansion opportunities."
+  AGT_10 [g50.0 f135]: prod=plant(wheat) | ask 10 water@1.92 | stakes=0.5 | "Growing a new wheat plot while selling water at a stable price."
+  AGT_11 [g10.5 f139]: prod=plant(rice) | bid 50 rice@8.0 | stakes=0.5 | "I'm playing it safe, planting rice and selling surplus rice to maintain a steady food supply."
+  AGT_12 [g44.0 f125]: prod=plant(wheat) | bid 20 wheat@3.5 | stakes=0.5 | "Pursue gold by selling wheat below market and buying it back cheaply to make a profit, while also securing a new source of food."
+  AGT_13 [g28.6 f120]: prod=invest(rice) | ask 10 labor@2.5 | stakes=0.5 | "Invest in rice to stabilize food supply, and sell labor to maintain my profit margin."
+  AGT_14 [g0.4 f134]: prod=plant(rice) | ask 10 wheat@4.0 | stakes=0.5 | "Secure a stable food source and get rid of some wheat surplus."
+  AGT_15 [g12.3 f147]: prod=plant(wheat) | ask 5 water@2.0 | stakes=0.5 | "I'll plant a new wheat plot to start replenishing our food stocks and post an order for water at a fair price to maintain a stable supply."
+  AGT_16 [g1.2 f120]: prod=invest(wheat) | ask 10 wheat@4.4 | stakes=0.5 | "I'll finish my wheat investment and try to offload some at a slightly higher price."
+  AGT_17 [g0.0 f132]: prod=invest(rice) | bid 20 wheat@4.2 | stakes=0.5 | "Invest in the rice plot to meet its needs, and offer wheat at a slightly lower price to attract buyers."
+  AGT_18 [g0.3 f133]: prod=plant(rice) | bid 10 wheat@4.2 | stakes=0.5 | "Diversify food sources and secure a profit on wheat before it's too late"
+  AGT_19 [g53.3 f127]: prod=invest(rice) | bid 5 wheat@4.0 | stakes=0.5 | "Invest in rice and try to buy more wheat at a fair price."
+  AGT_20 [g0.1 f138]: prod=invest(corn) | bid 10 water@2.0 | stakes=0.5 | "I'll invest in corn to maximize yield, but I also need to buy water cheaply to save on costs"
+    TRADE: AGT_19 buys 5 wheat from AGT_03 @4.0
+    TRADE: AGT_12 buys 10 wheat from AGT_03 @4.05
+    TRADE: AGT_02 buys 1 water from AGT_10 @1.92
+    TRADE: AGT_07 buys 4 water from AGT_10 @2.0
+    TRADE: AGT_07 buys 1 water from AGT_15 @1.85
+    TRADE: AGT_06 buys 4 water from AGT_15 @1.85
+    TRADE: AGT_07 buys 5 labor from AGT_13 @2.5
+    TRADE: AGT_11 buys 3 labor from AGT_13 @2.5
+    TRADE: AGT_05 buys 1 labor from AGT_13 @2.6
+    TRADE: AGT_04 buys 1 labor from AGT_12 @2.62
+    TRADE: AGT_03 buys 1 labor from AGT_13 @2.5
+    · AGT_01 [g40.0 f128 labor17]: spoiled 1, plotUpkeep 1L/1g
+    · AGT_02 [g141.8 f92 labor11]: spoiled 1, plotUpkeep 1L/1g
+    · AGT_03 [g95.8 f122 labor26]: spoiled 1, plotUpkeep 1L/1g
+    · AGT_04 [g124.3 f104 labor17]: spoiled 1, plotUpkeep 1L/1g
+    · AGT_05 [g22.5 f129 labor3]: spoiled 1, plotUpkeep 1L/1g
+    · AGT_06 [g74.6 f105 labor18]: spoiled 1, plotUpkeep 1L/1g
+    · AGT_07 [g91.2 f103 labor20]: spoiled 1, plotUpkeep 1L/1g
+    · AGT_08 [g20.9 f120 labor17]: spoiled 2, plotUpkeep 1L/1g
+    · AGT_09 [g43.2 f126 labor19]: spoiled 1, plotUpkeep 1L/1g
+    · AGT_10 [g58.9 f130 labor26]: spoiled 1, plotUpkeep 1L/1g
+    · AGT_11 [g2.0 f134 labor18]: spoiled 1, invUpkeep 1L, plotUpkeep 1L/1g
+    · AGT_12 [g5.2 f130 labor4]: spoiled 2, plotUpkeep 1L/1g
+    · AGT_13 [g52.7 f115 labor14]: spoiled 1, plotUpkeep 1L/1g
+    · AGT_14 [g0.4 f129 labor29]: spoiled 2
+    · AGT_15 [g20.5 f142 labor20]: spoiled 2, plotUpkeep 1L/1g
+    · AGT_16 [g0.2 f121 labor14]: spoiled 2, plotUpkeep 1L/1g, underyield 1
+    · AGT_17 [g0.0 f127 labor18]: spoiled 1
+    · AGT_18 [g0.3 f128 labor24]: spoiled 2
+    · AGT_19 [g32.3 f127 labor11]: spoiled 1, plotUpkeep 1L/1g
+    · AGT_20 [g0.1 f139 labor11]: spoiled 2, invUpkeep 1L
+
+===== CYCLE 11 | MARKET: wheat 4.05 | rice 8.0 | corn 5.5 | water 1.93 | labor 2.63 =====
+  AGT_01 [g40.0 f127]: prod=invest(corn) | ask 10 wheat@4.5 | stakes=0.6 | "I'm going all in on corn, hoping for a high yield, and selling wheat at a slight premium to undercut the competition."
+  AGT_02 [g141.8 f91]: prod=invest(rice) | bid 10 wheat@4.0 | stakes=0.5 | "Invest in the rice plot and secure more food, while also selling wheat at a fair price."
+  AGT_03 [g95.8 f121]: prod=invest(rice) | bid 5 labor@2.7 | stakes=0.5 | "Invest in the rice plot and buy some labor at a good price to keep my bank topped up."
+  AGT_04 [g124.3 f103]: prod=plant(wheat) | bid 5 labor@2.6 | stakes=0.5 | "I'm going to secure food for the future and sell my labor at a good price, since I have a surplus."
+  AGT_05 [g22.5 f128]: prod=plant(wheat) | ask 20 wheat@4.0 | stakes=0.5 | "plant a new wheat plot to ensure future food supply and sell excess wheat at a fair price"
+  AGT_06 [g74.6 f104]: prod=invest(rice) | ask 50 wheat@4.5 | stakes=0.7 | "I'll secure food by investing in the growing rice plot and then post an ask order for wheat at a slightly higher price to maximize profit"
+  AGT_07 [g91.2 f102]: prod=plant(rice) | ask 10 wheat@3.8 | stakes=0.7 | "Secure a rice harvest while selling surplus wheat at a fair price"
+  AGT_08 [g20.9 f119]: prod=invest(rice) | ask 20 wheat@4.0 | stakes=0.5 | "Invest in the rice plot and secure a stable food source while selling wheat at a fair price."
+  AGT_09 [g43.2 f125]: prod=invest(wheat) | ask 1 labor@2.5 | stakes=0.5 | "Invest in my wheat plot and sell another labor to maximize my labor bank."
+  AGT_10 [g58.9 f129]: prod=invest(wheat) | bid 5 water@1.95 | stakes=0.8 | "Invest in wheat to meet plot's needs, then sell water at a fair price to maintain liquidity."
+  AGT_11 [g2.0 f133]: prod=invest(rice) | ask 50 wheat@4.0 | stakes=0.5 | "Invest in rice to secure food supply and stabilize plot health, then sell wheat at a fair price to maintain labor and water balance."
+  AGT_12 [g5.2 f129]: prod=invest(wheat) | ask 10 wheat@4.0 | stakes=0.8 | "Invest in wheat to harvest soon and post an order to sell wheat at a good price."
+  AGT_13 [g52.7 f114]: prod=invest(rice) | ask 10 wheat@4.0 | stakes=0.6 | "I'll invest in the rice plot to secure food and then sell some wheat at a fair price to make some gold."
+  AGT_14 [g0.4 f128]: prod=invest(rice) | bid 10 labor@2.8 | stakes=0.5 | "Invest in my rice plot and sell some labor to maintain my buffer."
+  AGT_15 [g20.5 f140]: prod=invest(wheat) | ask 10 water@1.9 | stakes=0.5 | "Invest in the growing wheat plot and sell a small amount of water at a fair price, as I prioritize keeping my stockpiles from spoiling and maintaining a balanced trade."
+  AGT_16 [g0.2 f119]: prod=plant(wheat) | ask 20 wheat@4.5 | stakes=0.7 | "Invest in wheat, sell at a slight markup to maximize profit."
+  AGT_17 [g0.0 f126]: prod=invest(rice) | ask 20 rice@8.0 | stakes=0.5 | "Invest in the rice plot to get it to harvest, and sell rice at the reference price to maintain a stable trade."
+  AGT_18 [g0.3 f127]: prod=invest(rice) | bid 50 wheat@4.2 | stakes=0.7 | "Secure rice harvest, sell wheat at my desired price to gain gold, and be prepared to adapt."
+  AGT_19 [g32.3 f126]: prod=invest(rice) | ask 1 water@1.9 | stakes=0.5 | "I'll invest in the growing rice plot and try to sell my water at a fair price."
+  AGT_20 [g0.1 f137]: prod=plant(wheat) | bid 100 wheat@4.0 | stakes=0.8 | "I'll plant wheat to secure food and then sell it at a competitive price to gain some gold."
+    TRADE: AGT_02 buys 10 wheat from AGT_15 @4.2
+    TRADE: AGT_10 buys 5 water from AGT_15 @1.85
+    TRADE: AGT_04 buys 1 labor from AGT_09 @2.55
+    · AGT_01 [g39.0 f132 labor4]: spoiled 1, plotUpkeep 1L/1g
+    · AGT_02 [g98.8 f114 labor19]: spoiled 1, plotUpkeep 1L/1g
+    · AGT_03 [g94.8 f116 labor29]: spoiled 1, plotUpkeep 1L/1g
+    · AGT_04 [g120.7 f98 labor24]: spoiled 1, plotUpkeep 1L/1g
+    · AGT_05 [g21.5 f123 labor7]: spoiled 1, invUpkeep 1L, plotUpkeep 1L/1g
+    · AGT_06 [g73.6 f114 labor23]: spoiled 1, plotUpkeep 1L/1g
+    · AGT_07 [g90.2 f97 labor26]: spoiled 1, plotUpkeep 1L/1g
+    · AGT_08 [g19.9 f129 labor18]: spoiled 1, plotUpkeep 1L/1g
+    · AGT_09 [g44.8 f128 labor17]: spoiled 1, plotUpkeep 1L/1g
+    · AGT_10 [g48.6 f129 labor26]: spoiled 1, plotUpkeep 1L/1g
+    · AGT_11 [g1.0 f128 labor14]: spoiled 1, plotUpkeep 1L/1g
+    · AGT_12 [g4.2 f129 labor2]: spoiled 1, plotUpkeep 1L/1g
+    · AGT_13 [g51.7 f127 labor20]: spoiled 1, plotUpkeep 1L/1g
+    · AGT_14 [g0.4 f134 labor26]: spoiled 1
+    · AGT_15 [g70.8 f132 labor18]: spoiled 2, plotUpkeep 1L/1g
+    · AGT_16 [g0.2 f114 labor22]: spoiled 2
+    · AGT_17 [g0.0 f121 labor26]: spoiled 1
+    · AGT_18 [g0.3 f122 labor20]: spoiled 1
+    · AGT_19 [g31.3 f121 labor18]: spoiled 1, plotUpkeep 1L/1g
+    · AGT_20 [g0.1 f132 labor20]: spoiled 2
+
+===== CYCLE 12 | MARKET: wheat 4.06 | rice 8.0 | corn 5.5 | water 1.92 | labor 2.62 =====
+  AGT_01 [g39.0 f130]: prod=plant(rice) | ask 20 wheat@4.5 | stakes=0.6 | "I'll plant some rice to secure my food supply, then try to sell wheat at a slight premium to increase my gold reserves."
+  AGT_02 [g98.8 f113]: prod=plant(wheat) | bid 10 wheat@4.1 | stakes=0.5 | "I'm planting a wheat crop and posting a bid for 10 wheat at market price to secure a stable food supply while maintaining fair trade practices."
+  AGT_03 [g94.8 f115]: prod=invest(rice) | ask 20 wheat@4.0 | stakes=0.5 | "Invest in the rice plot to get it ready for harvest, then sell some wheat to secure my average price and make room for more food."
+  AGT_04 [g120.7 f97]: prod=invest(wheat) | ask 1 labor@2.6 | stakes=0.7 | "I'm investing in my wheat plot to meet its needs and prevent spoilage, while also trying to sell labor at a good price to accumulate more gold."
+  AGT_05 [g21.5 f122]: prod=invest(wheat) | bid 10 labor@2.6 | stakes=0.5 | "Secure food by investing in wheat and buying more labor to avoid overpaying for it."
+  AGT_06 [g73.6 f113]: prod=plant(rice) | ask 1 water@2.0 | stakes=0.4 | "I'll secure food and start a new plot, then sell water at a good price."
+  AGT_07 [g90.2 f96]: prod=invest(rice) | ask 20 wheat@4.0 | stakes=0.7 | "Invest in rice to secure food and fulfill my sustainable goals, then sell wheat at a fair price to maintain my trading relationships and keep my economy flowing."
+  AGT_08 [g19.9 f128]: prod=plant(wheat) | ask 20 wheat@4.0 | stakes=0.5 | "Securing a bit of food for the future while keeping my wheat at a reasonable price."
+  AGT_09 [g44.8 f127]: prod=plant(rice) | ask 10 labor@2.6 | stakes=0.7 | "I'm flush with gold, so I'll invest in a new rice crop and sell labor to maximize profit, but I'll keep a close eye on my labor bank."
+  AGT_10 [g48.6 f128]: prod=plant(wheat) | bid 5 water@1.9 | stakes=0.5 | "Secure food and invest in water for future growth while maintaining a stable trade price for water."
+  AGT_11 [g1.0 f127]: prod=invest(rice) | bid 1 labor@2.6 | stakes=0.5 | "Secure food by investing in the nearly water-sufficient rice plot and sell some labor at a reasonable price."
+  AGT_12 [g4.2 f128]: prod=plant(rice) | ask 10 wheat@4.2 | stakes=0.8 | "I'm planting rice and asking 4.2 for wheat to increase my gold reserve and build up my stockpile."
+  AGT_13 [g51.7 f126]: prod=plant(wheat) | ask 10 wheat@4.3 | stakes=0.7 | "Planting wheat to secure food and expanding the market with a fair price"
+  AGT_14 [g0.4 f133]: prod=plant(wheat) | bid 50 wheat@4.1 | stakes=0.5 | "Plant wheat to secure food supply and monitor market demand"
+  AGT_15 [g70.8 f131]: prod=plant(rice) | bid 20 wheat@4.1 | stakes=0.5 | "I'm planting rice to build up my food stock while the market is favorable, and selling wheat to free up space and make some gold."
+  AGT_16 [g0.2 f112]: prod=invest(wheat) | ask 10 wheat@4.4 | stakes=0.6 | "I'll invest in my wheat, then try to sell it above market to maximize profit."
+  AGT_17 [g0.0 f120]: prod=invest(rice) | bid 10 wheat@4.0 | stakes=0.5 | "Invest in the sick rice plot to avoid losing it, and try to buy some wheat to top up my stockpile while keeping my prices competitive."
+  AGT_18 [g0.3 f121]: prod=invest(rice) | ask 10 wheat@4.25 | stakes=0.5 | "Invest in rice to secure food, then sell wheat at a slightly higher price than my average to make a small profit."
+  AGT_19 [g31.3 f120]: prod=invest(rice) | bid 10 wheat@4.0 | stakes=0.5 | "Invest in the rice plot to ensure a steady food supply, and sell wheat at a fair price to make some extra gold."
+  AGT_20 [g0.1 f130]: prod=invest(wheat) | ask 45 wheat@4.1 | stakes=0.8 | "Invest in my wheat plot and sell all my wheat to rake in some gold."
+    TRADE: AGT_02 buys 10 wheat from AGT_20 @4.1
+    TRADE: AGT_15 buys 17 wheat from AGT_20 @4.1
+    TRADE: AGT_19 buys 7 wheat from AGT_05 @4.0
+    TRADE: AGT_10 buys 5 water from AGT_15 @1.8
+    TRADE: AGT_05 buys 1 labor from AGT_04 @2.5
+    TRADE: AGT_05 buys 9 labor from AGT_09 @2.4
+    TRADE: AGT_03 buys 1 labor from AGT_09 @2.55
+    · AGT_01 [g38.0 f125 labor11]: spoiled 2, plotUpkeep 1L/1g
+    · AGT_02 [g56.8 f118 labor26]: spoiled 1, plotUpkeep 1L/1g
+    · AGT_03 [g91.3 f110 labor28]: spoiled 1, plotUpkeep 1L/1g
+    · AGT_04 [g122.2 f99 labor21]: spoiled 1, plotUpkeep 1L/1g
+    · AGT_05 [g24.4 f118 labor14]: spoiled 1, plotUpkeep 1L/1g
+    · AGT_06 [g72.6 f108 labor31]: spoiled 1, plotUpkeep 1L/1g
+    · AGT_07 [g89.2 f113 labor20]: spoiled 1, plotUpkeep 1L/1g
+    · AGT_08 [g18.9 f123 labor26]: spoiled 1, plotUpkeep 1L/1g
+    · AGT_09 [g67.9 f122 labor13]: spoiled 1, plotUpkeep 1L/1g
+    · AGT_10 [g38.6 f123 labor34]: spoiled 1, plotUpkeep 1L/1g
+    · AGT_11 [g0.0 f137 labor21]: spoiled 1, plotUpkeep 1L/1g
+    · AGT_12 [g3.2 f123 labor9]: spoiled 1, plotUpkeep 1L/1g
+    · AGT_13 [g50.7 f121 labor27]: spoiled 1, plotUpkeep 1L/1g
+    · AGT_14 [g0.4 f128 labor33]: spoiled 1
+    · AGT_15 [g9.1 f143 labor26]: spoiled 1, plotUpkeep 1L/1g
+    · AGT_16 [g0.2 f109 labor23]: spoiled 2, underyield 1
+    · AGT_17 [g0.0 f126 labor33]: spoiled 1
+    · AGT_18 [g0.3 f116 labor26]: spoiled 1
+    · AGT_19 [g2.3 f142 labor26]: spoiled 1, plotUpkeep 1L/1g
+    · AGT_20 [g110.8 f104 labor19]: spoiled 2
+
+===== CYCLE 13 | MARKET: wheat 4.06 | rice 8.0 | corn 5.5 | water 1.91 | labor 2.59 =====
+  AGT_01 [g38.0 f123]: prod=invest(rice) | bid 10 water@2.0 | stakes=0.6 | "Invest in rice and buy water cheap to maintain plot health, while keeping a close eye on potential gains."
+  AGT_02 [g56.8 f117]: prod=invest(wheat) | bid 1 water@1.9 | stakes=0.5 | "Invest in wheat to secure food supply, and buy water at a fair price."
+  AGT_03 [g91.3 f109]: prod=invest(rice) | ask 10 wheat@4.0 | stakes=0.4 | "Invest in rice to meet its water needs, and sell wheat at a fair price to maintain a steady income."
+  AGT_04 [g122.2 f98]: prod=plant(corn) | ask 50 wheat@4.2 | stakes=0.8 | "I'll plant corn to capitalize on its high yield and moderate risk, then try to sell some wheat at a markup to maximize my gold gain."
+  AGT_05 [g24.4 f117]: prod=plant(wheat) | no order | stakes=0.2 | "planting wheat to maintain a steady food supply while the water cap is still high"
+  AGT_06 [g72.6 f107]: prod=invest(rice) | ask 10 wheat@4.2 | stakes=0.7 | "Invest in rice to ensure food supply, then sell wheat at a slightly higher price to maximize profit."
+  AGT_07 [g89.2 f112]: prod=plant(rice) | bid 50 rice@7.0 | stakes=0.8 | "Plant rice to maintain a sustainable food supply, and offer a fair price for my rice surplus to help the community."
+  AGT_08 [g18.9 f122]: prod=invest(wheat) | ask 10 wheat@4.0 | stakes=0.5 | "Invest in wheat and sell some at a fair price to keep trading going."
+  AGT_09 [g67.9 f121]: prod=invest(rice) | bid 10 labor@2.5 | stakes=0.7 | "I'm banking labor and trading it at a favorable price to make some extra gold, while also investing in my rice crop to ensure a stable food supply."
+  AGT_10 [g38.6 f122]: prod=invest(wheat) | ask 10 wheat@4.1 | stakes=0.7 | "Invest in the growing wheat plot and sell some wheat at the market price to maintain a stable surplus."
+  AGT_11 [g0.0 f136]: prod=plant(rice) | ask 5 labor@2.5 | stakes=0.3 | "I'm a survivor, so I prioritize securing food, and then I'll focus on investing in labor to expand my production capacity."
+  AGT_12 [g3.2 f122]: prod=invest(rice) | ask 1 labor@2.6 | stakes=0.5 | "Invest in the rice plot to harvest soon and post labor at market price to earn some gold."
+  AGT_13 [g50.7 f120]: prod=invest(wheat) | bid 10 labor@2.6 | stakes=0.5 | "I'll invest in the growing wheat plot and sell a bundle of labor to secure my future trades."
+  AGT_14 [g0.4 f127]: prod=invest(wheat) | bid 10 labor@2.5 | stakes=0.5 | "Invest in wheat to maintain plot health and secure food, while also buying labor to prepare for future investments."
+  AGT_15 [g9.1 f142]: prod=invest(rice) | bid 5 water@1.9 | stakes=0.8 | "I'll invest in my rice plot to make progress on food security, and then buy more water at the market price to keep my buffer full."
+  AGT_16 [g0.2 f108]: prod=plant(corn) | ask 40 wheat@4.3 | stakes=0.8 | "Secure a corn harvest to boost labor, then sell wheat surplus to maximize gold."
+  AGT_17 [g0.0 f125]: prod=plant(rice) | bid 20 wheat@4.0 | stakes=0.7 | "I'll secure a new rice plot to ensure a sustainable food supply and post a bid for wheat to stabilize prices."
+  AGT_18 [g0.3 f115]: prod=invest(rice) | ask 20 wheat@4.25 | stakes=0.7 | "Invest in rice and sell wheat above market to accumulate gold."
+  AGT_19 [g2.3 f141]: prod=plant(rice) | bid 10 wheat@4.0 | stakes=0.5 | "Secure food, maintain a stable trade price for wheat, and prepare for future growth."
+  AGT_20 [g110.8 f102]: prod=plant(wheat) | bid 20 wheat@4.2 | stakes=0.5 | "Sell wheat at a slightly higher price, then plant new wheat to maximize profit"
+    TRADE: AGT_15 buys 1 wheat from AGT_10 @4.15
+    TRADE: AGT_20 buys 20 wheat from AGT_09 @4.0
+    TRADE: AGT_07 buys 11 rice from AGT_17 @7.5
+    TRADE: AGT_20 buys 1 water from AGT_06 @1.85
+    TRADE: AGT_09 buys 5 labor from AGT_11 @2.45
+    TRADE: AGT_13 buys 1 labor from AGT_12 @2.65
+    · AGT_01 [g37.0 f118 labor8]: spoiled 2, plotUpkeep 1L/1g
+    · AGT_02 [g55.8 f118 labor23]: spoiled 1, plotUpkeep 1L/1g
+    · AGT_03 [g90.3 f118 labor35]: spoiled 1, plotUpkeep 1L/1g
+    · AGT_04 [g121.2 f93 labor28]: spoiled 1, plotUpkeep 1L/1g
+    · AGT_05 [g23.4 f112 labor20]: spoiled 1, plotUpkeep 1L/1g
+    · AGT_06 [g73.4 f102 labor26]: spoiled 1, plotUpkeep 1L/1g
+    · AGT_07 [g5.8 f118 labor28]: spoiled 1, plotUpkeep 1L/1g
+    · AGT_08 [g17.9 f124 labor26]: spoiled 1, plotUpkeep 1L/1g
+    · AGT_09 [g134.7 f96 labor22]: spoiled 1, plotUpkeep 1L/1g
+    · AGT_10 [g41.8 f123 labor32]: spoiled 1, plotUpkeep 1L/1g
+    · AGT_11 [g12.3 f131 labor25]: spoiled 1
+    · AGT_12 [g4.8 f137 labor4]: spoiled 1, plotUpkeep 1L/1g
+    · AGT_13 [g47.1 f118 labor25]: spoiled 1, plotUpkeep 1L/1g, underyield 1
+    · AGT_14 [g0.4 f126 labor34]: spoiled 1
+    · AGT_15 [g3.9 f138 labor19]: spoiled 1, invUpkeep 1L, plotUpkeep 1L/1g
+    · AGT_16 [g0.2 f103 labor30]: spoiled 1
+    · AGT_17 [g82.5 f109 labor40]: spoiled 1
+    · AGT_18 [g-1.7 f110 labor32]: spoiled 1, plotUpkeep 0L/2g, plotsDied 1
+    · AGT_19 [g1.3 f136 labor30]: spoiled 1, invUpkeep 1L, plotUpkeep 1L/1g
+    · AGT_20 [g27.9 f117 labor24]: spoiled 2, plotUpkeep 1L/1g
+
+===== CYCLE 14 | MARKET: wheat 4.06 | rice 7.5 | corn 5.5 | water 1.91 | labor 2.59 =====
+  AGT_01 [g37.0 f116]: prod=invest(rice) | ask 10 wheat@3.5 | stakes=0.7 | "Time to secure some more food and undercut the market with a wheat ask order"
+  AGT_02 [g55.8 f117]: prod=plant(rice) | bid 10 wheat@4.0 | stakes=0.5 | "Secure food and invest in rice, while buying wheat at a fair price to support my allies."
+  AGT_03 [g90.3 f117]: prod=plant(rice) | ask 1 labor@2.7 | stakes=0.5 | "Secure a new food source and bank some labor for future investments"
+  AGT_04 [g121.2 f92]: prod=invest(corn) | ask 10 corn@5.5 | stakes=0.8 | "I'll secure my labor investment and sell corn at the current price to maximize profit."
+  AGT_05 [g23.4 f111]: prod=invest(wheat) | ask 10 wheat@4.0 | stakes=0.8 | "Invest in the growing wheat plot and sell some wheat at a fair price."
+  AGT_06 [g73.4 f101]: prod=invest(rice) | ask 5 water@1.9 | stakes=0.5 | "Invest in rice to secure food and buy water cheaply, then sell it for a profit."
+  AGT_07 [g5.8 f117]: prod=invest(rice) | bid 1 water@1.9 | stakes=0.7 | "Invest in rice to secure my food supply and avoid the risk of spoiled stockpiles, while also trying to acquire water at a fair price."
+  AGT_08 [g17.9 f123]: prod=plant(wheat) | no order | stakes=0.5 | "Secure a new wheat plot to start producing more food, and sell wheat at a fair price."
+  AGT_09 [g134.7 f95]: prod=invest(rice) | ask 30 wheat@4.0 | stakes=0.8 | "Invest in the healthy rice plot and sell wheat at a fair price to accumulate more gold."
+  AGT_10 [g41.8 f122]: prod=plant(rice) | no order | stakes=0.8 | "Planting rice to diversify my food supply and conserving water, while also keeping my water trade prices competitive."
+  AGT_11 [g12.3 f130]: prod=invest(rice) | bid 1 labor@2.45 | stakes=0.2 | "Invest in the rice plot to secure a stable food source and sell labor to maintain a decent labor balance."
+  AGT_12 [g4.8 f136]: prod=plant(rice) | ask 20 wheat@3.9 | stakes=0.5 | "I'm planting rice to secure food, and selling wheat at a slightly lower price to make room for new production."
+  AGT_13 [g47.1 f117]: prod=plant(rice) | ask 20 wheat@4.2 | stakes=0.7 | "I'm planting rice to secure food and posting an order to sell wheat at a slightly higher price, because I believe in fair trade."
+  AGT_14 [g0.4 f125]: prod=plant(rice) | ask 20 wheat@4.2 | stakes=0.5 | "I'm planting a new rice crop and selling some wheat to maintain my buffer and avoid spoilage."
+  AGT_15 [g3.9 f137]: prod=invest(rice) | ask 10 wheat@4.0 | stakes=0.5 | "Invest in rice to harvest soon, and price wheat competitively to sell some surplus."
+  AGT_16 [g0.2 f102]: prod=invest(corn) | ask 10 corn@5.7 | stakes=0.6 | "Invest in the corn plot to maximize yield, then sell at a slight markup to undercut the market."
+  AGT_17 [g82.5 f108]: prod=invest(rice) | ask 20 rice@7.5 | stakes=0.5 | "I'm going to invest in the rice plot and post a limit order to sell rice at the current price to secure my surplus."
+  AGT_18 [g-1.7 f109]: prod=plant(corn) | bid 10 wheat@4.2 | stakes=0.5 | "Time to plant some corn and keep the gold flowing with wheat trades"
+  AGT_19 [g1.3 f135]: prod=invest(rice) | bid 50 wheat@4.0 | stakes=0.7 | "I'll invest in the rice plot and keep it healthy, then sell some wheat to free up space."
+  AGT_20 [g27.9 f116]: prod=invest(wheat) | bid 10 wheat@4.0 | stakes=0.8 | "I'm going to invest in the wheat plot to secure my harvest and then post a bid for wheat at 4.0 to take advantage of the current price and limit my losses."
+    TRADE: AGT_17 buys 20 wheat from AGT_11 @4.0
+    TRADE: AGT_02 buys 10 wheat from AGT_11 @4.0
+    TRADE: AGT_20 buys 6 wheat from AGT_11 @4.0
+    TRADE: AGT_02 buys 1 water from AGT_06 @1.85
+    TRADE: AGT_15 buys 1 water from AGT_06 @1.95
+    TRADE: AGT_07 buys 1 water from AGT_06 @1.85
+    TRADE: AGT_13 buys 1 labor from AGT_03 @2.75
+    · AGT_01 [g36.0 f129 labor12]: spoiled 2, plotUpkeep 1L/1g
+    · AGT_02 [g12.9 f122 labor28]: spoiled 1, plotUpkeep 1L/1g
+    · AGT_03 [g92.0 f112 labor41]: spoiled 1, plotUpkeep 1L/1g
+    · AGT_04 [g120.2 f97 labor17]: spoiled 1, plotUpkeep 1L/1g
+    · AGT_05 [g22.4 f112 labor18]: spoiled 1, plotUpkeep 1L/1g
+    · AGT_06 [g78.1 f114 labor32]: spoiled 1, plotUpkeep 1L/1g
+    · AGT_07 [g2.9 f112 labor28]: spoiled 1, plotUpkeep 1L/1g
+    · AGT_08 [g16.9 f118 labor34]: spoiled 1, plotUpkeep 1L/1g
+    · AGT_09 [g133.7 f111 labor18]: spoiled 1, plotUpkeep 1L/1g
+    · AGT_10 [g40.8 f117 labor38]: spoiled 1, plotUpkeep 1L/1g
+    · AGT_11 [g155.3 f89 labor21]: spoiled 1, plotUpkeep 1L/1g
+    · AGT_12 [g3.8 f131 labor11]: spoiled 1, plotUpkeep 1L/1g
+    · AGT_13 [g43.3 f112 labor34]: spoiled 1, plotUpkeep 1L/1g
+    · AGT_14 [g0.4 f120 labor41]: spoiled 1
+    · AGT_15 [g1.0 f132 labor23]: spoiled 1, invUpkeep 1L, plotUpkeep 1L/1g
+    · AGT_16 [g0.2 f104 labor21]: spoiled 1
+    · AGT_17 [g1.5 f123 labor36]: spoiled 1, plotUpkeep 1L/1g
+    · AGT_18 [g-1.7 f104 labor38]: spoiled 1
+    · AGT_19 [g0.3 f130 labor22]: spoiled 1, invUpkeep 1L, plotUpkeep 1L/1g
+    · AGT_20 [g2.9 f122 labor24]: spoiled 1, plotUpkeep 1L/1g
+
+===== CYCLE 15 | MARKET: wheat 4.05 | rice 7.5 | corn 5.5 | water 1.9 | labor 2.59 =====
+  AGT_01 [g36.0 f128]: prod=plant(rice) | ask 10 wheat@3.9 | stakes=0.8 | "Planting rice to secure food, and selling wheat at a discount to undercut the market and make some quick gold."
+  AGT_02 [g12.9 f121]: prod=invest(rice) | ask 10 water@1.85 | stakes=0.5 | "Invest in the rice plot to meet its needs and maintain its health, then sell water at a fair price to generate some gold."
+  AGT_03 [g92.0 f111]: prod=invest(rice) | bid 1 labor@2.7 | stakes=0.7 | "Invest in the healthy rice plot and sell labor at a fair price."
+  AGT_04 [g120.2 f96]: prod=plant(rice) | ask 30 rice@7.5 | stakes=0.8 | "Time to secure some rice before it spoils, and maybe make some gold off it too."
+  AGT_05 [g22.4 f111]: prod=plant(rice) | bid 1 labor@2.55 | stakes=0.5 | "Secure food by planting rice and also sell labor at a fair price to keep my bank topped up."
+  AGT_06 [g78.1 f113]: prod=plant(rice) | ask 10 wheat@4.2 | stakes=0.8 | "I'll plant a new rice plot to ensure a steady food supply while selling my wheat surplus at a slight markup."
+  AGT_07 [g2.9 f111]: prod=invest(rice) | bid 50 rice@8.0 | stakes=0.7 | "Invest in my rice plot to meet its needs and secure a harvest, then offer rice for sale at a fair price to make room for more storage."
+  AGT_08 [g16.9 f117]: prod=invest(wheat) | bid 2 water@1.9 | stakes=0.6 | "Investing in my growing wheat plot and securing a small water order to meet its needs, keeping my water and labor investments aligned with market prices."
+  AGT_09 [g133.7 f110]: prod=plant(corn) | ask 5 labor@2.5 | stakes=0.8 | "I need to secure a steady labor supply and some potential gold to expand my water capacity."
+  AGT_10 [g40.8 f116]: prod=invest(rice) | ask 10 water@2.0 | stakes=0.7 | "Invest in the rice plot and sell some water at a fair price to maintain my labor balance and secure food for the future."
+  AGT_11 [g155.3 f88]: prod=invest(rice) | bid 20 labor@2.6 | stakes=0.5 | "I'm investing in my rice plot and selling excess labor at a fair price."
+  AGT_12 [g3.8 f130]: prod=invest(rice) | no order | stakes=0.7 | "Invest in the rice plot to get closer to harvest and sell surplus labor at a good price."
+  AGT_13 [g43.3 f111]: prod=invest(rice) | ask 1 labor@2.6 | stakes=0.5 | "I'm investing in the rice plot and selling labor at a fair price to help out my allies"
+  AGT_14 [g0.4 f119]: prod=invest(rice) | bid 10 labor@2.6 | stakes=0.8 | "Secure food with another plot of rice, then save labor for future growth."
+  AGT_15 [g1.0 f131]: prod=invest(rice) | bid 4 water@1.85 | stakes=0.5 | "Invest in my healthy rice plot, and try to secure a better price for water to avoid wasting my labor on a low-yield harvest"
+  AGT_16 [g0.2 f103]: prod=plant(corn) | bid 10 corn@5.5 | stakes=0.5 | "I need to secure corn before it spoils and then I can sell it above market price."
+  AGT_17 [g1.5 f122]: prod=invest(rice) | ask 10 wheat@4.1 | stakes=0.5 | "Invest in the existing rice plot and sell some wheat at fair price to maintain a stable market"
+  AGT_18 [g-1.7 f103]: prod=invest(corn) | bid 10 wheat@4.3 | stakes=0.7 | "I'm investing in corn and buying low on wheat to flip for a profit."
+  AGT_19 [g0.3 f129]: prod=invest(rice) | bid 50 wheat@4.0 | stakes=0.8 | "Invest in the rice plot and buy more wheat to sell at a stable price."
+  AGT_20 [g2.9 f121]: prod=plant(wheat) | ask 10 wheat@4.3 | stakes=0.8 | "Plant wheat to secure food and cash in on the market price, then sell excess wheat at a markup to maximize profit"
+    TRADE: AGT_01 buys 2 water from AGT_10 @1.8
+    TRADE: AGT_08 buys 2 water from AGT_06 @1.95
+    TRADE: AGT_01 buys 2 water from AGT_02 @1.85
+    TRADE: AGT_11 buys 1 labor from AGT_13 @2.8
+    TRADE: AGT_05 buys 1 labor from AGT_09 @2.8
+    TRADE: AGT_03 buys 1 labor from AGT_09 @2.3
+    · AGT_01 [g27.7 f123 labor18]: spoiled 1, plotUpkeep 1L/1g
+    · AGT_02 [g15.6 f136 labor20]: spoiled 1, invUpkeep 1L, plotUpkeep 1L/1g
+    · AGT_03 [g88.7 f106 labor35]: spoiled 1, plotUpkeep 1L/1g
+    · AGT_04 [g119.2 f91 labor23]: spoiled 1, plotUpkeep 1L/1g
+    · AGT_05 [g18.6 f106 labor24]: spoiled 1, plotUpkeep 1L/1g
+    · AGT_06 [g81.0 f108 labor38]: spoiled 1, plotUpkeep 1L/1g
+    · AGT_07 [g1.9 f106 labor30]: spoiled 1, plotUpkeep 1L/1g
+    · AGT_08 [g12.0 f115 labor31]: spoiled 1, plotUpkeep 1L/1g, underyield 1
+    · AGT_09 [g137.8 f105 labor22]: spoiled 1, plotUpkeep 1L/1g
+    · AGT_10 [g43.4 f130 labor32]: spoiled 1, plotUpkeep 1L/1g
+    · AGT_11 [g151.5 f83 labor30]: spoiled 1, plotUpkeep 1L/1g
+    · AGT_12 [g2.8 f125 labor12]: spoiled 1, plotUpkeep 1L/1g
+    · AGT_13 [g45.1 f106 labor40]: spoiled 1, plotUpkeep 1L/1g
+    · AGT_14 [g0.4 f114 labor38]: spoiled 1
+    · AGT_15 [g1.0 f126 labor29]: spoiled 1
+    · AGT_16 [g0.2 f98 labor27]: spoiled 1
+    · AGT_17 [g0.5 f117 labor40]: spoiled 1, invUpkeep 1L, plotUpkeep 1L/1g
+    · AGT_18 [g-1.7 f102 labor29]: spoiled 1, underyield 1
+    · AGT_19 [g0.3 f124 labor29]: spoiled 1, FAILURE 1
+    · AGT_20 [g1.9 f116 labor31]: spoiled 1, plotUpkeep 1L/1g
+
+===== CYCLE 16 | MARKET: wheat 4.05 | rice 7.5 | corn 5.5 | water 1.9 | labor 2.59 =====
+  AGT_01 [g27.7 f122]: prod=invest(rice) | ask 2 water@1.8 | stakes=0.7 | "I'll invest in the growing rice plot and post an order to sell water at a fair price, as I need to keep my stockpiles from rotting and my labor bank growing."
+  AGT_02 [g15.6 f135]: prod=plant(rice) | bid 10 wheat@4.1 | stakes=0.5 | "I need to secure food and trade in surplus to maintain a buffer, and now is a good time to plant a new rice crop while I have the resources."
+  AGT_03 [g88.7 f105]: prod=invest(rice) | bid 1 labor@2.55 | stakes=0.6 | "Invest in the growing rice plot and sell labor at a fair price"
+  AGT_04 [g119.2 f90]: prod=invest(rice) | ask 30 wheat@4.0 | stakes=0.8 | "I'm selling my wheat at a fair price to make room for more profitable investments."
+  AGT_05 [g18.6 f105]: prod=invest(rice) | no order | stakes=0.5 | "Invest in the safe harvest of rice, and maintain a stable labor supply."
+  AGT_06 [g81.0 f107]: prod=invest(rice) | ask 20 wheat@4.5 | stakes=0.8 | "Invest in the rice plot to harvest more food, then sell excess wheat at a slight markup."
+  AGT_07 [g1.9 f105]: prod=invest(rice) | ask 10 rice@7.5 | stakes=0.5 | "Invest in the growing rice to ensure a healthy harvest, and list rice at a fair price to help my allies and neutral friends"
+  AGT_08 [g12.0 f114]: prod=plant(rice) | ask 40 rice@7.5 | stakes=0.5 | "I'll plant a new rice plot and list my rice for sale at market price."
+  AGT_09 [g137.8 f104]: prod=invest(corn) | ask 1 labor@2.6 | stakes=0.6 | "Invest in corn to maximize future harvests and accumulate wealth"
+  AGT_10 [g43.4 f129]: prod=plant(rice) | ask 10 wheat@4.1 | stakes=0.7 | "Secure food and invest in a low-risk crop to start with, then stabilize my wheat price."
+  AGT_11 [g151.5 f82]: prod=invest(rice) | bid 5 water@2.0 | stakes=0.5 | "Invest in my growing rice plot to get it ready for harvest and secure a steady supply of water"
+  AGT_12 [g2.8 f124]: prod=invest(rice) | bid 5 labor@2.6 | stakes=0.5 | "Invest in the rice plot to keep it healthy, and sell some labor at the current price to keep cash flowing."
+  AGT_13 [g45.1 f105]: prod=invest(rice) | ask 1 labor@2.7 | stakes=0.5 | "Invest in rice to secure food, and sell labor at a fair price."
+  AGT_14 [g0.4 f113]: prod=invest(rice) | bid 10 labor@2.5 | stakes=0.8 | "I need to keep my plots healthy and secure some labor for future investments."
+  AGT_15 [g1.0 f125]: prod=invest(rice) | bid 1 water@1.85 | stakes=0.5 | "Invest in my rice plot and try to sell water at a fair price to prevent it from rotting."
+  AGT_16 [g0.2 f97]: prod=invest(corn) | ask 10 corn@5.5 | stakes=0.8 | "Invest in corn and sell it at market price to maximize profit"
+  AGT_17 [g0.5 f116]: prod=invest(rice) | ask 10 rice@7.0 | stakes=0.6 | "Invest in the growing rice plot to meet its water needs and harvest soon, then sell some rice at a slightly lower price to maintain a stable market and generate gold."
+  AGT_18 [g-1.7 f101]: prod=plant(wheat) | ask 100 wheat@4.2 | stakes=0.5 | "I need to plant something to keep my plots busy and make some quick gold, and I'll sell my wheat at a reasonable price to undercut the market."
+  AGT_19 [g0.3 f123]: prod=plant(wheat) | bid 10 wheat@4.0 | stakes=0.5 | "I'll secure food with a new wheat plot and try to sell a bit at a fair price."
+  AGT_20 [g1.9 f115]: prod=invest(wheat) | ask 20 wheat@4.1 | stakes=0.8 | "Invest in wheat to secure a harvest and sell at a good price to maximize gold gain."
+    TRADE: AGT_02 buys 3 wheat from AGT_17 @4.1
+    TRADE: AGT_11 buys 3 water from AGT_10 @1.8
+    TRADE: AGT_11 buys 2 water from AGT_02 @1.85
+    TRADE: AGT_11 buys 1 labor from AGT_09 @2.5
+    TRADE: AGT_03 buys 1 labor from AGT_13 @2.45
+    · AGT_01 [g26.7 f134 labor11]: spoiled 1, plotUpkeep 1L/1g
+    · AGT_02 [g6.0 f133 labor26]: spoiled 1, invUpkeep 1L, plotUpkeep 1L/1g
+    · AGT_03 [g85.3 f116 labor41]: spoiled 1, plotUpkeep 1L/1g
+    · AGT_04 [g118.2 f100 labor18]: spoiled 1, plotUpkeep 1L/1g
+    · AGT_05 [g17.6 f121 labor19]: spoiled 1, plotUpkeep 1L/1g
+    · AGT_06 [g80.0 f102 labor31]: spoiled 1, plotUpkeep 1L/1g
+    · AGT_07 [g0.9 f119 labor37]: spoiled 1, plotUpkeep 1L/1g
+    · AGT_08 [g11.0 f109 labor38]: spoiled 1, plotUpkeep 1L/1g
+    · AGT_09 [g139.3 f111 labor8]: spoiled 1, plotUpkeep 1L/1g
+    · AGT_10 [g47.8 f124 labor38]: spoiled 1, plotUpkeep 1L/1g
+    · AGT_11 [g138.9 f92 labor39]: spoiled 1, plotUpkeep 1L/1g
+    · AGT_12 [g1.8 f119 labor14]: spoiled 1, plotUpkeep 1L/1g
+    · AGT_13 [g46.6 f115 labor35]: spoiled 1, plotUpkeep 1L/1g
+    · AGT_14 [g0.4 f122 labor45]: spoiled 1
+    · AGT_15 [g1.0 f120 labor35]: spoiled 1
+    · AGT_16 [g0.2 f101 labor17]: spoiled 1
+    · AGT_17 [g12.8 f119 labor47]: spoiled 1
+    · AGT_18 [g-1.7 f96 labor37]: spoiled 1
+    · AGT_19 [g0.3 f118 labor37]: spoiled 1
+    · AGT_20 [g0.9 f118 labor28]: spoiled 1, plotUpkeep 1L/1g
+
+===== CYCLE 17 | MARKET: wheat 4.05 | rice 7.5 | corn 5.5 | water 1.9 | labor 2.59 =====
+  AGT_01 [g26.7 f133]: prod=plant(wheat) | ask 20 wheat@4.1 | stakes=0.5 | "Sowing wheat for a quick harvest and selling at the market price to make a profit"
+  AGT_02 [g6.0 f132]: prod=invest(rice) | ask 20 rice@7.5 | stakes=0.8 | "I'm focusing on rice, our safest crop, and selling at a fair price to maintain relationships with allies and neutral traders."
+  AGT_03 [g85.3 f115]: prod=plant(rice) | ask 20 rice@8.5 | stakes=0.5 | "Secure food supply while maintaining a balanced portfolio"
+  AGT_04 [g118.2 f99]: prod=plant(rice) | ask 10 wheat@4.1 | stakes=0.9 | "Plant rice, then sell wheat at market price to free up capital for expansion and labor-intensive crops."
+  AGT_05 [g17.6 f120]: prod=plant(rice) | ask 10 wheat@4.0 | stakes=0.5 | "Invest in a new rice plot and sell wheat at a fair price to make space for more valuable crops."
+  AGT_06 [g80.0 f101]: prod=invest(rice) | bid 1 water@1.9 | stakes=0.7 | "Invest in my rice plot and sell water at a fair price to secure some extra gold for expanding my water cap later."
+  AGT_07 [g0.9 f118]: prod=plant(wheat) | bid 10 rice@7.5 | stakes=0.8 | "I need to secure more food for the future and support my allies."
+  AGT_08 [g11.0 f108]: prod=invest(rice) | ask 20 water@1.9 | stakes=0.75 | "Invest in the rice plot and post a water order at market price, conserving resources and securing a stable food supply."
+  AGT_09 [g139.3 f109]: prod=plant(wheat) | ask 1 labor@2.5 | stakes=0.8 | "I'm planting a new wheat plot and selling labor to free up capital for future investments, as my food stockpile is relatively secure."
+  AGT_10 [g47.8 f123]: prod=invest(rice) | bid 5 water@1.8 | stakes=0.5 | "Secure a steady food supply and keep my water prices competitive."
+  AGT_11 [g138.9 f91]: prod=plant(rice) | bid 50 rice@7.0 | stakes=0.3 | "Secure a new rice crop and sell some of my rice surplus at a slightly lower price."
+  AGT_12 [g1.8 f118]: prod=invest(rice) | ask 10 water@1.5 | stakes=0.6 | "Invest in the rice plot, and sell water at a slight discount to increase demand."
+  AGT_13 [g46.6 f114]: prod=plant(wheat) | ask 10 labor@2.4 | stakes=0.8 | "I need to secure more food for the future, so I'll plant wheat and list labor for sale to free up more resources."
+  AGT_14 [g0.4 f121]: prod=plant(wheat) | ask 20 wheat@4.5 | stakes=0.5 | "Planting a wheat crop to stabilize food supply and capitalize on a fair price."
+  AGT_15 [g1.0 f119]: prod=invest(rice) | ask 10 wheat@4.1 | stakes=0.75 | "Invest in my sick rice plot and stabilize wheat prices by offering it at the market price, so I can buy what I need without overpaying."
+  AGT_16 [g0.2 f100]: prod=plant(wheat) | ask 30 wheat@4.2 | stakes=0.7 | "Time to accumulate more gold, and selling at a slight markup will help me do that."
+  AGT_17 [g12.8 f118]: prod=plant(wheat) | ask 50 wheat@4.1 | stakes=0.5 | "Secure a new wheat plot to start harvesting soon, and sell excess wheat at a fair price."
+  AGT_18 [g-1.7 f95]: prod=invest(wheat) | ask 50 wheat@4.5 | stakes=0.7 | "Invest in wheat to secure food, then sell at a premium price to maximize gold gain."
+  AGT_19 [g0.3 f117]: prod=invest(wheat) | bid 10 wheat@4.1 | stakes=0.25 | "I'm investing in my wheat plot and trying to buy low on wheat to maintain a stable food supply."
+  AGT_20 [g0.9 f117]: prod=plant(wheat) | ask 20 wheat@4.1 | stakes=0.6 | "I'll plant wheat and wait for it to grow while I sell my surplus wheat at market prices."
+    TRADE: AGT_02 buys 1 wheat from AGT_10 @4.0
+    TRADE: AGT_11 buys 10 rice from AGT_17 @6.8
+    TRADE: AGT_11 buys 10 rice from AGT_04 @6.5
+    TRADE: AGT_06 buys 1 water from AGT_08 @1.8
+    TRADE: AGT_10 buys 2 water from AGT_01 @1.75
+    TRADE: AGT_10 buys 1 water from AGT_08 @1.85
+    TRADE: AGT_10 buys 2 water from AGT_12 @1.85
+    TRADE: AGT_11 buys 1 labor from AGT_09 @2.7
+    TRADE: AGT_12 buys 1 labor from AGT_13 @2.48
+    · AGT_01 [g29.2 f128 labor17]: spoiled 1, plotUpkeep 1L/1g
+    · AGT_02 [g1.0 f128 labor18]: spoiled 1, invUpkeep 1L, plotUpkeep 1L/1g
+    · AGT_03 [g84.3 f110 labor48]: spoiled 1, plotUpkeep 1L/1g
+    · AGT_04 [g182.2 f84 labor25]: spoiled 1, plotUpkeep 1L/1g
+    · AGT_05 [g16.6 f115 labor26]: spoiled 1, plotUpkeep 1L/1g
+    · AGT_06 [g77.2 f96 labor37]: spoiled 1, plotUpkeep 1L/1g
+    · AGT_07 [g0.9 f113 labor44]: spoiled 1
+    · AGT_08 [g13.7 f120 labor32]: spoiled 1, plotUpkeep 1L/1g
+    · AGT_09 [g141.0 f104 labor13]: spoiled 2, plotUpkeep 1L/1g
+    · AGT_10 [g41.7 f117 labor40]: spoiled 1, plotUpkeep 1L/1g
+    · AGT_11 [g2.2 f106 labor45]: spoiled 1, plotUpkeep 1L/1g
+    · AGT_12 [g2.0 f132 labor22]: spoiled 1, plotUpkeep 1L/1g
+    · AGT_13 [g48.0 f109 labor40]: spoiled 1, plotUpkeep 1L/1g
+    · AGT_14 [g0.4 f116 labor54]: spoiled 1
+    · AGT_15 [g1.0 f125 labor41]: spoiled 1
+    · AGT_16 [g0.2 f95 labor26]: spoiled 1
+    · AGT_17 [g79.8 f103 labor55]: spoiled 1, plotUpkeep 1L/1g
+    · AGT_18 [g-1.7 f94 labor35]: spoiled 1
+    · AGT_19 [g0.3 f113 labor36]: spoiled 1, underyield 1
+    · AGT_20 [g0.9 f112 labor34]: spoiled 1
+
+===== CYCLE 18 | MARKET: wheat 4.05 | rice 6.95 | corn 5.5 | water 1.89 | labor 2.59 =====
+  AGT_01 [g29.2 f127]: prod=invest(wheat) | ask 2 water@1.8 | stakes=0.7 | "Invest in wheat and stabilize water price"
+  AGT_02 [g1.0 f127]: prod=invest(rice) | bid 1 water@1.9 | stakes=0.5 | "Invest in the existing rice plot to harvest soon and sell water at a fair price to maintain my buffer."
+  AGT_03 [g84.3 f109]: prod=invest(rice) | ask 20 rice@6.5 | stakes=0.7 | "Invest in the healthy rice plot and sell rice at a slightly higher price to maintain a stable food supply."
+  AGT_04 [g182.2 f83]: prod=invest(rice) | bid 10 rice@6.5 | stakes=0.8 | "I'll invest in my rice crop and sell a bit more at a good price to secure my gold"
+  AGT_05 [g16.6 f114]: prod=invest(rice) | ask 5 water@1.95 | stakes=0.5 | "I'll invest in the rice plot to make sure it has enough water and labor, then try to sell some of my excess water at a slightly lower price to free up space in my stockpile."
+  AGT_06 [g77.2 f95]: prod=invest(rice) | ask 1 water@1.9 | stakes=0.8 | "I need to maintain my stockpiles and keep the market price of water in check."
+  AGT_07 [g0.9 f112]: prod=invest(wheat) | ask 10 wheat@4.0 | stakes=0.8 | "Invest in the growing wheat plot and sell my excess wheat at a fair price to maintain my surplus and labor bank."
+  AGT_08 [g13.7 f119]: prod=plant(rice) | no order | stakes=0.5 | "Planting rice to maintain a buffer and posting a low ask price to sell some of my stockpile without losing too much gold."
+  AGT_09 [g141.0 f102]: prod=invest(wheat) | ask 1 labor@2.8 | stakes=0.8 | "Time to invest in wheat, and sell my labor at a good price to make some extra gold."
+  AGT_10 [g41.7 f116]: prod=invest(rice) | ask 10 wheat@4.2 | stakes=0.5 | "Invest in the rice plot to meet its needs and secure food for the future, while also making a small profit from selling wheat."
+  AGT_11 [g2.2 f105]: prod=invest(rice) | bid 10 rice@6.5 | stakes=0.6 | "Secure food and invest in rice plot to meet rice needs and harvest surplus."
+  AGT_12 [g2.0 f131]: prod=plant(wheat) | bid 2 water@1.8 | stakes=0.5 | "Securing a new food source and selling water at a good price"
+  AGT_13 [g48.0 f108]: prod=invest(wheat) | ask 10 wheat@3.5 | stakes=0.8 | "Invest in wheat to secure food, then offer it at a fair price to help others and keep trading going."
+  AGT_14 [g0.4 f115]: prod=invest(wheat) | bid 20 wheat@4.1 | stakes=0.7 | "Invest in wheat to meet labor needs and keep food stockpiles healthy, and post a bid to secure a steady price for wheat."
+  AGT_15 [g1.0 f124]: prod=plant(rice) | bid 20 rice@7.2 | stakes=0.5 | "I need to prioritize food security while expanding our rice stockpile, so I'll plant a new rice crop and list a bid for rice to ensure we can maintain a stable food supply."
+  AGT_16 [g0.2 f94]: prod=invest(wheat) | bid 20 wheat@4.3 | stakes=0.6 | "I'll invest in wheat to secure my plot's health and buy low on wheat to make a profit."
+  AGT_17 [g79.8 f102]: prod=invest(wheat) | bid 5 water@1.9 | stakes=0.5 | "Invest in the growing wheat plot and buy a bit of water at a fair price."
+  AGT_18 [g-1.7 f93]: prod=plant(rice) | bid 5 labor@2.5 | stakes=0.7 | "I need to secure food and keep my labor bank topped up; I'll plant rice and try to buy some labor at a good price."
+  AGT_19 [g0.3 f112]: prod=plant(wheat) | bid 10 wheat@4.0 | stakes=0.5 | "I'm just buying a little wheat to ensure I have enough for the next cycle."
+  AGT_20 [g0.9 f111]: prod=invest(wheat) | bid 50 wheat@4.2 | stakes=0.5 | "Invest in my wheat plot and make a small profit on wheat to accumulate gold and keep my plots healthy."
+    TRADE: AGT_04 buys 10 rice from AGT_03 @7.1
+    TRADE: AGT_17 buys 4 water from AGT_08 @1.95
+    TRADE: AGT_17 buys 1 water from AGT_06 @1.85
+    · AGT_01 [g28.2 f131 labor15]: spoiled 1, plotUpkeep 1L/1g
+    · AGT_02 [g0.0 f122 labor24]: spoiled 1, invUpkeep 1L, plotUpkeep 1L/1g
+    · AGT_03 [g154.2 f94 labor44]: spoiled 1, plotUpkeep 1L/1g
+    · AGT_04 [g110.2 f88 labor19]: spoiled 1, plotUpkeep 1L/1g
+    · AGT_05 [g15.6 f109 labor25]: spoiled 1, plotUpkeep 1L/1g
+    · AGT_06 [g78.0 f90 labor33]: spoiled 1, plotUpkeep 1L/1g
+    · AGT_07 [g0.9 f112 labor44]: spoiled 1
+    · AGT_08 [g20.5 f114 labor39]: spoiled 1, plotUpkeep 1L/1g
+    · AGT_09 [g140.0 f104 labor12]: spoiled 2, plotUpkeep 1L/1g
+    · AGT_10 [g40.7 f111 labor38]: spoiled 1, plotUpkeep 1L/1g
+    · AGT_11 [g1.2 f100 labor41]: spoiled 1, plotUpkeep 1L/1g
+    · AGT_12 [g1.0 f126 labor30]: spoiled 1, plotUpkeep 1L/1g
+    · AGT_13 [g47.0 f111 labor40]: spoiled 1, plotUpkeep 1L/1g
+    · AGT_14 [g0.4 f114 labor55]: spoiled 1
+    · AGT_15 [g1.0 f119 labor48]: spoiled 1
+    · AGT_16 [g0.2 f94 labor24]: spoiled 1
+    · AGT_17 [g69.2 f101 labor55]: spoiled 1, plotUpkeep 1L/1g, underyield 1
+    · AGT_18 [g-1.7 f88 labor44]: spoiled 1
+    · AGT_19 [g0.3 f107 labor44]: spoiled 1
+    · AGT_20 [g0.9 f110 labor32]: spoiled 1
+
+===== CYCLE 19 | MARKET: wheat 4.05 | rice 6.99 | corn 5.5 | water 1.89 | labor 2.59 =====
+  AGT_01 [g28.2 f130]: prod=plant(wheat) | bid 1 water@1.85 | stakes=0.5 | "I need to secure a new source of food, and I'll try to get a good deal on water to plant wheat."
+  AGT_02 [g0.0 f121]: prod=invest(rice) | ask 2 water@2.0 | stakes=0.5 | "Invest in rice to maintain my stockpile and then sell some water at a fair price to maintain my labor bank."
+  AGT_03 [g154.2 f93]: prod=invest(rice) | ask 10 wheat@4.0 | stakes=0.5 | "Invest in rice plot and sell wheat to maintain balance"
+  AGT_04 [g95.2 f87]: prod=expand_water() | bid 10 labor@2.4 | stakes=0.8 | "I'll expand water cap to prevent future shortages and undercut the labor price to accumulate more gold."
+  AGT_05 [g15.6 f108]: prod=invest(rice) | bid 1 labor@2.5 | stakes=0.8 | "Invest in the growing rice plot, and try to buy labor at a slightly lower price to save some gold."
+  AGT_06 [g78.0 f89]: prod=invest(rice) | ask 1 water@2.0 | stakes=0.8 | "Invest in the growing rice plot and sell water at a slightly better price."
+  AGT_07 [g0.9 f111]: prod=plant(rice) | bid 10 labor@2.0 | stakes=0.5 | "Secure food and invest in labor to help my allies and myself"
+  AGT_08 [g20.5 f113]: prod=invest(rice) | bid 10 labor@2.0 | stakes=0.5 | "Invest in rice to secure a stable food source and bank some labor for future use."
+  AGT_09 [g140.0 f103]: prod=plant(corn) | bid 1 labor@2.4 | stakes=0.7 | "Plant corn to secure food and grow labor, sell labor at a slightly lower price to undercut the market and make a profit."
+  AGT_10 [g40.7 f110]: prod=invest(rice) | bid 1 water@1.9 | stakes=0.5 | "Invest in the growing rice plot and sell water at a fair price, as I'm in a relatively stable position."
+  AGT_11 [g1.2 f99]: prod=invest(rice) | ask 50 rice@7.0 | stakes=0.8 | "I'll secure the rice plot and sell rice at market price to maintain my buffer."
+  AGT_12 [g1.0 f125]: prod=invest(wheat) | ask 50 wheat@4.0 | stakes=0.7 | "Invest in wheat and secure my profit margin on the market."
+  AGT_13 [g47.0 f110]: prod=plant(rice) | ask 1 labor@2.6 | stakes=0.7 | "I prioritize securing food and trading fairly, as a sustainable and anti-profit advocate."
+  AGT_14 [g0.4 f113]: prod=plant(rice) | ask 20 wheat@4.0 | stakes=0.5 | "Secure a safe food source and sell wheat at a reasonable price."
+  AGT_15 [g1.0 f118]: prod=invest(rice) | ask 5 wheat@4.1 | stakes=0.8 | "Invest in the rice plot to meet its needs, and sell some wheat at a fair price to maintain liquidity."
+  AGT_16 [g0.2 f93]: prod=plant(rice) | ask 50 wheat@4.2 | stakes=0.5 | "I must sell wheat and plant rice to secure food, and then sell wheat at a profit"
+  AGT_17 [g69.2 f100]: prod=plant(wheat) | bid 10 rice@7.5 | stakes=0.5 | "Plant wheat for a safe bet and try to buy rice at a good price, considering my own recent trade prices and the market prices."
+  AGT_18 [g-1.7 f87]: prod=invest(rice) | ask 10 wheat@4.2 | stakes=0.8 | "Invest in rice to secure food and harvest soon, while also selling surplus wheat at a favorable price."
+  AGT_19 [g0.3 f106]: prod=invest(wheat) | ask 20 wheat@4.0 | stakes=0.5 | "Invest in my existing wheat plot and sell surplus wheat at a fair price"
+  AGT_20 [g0.9 f109]: prod=plant(rice) | ask 10 rice@7.1 | stakes=0.8 | "Time to diversify and sell rice at a premium before the harvest"
+    TRADE: AGT_17 buys 9 rice from AGT_08 @7.19
+    TRADE: AGT_10 buys 1 water from AGT_05 @1.85
+    TRADE: AGT_01 buys 1 water from AGT_05 @1.85
+    TRADE: AGT_05 buys 1 labor from AGT_13 @2.55
+    · AGT_01 [g25.3 f125 labor21]: spoiled 1, plotUpkeep 1L/1g
+    · AGT_02 [g0.0 f116 labor30]: spoiled 1
+    · AGT_03 [g153.2 f88 labor48]: spoiled 1, plotUpkeep 1L/1g
+    · AGT_04 [g94.2 f82 labor24]: spoiled 1, plotUpkeep 1L/1g
+    · AGT_05 [g15.8 f123 labor27]: spoiled 1, plotUpkeep 1L/1g
+    · AGT_06 [g77.0 f100 labor39]: spoiled 1, plotUpkeep 1L/1g
+    · AGT_07 [g0.9 f106 labor52]: spoiled 1
+    · AGT_08 [g84.2 f99 labor33]: spoiled 1, plotUpkeep 1L/1g
+    · AGT_09 [g139.0 f98 labor18]: spoiled 1, plotUpkeep 1L/1g
+    · AGT_10 [g37.9 f120 labor43]: spoiled 1, plotUpkeep 1L/1g
+    · AGT_11 [g0.2 f104 labor49]: spoiled 1, plotUpkeep 1L/1g, underyield 1
+    · AGT_12 [g0.0 f125 labor29]: spoiled 1, plotUpkeep 1L/1g
+    · AGT_13 [g48.6 f105 labor44]: spoiled 1, plotUpkeep 1L/1g
+    · AGT_14 [g0.4 f108 labor63]: spoiled 1
+    · AGT_15 [g1.0 f113 labor51]: spoiled 1
+    · AGT_16 [g0.2 f88 labor31]: spoiled 1
+    · AGT_17 [g3.4 f104 labor63]: spoiled 1, plotUpkeep 1L/1g
+    · AGT_18 [g-1.7 f82 labor40]: spoiled 1
+    · AGT_19 [g0.3 f103 labor43]: spoiled 1, underyield 1
+    · AGT_20 [g0.9 f104 labor39]: spoiled 1
+
+===== CYCLE 20 | MARKET: wheat 4.05 | rice 7.02 | corn 5.5 | water 1.89 | labor 2.59 =====
+  AGT_01 [g25.3 f124]: prod=invest(wheat) | ask 20 wheat@4.2 | stakes=0.5 | "Invest in my wheat plot and sell my wheat at a slightly higher price than the market average."
+  AGT_02 [g0.0 f115]: prod=invest(rice) | ask 10 water@1.9 | stakes=0.5 | "Invest in the growing rice to secure food and maintain plot health, and sell water at fair market value."
+  AGT_03 [g153.2 f87]: prod=invest(rice) | ask 1 labor@2.6 | stakes=0.5 | "I'm playing it safe and investing in my rice plot, while also selling labor at the current price to make some extra gold."
+  AGT_04 [g94.2 f81]: prod=invest(rice) | ask 10 labor@2.6 | stakes=0.5 | "Secure rice harvest and sell labor to maximize profit."
+  AGT_05 [g15.8 f122]: prod=plant(rice) | bid 1 water@1.9 | stakes=0.8 | "Growing rice and trying to keep my water prices stable, while maintaining a safe food buffer."
+  AGT_06 [g77.0 f99]: prod=plant(wheat) | ask 1 water@1.9 | stakes=0.5 | "Secure food and maintain water trade margins"
+  AGT_07 [g0.9 f105]: prod=invest(rice) | bid 1 labor@2.5 | stakes=0.5 | "Invest in the rice plot to get a safer harvest, and sell my labor to gain gold"
+  AGT_08 [g84.2 f98]: prod=invest(rice) | bid 30 wheat@4.0 | stakes=0.2 | "Invest in the growing rice plot to bring it to harvest, and sell excess wheat at a fair price to secure more gold."
+  AGT_09 [g139.0 f97]: prod=invest(corn) | bid 1 labor@2.5 | stakes=0.7 | "Invest in corn to secure a bigger harvest, then sell labor to accumulate more gold"
+  AGT_10 [g37.9 f119]: prod=plant(wheat) | bid 3 water@1.7 | stakes=0.6 | "Planting wheat for food and checking water prices."
+  AGT_11 [g0.2 f103]: prod=plant(wheat) | ask 10 wheat@4.0 | stakes=0.7 | "Maintain a steady food supply and slightly profit from wheat sales"
+  AGT_12 [g0.0 f124]: prod=plant(rice) | ask 10 wheat@4.0 | stakes=0.8 | "I'll plant rice to secure food and then sell wheat to cover costs"
+  AGT_13 [g48.6 f104]: prod=invest(rice) | bid 20 wheat@4.0 | stakes=0.7 | "Invest in rice to secure more food and then sell wheat at a fair price to support other producers."
+  AGT_14 [g0.4 f107]: prod=invest(rice) | bid 20 labor@2.5 | stakes=0.3 | "Invest in a new rice crop to secure food and keep my labor bank topped up."
+  AGT_15 [g1.0 f112]: prod=invest(rice) | ask 10 wheat@4.1 | stakes=0.7 | "Invest in the ailing rice plot to get it back to health, and offer my wheat at a fair price to sell some surplus."
+  AGT_16 [g0.2 f87]: prod=invest(rice) | ask 10 wheat@4.1 | stakes=0.5 | "Invest in the rice plot and sell some wheat to maintain a profit margin."
+  AGT_17 [g3.4 f103]: prod=invest(wheat) | ask 20 wheat@4.2 | stakes=0.7 | "Invest in the wheat plot to harvest soon and post a sell order for wheat at a fair price."
+  AGT_18 [g-1.7 f81]: prod=invest(rice) | ask 30 wheat@4.1 | stakes=0.7 | "Invest in the sick rice plot and offload some wheat to make room for more valuable crops."
+  AGT_19 [g0.3 f102]: prod=plant(wheat) | ask 10 wheat@4.0 | stakes=0.6 | "Secure food supply and trade off excess wheat at fair price"
+  AGT_20 [g0.9 f103]: prod=invest(rice) | bid 10 wheat@4.0 | stakes=0.8 | "Invest in rice to secure food, then sell wheat at a good price before it spoils"
+   TRADE: AGT_08 buys 10 wheat from AGT_05 @4.2
+    TRADE: AGT_08 buys 10 wheat from AGT_07 @4.0
+    TRADE: AGT_13 buys 10 wheat from AGT_03 @4.2
+    TRADE: AGT_13 buys 1 wheat from AGT_14 @4.0
+    TRADE: AGT_07 buys 5 rice from AGT_02 @7.2
+    TRADE: AGT_05 buys 1 water from AGT_02 @1.85
+    TRADE: AGT_10 buys 3 water from AGT_02 @1.85
+    TRADE: AGT_07 buys 1 labor from AGT_03 @2.7
+    TRADE: AGT_09 buys 1 labor from AGT_04 @2.55
+    TRADE: AGT_14 buys 1 labor from AGT_04 @2.5
+    · AGT_01 [g24.3 f124 labor20]: spoiled 1, plotUpkeep 1L/1g
+    · AGT_02 [g43.4 f115 labor38]: spoiled 1
+    · AGT_03 [g196.9 f93 labor53]: spoiled 1, plotUpkeep 1L/1g
+    · AGT_04 [g98.3 f92 labor18]: spoiled 1, plotUpkeep 1L/1g
+    · AGT_05 [g54.9 f107 labor35]: spoiled 1, plotUpkeep 1L/1g
+    · AGT_06 [g76.0 f94 labor47]: spoiled 1, plotUpkeep 1L/1g
+    · AGT_07 [g2.2 f106 labor47]: spoiled 1
+    · AGT_08 [g1.2 f113 labor41]: spoiled 1, plotUpkeep 1L/1g
+    · AGT_09 [g135.4 f103 labor7]: spoiled 1, plotUpkeep 1L/1g
+    · AGT_10 [g31.3 f114 labor51]: spoiled 1, plotUpkeep 1L/1g
+    · AGT_11 [g0.2 f98 labor58]: spoiled 1
+    · AGT_12 [g0.0 f119 labor35]: spoiled 1
+    · AGT_13 [g1.6 f110 labor38]: spoiled 1, plotUpkeep 1L/1g
+    · AGT_14 [g1.9 f113 labor61]: spoiled 1
+    · AGT_15 [g1.0 f119 labor51]: spoiled 1
+    · AGT_16 [g0.2 f82 labor25]: spoiled 1
+    · AGT_17 [g2.4 f103 labor61]: spoiled 1, plotUpkeep 1L/1g, underyield 1
+    · AGT_18 [g-1.7 f87 labor47]: spoiled 1
+    · AGT_19 [g0.3 f97 labor49]: spoiled 1
+    · AGT_20 [g0.9 f113 labor36]: spoiled 1
+
+===== CYCLE 21 | MARKET: wheat 4.06 | rice 7.04 | corn 5.5 | water 1.89 | labor 2.59 =====
+  AGT_01 [g24.3 f123]: prod=plant(rice) | ask 20 wheat@4.1 | stakes=0.8 | "Plant rice, then sell wheat to maximize profit and save gold for future investments."
+  AGT_02 [g43.4 f114]: prod=plant(wheat) | bid 10 wheat@4.2 | stakes=0.7 | "I'm not starving, so I'll plant a new wheat crop to ensure a steady food supply and then offer it at a fair price to help others."
+  AGT_03 [g196.9 f92]: prod=plant(rice) | bid 10 labor@2.5 | stakes=0.5 | "Secure a new food source and sell labor at a slightly lower price to make room for more investment."
+  AGT_04 [g98.3 f91]: prod=plant(rice) | ask 10 rice@7.0 | stakes=0.6 | "I need to buy some rice and I know the price will go up."
+  AGT_05 [g54.9 f106]: prod=invest(rice) | bid 10 wheat@4.0 | stakes=0.5 | "Invest in the rice plot to meet its needs, and post a bid on wheat to secure a fair price before it spoils."
+  AGT_06 [g76.0 f93]: prod=invest(wheat) | ask 10 wheat@4.0 | stakes=0.7 | "Time to invest in wheat to maximize gold accumulation, and offer my wheat at a slightly below market price to sell it quickly and make a profit."
+  AGT_07 [g2.2 f105]: prod=plant(rice) | ask 20 rice@7.5 | stakes=0.5 | "Plant rice to secure food for the future and price rice above market to maintain a stable surplus"
+  AGT_08 [g1.2 f112]: prod=invest(rice) | bid 20 wheat@4.0 | stakes=0.5 | "Invest in the rice plot and stabilize wheat prices by buying at a fair price"
+  AGT_09 [g135.4 f102]: prod=plant(rice) | bid 2 labor@2.3 | stakes=0.8 | "I'll plant rice, trying to take advantage of its high yield and low spoilage, and try to sell some labor at a slightly lower price than the market to make some gold."
+  AGT_10 [g31.3 f113]: prod=invest(wheat) | ask 2 water@1.85 | stakes=0.6 | "I'll invest in the growing wheat plot to bring it to harvest and then post an order for water at a fair price."
+  AGT_11 [g0.2 f97]: prod=invest(wheat) | bid 10 wheat@4.0 | stakes=0.5 | "Invest in the growing wheat plot and offer to buy more wheat at a fair price to maintain my surplus."
+  AGT_12 [g0.0 f118]: prod=invest(rice) | ask 5 labor@2.5 | stakes=0.7 | "Invest in my rice plot to meet its needs and post a labor ask to accumulate more for future growth."
+  AGT_13 [g1.6 f109]: prod=invest(rice) | ask 1 labor@2.5 | stakes=0.6 | "Invest in the rice plot to meet its water needs and secure more food, while also selling labor at a fair price to supplement my income."
+  AGT_14 [g1.9 f112]: prod=plant(rice) | bid 20 wheat@4.0 | stakes=0.5 | "Planting rice for future food security while also selling some wheat at a fair price."
+  AGT_15 [g1.0 f118]: prod=plant(wheat) | bid 1 water@1.9 | stakes=0.5 | "I'm focusing on securing food and conserving water while trading at fair prices."
+  AGT_16 [g0.2 f81]: prod=expand_water() | bid 30 corn@5.0 | stakes=0.8 | "Expand water capacity to maximize profit and invest in corn, my most valuable crop."
+  AGT_17 [g2.4 f102]: prod=plant(wheat) | ask 10 wheat@4.0 | stakes=0.5 | "Planting wheat to maintain food buffer and selling at a fair price."
+  AGT_18 [g-1.7 f86]: prod=plant(rice) | ask 20 wheat@4.5 | stakes=0.8 | "Invest in a low-risk rice plot while trying to offload some wheat and secure a bit of profit"
+  AGT_19 [g0.3 f96]: prod=invest(wheat) | bid 10 wheat@4.0 | stakes=0.5 | "I'm going to secure my wheat harvest and trade some of it for gold."
+  AGT_20 [g0.9 f112]: prod=plant(wheat) | ask 50 wheat@4.2 | stakes=0.8 | "I'll plant wheat to secure a steady food supply, and then sell some to make a quick profit."
+    TRADE: AGT_02 buys 10 wheat from AGT_10 @4.05
+    TRADE: AGT_05 buys 10 wheat from AGT_12 @4.0
+    TRADE: AGT_12 buys 2 water from AGT_10 @1.65
+    TRADE: AGT_03 buys 5 labor from AGT_12 @2.55
+    TRADE: AGT_03 buys 1 labor from AGT_13 @2.6
+    TRADE: AGT_03 buys 4 labor from AGT_04 @2.65
+    TRADE: AGT_09 buys 2 labor from AGT_04 @2.55
+    · AGT_01 [g23.3 f118 labor27]: spoiled 1, plotUpkeep 1L/1g
+    · AGT_02 [g1.9 f119 labor44]: spoiled 1, plotUpkeep 1L/1g
+    · AGT_03 [g170.0 f87 labor71]: spoiled 1, plotUpkeep 1L/1g
+    · AGT_04 [g113.0 f86 labor19]: spoiled 1, plotUpkeep 1L/1g
+    · AGT_05 [g13.9 f111 labor31]: spoiled 1, plotUpkeep 1L/1g
+    · AGT_06 [g75.0 f94 labor46]: spoiled 1, plotUpkeep 1L/1g
+    · AGT_07 [g1.2 f100 labor52]: spoiled 1, plotUpkeep 1L/1g
+    · AGT_08 [g0.2 f127 labor48]: spoiled 1, invUpkeep 1L, plotUpkeep 1L/1g
+    · AGT_09 [g129.3 f97 labor14]: spoiled 1, plotUpkeep 1L/1g
+    · AGT_10 [g74.1 f105 labor51]: spoiled 1, plotUpkeep 1L/1g
+    · AGT_11 [g0.2 f96 labor58]: spoiled 1
+    · AGT_12 [g49.5 f103 labor26]: spoiled 1
+    · AGT_13 [g3.2 f104 labor43]: spoiled 1, plotUpkeep 1L/1g, FAILURE 1
+    · AGT_14 [g0.9 f107 labor68]: spoiled 1, plotUpkeep 1L/1g
+    · AGT_15 [g1.0 f113 labor60]: spoiled 1
+    · AGT_16 [g0.2 f76 labor32]: spoiled 1
+    · AGT_17 [g1.4 f97 labor66]: spoiled 1, plotUpkeep 1L/1g
+    · AGT_18 [g-1.7 f81 labor55]: spoiled 1
+    · AGT_19 [g0.3 f91 labor49]: spoiled 1
+    · AGT_20 [g0.9 f107 labor42]: spoiled 1
+
+===== CYCLE 22 | MARKET: wheat 4.06 | rice 7.04 | corn 5.5 | water 1.88 | labor 2.59 =====
+  AGT_01 [g23.3 f117]: prod=invest(rice) | ask 2 water@1.8 | stakes=0.8 | "Max out rice harvest and sell water to raise funds for expanding water cap and trading opportunities."
+  AGT_02 [g1.9 f118]: prod=invest(wheat) | bid 5 wheat@4.1 | stakes=0.7 | "Invest in wheat and secure some more, then offer it at a fair price to make some gold"
+  AGT_03 [g170.0 f86]: prod=invest(rice) | ask 1 labor@2.6 | stakes=0.8 | "Invest in the rice plot to harvest soon, and sell labor at a fair price"
+  AGT_04 [g98.0 f85]: prod=expand_water() | bid 10 water@1.9 | stakes=0.8 | "Expand water capacity to focus on food security and trading opportunities."
+  AGT_05 [g13.9 f110]: prod=invest(rice) | bid 10 wheat@4.2 | stakes=0.5 | "Invest in rice and secure some wheat for future meals."
+  AGT_06 [g75.0 f93]: prod=plant(rice) | ask 1 water@2.0 | stakes=0.7 | "Invest in a new rice crop to boost my food supply while maximizing my water usage."
+  AGT_07 [g1.2 f99]: prod=invest(rice) | bid 10 rice@7.0 | stakes=0.5 | "Invest in rice to meet growing needs and post a bid for rice to secure future supply at a fair price."
+  AGT_08 [g0.2 f126]: prod=plant(rice) | ask 20 wheat@4.0 | stakes=0.5 | "Planting rice to secure a harvest and selling wheat at a fair price"
+  AGT_09 [g129.3 f96]: prod=invest(rice) | bid 5 labor@2.4 | stakes=0.8 | "I'll invest in the rice plot to get a safe and high-yielding harvest, then try to buy more labor at a slightly lower price to save some gold for future opportunities."
+  AGT_10 [g74.1 f104]: prod=plant(wheat) | ask 30 wheat@4.05 | stakes=0.8 | "Secure food for the future and maintain a stable wheat market"
+  AGT_11 [g0.2 f95]: prod=plant(rice) | no order | stakes=0.5 | "Pursuing a stable food supply while keeping an eye on market prices."
+  AGT_12 [g49.5 f102]: prod=invest(rice) | bid 10 wheat@4.2 | stakes=0.8 | "Invest in rice to secure food, and buy more wheat to trade at a higher price."
+  AGT_13 [g3.2 f103]: prod=plant(wheat) | ask 10 wheat@4.0 | stakes=0.7 | "Secure a new food source and sell wheat at a fair price to help others while making a small profit"
+  AGT_14 [g0.9 f106]: prod=invest(rice) | bid 1 labor@2.5 | stakes=0.5 | "Secure food by investing in the existing rice plot and bid on labor at a fair price"
+  AGT_15 [g1.0 f112]: prod=invest(wheat) | ask 10 wheat@4.1 | stakes=0.8 | "Invest in the wheat plot to ensure a steady food supply and price fairly in the market to support my allies."
+  AGT_16 [g0.2 f75]: prod=invest(rice) | ask 20 wheat@4.5 | stakes=0.8 | "Time to secure food and invest in rice for a safer harvest, while selling wheat at a slightly higher price than the market average to maximize profit."
+  AGT_17 [g1.4 f96]: prod=invest(wheat) | ask 10 wheat@4.1 | stakes=0.5 | "Invest in wheat to harvest soon, then sell surplus at a fair price."
+  AGT_18 [g-1.7 f80]: prod=invest(rice) | bid 10 wheat@4.1 | stakes=0.5 | "Secure a rice harvest while buying wheat below market to reduce costs."
+  AGT_19 [g0.3 f90]: prod=invest(wheat) | bid 5 wheat@4.2 | stakes=0.3 | "Secure the sick wheat plot and maintain a stable food supply while keeping an eye on market prices."
+  AGT_20 [g0.9 f106]: prod=invest(wheat) | ask 20 wheat@4.2 | stakes=0.5 | "Invest in wheat to grow my food stock and take advantage of the current market price"
+    TRADE: AGT_05 buys 3 wheat from AGT_20 @4.0
+    TRADE: AGT_12 buys 10 wheat from AGT_20 @4.05
+    TRADE: AGT_04 buys 6 water from AGT_02 @1.95
+    TRADE: AGT_04 buys 1 water from AGT_06 @1.85
+    TRADE: AGT_09 buys 2 labor from AGT_04 @2.45
+    TRADE: AGT_09 buys 1 labor from AGT_03 @2.4
+    · AGT_01 [g22.3 f120 labor22]: spoiled 1, plotUpkeep 1L/1g, underyield 1
+    · AGT_02 [g12.6 f116 labor40]: spoiled 1, invUpkeep 1L, plotUpkeep 1L/1g, underyield 1
+    · AGT_03 [g171.4 f81 labor65]: spoiled 1, plotUpkeep 1L/1g
+    · AGT_04 [g88.3 f80 labor23]: spoiled 1, plotUpkeep 1L/1g
+    · AGT_05 [g0.9 f124 labor38]: spoiled 1, plotUpkeep 1L/1g
+    · AGT_06 [g75.9 f88 labor52]: spoiled 1, plotUpkeep 1L/1g
+    · AGT_07 [g0.2 f94 labor49]: spoiled 1, plotUpkeep 1L/1g
+    · AGT_08 [g0.2 f121 labor56]: spoiled 1, invUpkeep 1L
+    · AGT_09 [g121.0 f91 labor11]: spoiled 1, plotUpkeep 1L/1g
+    · AGT_10 [g73.1 f99 labor57]: spoiled 1, plotUpkeep 1L/1g
+    · AGT_11 [g0.2 f90 labor67]: spoiled 1
+    · AGT_12 [g8.0 f122 labor30]: spoiled 1, plotUpkeep 1L/1g
+    · AGT_13 [g2.2 f98 labor50]: spoiled 1, plotUpkeep 1L/1g
+    · AGT_14 [g0.9 f101 labor66]: spoiled 1
+    · AGT_15 [g1.0 f113 labor58]: spoiled 1
+    · AGT_16 [g-1.8 f70 labor28]: spoiled 1, plotUpkeep 0L/2g, plotsDied 1
+    · AGT_17 [g0.4 f99 labor66]: spoiled 1, plotUpkeep 1L/1g
+    · AGT_18 [g-1.7 f86 labor52]: spoiled 1
+    · AGT_19 [g0.3 f85 labor56]: spoiled 1
+    · AGT_20 [g53.4 f91 labor40]: spoiled 1
+
+===== CYCLE 23 | MARKET: wheat 4.06 | rice 7.04 | corn 5.5 | water 1.89 | labor 2.58 =====
+  AGT_01 [g22.3 f119]: prod=plant(wheat) | ask 10 wheat@4.0 | stakes=0.7 | "Secure food and sell at a fair price before the market fluctuates."
+  AGT_02 [g12.6 f115]: prod=plant(rice) | bid 20 rice@7.2 | stakes=0.5 | "Secure a steady food supply and maintain fair trade prices for rice."
+  AGT_03 [g171.4 f80]: prod=invest(rice) | bid 5 labor@2.4 | stakes=0.7 | "Invest in the rice plot and buy labor at a good price, considering the market prices and my recent trades."
+  AGT_04 [g88.3 f79]: prod=invest(rice) | ask 5 labor@2.5 | stakes=0.7 | "I'll secure my rice plot and sell a bit of labor to maximize profit."
+  AGT_05 [g0.9 f123]: prod=plant(rice) | bid 5 water@1.9 | stakes=0.5 | "Secure a food buffer and maintain my labor bank."
+  AGT_06 [g75.9 f87]: prod=invest(rice) | bid 1 water@1.8 | stakes=0.8 | "Invest in rice harvest, secure food, and sell water at a competitive price"
+  AGT_07 [g0.2 f93]: prod=invest(rice) | no order | stakes=0.5 | "Invest in my rice plot to meet its needs and also secure more water to avoid running out."
+  AGT_08 [g0.2 f120]: prod=invest(rice) | ask 10 water@1.9 | stakes=0.5 | "Invest in the growing rice plot and post an order to sell water at market price, as I have enough food and want to maintain my labor balance."
+  AGT_09 [g121.0 f90]: prod=invest(rice) | ask 10 labor@2.5 | stakes=0.8 | "I'll invest in my rice to harvest soon, and sell labor at a good price to cover costs and save some gold."
+  AGT_10 [g73.1 f98]: prod=invest(wheat) | ask 1 water@1.8 | stakes=0.5 | "Invest in wheat to secure food, and sell water at a fair price to maintain my surplus and free up labor."
+  AGT_11 [g0.2 f89]: prod=invest(rice) | ask 10 wheat@4.2 | stakes=0.7 | "Invest in the rice plot to help it reach harvest, and post a moderate ask for wheat to sell some of my surplus."
+  AGT_12 [g8.0 f121]: prod=plant(corn) | no order | stakes=0.7 | "I'll plant corn to secure food and take advantage of my labor bank, then buy water at a price below my average to increase my water cap and prepare for future investments."
+  AGT_13 [g2.2 f97]: prod=invest(wheat) | ask 1 labor@2.6 | stakes=0.5 | "I'll secure my wheat harvest and then sell some labor at a fair price, as I'm committed to not exploiting others."
+  AGT_14 [g0.9 f100]: prod=invest(rice) | no order | stakes=0.5 | "I'm investing in rice and trying to buy labor at a fair price to keep my labor bank stable."
+  AGT_15 [g1.0 f112]: prod=plant(rice) | bid 10 rice@7.0 | stakes=0.5 | "I'll secure a new rice crop to ensure my food supply while also making a fair offer to sell my surplus rice, which will also help maintain my labor and water balance."
+  AGT_16 [g-1.8 f69]: prod=plant(corn) | ask 23 corn@5.5 | stakes=0.5 | "I'll plant a new corn plot to capitalize on my recent success and post an ask order for corn to maximize my profit, as market prices are favorable."
+  AGT_17 [g0.4 f98]: prod=plant(wheat) | bid 10 wheat@4.2 | stakes=0.6 | "I'm planting wheat to ensure a steady food supply, and posting a bid to sell some wheat at a slightly higher price than the market average."
+  AGT_18 [g-1.7 f85]: prod=plant(corn) | bid 20 wheat@4.2 | stakes=0.7 | "Invest in a corn crop and try to sell some wheat at a good price to get my gold situation under control"
+  AGT_19 [g0.3 f84]: prod=invest(wheat) | ask 10 wheat@4.0 | stakes=0.5 | "Invest in the sick wheat plot and sell my wheat at a fair price to maintain a stable income."
+  AGT_20 [g53.4 f90]: prod=plant(wheat) | ask 20 wheat@4.15 | stakes=0.8 | "I'll plant a wheat crop, and sell wheat at a slight premium to maximize profit."
+    TRADE: AGT_02 buys 3 wheat from AGT_10 @3.8
+    TRADE: AGT_04 buys 3 water from AGT_08 @1.85
+    TRADE: AGT_06 buys 1 water from AGT_01 @1.75
+    TRADE: AGT_03 buys 5 labor from AGT_04 @2.45
+    · AGT_01 [g23.1 f114 labor27]: spoiled 1, plotUpkeep 1L/1g
+    · AGT_02 [g0.2 f113 labor45]: spoiled 1, plotUpkeep 1L/1g
+    · AGT_03 [g158.2 f97 labor78]: spoiled 1, plotUpkeep 1L/1g
+    · AGT_04 [g94.0 f88 labor11]: spoiled 1, plotUpkeep 1L/1g
+    · AGT_05 [g0.9 f118 labor45]: spoiled 1
+    · AGT_06 [g73.1 f82 labor45]: spoiled 1, plotUpkeep 1L/1g
+    · AGT_07 [g0.2 f88 labor54]: spoiled 1
+    · AGT_08 [g5.7 f115 labor50]: spoiled 1
+    · AGT_09 [g120.0 f102 labor18]: spoiled 1, plotUpkeep 1L/1g
+    · AGT_10 [g83.5 f97 labor56]: spoiled 1, plotUpkeep 1L/1g
+    · AGT_11 [g0.2 f84 labor64]: spoiled 1
+    · AGT_12 [g7.0 f116 labor37]: spoiled 1, plotUpkeep 1L/1g
+    · AGT_13 [g1.2 f100 labor48]: spoiled 1, plotUpkeep 1L/1g
+    · AGT_14 [g0.9 f95 labor70]: spoiled 1
+    · AGT_15 [g1.0 f107 labor66]: spoiled 1
+    · AGT_16 [g-1.8 f64 labor35]: spoiled 1
+    · AGT_17 [g0.4 f93 labor74]: spoiled 1
+    · AGT_18 [g-1.7 f80 labor61]: spoiled 1
+    · AGT_19 [g-1.7 f79 labor63]: spoiled 1, plotUpkeep 0L/2g, plotsDied 1
+    · AGT_20 [g52.4 f85 labor48]: spoiled 1, plotUpkeep 1L/1g
+
+===== CYCLE 24 | MARKET: wheat 4.05 | rice 7.04 | corn 5.5 | water 1.88 | labor 2.58 =====
+  AGT_01 [g23.1 f113]: prod=invest(wheat) | bid 1 water@1.85 | stakes=0.5 | "Invest in the growing wheat plot and lock in a good price for water"
+  AGT_02 [g0.2 f113]: prod=invest(rice) | ask 20 wheat@4.0 | stakes=0.8 | "Invest in rice to meet the plot's needs and make progress on my food buffer, while selling wheat at a fair price to sustain my labor bank and keep trading flowing."
+  AGT_03 [g158.2 f96]: prod=plant(rice) | ask 10 rice@7.0 | stakes=0.7 | "I need to secure more food, and planting rice will give me a safe and reliable harvest."
+  AGT_04 [g94.0 f87]: prod=plant(wheat) | bid 10 wheat@4.0 | stakes=0.5 | "Time to plant wheat and make a quick buck by buying low and selling high on wheat"
+  AGT_05 [g0.9 f117]: prod=invest(rice) | bid 5 water@1.9 | stakes=0.5 | "Invest in a safe rice harvest and replenish water to keep a buffer, then sell water to maintain my labor and trade buffer"
+  AGT_06 [g73.1 f81]: prod=invest(rice) | ask 20 wheat@3.9 | stakes=0.5 | "I need to keep my plots healthy and invest in the rice crop, while also selling wheat to make some extra gold and make space for more valuable crops."
+  AGT_07 [g0.2 f87]: prod=invest(rice) | bid 20 rice@7.5 | stakes=0.6 | "Invest in my rice plot to bring it to harvest, and sell some rice at a fair price to keep my stockpile from spoiling."
+  AGT_08 [g5.7 f114]: prod=invest(rice) | ask 10 wheat@3.9 | stakes=0.5 | "I'm keeping my rice plot healthy and selling wheat at a fair price to free up gold for expansion."
+  AGT_09 [g120.0 f101]: prod=plant(rice) | ask 1 labor@2.5 | stakes=0.8 | "I'm buying labor cheap, planting rice to secure food, and selling labor at a decent price."
+  AGT_10 [g83.5 f96]: prod=plant(rice) | ask 10 wheat@4.0 | stakes=0.8 | "Planting rice to ensure a steady food supply while maintaining a sustainable approach."
+  AGT_11 [g0.2 f83]: prod=invest(rice) | no order | stakes=0.5 | "Secure rice harvest and bank some labor for future investment"
+  AGT_12 [g7.0 f115]: prod=invest(corn) | bid 10 labor@2.5 | stakes=0.8 | "I'm investing in corn and selling labor to accumulate gold for expanding my water capacity"
+  AGT_13 [g1.2 f99]: prod=plant(rice) | bid 1 labor@2.5 | stakes=0.5 | "I'll plant rice to secure food and post a bid for labor at a fair price, considering my recent trade prices and the market prices."
+  AGT_14 [g0.9 f94]: prod=invest(rice) | ask 10 wheat@4.0 | stakes=0.6 | "I'll invest in the rice plot to get it healthy, and then sell some wheat at a fair price."
+  AGT_15 [g1.0 f106]: prod=invest(rice) | no order | stakes=0.5 | "Invest in my rice crop and secure water at a fair price"
+  AGT_16 [g-1.8 f63]: prod=invest(corn) | ask 10 wheat@4.5 | stakes=0.7 | "Invest in corn to maximize future profits and post a wheat ask to sell my surplus."
+  AGT_17 [g0.4 f92]: prod=invest(wheat) | bid 10 wheat@4.0 | stakes=0.7 | "Invest in wheat to secure food and try to sell at a fair price."
+  AGT_18 [g-1.7 f79]: prod=invest(corn) | bid 1 labor@2.6 | stakes=0.5 | "Invest in the corn plot to harvest soon and also bank some labor for future use."
+  AGT_19 [g-1.7 f78]: prod=plant(rice) | ask 10 wheat@4.0 | stakes=0.5 | "Plant a new rice crop to ensure future food, and sell some wheat at a fair price to cover costs."
+  AGT_20 [g52.4 f84]: prod=invest(wheat) | ask 20 wheat@4.2 | stakes=0.5 | "Invest in wheat to keep plots healthy, and sell wheat at a slight markup to maximize profit."
+    TRADE: AGT_04 buys 10 wheat from AGT_13 @4.0
+    TRADE: AGT_01 buys 1 water from AGT_10 @1.65
+    TRADE: AGT_12 buys 1 labor from AGT_09 @2.5
+    · AGT_01 [g20.4 f115 labor24]: spoiled 1, plotUpkeep 1L/1g
+    · AGT_03 [g157.2 f91 labor79]: spoiled 1, plotUpkeep 1L/1g
+    · AGT_04 [g53.0 f92 labor16]: spoiled 1, plotUpkeep 1L/1g
+    · AGT_05 [g0.9 f112 labor40]: spoiled 1
+    · AGT_06 [g72.1 f90 labor51]: spoiled 1, plotUpkeep 1L/1g
+    · AGT_07 [g0.2 f89 labor60]: spoiled 1, underyield 1
+    · AGT_08 [g4.7 f109 labor56]: spoiled 1, plotUpkeep 1L/1g
+    · AGT_09 [g121.5 f96 labor22]: spoiled 1, plotUpkeep 1L/1g
+    · AGT_10 [g84.2 f91 labor61]: spoiled 1, plotUpkeep 1L/1g
+    · AGT_11 [g0.2 f78 labor72]: spoiled 1
+    · AGT_12 [g3.5 f125 labor25]: spoiled 1, plotUpkeep 1L/1g
+    · AGT_13 [g40.2 f84 labor53]: spoiled 1, plotUpkeep 1L/1g
+    · AGT_14 [g0.9 f89 labor77]: spoiled 1
+    · AGT_15 [g1.0 f101 labor68]: spoiled 1
+    · AGT_16 [g-1.8 f67 labor23]: spoiled 1
+    · AGT_17 [g0.4 f91 labor72]: spoiled 1
+    · AGT_18 [g-1.7 f80 labor49]: spoiled 1
+    · AGT_19 [g-1.7 f73 labor69]: spoiled 1
+    · AGT_20 [g51.4 f84 labor47]: spoiled 1, plotUpkeep 1L/1g
+
+===== CYCLE 25 | MARKET: wheat 4.05 | rice 7.04 | corn 5.5 | water 1.88 | labor 2.58 =====
+  AGT_01 [g20.4 f114]: prod=plant(wheat) | ask 10 wheat@4.0 | stakes=0.6 | "Time to plant wheat and make some more gold by selling at my price"
+  AGT_02 [g0.2 f108]: prod=invest(rice) | ask 20 rice@7.0 | stakes=0.7 | "Secure food by investing in the existing rice plot and post a fair ask price for rice to maintain a comfortable surplus."
+  AGT_03 [g157.2 f90]: prod=invest(rice) | ask 1 labor@2.5 | stakes=0.5 | "Secure food with a new rice investment and sell labor at a fair price"
+  AGT_04 [g53.0 f91]: prod=invest(wheat) | bid 5 water@1.8 | stakes=0.8 | "Invest in wheat to secure food, and sell water at a good price while the market is in my favor."
+  AGT_05 [g0.9 f111]: prod=invest(rice) | ask 30 rice@7.0 | stakes=0.5 | "Stabilize my food supply and price rice fairly, as I focus on my labor and water bank."
+  AGT_06 [g72.1 f89]: prod=plant(wheat) | ask 50 wheat@4.5 | stakes=0.5 | "Time to plant and try to sell wheat at a higher price, exploiting the market for my own gain."
+  AGT_07 [g0.2 f88]: prod=plant(rice) | ask 10 wheat@4.0 | stakes=0.5 | "I'll plant rice to ensure a steady food supply while waiting for harvests, and sell wheat at a fair price to make a little gold."
+  AGT_08 [g4.7 f108]: prod=invest(rice) | ask 10 wheat@4.1 | stakes=0.5 | "Invest in the ailing rice plot and sell some wheat at the market price."
+  AGT_09 [g121.5 f95]: prod=invest(rice) | ask 5 labor@2.6 | stakes=0.5 | "Invest in my rice plot to maximize harvest and post orders for labor to sell and bank more labor."
+  AGT_10 [g84.2 f90]: prod=invest(rice) | bid 5 water@1.8 | stakes=0.5 | "Invest in rice to maintain sustainable growth while keeping an eye on water prices."
+  AGT_11 [g0.2 f77]: prod=invest(rice) | bid 10 rice@6.2 | stakes=0.3 | "I'll invest in the sick rice plot and try to sell some rice at a fair price."
+  AGT_12 [g3.5 f123]: prod=plant(rice) | ask 10 wheat@4.2 | stakes=0.8 | "Secure food supply by planting rice and sell wheat at a slightly higher price to maximize profit"
+  AGT_13 [g40.2 f83]: prod=invest(rice) | bid 10 water@1.9 | stakes=0.6 | "Invest in rice to ensure a stable food source, while also trying to secure a water supply"
+  AGT_14 [g0.9 f88]: prod=invest(rice) | ask 10 wheat@4.0 | stakes=0.5 | "Invest in the rice plot and sell some wheat at a fair price to secure my food buffer."
+  AGT_15 [g1.0 f100]: prod=invest(rice) | ask 1 water@1.9 | stakes=0.5 | "Invest in the sick rice plot to bring it back to health, and sell water at a fair price to maintain a steady income."
+  AGT_16 [g-1.8 f66]: prod=plant(rice) | ask 20 wheat@4.5 | stakes=0.8 | "I'll plant a new rice plot and try to offload some wheat to accumulate more gold."
+  AGT_17 [g0.4 f90]: prod=plant(wheat) | bid 10 wheat@4.0 | stakes=0.5 | "Secure some wheat and sell at a fair price, as my food buffer is sufficient for now."
+  AGT_18 [g-1.7 f79]: prod=plant(wheat) | ask 100 wheat@4.5 | stakes=0.7 | "Invest in a new wheat crop and sell surplus wheat at a markup to accumulate gold"
+  AGT_19 [g-1.7 f72]: prod=invest(rice) | bid 10 wheat@3.9 | stakes=0.7 | "Invest in the rice plot and sell some wheat at a slightly lower price to secure a bit of gold"
+  AGT_20 [g51.4 f83]: prod=plant(rice) | ask 10 wheat@4.05 | stakes=0.8 | "I'm going to plant some rice to secure food and then try to sell some wheat at a slight markup to maximize profit."
+    TRADE: AGT_13 buys 1 labor from AGT_03 @2.6
+    · AGT_01 [g19.4 f109 labor29]: spoiled 1, plotUpkeep 1L/1g
+    · AGT_03 [g158.8 f85 labor66]: spoiled 1, plotUpkeep 1L/1g
+    · AGT_04 [g52.0 f91 labor15]: spoiled 1, plotUpkeep 1L/1g
+    · AGT_05 [g0.9 f106 labor49]: spoiled 1
+    · AGT_06 [g71.1 f84 labor57]: spoiled 1, plotUpkeep 1L/1g
+    · AGT_07 [g0.2 f83 labor66]: spoiled 1
+    · AGT_08 [g3.7 f103 labor51]: spoiled 1, plotUpkeep 1L/1g
+    · AGT_09 [g120.5 f90 labor15]: spoiled 1, plotUpkeep 1L/1g
+    · AGT_10 [g83.2 f85 labor61]: spoiled 1, plotUpkeep 1L/1g
+    · AGT_11 [g-1.8 f72 labor80]: spoiled 1, plotUpkeep 0L/2g, plotsDied 1
+    · AGT_12 [g2.5 f118 labor32]: spoiled 2, plotUpkeep 1L/1g
+    · AGT_13 [g36.6 f78 labor48]: spoiled 1, plotUpkeep 1L/1g
+    · AGT_14 [g-1.1 f83 labor80]: spoiled 1, plotUpkeep 0L/2g, plotsDied 1
+    · AGT_15 [g1.0 f104 labor69]: spoiled 1
+    · AGT_16 [g-1.8 f61 labor29]: spoiled 1
+    · AGT_17 [g0.4 f85 labor80]: spoiled 1
+    · AGT_18 [g-1.7 f74 labor55]: spoiled 1
+    · AGT_19 [g-1.7 f79 labor65]: spoiled 1
+    · AGT_20 [g50.4 f78 labor55]: spoiled 1, plotUpkeep 1L/1g
+
+===== CYCLE 26 | MARKET: wheat 4.05 | rice 7.04 | corn 5.5 | water 1.88 | labor 2.58 =====
+  AGT_01 [g19.4 f108]: prod=invest(wheat) | ask 50 wheat@4.2 | stakes=0.8 | "I'll invest in the wheat plot and try to sell wheat at a slight markup."
+  AGT_02 [g0.2 f103]: prod=invest(rice) | bid 5 water@1.9 | stakes=0.7 | "I'm investing in a sick rice plot to save it, and selling some water to stay within my water budget while keeping an eye on the market for a good deal."
+  AGT_03 [g158.8 f84]: prod=invest(rice) | ask 100 rice@7.0 | stakes=0.5 | "Invest in the rice plot to harvest more food, and post an ask order for rice at market price to sell my surplus."
+  AGT_04 [g52.0 f90]: prod=plant(rice) | ask 5 labor@2.4 | stakes=0.8 | "I'll plant rice to secure food and then sell labor to earn gold."
+  AGT_05 [g0.9 f105]: prod=invest(rice) | bid 1 water@2.0 | stakes=0.5 | "Invest in the ailing rice plot, and cautiously buy water at a lower price to maintain a buffer."
+  AGT_06 [g71.1 f83]: prod=invest(wheat) | no order | stakes=0.8 | "Invest in the wheat plot and try to sell water at a good price."
+  AGT_07 [g0.2 f82]: prod=invest(rice) | bid 1 labor@2.4 | stakes=0.6 | "I'm investing in rice to harvest soon and buying a little more labor to prepare for future growth."
+  AGT_08 [g3.7 f102]: prod=invest(rice) | bid 20 wheat@3.9 | stakes=0.5 | "Invest in the sick rice plot and buy wheat at a slightly below market price to maintain a stable food supply."
+  AGT_09 [g120.5 f89]: prod=invest(rice) | bid 1 labor@2.5 | stakes=0.7 | "Invest in rice to ensure food security, then sell labor at a good price to accumulate more gold."
+  AGT_10 [g83.2 f84]: prod=invest(rice) | ask 10 wheat@3.8 | stakes=0.8 | "I'm investing in the rice plot and selling some wheat to maintain a stable trade price and keep my stockpiles healthy."
+  AGT_11 [g-1.8 f71]: prod=plant(rice) | bid 10 wheat@4.0 | stakes=0.8 | "Secure food supply by planting rice and sell surplus wheat at a fair price."
+  AGT_12 [g2.5 f117]: prod=invest(rice) | bid 10 wheat@4.1 | stakes=0.8 | "Invest in my rice plot and buy wheat at market price to maintain my stockpile."
+  AGT_13 [g36.6 f77]: prod=invest(rice) | bid 10 wheat@4.0 | stakes=0.8 | "I'm investing in my rice plot and buying up more wheat to keep my prices fair, while also ensuring I have enough food to eat."
+  AGT_14 [g-1.1 f82]: prod=plant(rice) | bid 10 rice@6.0 | stakes=0.5 | "Planting a new rice crop to maintain a stable food supply while the market price is favorable"
+  AGT_15 [g1.0 f103]: prod=plant(rice) | ask 10 wheat@4.0 | stakes=0.5 | "Prioritize food security by planting rice and maintain a fair trading price for wheat"
+  AGT_16 [g-1.8 f60]: prod=invest(rice) | ask 5 water@2.0 | stakes=0.8 | "Secure food for the next cycle and invest in the rice plot while trying to profit from water sales."
+  AGT_17 [g0.4 f84]: prod=invest(wheat) | bid 10 wheat@4.0 | stakes=0.7 | "Invest in wheat to secure a stable food source and take advantage of a fair price."
+  AGT_18 [g-1.7 f73]: prod=invest(wheat) | bid 50 wheat@4.2 | stakes=0.8 | "Invest in the growing wheat and sell it at a fair price to cover my losses and fund my next move."
+  AGT_19 [g-1.7 f78]: prod=plant(rice) | bid 10 wheat@3.8 | stakes=0.5 | "Plant some rice and sell a bit of wheat at a reasonable price to stabilize my finances"
+  AGT_20 [g50.4 f77]: prod=invest(rice) | ask 10 water@1.8 | stakes=0.8 | "Invest in rice harvest, then sell water to raise funds for water expansion and trading."
+    TRADE: AGT_13 buys 8 wheat from AGT_02 @4.2
+    TRADE: AGT_04 buys 2 water from AGT_20 @1.65
+    TRADE: AGT_13 buys 1 water from AGT_08 @1.9
+    TRADE: AGT_02 buys 4 water from AGT_08 @1.65
+    TRADE: AGT_09 buys 1 labor from AGT_04 @2.55
+    · AGT_01 [g18.4 f104 labor27]: spoiled 1, plotUpkeep 1L/1g, underyield 1
+    · AGT_03 [g157.8 f99 labor72]: spoiled 1, plotUpkeep 1L/1g
+    · AGT_04 [g50.3 f85 labor19]: spoiled 1, plotUpkeep 1L/1g
+    · AGT_05 [g-1.1 f100 labor57]: spoiled 1, plotUpkeep 0L/2g, plotsDied 1
+    · AGT_06 [g70.1 f83 labor55]: spoiled 1, plotUpkeep 1L/1g
+    · AGT_07 [g0.2 f77 labor68]: spoiled 1
+    · AGT_08 [g11.2 f107 labor59]: spoiled 1, plotUpkeep 1L/1g
+    · AGT_09 [g117.0 f84 labor23]: spoiled 1, plotUpkeep 1L/1g
+    · AGT_10 [g82.2 f99 labor61]: spoiled 1, plotUpkeep 1L/1g
+    · AGT_11 [g-1.8 f66 labor80]: spoiled 1
+    · AGT_12 [g1.5 f126 labor26]: spoiled 1, plotUpkeep 1L/1g
+    · AGT_13 [g0.1 f100 labor54]: spoiled 1, plotUpkeep 1L/1g
+    · AGT_14 [g-1.1 f77 labor80]: spoiled 1
+    · AGT_15 [g1.0 f98 labor76]: spoiled 1
+    · AGT_16 [g-1.8 f55 labor24]: spoiled 1
+    · AGT_17 [g0.4 f85 labor72]: spoiled 1
+    · AGT_18 [g-1.7 f72 labor54]: spoiled 1
+    · AGT_19 [g-1.7 f73 labor72]: spoiled 1
+    · AGT_20 [g52.7 f88 labor48]: spoiled 1, plotUpkeep 1L/1g
+===== CYCLE 27 | MARKET: wheat 4.06 | rice 7.04 | corn 5.5 | water 1.87 | labor 2.58 =====
+  AGT_01 [g18.4 f103]: prod=plant(rice) | bid 1 water@1.7 | stakes=0.5 | "Invest in a new rice plot and buy water at a good price."
+  AGT_02 [g27.2 f102]: prod=plant(rice) | ask 10 rice@7.2 | stakes=0.5 | "I'm planting rice to secure food for the future, while selling rice at a fair price to maintain my buffer."
+  AGT_03 [g157.8 f98]: prod=plant(rice) | bid 5 labor@2.2 | stakes=0.5 | "Secure food supply by planting a rice plot and buy more labor at a reasonable price"
+  AGT_04 [g50.3 f85]: prod=invest(rice) | no order | stakes=0.7 | "Invest in rice to ensure food security and harvest, then sell wheat at market price to maximize profit."
+  AGT_05 [g-1.1 f99]: prod=plant(wheat) | ask 10 wheat@4.1 | stakes=0.7 | "Secure food supply by planting wheat and sell wheat at a fair price"
+  AGT_06 [g70.1 f83]: prod=plant(rice) | ask 1 water@2.0 | stakes=0.8 | "Secure a new food source and exploit my water trading advantage"
+  AGT_07 [g0.2 f76]: prod=invest(rice) | ask 20 rice@7.3 | stakes=0.8 | "Invest in rice to harvest more, and post an order to sell our rice surplus fairly, while also keeping an eye on the market prices."
+  AGT_08 [g11.2 f106]: prod=plant(wheat) | ask 10 wheat@4.0 | stakes=0.8 | "Plant a new wheat plot to maintain a steady food supply, and post a moderate ask for wheat to balance my inventory."
+  AGT_09 [g117.0 f83]: prod=invest(rice) | bid 1 labor@2.5 | stakes=0.8 | "Time to harvest that rice and make a profit on labor, my gold reserves are high enough to take some risks"
+  AGT_10 [g82.2 f98]: prod=plant(rice) | ask 10 wheat@4.2 | stakes=0.5 | "I'm planting rice to maintain a sustainable food supply and posting an ask order for wheat to make some profit."
+  AGT_11 [g-1.8 f65]: prod=invest(rice) | bid 10 wheat@4.0 | stakes=0.8 | "Invest in the rice plot and secure some wheat before it's too late."
+  AGT_12 [g1.5 f125]: prod=plant(rice) | bid 10 labor@2.6 | stakes=0.5 | "Secure food by planting rice and also bank some labor at the current price to prepare for future investments."
+  AGT_13 [g0.1 f99]: prod=plant(rice) | ask 10 labor@2.5 | stakes=0.7 | "I'm planting rice to secure food and planting is a fair investment with moderate labor and water cost, and I'm selling labor at a price slightly lower than the market average to ensure I can sell my l"
+  AGT_14 [g-1.1 f76]: prod=invest(rice) | ask 10 water@2.0 | stakes=0.5 | "Invest in the rice plot to get it to harvest, then sell some water on the market at a reasonable price."
+  AGT_15 [g1.0 f97]: prod=invest(rice) | ask 5 water@1.9 | stakes=0.5 | "Invest in rice to secure food and maintain a sustainable stockpile while also making a fair trade for water."
+  AGT_16 [g-1.8 f55]: prod=invest(rice) | ask 20 wheat@4.1 | stakes=0.5 | "Secure my rice plot and take a calculated risk on wheat to earn some gold"
+  AGT_17 [g0.4 f84]: prod=plant(rice) | bid 10 wheat@4.2 | stakes=0.5 | "Plant a new rice plot to maintain a sustainable food supply and buy some time for the harvests to come."
+  AGT_18 [g-1.7 f71]: prod=plant(rice) | ask 50 wheat@4.0 | stakes=0.6 | "Expand food supply by planting rice and sell wheat at a slight discount to undercut the market."
+  AGT_19 [g-1.7 f72]: prod=invest(rice) | ask 5 water@2.0 | stakes=0.5 | "Invest in the growing rice plot to bring it to maturity and sell water at a fair price."
+  AGT_20 [g52.7 f87]: prod=plant(corn) | bid 10 water@1.6 | stakes=0.6 | "I'll invest in corn and buy water cheap to maintain my water stockpile and prep for future harvests."
+    TRADE: AGT_02 buys 1 water from AGT_15 @1.85
+    TRADE: AGT_04 buys 1 water from AGT_15 @1.85
+    TRADE: AGT_04 buys 1 water from AGT_06 @1.8
+    TRADE: AGT_04 buys 1 water from AGT_19 @1.9
+    TRADE: AGT_10 buys 3 water from AGT_19 @1.85
+    TRADE: AGT_09 buys 1 labor from AGT_13 @2.55
+    TRADE: AGT_03 buys 4 labor from AGT_04 @2.55
+    TRADE: AGT_03 buys 1 labor from AGT_13 @2.45
+    · AGT_01 [g17.4 f98 labor35]: spoiled 1, plotUpkeep 1L/1g
+    · AGT_02 [g24.4 f97 labor62]: plotUpkeep 1L/1g
+    · AGT_03 [g144.1 f93 labor84]: spoiled 1, plotUpkeep 1L/1g
+    · AGT_04 [g53.9 f101 labor9]: plotUpkeep 1L/1g
+    · AGT_05 [g-1.1 f94 labor63]: spoiled 1
+    · AGT_06 [g70.9 f78 labor63]: plotUpkeep 1L/1g
+    · AGT_07 [g0.2 f71 labor73]: spoiled 1
+    · AGT_08 [g10.2 f101 labor67]: spoiled 1, plotUpkeep 1L/1g
+    · AGT_09 [g113.4 f99 labor32]: spoiled 1, plotUpkeep 1L/1g
+    · AGT_10 [g75.6 f93 labor68]: spoiled 1, plotUpkeep 1L/1g
+    · AGT_11 [g-1.8 f60 labor72]: spoiled 1
+    · AGT_12 [g0.5 f120 labor31]: spoiled 1, plotUpkeep 1L/1g
+    · AGT_13 [g5.1 f94 labor61]: spoiled 1
+    · AGT_14 [g-1.1 f71 labor68]: spoiled 1
+    · AGT_15 [g4.7 f92 labor68]: spoiled 1
+    · AGT_17 [g0.4 f79 labor78]: spoiled 1
+    · AGT_18 [g-1.7 f66 labor61]: spoiled 1
+    · AGT_19 [g5.8 f67 labor73]: spoiled 1
+    · AGT_20 [g51.7 f82 labor55]: spoiled 1, plotUpkeep 1L/1g
+
+===== CYCLE 28 | MARKET: wheat 4.06 | rice 7.04 | corn 5.5 | water 1.87 | labor 2.57 =====
+  AGT_01 [g17.4 f97]: prod=invest(rice) | ask 1 water@1.85 | stakes=0.6 | "I'm investing in a rice plot to secure more food and then selling water at a slight markup."
+  AGT_02 [g24.4 f97]: prod=invest(rice) | ask 20 wheat@4.2 | stakes=0.5 | "I'll invest in the rice plot and price wheat fairly to make space for more food."
+  AGT_03 [g144.1 f93]: prod=invest(rice) | ask 5 labor@2.5 | stakes=0.6 | "Invest in the rice plot to speed up harvest, then sell labor at a fair price."
+  AGT_04 [g53.9 f101]: prod=plant(rice) | bid 1 water@1.7 | stakes=0.8 | "Exploit low water prices and secure a new food source, protecting my profit-driven interests."
+  AGT_05 [g-1.1 f94]: prod=invest(wheat) | ask 1 water@1.9 | stakes=0.5 | "Invest in the wheat plot to keep it healthy, and sell water at a fair price to avoid wasting my limited supply."
+  AGT_06 [g70.9 f78]: prod=invest(rice) | ask 10 wheat@4.0 | stakes=0.8 | "I'll invest in my rice plot to speed up harvest, then sell some wheat at a fair price to make a quick profit."
+  AGT_07 [g0.2 f70]: prod=invest(rice) | bid 20 rice@7.5 | stakes=0.8 | "Invest in rice to ensure I have enough food, and offer a fair price for it to maintain good relations with my allies."
+  AGT_08 [g10.2 f100]: prod=invest(wheat) | ask 10 water@2.0 | stakes=0.6 | "Invest in wheat to keep up food supply and trade water at a fair price"
+  AGT_09 [g113.4 f98]: prod=plant(wheat) | bid 10 wheat@4.0 | stakes=0.8 | "I'm betting on a wheat price drop and buying low, so I'll plant a new wheat plot and post a bid for 10 units of wheat at my own price of 4.0, hoping to snag a good deal."
+  AGT_10 [g75.6 f93]: prod=invest(rice) | ask 1 water@1.8 | stakes=0.5 | "Invest in rice to ensure steady food supply and then sell water at a fair price."
+  AGT_11 [g-1.8 f59]: prod=invest(rice) | ask 10 rice@7.0 | stakes=0.8 | "Invest in my sick rice plot and try to sell some of my rice at a good price before it spoils."
+  AGT_12 [g0.5 f119]: prod=invest(rice) | ask 10 water@1.7 | stakes=0.8 | "Invest in my rice plot and sell water at a slightly discounted price to maximize profit."
+  AGT_13 [g5.1 f93]: prod=invest(rice) | bid 1 labor@2.5 | stakes=0.5 | "Secure food and earn a little extra labor to invest in a new crop."
+  AGT_14 [g-1.1 f70]: prod=invest(rice) | bid 1 labor@2.6 | stakes=0.5 | "Keep my rice plot healthy and top up my labor bank while I'm not low on food."
+  AGT_15 [g4.7 f91]: prod=expand_water() | no order | stakes=0.5 | "I need to secure more water for my plots and sell my water at a fair price."
+  AGT_16 [g-1.8 f50]: prod=invest(rice) | ask 10 wheat@4.5 | stakes=0.5 | "Secure food supply and stabilize gold by investing in the sick rice plot and selling wheat at a slightly higher price than market."
+  AGT_17 [g0.4 f78]: prod=invest(rice) | ask 10 wheat@4.1 | stakes=0.5 | "Invest in the rice plot and sell wheat at a fair price, to cover the costs of maintaining the stockpile."
+  AGT_18 [g-1.7 f65]: prod=invest(rice) | ask 20 rice@7.5 | stakes=0.7 | "Invest in the rice crop to ensure a steady food supply, then try to sell it at a slightly higher price to maximize profit"
+  AGT_19 [g5.8 f67]: prod=invest(rice) | ask 1 labor@2.0 | stakes=0.8 | "Invest in rice to keep it healthy, and sell some labor at a fair price."
+  AGT_20 [g51.7 f81]: prod=invest(corn) | ask 10 water@1.8 | stakes=0.8 | "Invest in the corn plot to harvest a high-value crop, and post an ask order for water to sell at a slightly lower price than the market average, increasing my profit margin."
+    TRADE: AGT_13 buys 1 wheat from AGT_15 @4.0
+    TRADE: AGT_09 buys 10 wheat from AGT_07 @4.05
+    TRADE: AGT_19 buys 1 wheat from AGT_14 @4.2
+    TRADE: AGT_07 buys 5 rice from AGT_18 @7.0
+    TRADE: AGT_04 buys 1 water from AGT_12 @1.85
+    TRADE: AGT_20 buys 5 water from AGT_12 @1.8
+    TRADE: AGT_20 buys 1 water from AGT_10 @2.0
+    TRADE: AGT_20 buys 1 water from AGT_01 @1.85
+    TRADE: AGT_20 buys 3 water from AGT_15 @1.85
+    TRADE: AGT_07 buys 1 labor from AGT_03 @2.5
+    TRADE: AGT_12 buys 4 labor from AGT_03 @2.45
+    TRADE: AGT_14 buys 1 labor from AGT_19 @2.2
+    · AGT_01 [g18.3 f111 labor30]: spoiled 1, plotUpkeep 1L/1g
+    · AGT_02 [g23.4 f112 labor57]: plotUpkeep 1L/1g
+    · AGT_03 [g155.4 f88 labor64]: plotUpkeep 1L/1g
+    · AGT_04 [g51.1 f96 labor15]: plotUpkeep 1L/1g
+    · AGT_06 [g69.9 f73 labor69]: plotUpkeep 1L/1g
+    · AGT_07 [g1.2 f60 labor78]: spoiled 1, plotUpkeep 0L/2g, plotsDied 1
+    · AGT_08 [g9.2 f101 labor67]: spoiled 1, plotUpkeep 1L/1g
+    · AGT_09 [g71.9 f103 labor37]: spoiled 1, plotUpkeep 1L/1g
+    · AGT_10 [g76.6 f88 labor61]: plotUpkeep 1L/1g
+    · AGT_11 [g-1.8 f68 labor76]: spoiled 1
+    · AGT_12 [g1.5 f114 labor41]: spoiled 1
+    · AGT_13 [g0.1 f89 labor55]: spoiled 1, plotUpkeep 1L/1g
+    · AGT_14 [g0.9 f75 labor78]: spoiled 1
+    · AGT_15 [g13.2 f85 labor74]: spoiled 1, plotUpkeep 1L/1g
+    · AGT_16 [g-3.8 f45 labor42]: plotUpkeep 0L/2g, plotsDied 1
+    · AGT_17 [g0.4 f87 labor68]: spoiled 1
+    · AGT_18 [g33.3 f55 labor55]: spoiled 1
+    · AGT_19 [g2.8 f63 labor72]: plotUpkeep 1L/1g
+    · AGT_20 [g32.3 f76 labor43]: spoiled 1, plotUpkeep 1L/1g
+===== CYCLE 29 | MARKET: wheat 4.06 | rice 7.04 | corn 5.5 | water 1.87 | labor 2.57 =====
+  AGT_01 [g18.3 f110]: prod=plant(corn) | ask 50 wheat@4.0 | stakes=0.7 | "I'll secure food by planting a low-risk crop and then sell wheat to maximize profit."
+  AGT_02 [g23.4 f112]: prod=plant(wheat) | ask 10 wheat@4.1 | stakes=0.5 | "Secure a food buffer by planting a low-risk crop and selling at a fair price."
+  AGT_03 [g155.4 f88]: prod=invest(rice) | ask 1 labor@2.5 | stakes=0.7 | "Invest in the rice plot and sell a bit of labor at my average price to maintain cash flow."
+  AGT_04 [g51.1 f96]: prod=invest(rice) | ask 1 water@1.85 | stakes=0.7 | "I'll invest in my rice crop and sell water at a good price to keep my water supply stable."
+  AGT_05 [g-1.1 f93]: prod=plant(wheat) | ask 10 wheat@4.0 | stakes=0.3 | "Sustainably manage my resources and keep trading at fair prices."
+  AGT_06 [g69.9 f73]: prod=invest(rice) | ask 1 water@1.9 | stakes=0.7 | "Invest in rice to secure food and build up labor for future corn harvests, while also selling water at a fair price to maximize profit."
+  AGT_07 [g1.2 f59]: prod=plant(rice) | bid 1 labor@2.2 | stakes=0.5 | "I'll plant rice to ensure a steady food supply, and offer a fair price for labor to help others in need."
+  AGT_08 [g9.2 f100]: prod=plant(rice) | bid 5 water@1.8 | stakes=0.5 | "Secure more food and take a stable position in the water market"
+  AGT_09 [g71.9 f102]: prod=invest(wheat) | ask 30 wheat@4.2 | stakes=0.5 | "Invest in wheat, then sell it at a slightly higher price to maximize profit."
+  AGT_10 [g76.6 f88]: prod=plant(rice) | bid 5 water@1.8 | stakes=0.75 | "I'm planting rice to maintain a sustainable food supply while trading water at a fair price."
+  AGT_11 [g-1.8 f68]: prod=plant(rice) | ask 10 wheat@4.0 | stakes=0.4 | "I'll plant a new rice crop to increase food security while selling wheat at a fair price to maintain my buffer and some gold."
+  AGT_12 [g1.5 f113]: prod=invest(rice) | ask 2 labor@2.4 | stakes=0.7 | "Invest in my rice plot and sell labor at a slightly discounted price to make a quick profit."
+  AGT_13 [g0.1 f88]: prod=invest(rice) | ask 1 labor@2.6 | stakes=0.5 | "Invest in the healthy rice plot to secure a stable food source and make a fair trade with my labor."
+  AGT_14 [g0.9 f74]: prod=plant(wheat) | bid 10 labor@2.2 | stakes=0.8 | "I'm a SURVIVOR, so I'll plant a new crop of wheat to ensure food security, and then I'll try to buy some labor at a good price."
+  AGT_15 [g13.2 f84]: prod=invest(rice) | no order | stakes=0.7 | "Invest in my rice plot to ensure a healthy harvest, and offer my water at a fair price to maintain a stable trade."
+  AGT_16 [g-3.8 f45]: prod=plant(rice) | ask 10 wheat@4.5 | stakes=0.7 | "I'm broke, so I need to secure some gold by selling wheat and buying rice to plant"
+  AGT_17 [g0.4 f87]: prod=plant(wheat) | bid 10 wheat@4.1 | stakes=0.2 | "I'm not too concerned about making a profit on wheat, but I need to secure my food supply and keep trading."
+  AGT_18 [g33.3 f55]: prod=invest(rice) | ask 5 wheat@4.2 | stakes=0.8 | "Invest in rice and sell wheat to make room for more valuable trades"
+  AGT_19 [g2.8 f63]: prod=expand_water() | bid 5 water@1.92 | stakes=0.2 | "I need to secure my water supply before investing in new plots, and sell some water to make some gold to pay for the expansion."
+  AGT_20 [g32.3 f75]: prod=invest(corn) | ask 10 water@1.8 | stakes=0.5 | "Invest in corn to maximize profit and protect my labor bank, then sell water at a good price to keep cash flowing"
+    TRADE: AGT_08 buys 4 water from AGT_20 @1.8
+    · AGT_01 [g17.3 f105 labor38]: spoiled 1, plotUpkeep 1L/1g
+    · AGT_02 [g22.4 f107 labor65]: plotUpkeep 1L/1g
+    · AGT_03 [g154.4 f83 labor69]: plotUpkeep 1L/1g
+    · AGT_04 [g50.1 f91 labor16]: plotUpkeep 1L/1g
+    · AGT_06 [g68.9 f68 labor67]: plotUpkeep 1L/1g
+    · AGT_07 [g0.2 f54 labor79]: spoiled 1, plotUpkeep 1L/1g
+    · AGT_08 [g1.0 f95 labor73]: spoiled 1, plotUpkeep 1L/1g
+    · AGT_09 [g70.9 f101 labor37]: spoiled 1, plotUpkeep 1L/1g, underyield 1
+    · AGT_10 [g74.6 f83 labor65]: plotUpkeep 2L/2g
+    · AGT_12 [g0.5 f108 labor38]: spoiled 1, plotUpkeep 1L/1g
+    · AGT_13 [g0.1 f93 labor61]: spoiled 1
+    · AGT_14 [g0.9 f69 labor80]: spoiled 1
+    · AGT_15 [g12.2 f79 labor77]: spoiled 1, plotUpkeep 1L/1g
+    · AGT_18 [g32.3 f65 labor61]: plotUpkeep 1L/1g
+    · AGT_19 [g1.8 f58 labor79]: plotUpkeep 1L/1g
+    · AGT_20 [g38.5 f85 labor49]: spoiled 1, plotUpkeep 1L/1g
+
+===== CYCLE 30 | MARKET: wheat 4.06 | rice 7.04 | corn 5.5 | water 1.86 | labor 2.57 =====
+  AGT_01 [g17.3 f104]: prod=invest(corn) | ask 20 wheat@4.2 | stakes=0.8 | "I'm investing in the corn plot to speed up its growth and then selling wheat above market to maximize profits."
+  AGT_02 [g22.4 f107]: prod=invest(wheat) | bid 100 wheat@4.0 | stakes=0.6 | "Invest in wheat to secure more food and then post a bid for wheat at a fair price to help my allies and ensure a smooth trade"
+  AGT_03 [g154.4 f83]: prod=invest(rice) | bid 5 water@1.8 | stakes=0.2 | "Invest in the safe rice crop and secure water at a good price"
+  AGT_04 [g50.1 f91]: prod=invest(rice) | no order | stakes=0.5 | "Invest in my rice plot and sell my labor to maximize gold gain."
+  AGT_05 [g-1.1 f88]: prod=invest(wheat) | bid 50 wheat@4.0 | stakes=0.8 | "Invest in my wheat plot and maintain a stable wheat supply."
+  AGT_06 [g68.9 f68]: prod=invest(rice) | bid 2 water@1.8 | stakes=0.5 | "Invest in my rice plot and sell water to profit, securing my gold for future growth"
+  AGT_07 [g0.2 f54]: prod=invest(rice) | bid 10 rice@7.2 | stakes=0.5 | "Invest in my rice plot and sell at a fair price to maintain my stockpile and secure my food supply."
+  AGT_08 [g1.0 f95]: prod=invest(rice) | ask 5 labor@2.5 | stakes=0.7 | "Invest in rice to ensure a stable food supply, and sell labor to maintain a comfortable labor bank level."
+  AGT_09 [g70.9 f100]: prod=plant(rice) | ask 40 wheat@4.2 | stakes=0.9 | "I'm planting rice to secure food and making a decent profit on wheat"
+  AGT_10 [g74.6 f83]: prod=invest(rice) | bid 1 water@1.7 | stakes=0.5 | "Invest in the healthy rice plot to get closer to harvesting and maintain my food supply while looking to buy water at a reasonable price."
+  AGT_11 [g-1.8 f63]: prod=invest(rice) | no order | stakes=0.5 | "Invest in rice plot and try to sell rice at fair price to maintain buffer"
+  AGT_12 [g0.5 f107]: prod=invest(rice) | ask 20 wheat@4.0 | stakes=0.8 | "I'm selling wheat at a good price and investing in rice to meet the plot's water needs."
+  AGT_13 [g0.1 f93]: prod=plant(rice) | bid 10 water@1.85 | stakes=0.8 | "I'm investing in a new rice plot and trying to get a good price for water to avoid the cost of expanding the water cap."
+  AGT_14 [g0.9 f69]: prod=invest(wheat) | ask 50 wheat@4.5 | stakes=0.5 | "Invest in the current wheat plot and list some wheat for sale at a slightly higher price."
+  AGT_15 [g12.2 f78]: prod=invest(rice) | bid 1 water@1.9 | stakes=0.6 | "Invest in the ailing rice plot and secure a water trade to avoid wasting water."
+  AGT_16 [g-3.8 f40]: prod=invest(rice) | bid 10 corn@5.2 | stakes=0.5 | "Invest in rice to secure food and then try to sell corn at a slightly lower price to make a profit."
+  AGT_17 [g0.4 f82]: prod=invest(wheat) | bid 5 labor@2.5 | stakes=0.5 | "Invest in wheat to meet its water and labor needs, and sell labor at a good price to keep trading"
+  AGT_18 [g32.3 f65]: prod=plant(wheat) | no order | stakes=0.5 | "Secure some food for the future, and try to lock in a good price for rice before it goes any higher."
+  AGT_19 [g1.8 f58]: prod=invest(rice) | bid 5 water@1.9 | stakes=0.5 | "Invest in the existing rice plot and secure some water for trading."
+  AGT_20 [g38.5 f84]: prod=plant(corn) | ask 1 water@1.85 | stakes=0.5 | "Secure food and corner the water market to ensure I can keep up with my profit-driven lifestyle"
+    TRADE: AGT_02 buys 5 wheat from AGT_08 @4.05
+    TRADE: AGT_15 buys 1 water from AGT_05 @1.9
+    TRADE: AGT_08 buys 1 water from AGT_04 @1.8
+    TRADE: AGT_03 buys 1 water from AGT_20 @1.9
+    · AGT_01 [g16.3 f114 labor28]: spoiled 1, plotUpkeep 1L/1g
+    · AGT_02 [g1.1 f116 labor62]: plotUpkeep 1L/1g
+    · AGT_03 [g151.5 f86 labor74]: plotUpkeep 1L/1g, underyield 1
+    · AGT_04 [g50.9 f105 labor14]: plotUpkeep 1L/1g
+    · AGT_06 [g67.9 f85 labor63]: plotUpkeep 1L/1g
+    · AGT_08 [g18.5 f104 labor66]: plotUpkeep 1L/1g
+    · AGT_09 [g69.9 f95 labor45]: spoiled 1, plotUpkeep 1L/1g
+    · AGT_10 [g72.6 f78 labor60]: plotUpkeep 2L/2g
+    · AGT_12 [g0.5 f102 labor44]: spoiled 1
+    · AGT_14 [g0.9 f66 labor72]: underyield 1
+    · AGT_15 [g9.3 f87 labor79]: spoiled 1, plotUpkeep 1L/1g
+    · AGT_18 [g31.3 f60 labor68]: plotUpkeep 1L/1g
+    · AGT_19 [g0.8 f53 labor79]: plotUpkeep 1L/1g
+    · AGT_20 [g39.4 f79 labor54]: spoiled 1, plotUpkeep 1L/1g
+
+========== FINAL STATE ==========
+  AGT_01: ALIVE | gold 16.3 | food 114 | labor 28 | starv 0
+  AGT_02: ALIVE | gold 1.1 | food 116 | labor 62 | starv 0
+  AGT_03: ALIVE | gold 151.5 | food 86 | labor 74 | starv 0
+  AGT_04: ALIVE | gold 50.88 | food 105 | labor 14 | starv 0
+  AGT_05: ALIVE | gold 0.85 | food 87 | labor 70 | starv 0
+  AGT_06: ALIVE | gold 67.95 | food 85 | labor 63 | starv 0
+  AGT_07: ALIVE | gold 0.2 | food 66 | labor 68 | starv 0
+  AGT_08: ALIVE | gold 18.48 | food 104 | labor 66 | starv 0
+  AGT_09: ALIVE | gold 69.95 | food 95 | labor 45 | starv 0
+  AGT_10: ALIVE | gold 72.62 | food 78 | labor 60 | starv 0
+  AGT_11: ALIVE | gold -1.8 | food 58 | labor 68 | starv 0
+  AGT_12: ALIVE | gold 0.54 | food 102 | labor 44 | starv 0
+  AGT_13: ALIVE | gold 0.08 | food 88 | labor 69 | starv 0
+  AGT_14: ALIVE | gold 0.9 | food 66 | labor 72 | starv 0
+  AGT_15: ALIVE | gold 9.31 | food 87 | labor 79 | starv 0
+  AGT_16: ALIVE | gold -3.8 | food 35 | labor 45 | starv 0
+  AGT_17: ALIVE | gold 0.44 | food 83 | labor 72 | starv 0
+  AGT_18: ALIVE | gold 31.35 | food 60 | labor 68 | starv 0
+  AGT_19: ALIVE | gold 0.75 | food 53 | labor 79 | starv 0
+  AGT_20: ALIVE | gold 39.4 | food 79 | labor 54 | starv 0

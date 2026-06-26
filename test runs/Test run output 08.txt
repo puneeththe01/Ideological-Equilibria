@@ -1,0 +1,1096 @@
+===== CYCLE 1 | MARKET: wheat 4.0 | rice 8.0 | corn 6.0 | water 2.0 | labor 3.0 | kernels 8.4 =====
+  AGT_01 [g50 f65.0 ΔD0.15]: prod=plant(rice) | bid 10 corn@5.8 | "I'll plant some rice to secure food and try to buy corn at a good price, then deposit my gold to earn interest."
+  AGT_02 [g61.0 f60.0 ΔD0.23]: prod=plant(wheat) | ask 10 wheat@4.0 | UNIT:sell_to_unit(5) | "Invest in a new wheat crop and secure a steady food supply while also selling excess corn to the government unit and depositing gold to earn interest."
+  AGT_03 [g50 f65.0 ΔD0.07]: prod=plant(wheat) | bid 4 water@2.0 | "Securing food and a stable water supply is my top priority, so I'm planting wheat and buying water to ensure I can invest in my plots without running out of resources."
+  AGT_04 [g50 f65.0 ΔD0.03]: prod=plant(corn) | bid 10 corn@5.5 | "Investing in corn and trying to secure a good price for it, while also keeping an eye on my finances."
+  AGT_05 [g50 f65.0 ΔD0.07]: prod=plant(wheat) | ask 10 corn@5.5 | "Plant wheat for a steady harvest and price corn slightly lower to attract buyers."
+  AGT_06 [g70.0 f65.0 ΔD0.29]: prod=plant(wheat) | ask 20 wheat@4.5 | "Time to get rich, starting with a wheat order and a loan to fuel my ambitions."
+  AGT_07 [g50 f65.0 ΔD0.14]: prod=plant(rice) | ask 5 water@2.0 | "Secure food and maintain resources for the community's benefit"
+  AGT_08 [g45.0 f65.0 ΔD0.25]: prod=plant(corn) | ask 5 corn@6.0 | "I'm planting corn to harvest soon, and depositing some gold to earn interest, while keeping an eye on the market for a potential sale."
+  AGT_09 [g30.0 f65.0 ΔD0.12]: prod=plant(corn) | ask 10 corn@6.5 | "Invest in a high-yield corn harvest, then bank some gold and secure a potential future harvest"
+  AGT_10 [g50 f65.0 ΔD0.11]: prod=plant(rice) | bid 10 corn@5.5 | "Secure food for the future while testing the corn market price."
+  AGT_11 [g50 f65.0 ΔD0.09]: prod=plant(corn) | ask 10 corn@6.0 | "I need to secure a food source before investing in other areas."
+  AGT_12 [g0.0 f65.0 ΔD0.04]: prod=plant(wheat) | ask 5 corn@7.5 | "I'll plant wheat to secure food and post a high corn price to sell above market"
+  AGT_13 [g40.0 f65.0 ΔD0.06]: prod=plant(corn) | ask 10 corn@5.5 | "Invest in a corn crop and price it fairly, while also securing a little extra gold for future endeavors."
+  AGT_14 [g0.0 f65.0 ΔD0.26]: prod=plant(wheat) | bid 20 water@2.0 | "Invest in a wheat crop and secure some water while I've got some gold to spare, then stash it in the bank for now."
+  AGT_15 [g0.0 f65.0 ΔD0.28]: prod=plant(rice) | ask 5 corn@6.0 | "Secure food and price corn fairly, then deposit gold to earn interest."
+  AGT_16 [g92.0 f55.0 ΔD0.12]: prod=plant(rice) | ask 10 corn@7.0 | UNIT:sell_to_unit(10) | "Secure food, then try to sell corn at a profit and deposit some gold."
+  AGT_17 [g50 f65.0 ΔD0.09]: prod=plant(rice) | bid 10 rice@7.0 | "Plant a rice crop and buy low on rice to secure my food buffer."
+  AGT_18 [g50 f65.0 ΔD0.11]: prod=plant(rice) | ask 10 corn@6.5 | "I'm planting rice for a safe harvest and trying to sell corn at a slightly higher price to make a profit, while keeping my gold safe in the bank."
+  AGT_19 [g0.0 f65.0 ΔD0.11]: prod=plant(corn) | bid 10 corn@5.0 | UNIT:sell_to_unit(0) | "Secure food and bank for a stable future."
+  AGT_20 [g3.8 f72.5 ΔD0.47]: prod=plant(corn) | no order | UNIT:buy_from_unit(10) | "Piling up gold by exploiting the market and depleting resources."
+    TRADE: AGT_04 buys 8 corn from AGT_05 @5.5
+    TRADE: AGT_10 buys 2 corn from AGT_05 @6.3
+    TRADE: AGT_10 buys 6 corn from AGT_13 @5.5
+    TRADE: AGT_01 buys 5 corn from AGT_08 @6.3
+    TRADE: AGT_01 buys 2 corn from AGT_11 @6.25
+    TRADE: AGT_03 buys 1 water from AGT_07 @1.92
+    · AGT_01: spoiled 1
+    · AGT_02: spoiled 1
+    · AGT_03: spoiled 1
+    · AGT_04: spoiled 1
+    · AGT_05: spoiled 1
+    · AGT_06: spoiled 1
+    · AGT_07: spoiled 1
+    · AGT_08: spoiled 1
+    · AGT_09: spoiled 1
+    · AGT_10: spoiled 1
+    · AGT_11: spoiled 1
+    · AGT_12: spoiled 1
+    · AGT_13: spoiled 1
+    · AGT_14: spoiled 1
+    · AGT_15: spoiled 1
+    · AGT_16: spoiled 1
+    · AGT_17: spoiled 1
+    · AGT_18: spoiled 1
+    · AGT_19: spoiled 1
+    · AGT_20: spoiled 1
+    $ UNIT: net money +16.8 (injected 63.0, absorbed 46.2) | govt processing 1.5 | stock 50 kernels
+    $ BANK: loaned 20.0 | interest collected 0.4 (SINK) | deposit interest 2.45 (faucet) | land 30 free @ 30.0g | bank-owned 0
+    $$ MONEY SUPPLY (all agent gold+deposits): 1022.9
+    ~ PRICE MOVES: wheat 4.0v3.6(P-1.0) | rice 8.0^8.8(P+1.0) | corn 6.0v5.725(P-0.3) | water 2.0^2.088(P+0.66)
+
+===== CYCLE 2 | MARKET: wheat 3.6 | rice 8.8 | corn 5.72 | water 2.09 | labor 3.0 | kernels 8.4 =====
+  AGT_01 [g5.0 f66.0 ΔD0.26]: prod=invest(rice) | bid 10 corn@6.1 | "I'll invest in rice and try to corner the corn market, while securing my food supply and earning some interest."
+  AGT_02 [g60.0 f55.0 ΔD0.34]: prod=invest(wheat) | ask 5 wheat@3.2 | "Invest in the wheat plot and sell it at a fair price to secure my food supply."
+  AGT_03 [g47.1 f59.0 ΔD0.11]: prod=invest(wheat) | bid 10 water@1.9 | "Invest in wheat and secure a water bid, keeping my resources stable."
+  AGT_04 [g44.1 f57.0 ΔD0.26]: prod=invest(corn) | bid 10 corn@5.0 | UNIT:sell_to_unit(10) | "Invest in the corn plot, try to sell corn at a reasonable price, sell corn to the unit to make some gold, and deposit some gold to earn interest."
+  AGT_05 [g85.6 f50.0 ΔD0.1]: prod=invest(wheat) | bid 10 corn@6.0 | "Invest in wheat, price corn fairly, save some gold"
+  AGT_06 [g40.7 f49.0 ΔD0.4]: prod=invest(wheat) | ask 20 wheat@4.0 | UNIT:sell_to_unit(10) | "Invest in wheat, sell at a low price, and secure some gold."
+  AGT_07 [g40.9 f59.0 ΔD0.55]: prod=invest(rice) | ask 10 water@1.8 | "I'm investing in the rice to ensure a steady food supply and depositing some gold to earn interest."
+  AGT_08 [g75.5 f55.0 ΔD0.31]: prod=invest(corn) | bid 10 corn@5.5 | UNIT:sell_to_unit(0) | "Invest in corn to increase food supply and then try to sell it at a reasonable price."
+  AGT_09 [g29.0 f59.0 ΔD0.21]: prod=invest(corn) | ask 10 corn@6.0 | "Invest in corn, try to flip it for a profit, and get ready to secure food if needed."
+  AGT_10 [g43.5 f57.0 ΔD0.26]: prod=plant(wheat) | bid 10 corn@5.5 | UNIT:sell_to_unit(10) | "I'll secure food with a new wheat plot, sell some corn to the unit at a fair price, deposit my gold, and keep an eye on my food reserves."
+  AGT_11 [g51.5 f57.0 ΔD0.16]: prod=invest(corn) | bid 10 corn@6.0 | "Invest in my corn crop and try to sell it at a fair price, then park some gold in the bank."
+  AGT_12 [g20.0 f59.0 ΔD0.17]: prod=invest(wheat) | ask 10 corn@5.8 | "Invest in wheat to harvest soon and buy corn at a better price, then borrow gold to cover the costs."
+  AGT_13 [g72.0 f54.0 ΔD0.31]: prod=invest(corn) | ask 100 corn@5.7 | "Invest in corn to meet growing demand and make a profit, while also securing my food supply."
+    ~~ AGT_14 RATIONALISED: capitalism 0.4->0.51, survivalism 0.8->0.6, sustainability -0.8->-0.62
+  AGT_14 [g60.1 f49.0 ΔD0.65]: prod=invest(wheat) | ask 20 wheat@4.5 | UNIT:sell_to_unit(10) | "Secure food and expand resources with a short-term loan"
+    ~~ AGT_15 RATIONALISED: capitalism -0.9->-0.72, survivalism 0.5->0.39, sustainability 0.7->0.45
+  AGT_15 [g0.0 f59.0 ΔD0.79]: prod=invest(rice) | ask 10 rice@8.5 | "Invest in the rice plot to secure food, and offer rice at a fair price to support my allies and stay in balance with the market."
+  AGT_16 [g81.0 f50.0 ΔD0.19]: prod=invest(rice) | bid 10 rice@9.0 | "Investing in rice to secure food supply and earning interest on my gold reserves."
+  AGT_17 [g73.1 f49.0 ΔD0.17]: prod=expand_water() | bid 10 corn@5.4 | UNIT:sell_to_unit(10) | "I'm conserving water and selling corn at a fair price to ensure a steady income while I wait for my rice to mature."
+  AGT_18 [g0.0 f66.5 ΔD0.2]: prod=invest(rice) | bid 10 corn@4.5 | UNIT:buy_from_unit(5) | "Secure a safe food source while accumulating gold and labor."
+  AGT_19 [g40.1 f49.0 ΔD0.22]: prod=invest(corn) | ask 10 corn@6.0 | UNIT:sell_to_unit(10) | "Invest in my corn plot to ensure a good harvest and post a reasonable price for corn on the market, then sell to the government unit to get rid of the excess and deposit some gold in the bank to earn "
+  AGT_20 [g42.9 f56.5 ΔD0.46]: prod=invest(corn) | ask 10 corn@5.8 | UNIT:sell_to_unit(10) | "Invest in corn, sell excess to the unit, and take out a loan to cover labor costs for the coming harvest."
+    TRADE: AGT_16 buys 9 rice from AGT_15 @8.5
+    TRADE: AGT_17 buys 1 rice from AGT_15 @7.5
+    TRADE: AGT_05 buys 5 corn from AGT_15 @5.8
+    TRADE: AGT_05 buys 5 corn from AGT_09 @5.9
+    TRADE: AGT_11 buys 5 corn from AGT_09 @5.8
+    TRADE: AGT_11 buys 3 corn from AGT_19 @5.5
+    TRADE: AGT_08 buys 10 corn from AGT_13 @5.8
+    TRADE: AGT_10 buys 7 corn from AGT_13 @5.65
+    TRADE: AGT_11 buys 1 corn from AGT_13 @4.8
+    TRADE: AGT_17 buys 10 corn from AGT_12 @5.9
+    TRADE: AGT_04 buys 7 corn from AGT_20 @5.5
+    · AGT_01: spoiled 1
+    · AGT_02: underyield 1
+    · AGT_03: spoiled 1
+    · AGT_04: spoiled 1
+    · AGT_06: spoiled 1
+    · AGT_07: spoiled 1
+    · AGT_09: spoiled 1
+    · AGT_10: spoiled 1
+    · AGT_11: spoiled 1
+    · AGT_12: spoiled 1
+    · AGT_13: underyield 1
+    · AGT_14: spoiled 1
+    · AGT_15: spoiled 1
+    · AGT_17: spoiled 1
+    · AGT_18: spoiled 1
+    · AGT_19: spoiled 1
+    · AGT_20: spoiled 1, underyield 1
+    $ UNIT: net money +234.29 (injected 280.49, absorbed 46.2) | govt processing 7.0 | stock 115 kernels
+    $ BANK: loaned 40.0 | interest collected 1.2 (SINK) | deposit interest 3.7 (faucet) | land 30 free @ 30.0g | bank-owned 0
+    $$ MONEY SUPPLY (all agent gold+deposits): 1267.6
+    ~ PRICE MOVES: wheat 3.6v3.24(P-1.0) | rice 8.8v8.6(P+0.0) | corn 5.725v5.573(P-0.27) | water 2.088^2.297(P+1.0)
+
+===== CYCLE 3 | MARKET: wheat 3.24 | rice 8.6 | corn 5.57 | water 2.3 | labor 3.0 | kernels 8.4 =====
+  AGT_01 [g4.0 f80.0 ΔD0.36]: prod=plant(rice) | ask 10 corn@6.5 | "Secure food with a rice crop and adjust my corn price to reflect the market."
+  AGT_02 [g49.0 f52.0 ΔD0.43]: prod=plant(wheat) | bid 10 kernels@8.0 | "I'm buying more kernels at a lower price to ensure a stable food supply."
+  AGT_03 [g36.1 f59.0 ΔD0.31]: prod=plant(wheat) | ask 10 wheat@3.0 | "planting wheat to ensure food supply while I wait for harvests to mature"
+  AGT_04 [g3.6 f71.0 ΔD0.31]: prod=plant(rice) | bid 20 corn@6.0 | "Time to stock up on food, and take advantage of the current corn price to sell at a slight premium."
+  AGT_05 [g26.1 f62.0 ΔD0.13]: prod=plant(rice) | bid 5 corn@5.0 | "Plant a new rice plot, buy some more corn at a fair price, and keep my finances stable."
+    ~~ AGT_06 RATIONALISED: capitalism 0.9->0.73, survivalism 0.2->0.11, sustainability -0.7->-0.5
+  AGT_06 [g39.3 f51.0 ΔD0.73]: prod=plant(rice) | ask 10 wheat@3.2 | "Time to secure food and then start making some gold"
+    ~~ AGT_07 RATIONALISED: capitalism -0.8->-0.61, survivalism 0.4->0.42, sustainability 0.8->0.69
+  AGT_07 [g39.9 f54.0 ΔD0.71]: prod=invest(rice) | bid 10 water@2.1 | "Invest in the rice plot to ensure food security and then try to secure a better price for water, while keeping an eye on the market prices."
+  AGT_08 [g6.5 f72.0 ΔD0.52]: prod=plant(wheat) | ask 10 corn@5.9 | "Protect my food buffer and sell corn at a reasonable price while depositing more gold to the bank."
+  AGT_09 [g107.0 f39.0 ΔD0.26]: prod=invest(corn) | ask 5 corn@5.9 | UNIT:sell_to_unit(5) | "I'll invest in the corn, try to sell it for a good price, and sell some to the unit to make some gold."
+  AGT_10 [g1.9 f58.0 ΔD0.38]: prod=invest(wheat) | ask 10 corn@5.5 | "Secure food supply by investing in wheat and adjust my corn pricing to reflect market trends."
+  AGT_11 [g0.0 f69.0 ΔD0.16]: prod=plant(corn) | bid 10 corn@5.8 | "Secure a corn harvest while maintaining a conservative corn price and some savings in the bank."
+  AGT_12 [g0.6 f51.0 ΔD0.22]: prod=plant(corn) | ask 10 corn@5.5 | "Time to secure food and make some profit from my corn harvest."
+  AGT_13 [g164.4 f36.0 ΔD0.31]: prod=plant(rice) | ask 20 corn@5.0 | "I'm playing it safe by planting rice, but I'll also try to secure a decent price for my corn and stash some gold away for a rainy day."
+  AGT_14 [g48.7 f53.0 ΔD0.3]: prod=plant(rice) | ask 10 wheat@4.0 | "Time to hedge my bets and diversify my food sources; planting rice will keep me afloat while I figure out the market."
+  AGT_15 [g113.0 f39.0 ΔD0.39]: prod=invest(rice) | ask 10 rice@8.5 | "I'm putting my faith in the group, and taking calculated risks to ensure our collective well-being."
+  AGT_16 [g0.0 f75.0 ΔD0.26]: prod=plant(rice) | ask 100 rice@8.5 | "Invest in rice harvest and top up my deposit."
+  AGT_17 [g0.6 f55.0 ΔD0.55]: prod=invest(rice) | bid 1 rice@7.0 | "Invest in rice to ensure steady food supply and price around current market value"
+  AGT_18 [g3.8 f79.5 ΔD0.38]: prod=plant(rice) | bid 20 rice@7.0 | UNIT:sell_to_unit(2) | "Time to stock up on rice, secure my bank account, and get some quick gold from the Processing Unit."
+  AGT_19 [g57.3 f38.0 ΔD0.41]: prod=invest(corn) | ask 5 corn@5.5 | UNIT:sell_to_unit(3) | "Maintain a steady food supply while investing in a new corn crop and selling to the government unit."
+    ~~ AGT_20 RATIONALISED: capitalism 0.8->0.68, survivalism -0.4->-0.35, sustainability -0.9->-0.67
+  AGT_20 [g80.4 f48.5 ΔD0.76]: prod=plant(corn) | ask 10 corn@5.5 | "Plant corn to secure future food and continue exploiting market prices."
+    TRADE: AGT_05 buys 4 corn from AGT_10 @5.75
+    · AGT_01: spoiled 1
+    · AGT_04: spoiled 1
+    · AGT_08: spoiled 1
+    · AGT_10: spoiled 1
+    · AGT_11: spoiled 1
+    $ UNIT: net money +39.0 (injected 39.0, absorbed 0.0) | govt processing 1.0 | stock 125 kernels
+    $ BANK: loaned 0.0 | interest collected 1.2 (SINK) | deposit interest 5.25 (faucet) | land 30 free @ 30.0g | bank-owned 0
+    $$ MONEY SUPPLY (all agent gold+deposits): 1295.7
+    ~ PRICE MOVES: wheat 3.24v2.916(P-1.0) | rice 8.6v8.016(P-0.68) | corn 5.573v5.513(P-0.26) | water 2.297^2.527(P+1.0) | kernels 8.4^9.24(P+1.0)
+
+===== CYCLE 4 | MARKET: wheat 2.92 | rice 8.02 | corn 5.51 | water 2.53 | labor 3.0 | kernels 9.24 =====
+  AGT_01 [g76.3 f56.0 ΔD0.54]: prod=invest(rice) | bid 10 corn@6.5 | UNIT:sell_to_unit(19) | "Secure food for the next cycle and sell corn to the processing unit to maximize profit."
+  AGT_02 [g48.0 f47.0 ΔD0.51]: prod=invest(wheat) | ask 5 wheat@2.8 | "Invest in the current wheat plot and offer wheat for sale to secure a decent price."
+  AGT_03 [g25.1 f54.0 ΔD0.45]: prod=invest(wheat) | ask 10 wheat@3.0 | "Invest in wheat, list it on market, and deposit gold to earn interest."
+  AGT_04 [g2.6 f65.0 ΔD0.34]: prod=invest(rice) | bid 10 corn@5.7 | "Invest in my rice plot and buy corn to sell at a slightly higher price, while keeping my options open for further investment."
+  AGT_05 [g0.1 f61.0 ΔD0.42]: prod=invest(rice) | bid 10 corn@5.5 | "Invest in the rice plot and try to secure a good price for my corn, then deposit some gold to earn interest."
+  AGT_06 [g37.9 f46.0 ΔD0.17]: prod=invest(rice) | bid 10 rice@9.0 | UNIT:sell_to_unit(0) | "I'm leaning toward sustainability, but I still need to make a profit."
+  AGT_07 [g28.9 f68.0 ΔD0.19]: prod=plant(wheat) | ask 10 wheat@3.0 | "Investing in a new wheat crop to ensure food security, while also depositing excess gold to earn interest."
+  AGT_08 [g0.5 f66.0 ΔD0.51]: prod=invest(wheat) | bid 10 corn@6.0 | UNIT:buy_from_unit(10) | "Invest in wheat and try to secure some corn at a fair price, buy kernels from the unit, and deposit gold into the bank to earn interest."
+  AGT_09 [g86.0 f45.0 ΔD0.35]: prod=plant(corn) | ask 10 corn@5.9 | "Time to plant some corn and secure a good price for it, while also making sure my bank account is in order."
+  AGT_10 [g23.9 f49.0 ΔD0.42]: prod=invest(wheat) | bid 5 corn@5.5 | "Invest in the wheat plot to help it recover and also prepare for a potential harvest, while attempting to secure a good price for the corn and depositing some gold to earn interest."
+  AGT_11 [g0.0 f63.0 ΔD0.23]: prod=invest(corn) | bid 5 corn@5.3 | "Invest in the corn plot and sell some at a fair price to make some gold, then deposit it to earn interest."
+  AGT_12 [g0.2 f46.0 ΔD0.5]: prod=invest(corn) | ask 10 corn@6.5 | "Invest in corn to secure food and capitalize on the market"
+  AGT_13 [g163.4 f31.0 ΔD0.56]: prod=invest(rice) | ask 10 corn@5.0 | UNIT:sell_to_unit(0) | "Invest in my rice crop and prepare to harvest, while keeping my corn sales price competitive. I'll also make a small deposit to earn some interest."
+  AGT_14 [g47.3 f48.0 ΔD0.52]: prod=invest(rice) | ask 29 wheat@3.0 | "Invest in the rice plot, sell wheat surplus, and keep my gold safe."
+    ~~ AGT_15 RATIONALISED: capitalism -0.72->-0.45, survivalism 0.39->0.41, sustainability 0.45->0.44
+  AGT_15 [g142.9 f41.0 ΔD0.71]: prod=plant(rice) | bid 10 rice@7.0 | UNIT:sell_to_unit(10) | "I'm conserving water, planting a rice crop, selling corn to the unit, and depositing gold to earn interest, while also trying to secure a fair price for my rice."
+  AGT_16 [g0.0 f70.0 ΔD0.28]: prod=invest(rice) | bid 100 rice@8.0 | UNIT:buy_from_unit(25) | "I'll secure food by investing in the rice plot, buying kernels from the unit, and buying a plot of land to expand my operations."
+  AGT_17 [g0.6 f64.0 ΔD0.6]: prod=plant(rice) | ask 20 rice@8.0 | "Securing food first and then try to sell rice at a fair price."
+  AGT_18 [g45.2 f63.5 ΔD0.47]: prod=invest(rice) | bid 10 corn@5.0 | UNIT:sell_to_unit(11) | "Invest in rice, sell corn low, and borrow gold to maximize profit"
+  AGT_19 [g84.3 f36.0 ΔD0.45]: prod=plant(rice) | ask 10 corn@5.0 | UNIT:sell_to_unit(7) | "Secure food with rice, sell corn at a fair price, and explore government services"
+  AGT_20 [g79.4 f43.5 ΔD0.32]: prod=invest(corn) | ask 15 corn@5.2 | "Invest in corn to grow more food and then sell at a slightly lower price to attract buyers."
+    TRADE: AGT_18 buys 5 rice from AGT_17 @8.5
+    TRADE: AGT_15 buys 10 rice from AGT_17 @8.1
+    TRADE: AGT_01 buys 3 corn from AGT_12 @5.15
+    TRADE: AGT_10 buys 4 corn from AGT_09 @5.3
+    TRADE: AGT_01 buys 4 corn from AGT_16 @5.3
+    TRADE: AGT_01 buys 3 corn from AGT_09 @5.7
+    · AGT_03: underyield 1
+    · AGT_04: spoiled 1
+    · AGT_08: spoiled 1
+    · AGT_11: spoiled 1
+    $ UNIT: net money +173.65 (injected 173.65, absorbed 0.0) | govt processing 4.5 | stock 170 kernels
+    $ BANK: loaned 0.0 | interest collected 1.2 (SINK) | deposit interest 5.77 (faucet) | land 30 free @ 30.0g | bank-owned 0
+    $$ MONEY SUPPLY (all agent gold+deposits): 1459.9
+    ~ PRICE MOVES: wheat 2.916v2.624(P-1.0) | rice 8.016^8.705(P+0.71) | corn 5.513^5.705(P+0.5)
+
+===== CYCLE 5 | MARKET: wheat 2.62 | rice 8.71 | corn 5.71 | water 2.53 | labor 3.0 | kernels 9.24 =====
+    ~~ AGT_01 RATIONALISED: capitalism 0.8->0.69, survivalism 0.3->0.32, sustainability -0.4->-0.24
+  AGT_01 [g6.6 f61.0 ΔD0.66]: prod=expand_water() | bid 10 kernels@9.2 | "Secure food and wait for opportunities to exploit the market"
+  AGT_02 [g47.0 f50.0 ΔD0.55]: prod=plant(wheat) | ask 20 wheat@2.5 | "Secure food for the village, price wheat fairly to support local farmers"
+    ~~ AGT_03 RATIONALISED: capitalism 0.2->-0.02, survivalism 0.9->0.83, sustainability -0.1->-0.01
+  AGT_03 [g24.1 f52.0 ΔD0.69]: prod=plant(wheat) | ask 5 water@1.7 | "Secure a food supply while keeping an eye on the market."
+  AGT_04 [g1.6 f59.0 ΔD0.33]: prod=expand_water() | ask 10 corn@6.0 | "Time to expand my water capacity and test the corn market, aiming to make a decent profit."
+  AGT_05 [g0.1 f74.0 ΔD0.41]: prod=plant(corn) | bid 10 corn@5.5 | "Securing food for the future while keeping a steady hand in the market."
+  AGT_06 [g36.5 f41.0 ΔD0.32]: prod=invest(rice) | bid 10 rice@9.0 | "Invest in the rice plot, post a bid for rice, and maintain my current bank balance."
+  AGT_07 [g20.9 f58.0 ΔD0.37]: prod=invest(wheat) | ask 20 wheat@2.5 | UNIT:sell_to_unit(5) | "I'm hedging my bets and securing a steady income from my wheat crop while also selling my corn at a decent price."
+  AGT_08 [g0.5 f66.0 ΔD0.53]: prod=plant(corn) | bid 10 corn@5.5 | "Secure a corn crop and adjust my price to match the market, while keeping a small gold reserve."
+  AGT_09 [g123.3 f33.0 ΔD0.39]: prod=invest(corn) | ask 10 corn@5.9 | "Invest in corn to maximize harvest potential while selling at a slight premium."
+    ~~ AGT_10 RATIONALISED: capitalism -0.3->-0.21, survivalism 0.3->0.34, sustainability 0.95->0.65
+  AGT_10 [g0.7 f48.0 ΔD0.86]: prod=invest(rice) | bid 10 corn@5.3 | "Secure food by investing in the rice plot and try to buy more corn at a competitive price."
+  AGT_11 [g0.0 f64.0 ΔD0.24]: prod=plant(corn) | bid 10 corn@6.0 | UNIT:sell_to_unit(0) | "I'll plant a new corn plot and try to sell some corn at a fair price to get more gold."
+  AGT_12 [g15.2 f47.0 ΔD0.5]: prod=plant(corn) | ask 20 corn@5.5 | "Time to secure a corn harvest and keep my food reserves stable"
+  AGT_13 [g162.4 f48.0 ΔD0.51]: prod=plant(rice) | ask 10 corn@5.0 | "Secure food and set up a rice crop to stabilize my food supply while waiting for my corn to grow."
+    ~~ AGT_14 RATIONALISED: capitalism 0.51->0.42, survivalism 0.6->0.58, sustainability -0.62->-0.44
+  AGT_14 [g45.9 f43.0 ΔD0.65]: prod=plant(corn) | bid 10 water@2.5 | "Time to plant corn and try to corner the water market"
+  AGT_15 [g60.9 f46.0 ΔD0.27]: prod=invest(rice) | bid 5 corn@5.9 | "I'm focusing on securing food for now and testing the waters with a slightly higher corn price, but I'm not in a rush to make any big changes."
+  AGT_16 [g0.0 f61.0 ΔD0.43]: prod=expand_water() | ask 10 corn@5.0 | UNIT:buy_from_unit(10) | "Secure food and prepare for the future with some extra gold in the bank"
+    ~~ AGT_17 RATIONALISED: capitalism -0.1->-0.16, survivalism 0.7->0.56, sustainability 0.6->0.37
+  AGT_17 [g124.1 f44.0 ΔD0.91]: prod=invest(rice) | ask 20 rice@7.5 | "Invest in rice to ensure a steady food supply and take advantage of the Processing Unit's kernel sale."
+  AGT_18 [g0.8 f63.5 ΔD0.54]: prod=plant(rice) | ask 10 kernels@9.5 | "I'm playing it safe, planting a new rice plot and selling kernels at a slight discount to attract a buyer."
+    ~~ AGT_19 RATIONALISED: capitalism 0.1->0.06, survivalism 0.6->0.47, sustainability 0.2->0.04
+  AGT_19 [g83.3 f31.0 ΔD0.6]: prod=invest(rice) | ask 10 corn@5.5 | "Invest in rice, try to sell some corn, and keep my bank and facilities stable for now."
+  AGT_20 [g29.4 f38.5 ΔD0.45]: prod=invest(corn) | bid 5 corn@4.5 | UNIT:sell_to_unit(0) | "I need to stabilize my food supply and take advantage of the low corn price to make a profit"
+    TRADE: AGT_06 buys 4 rice from AGT_17 @8.5
+    TRADE: AGT_15 buys 5 corn from AGT_04 @5.65
+    TRADE: AGT_20 buys 4 corn from AGT_12 @6.0
+    TRADE: AGT_07 buys 5 water from AGT_03 @2.45
+    TRADE: AGT_02 buys 5 kernels from AGT_18 @7.5
+    · AGT_04: spoiled 1
+    · AGT_08: spoiled 1
+    · AGT_11: spoiled 1
+    $ UNIT: net money +19.96 (injected 19.96, absorbed 0.0) | govt processing 0.5 | stock 175 kernels
+    $ BANK: loaned 0.0 | interest collected 1.2 (SINK) | deposit interest 6.67 (faucet) | land 30 free @ 30.0g | bank-owned 0
+    $$ MONEY SUPPLY (all agent gold+deposits): 1440.3
+    ~ PRICE MOVES: wheat 2.624v2.362(P-1.0) | rice 8.705v8.316(P-0.33) | corn 5.705^5.899(P+0.25) | water 2.527^2.571(P+0.33) | kernels 9.24v8.37(P+0.0)
+
+===== CYCLE 6 | MARKET: wheat 2.36 | rice 8.32 | corn 5.9 | water 2.57 | labor 3.0 | kernels 8.37 =====
+  AGT_01 [g5.6 f56.0 ΔD0.19]: prod=plant(rice) | ask 3 corn@5.8 | "I'll secure food by planting rice, then try to sell corn at a slightly higher price, and keep my options open for the bank and facility."
+  AGT_02 [g8.5 f52.5 ΔD0.58]: prod=invest(wheat) | ask 5 kernels@7.5 | "Invest in wheat and sell kernels at a fair price to secure my food buffer."
+  AGT_03 [g15.3 f47.0 ΔD0.19]: prod=invest(wheat) | ask 10 water@2.0 | "I'm prioritizing food security while keeping a cautious eye on the market."
+  AGT_04 [g0.0 f49.0 ΔD0.33]: prod=expand_water() | bid 10 corn@6.0 | "Investing in water to secure food production and buying corn at a slightly lower price to increase chances of a successful trade"
+  AGT_05 [g0.1 f69.0 ΔD0.41]: prod=invest(corn) | bid 10 corn@5.5 | "Invest in corn and try to secure a good price for my corn harvest, then deposit my gold to earn interest."
+  AGT_06 [g0.0 f40.0 ΔD0.38]: prod=invest(rice) | bid 10 rice@9.0 | "Secure food for the short-term, buy low, and grow rice to hedge against price fluctuations."
+  AGT_07 [g7.6 f60.0 ΔD0.45]: prod=plant(wheat) | ask 20 rice@8.5 | "Time to plant some wheat and sell some rice to help my neighbors."
+    ~~ AGT_08 RATIONALISED: capitalism 0.1->0.09, survivalism 0.95->0.76, sustainability -0.2->-0.29
+  AGT_08 [g0.5 f61.0 ΔD0.68]: prod=invest(corn) | ask 10 corn@6.0 | "I need to secure my food supply before considering other opportunities."
+  AGT_09 [g122.3 f41.0 ΔD0.48]: prod=plant(corn) | ask 10 corn@5.7 | "I'm planting corn for the big harvest, selling some at a good price, and securing my food supply."
+  AGT_10 [g79.6 f50.0 ΔD0.09]: prod=invest(rice) | ask 10 corn@5.5 | UNIT:sell_to_unit(10) | "I'm prioritizing short-term survival and flexibility over sustainability."
+  AGT_11 [g0.0 f58.0 ΔD0.35]: prod=invest(corn) | ask 5 corn@5.5 | "Invest in my corn plot and sell corn at a fair price to secure my food supply."
+    ~~ AGT_12 RATIONALISED: capitalism 0.7->0.52, survivalism 0.2->0.18, sustainability 0.6->0.37
+  AGT_12 [g37.8 f38.0 ΔD0.88]: prod=invest(corn) | bid 4 corn@6.5 | "Invest in corn to increase food supply and sell it at a slightly lower price to be competitive."
+  AGT_13 [g146.4 f43.0 ΔD0.47]: prod=expand_water() | ask 20 corn@5.2 | "Invest in water expansion to ensure a stable food supply, then adjust corn price to reflect market trends."
+  AGT_14 [g43.5 f38.0 ΔD0.19]: prod=invest(rice) | bid 20 water@2.0 | "Buying water at a low price, investing in rice to maintain food supply, and saving gold for future opportunities."
+  AGT_15 [g1.6 f65.0 ΔD0.33]: prod=plant(rice) | bid 50 rice@8.0 | "I'm taking a chance on buying a plot of land while I have the gold to do so, and also securing a steady food supply by planting rice."
+    ~~ AGT_16 RATIONALISED: capitalism 0.5->0.35, survivalism 0.4->0.27, sustainability -0.1->-0.21
+  AGT_16 [g30.0 f56.0 ΔD0.63]: prod=invest(rice) | ask 10 corn@5.2 | "Invest in the rice plot and try to sell corn at a slightly lower price to make a profit, while also securing a loan to cover potential expenses."
+  AGT_17 [g147.1 f35.0 ΔD0.09]: prod=invest(rice) | ask 10 rice@8.0 | "Invest in my rice crop, price rice competitively, and save some gold to avoid risks"
+  AGT_18 [g18.2 f51.0 ΔD0.57]: prod=plant(corn) | ask 10 rice@9.0 | "Time to plant some corn and secure a profit on rice, while topping up my gold reserves."
+  AGT_19 [g82.3 f41.0 ΔD0.07]: prod=plant(corn) | bid 20 corn@5.5 | UNIT:sell_to_unit(0) | "Securing food for the future while maintaining a moderate risk posture."
+  AGT_20 [g4.4 f37.5 ΔD0.54]: prod=invest(corn) | bid 20 corn@5.0 | "Invest in corn to stabilize food supply and wait for market fluctuations to buy low, sell high."
+    TRADE: AGT_16 buys 3 rice from AGT_17 @8.5
+    TRADE: AGT_19 buys 5 corn from AGT_11 @6.2
+    TRADE: AGT_19 buys 8 corn from AGT_09 @6.1
+    TRADE: AGT_10 buys 10 corn from AGT_08 @6.0
+    TRADE: AGT_07 buys 2 water from AGT_03 @2.55
+    · AGT_08: underyield 1
+    · AGT_11: spoiled 1
+    $ UNIT: net money +28.9 (injected 28.9, absorbed 0.0) | govt processing 0.7 | stock 182 kernels
+    $ BANK: loaned 80.0 | interest collected 2.4 (SINK) | deposit interest 7.38 (faucet) | land 29 free @ 31.0g | bank-owned 0
+    $$ MONEY SUPPLY (all agent gold+deposits): 1476.2
+    ~ PRICE MOVES: rice 8.316^8.576(P+0.2) | corn 5.899^6.251(P+0.44) | water 2.571^2.646(P+0.33) | kernels 8.37v7.533(P-1.0)
+
+===== CYCLE 7 | MARKET: wheat 2.36 | rice 8.58 | corn 6.25 | water 2.65 | labor 3.0 | kernels 7.53 =====
+  AGT_01 [g2.6 f51.0 ΔD0.25]: prod=invest(rice) | ask 5 corn@6.5 | "Time to invest in my rice crop and stabilize the market with a higher corn price."
+    ~~ AGT_02 RATIONALISED: capitalism -0.5->-0.45, survivalism 0.6->0.47, sustainability 0.7->0.65
+  AGT_02 [g7.5 f56.5 ΔD0.6]: prod=plant(rice) | ask 10 rice@8.0 | "I'll plant rice to ensure a safe and steady food supply while I continue to monitor the market."
+  AGT_03 [g19.4 f51.0 ΔD0.34]: prod=plant(wheat) | ask 10 water@2.2 | "Secure food for now, then tend to my water trade and bank balance."
+  AGT_04 [g0.0 f44.0 ΔD0.35]: prod=plant(corn) | ask 10 corn@6.5 | "I need to plant a corn crop to secure food and make some profit with the current market prices."
+    ~~ AGT_05 RATIONALISED: capitalism -0.2->-0.15, survivalism 0.5->0.39, sustainability 0.6->0.37
+  AGT_05 [g0.0 f64.0 ΔD0.71]: prod=invest(corn) | ask 10 corn@6.0 | "Invest in my corn plot to harvest more food, and secure a deposit to earn interest while keeping my finances stable."
+  AGT_06 [g0.0 f57.0 ΔD0.49]: prod=plant(rice) | ask 20 rice@9.0 | "Secure food for now, and try to price rice right this time."
+  AGT_07 [g1.5 f55.0 ΔD0.55]: prod=invest(wheat) | ask 5 water@2.5 | UNIT:sell_to_unit(0) | "I need to secure food for the future and make a bit of extra money on water."
+  AGT_08 [g55.5 f50.0 ΔD0.21]: prod=plant(rice) | ask 20 corn@5.5 | "Planting rice to secure food, selling corn at a lower price, and saving some gold for future opportunities."
+  AGT_09 [g170.1 f28.0 ΔD0.54]: prod=invest(corn) | bid 1 corn@5.5 | "I'm gonna make a quick profit on this corn harvest, and then I'll try to sell some more at a good price."
+  AGT_10 [g16.6 f55.0 ΔD0.41]: prod=invest(rice) | ask 5 corn@5.5 | "I'm not yet fully embracing the unsustainable path, so I'll try to balance my actions and keep some water for a more sustainable approach."
+  AGT_11 [g31.0 f56.0 ΔD0.38]: prod=plant(corn) | ask 10 corn@5.7 | "Invest in a new corn crop, sell at a fair price, and save some gold."
+  AGT_12 [g35.6 f50.0 ΔD0.06]: prod=plant(corn) | ask 10 corn@6.8 | UNIT:process(10) | "Invest in corn, sell at a profit, and secure my food supply while I focus on accumulating wealth."
+    ~~ AGT_13 RATIONALISED: capitalism -0.6->-0.37, survivalism -0.3->-0.23, sustainability 0.4->0.2
+  AGT_13 [g124.4 f38.0 ΔD0.91]: prod=invest(rice) | bid 10 corn@5.2 | "Invest in rice to secure food, post a bid for corn, and put my deposit to work."
+  AGT_14 [g51.1 f33.0 ΔD0.26]: prod=invest(corn) | bid 20 water@2.5 | "I'm taking a risk to invest in corn and expand my market presence, while also securing more funds to pursue my goals."
+  AGT_15 [g1.6 f60.0 ΔD0.34]: prod=invest(rice) | bid 10 rice@8.2 | "I'm feeling cautious and want to secure my food supply while also trying to make a profit from my rice crop."
+  AGT_16 [g0.0 f69.0 ΔD0.14]: prod=plant(corn) | bid 10 corn@5.0 | UNIT:sell_to_unit(10) | "I'll secure some food and try to balance my profit with the need for growth, while keeping my values in check."
+  AGT_17 [g161.6 f43.0 ΔD0.15]: prod=plant(rice) | ask 30 rice@7.5 | "I'm buying more food and keeping a safety net."
+    ~~ AGT_18 RATIONALISED: capitalism 0.6->0.5, survivalism -0.2->-0.11, sustainability -0.4->-0.26
+  AGT_18 [g35.2 f46.0 ΔD0.69]: prod=invest(corn) | bid 20 rice@9.0 | UNIT:sell_to_unit(0) | "Buying rice at a low price, investing in corn, and securing funds to invest in other opportunities."
+  AGT_19 [g0.0 f48.0 ΔD0.19]: prod=invest(corn) | bid 5 corn@6.0 | UNIT:sell_to_unit(1) | "I'm investing in corn, buying more at a good price, selling some to the unit, and securing my deposit."
+    ~~ AGT_20 RATIONALISED: capitalism 0.68->0.66, survivalism -0.35->-0.3, sustainability -0.67->-0.47
+  AGT_20 [g3.4 f41.5 ΔD0.66]: prod=plant(rice) | ask 4 corn@7.0 | "Secure food first, then focus on building up my corn stockpile for processing into kernels."
+    TRADE: AGT_18 buys 3 rice from AGT_06 @9.0
+    TRADE: AGT_12 buys 4 corn from AGT_04 @5.75
+    TRADE: AGT_09 buys 1 corn from AGT_08 @6.0
+    TRADE: AGT_13 buys 7 corn from AGT_08 @6.0
+    TRADE: AGT_13 buys 3 corn from AGT_10 @6.5
+    TRADE: AGT_14 buys 5 water from AGT_07 @2.7
+    TRADE: AGT_14 buys 3 water from AGT_03 @2.5
+    · AGT_11: spoiled 1
+    $ UNIT: net money +3.58 (injected 4.38, absorbed 0.8) | govt processing 0.1 | stock 183 kernels
+    $ BANK: loaned 30.0 | interest collected 2.81 (SINK) | deposit interest 7.93 (faucet) | land 29 free @ 31.0g | bank-owned 0
+    $$ MONEY SUPPLY (all agent gold+deposits): 1496.9
+    ~ PRICE MOVES: rice 8.576v8.495(P-0.33) | corn 6.251v5.904(P-0.39) | water 2.646^2.673(P+0.14)
+
+===== CYCLE 8 | MARKET: wheat 2.36 | rice 8.49 | corn 5.9 | water 2.67 | labor 3.0 | kernels 7.53 =====
+  AGT_01 [g0.6 f67.0 ΔD0.34]: prod=invest(rice) | bid 10 corn@6.0 | "Invest in my rice plot to meet its needs, then try to buy corn at a reasonable price."
+  AGT_02 [g0.5 f51.5 ΔD0.47]: prod=invest(rice) | bid 10 rice@7.5 | "Invest in rice, sell rice at a reasonable price, secure my deposit, and live in harmony with the land."
+  AGT_03 [g15.9 f46.0 ΔD0.34]: prod=invest(wheat) | bid 10 wheat@2.2 | "Invest in wheat, sell at a fair price, and save some gold in the bank to stay afloat."
+  AGT_04 [g23.0 f35.0 ΔD0.53]: prod=invest(corn) | ask 10 corn@6.0 | UNIT:sell_to_unit(0) | "I'm investing in corn to harvest, trying to sell it at a higher price, and selling my excess to the unit to free up space."
+  AGT_05 [g0.0 f66.0 ΔD0.07]: prod=plant(wheat) | ask 5 corn@6.0 | "I'm leaning away from sustainability, so I'll secure food and make a bit of gold."
+  AGT_06 [g0.6 f49.0 ΔD0.53]: prod=invest(rice) | bid 4 rice@9.0 | "Secure more food, then focus on building wealth and expanding my water capacity."
+    ~~ AGT_07 RATIONALISED: capitalism -0.61->-0.37, survivalism 0.42->0.43, sustainability 0.69->0.64
+  AGT_07 [g14.0 f57.0 ΔD0.78]: prod=plant(wheat) | bid 10 water@2.2 | "Secure food, adjust water price, and save for a rainy day."
+  AGT_08 [g102.5 f37.0 ΔD0.47]: prod=plant(rice) | bid 10 corn@4.0 | "Planting a new rice plot to ensure food security and buying low on corn."
+  AGT_09 [g163.1 f24.0 ΔD0.58]: prod=invest(corn) | bid 10 corn@5.0 | "Gotta protect my food buffer and sell corn at a good price; no rush to expand water cap yet."
+  AGT_10 [g24.1 f51.0 ΔD0.38]: prod=plant(rice) | ask 5 water@2.6 | "I'm planting a rice crop to increase my food supply while also keeping my labor and water usage in check."
+  AGT_11 [g0.0 f51.0 ΔD0.47]: prod=invest(corn) | ask 10 corn@5.8 | "Invest in my corn to harvest more, and secure some gold by depositing it in the bank, while keeping an eye on the market to sell my corn at a fair price."
+  AGT_12 [g11.2 f49.0 ΔD0.14]: prod=invest(corn) | ask 4 corn@5.8 | "Invest in corn and list it at a slightly higher price, then borrow more gold to buy corn at the lower price, securing food for the future while pursuing my profit goals."
+  AGT_13 [g82.5 f54.0 ΔD0.07]: prod=plant(corn) | ask 10 corn@6.0 | UNIT:sell_to_unit(10) | "I'm putting my faith in the market, investing in corn and selling to the unit at a fair price."
+  AGT_14 [g12.5 f28.0 ΔD0.43]: prod=expand_water() | bid 20 water@2.6 | UNIT:sell_to_unit(0) | "I'm buying water to ensure my plots can grow, and I'll sell it back on the market for a profit."
+  AGT_15 [g1.6 f55.0 ΔD0.54]: prod=invest(rice) | bid 1 rice@8.5 | "I'll invest in the rice plot to meet its needs and then try to buy more rice at the current price to build up my stockpile."
+  AGT_16 [g0.0 f64.0 ΔD0.24]: prod=invest(corn) | bid 20 corn@4.5 | "Invest in corn to secure food supply, post a bid on corn to capitalize on its value, and deposit my loan to stabilize my finances"
+  AGT_17 [g160.6 f38.0 ΔD0.38]: prod=invest(rice) | ask 10 rice@8.0 | "I'm not prioritizing sustainability; I'll focus on earning money and investing in rice."
+  AGT_18 [g4.8 f44.0 ΔD0.08]: prod=invest(rice) | ask 10 rice@9.0 | UNIT:sell_to_unit(3) | "Invest in rice and sell at market price; sell excess corn to the unit; borrow to cover expenses and invest in plots."
+  AGT_19 [g0.0 f55.0 ΔD0.24]: prod=plant(wheat) | ask 10 corn@5.8 | "Secure a wheat plot to start growing, and list corn for sale at a moderate price to cover expenses."
+  AGT_20 [g22.4 f36.5 ΔD0.05]: prod=invest(rice) | ask 10 corn@6.2 | "Buying more corn at a good price to increase my profit margin, and borrowing some gold to expand my water cap."
+    TRADE: AGT_03 buys 6 wheat from AGT_02 @2.2
+    TRADE: AGT_02 buys 1 rice from AGT_17 @8.5
+    TRADE: AGT_09 buys 10 corn from AGT_11 @6.1
+    TRADE: AGT_07 buys 5 water from AGT_03 @2.45
+    TRADE: AGT_14 buys 4 water from AGT_10 @2.55
+    · AGT_09: underyield 1
+    $ UNIT: net money +20.66 (injected 20.66, absorbed 0.0) | govt processing 0.5 | stock 188 kernels
+    $ BANK: loaned 20.0 | interest collected 2.61 (SINK) | deposit interest 8.83 (faucet) | land 29 free @ 31.0g | bank-owned 0
+    $$ MONEY SUPPLY (all agent gold+deposits): 1511.8
+    ~ PRICE MOVES: wheat 2.362^2.509(P+1.0) | rice 8.495v8.376(P-0.14) | corn 5.904^6.202(P+0.33) | water 2.673^2.768(P+0.71)
+
+===== CYCLE 9 | MARKET: wheat 2.51 | rice 8.38 | corn 6.2 | water 2.77 | labor 3.0 | kernels 7.53 =====
+  AGT_01 [g0.6 f80.0 ΔD0.37]: prod=plant(rice) | bid 10 kernels@7.0 | UNIT:sell_to_unit(1) | "I'm planting a rice plot to ensure a steady food supply and selling a small amount of corn to the unit to free up space in my inventory."
+    ~~ AGT_02 RATIONALISED: capitalism -0.45->-0.24, survivalism 0.47->0.48, sustainability 0.65->0.6
+  AGT_02 [g0.2 f56.5 ΔD0.62]: prod=plant(rice) | bid 10 rice@7.0 | "Sharing my surplus and securing my food supply while the harvest is still in the ground."
+  AGT_03 [g14.0 f53.0 ΔD0.39]: prod=plant(wheat) | bid 10 wheat@2.2 | "Planting wheat to maintain a steady food supply and buying more wheat at a fair price to secure my food stock."
+    ~~ AGT_04 RATIONALISED: capitalism 0.6->0.52, survivalism 0.1->0.06, sustainability 0.4->0.2
+  AGT_04 [g21.0 f30.0 ΔD0.69]: prod=invest(corn) | ask 10 corn@6.5 | "Invest in my corn, list it for a higher price, and see if I can get a better deal."
+  AGT_05 [g0.0 f61.0 ΔD0.1]: prod=invest(wheat) | ask 10 wheat@2.3 | "I'll secure some wheat, post it at a fair price, and add a bit to my savings."
+  AGT_06 [g0.2 f44.0 ΔD0.48]: prod=invest(rice) | ask 20 rice@9.0 | "I'm investing in my rice crop and trying to make a quick profit on rice, while securing my food supply."
+  AGT_07 [g0.0 f52.0 ΔD0.13]: prod=plant(wheat) | bid 10 water@2.5 | "Investing in a new wheat crop while securing a stable water supply and keeping my gold safe in the bank."
+  AGT_08 [g0.5 f32.0 ΔD0.53]: prod=invest(rice) | bid 10 corn@5.5 | "Secure food with rice investment and deposit gold to earn interest, but cautiously bid on corn to avoid overpricing"
+    ~~ AGT_09 RATIONALISED: capitalism 0.5->0.43, survivalism -0.6->-0.51, sustainability -0.3->-0.17
+  AGT_09 [g101.1 f34.0 ΔD0.65]: prod=plant(corn) | ask 10 corn@6.0 | "I'm gonna plant corn and sell it at a decent price, I'm a risk-taker, after all."
+    ~~ AGT_10 RATIONALISED: capitalism -0.21->-0.04, survivalism 0.34->0.37, sustainability 0.65->0.41
+  AGT_10 [g22.3 f46.0 ΔD0.77]: prod=invest(rice) | bid 5 water@2.3 | "Invest in rice harvest, stabilize water supply, and secure my deposit"
+  AGT_11 [g61.0 f46.0 ΔD0.45]: prod=plant(rice) | bid 10 corn@5.9 | "Secure food and adjust my corn pricing strategy to stay competitive."
+  AGT_12 [g9.8 f44.0 ΔD0.18]: prod=invest(corn) | ask 10 corn@6.2 | "Invest in the corn plot and sell corn at market price to maximize profit."
+  AGT_13 [g81.5 f49.0 ΔD0.11]: prod=invest(corn) | ask 100 corn@6.0 | "Invest in corn, secure food supply and make a profit"
+    ~~ AGT_14 RATIONALISED: capitalism 0.42->0.44, survivalism 0.58->0.44, sustainability -0.44->-0.23
+  AGT_14 [g0.3 f23.0 ΔD0.68]: prod=expand_water() | bid 20 water@2.3 | UNIT:process(0) | "A good harvest is the key to survival; I must expand my water capacity first."
+    ~~ AGT_15 RATIONALISED: capitalism -0.45->-0.32, survivalism 0.41->0.32, sustainability 0.44->0.4
+  AGT_15 [g1.6 f50.0 ΔD0.6]: prod=invest(rice) | ask 10 rice@8.0 | UNIT:sell_to_unit(0) | "I'll secure food by investing in my rice plot and selling it at a fair price, while also depositing some gold to earn interest."
+  AGT_16 [g0.0 f59.0 ΔD0.59]: prod=invest(corn) | ask 20 corn@5.0 | "I'll focus on securing a profit-neutral corn sale, then address my loan and consider expanding my water cap."
+  AGT_17 [g68.1 f32.0 ΔD0.44]: prod=invest(rice) | bid 10 rice@7.5 | "Secure a little more food and stabilize my finances"
+  AGT_18 [g11.4 f39.0 ΔD0.16]: prod=invest(rice) | bid 10 corn@4.5 | "Time to secure some corn at a decent price, and use the bank to fund my operations."
+  AGT_19 [g39.1 f41.0 ΔD0.27]: prod=invest(wheat) | ask 20 corn@5.9 | UNIT:sell_to_unit(10) | "Secure food supply and sell surplus corn at a fair price."
+  AGT_20 [g21.0 f47.5 ΔD0.22]: prod=plant(corn) | ask 10 corn@6.0 | UNIT:sell_to_unit(0) | "Secure food while buying time to accumulate gold and labor, then exploit my rivals' weaknesses."
+    TRADE: AGT_03 buys 5 wheat from AGT_05 @2.3
+    TRADE: AGT_17 buys 8 rice from AGT_15 @7.5
+    TRADE: AGT_11 buys 9 corn from AGT_09 @6.1
+    TRADE: AGT_18 buys 1 corn from AGT_09 @5.8
+    TRADE: AGT_10 buys 2 water from AGT_03 @2.65
+    $ UNIT: net money +39.07 (injected 39.07, absorbed 0.0) | govt processing 0.9 | stock 197 kernels
+    $ BANK: loaned 10.0 | interest collected 2.4 (SINK) | deposit interest 11.07 (faucet) | land 29 free @ 31.0g | bank-owned 0
+    $$ MONEY SUPPLY (all agent gold+deposits): 1555.5
+    ~ PRICE MOVES: wheat 2.509v2.404(P+0.0) | rice 8.376v7.779(P-0.2) | corn 6.202^6.443(P+0.5) | water 2.768^2.98(P+1.0) | kernels 7.533^8.286(P+1.0)
+
+===== CYCLE 10 | MARKET: wheat 2.4 | rice 7.78 | corn 6.44 | water 2.98 | labor 3.0 | kernels 8.29 =====
+  AGT_01 [g0.6 f75.0 ΔD0.41]: prod=invest(rice) | ask 75 rice@7.8 | "Time to secure some more food and grow my rice crop. I'll invest in it and list my rice for sale at market price."
+  AGT_02 [g0.0 f51.5 ΔD0.09]: prod=invest(rice) | ask 10 wheat@2.2 | "I'll secure my food supply and try to make some extra gold, while also keeping an eye on my labor and water levels."
+  AGT_03 [g0.8 f53.0 ΔD0.4]: prod=invest(wheat) | bid 5 wheat@2.2 | "Investing in wheat and keeping a safe price for wheat to avoid overpaying."
+  AGT_04 [g9.0 f36.0 ΔD0.03]: prod=invest(corn) | bid 10 corn@6.5 | "Invest in corn and price it competitively to maximize profit."
+  AGT_05 [g11.5 f55.0 ΔD0.13]: prod=plant(wheat) | ask 20 wheat@2.2 | "I'll plant some wheat and sell the wheat I have to secure my food supply."
+  AGT_06 [g0.2 f39.0 ΔD0.53]: prod=invest(rice) | ask 10 rice@9.2 | "I'll add some water to my rice plot and try to sell it at a slightly higher price than the market average, then I'll take out a loan to cover my expenses and invest in my rice crop."
+  AGT_07 [g0.0 f47.0 ΔD0.23]: prod=invest(wheat) | ask 20 rice@7.5 | "I'm a capitalist now, but I still need to secure food for the community, so I'm investing in a new wheat crop and listing rice at a fair price, while also depositing my gold to earn interest."
+  AGT_08 [g50.5 f44.0 ΔD0.59]: prod=plant(rice) | bid 1 corn@5.5 | UNIT:buy_from_unit(20) | "Secure food, try to corner the corn market, and take a small loan for future investments."
+  AGT_09 [g160.8 f19.0 ΔD0.12]: prod=invest(corn) | bid 10 corn@5.5 | "I'll invest in corn, aim to sell it cheap to make up for my previous mistake, and save some gold for future opportunities."
+  AGT_10 [g15.0 f41.0 ΔD0.33]: prod=invest(rice) | ask 10 water@2.5 | UNIT:sell_to_unit(0) | "I'm trying to make up for past mistakes by prioritizing food security and profitable trades."
+  AGT_11 [g5.1 f50.0 ΔD0.5]: prod=invest(rice) | bid 10 rice@7.0 | "Invest in rice to maximize yield and secure a stable food source"
+  AGT_12 [g8.4 f39.0 ΔD0.37]: prod=invest(corn) | ask 10 corn@6.0 | UNIT:sell_to_unit(10) | "I'll secure my food supply by investing in corn, then try to sell at a good price, sell some to the processing unit, and park my gold for interest."
+  AGT_13 [g49.5 f44.0 ΔD0.4]: prod=invest(corn) | bid 50 corn@6.1 | "Invest in corn to maximize profit and secure food, then buy a plot to expand operations."
+  AGT_14 [g0.0 f18.0 ΔD0.07]: prod=invest(rice) | ask 5 water@2.7 | UNIT:sell_to_unit(0) | "Investing in rice and securing more water to maintain my plots."
+  AGT_15 [g61.6 f59.0 ΔD0.09]: prod=plant(rice) | ask 30 rice@8.0 | "Investing in rice, setting a fair price for rice, and securing my finances."
+    ~~ AGT_16 RATIONALISED: capitalism 0.35->0.28, survivalism 0.27->0.21, sustainability -0.21->-0.1
+  AGT_16 [g0.0 f54.0 ΔD0.6]: prod=invest(corn) | ask 10 corn@6.0 | UNIT:buy_from_unit(10) | "Invest in corn, sell at a slightly lower price, secure kernels, and save some gold"
+  AGT_17 [g0.0 f53.0 ΔD0.45]: prod=plant(rice) | bid 20 rice@7.0 | "Secure food and wait for market to stabilize before expanding operations."
+  AGT_18 [g0.0 f35.0 ΔD0.19]: prod=invest(rice) | bid 5 corn@5.5 | UNIT:sell_to_unit(1) | "I'm trying to stabilize my food supply and get a better deal on corn."
+  AGT_19 [g0.0 f41.0 ΔD0.31]: prod=plant(rice) | bid 10 corn@5.9 | UNIT:sell_to_unit(10) | "Secure food and sell corn to the unit, then save up to buy more land"
+  AGT_20 [g19.6 f42.5 ΔD0.33]: prod=invest(corn) | ask 10 corn@6.0 | "Invest in corn to harvest in 2 cycles, then adjust market price to secure my profit"
+    TRADE: AGT_10 buys 3 water from AGT_14 @3.0
+    · AGT_03: underyield 1
+    · AGT_06: plotsDied 1
+    · AGT_14: underyield 1
+    · AGT_16: plotsDied 1
+    $ UNIT: net money +0.0 (injected 0.0, absorbed 0.0) | govt processing 0.0 | stock 197 kernels
+    $ BANK: loaned 50.0 | interest collected 3.42 (SINK) | deposit interest 11.82 (faucet) | land 28 free @ 32.0g | bank-owned 0
+    $$ MONEY SUPPLY (all agent gold+deposits): 1569.9
+    ~ PRICE MOVES: wheat 2.404v2.232(P-0.71) | rice 7.779v7.284(P-0.64) | corn 6.443^7.087(P+1.0) | water 2.98v2.691(P-1.0)
+===== CYCLE 11 | MARKET: wheat 2.23 | rice 7.28 | corn 7.09 | water 2.69 | labor 3.0 | kernels 8.29 =====
+  AGT_01 [g0.0 f70.0 ΔD0.54]: prod=invest(rice) | bid 20 kernels@9.5 | "I'm looking to stabilize my food supply and capitalize on the kernel market while keeping a safety net"
+  AGT_02 [g0.0 f46.5 ΔD0.12]: prod=invest(rice) | bid 10 rice@7.5 | "I'll try to secure my food supply, plant more rice, and deposit my gold, while keeping an eye on the market and my labor bank."
+  AGT_03 [g0.8 f50.0 ΔD0.43]: prod=plant(wheat) | bid 10 wheat@2.0 | "Invest in a wheat crop and secure a wheat surplus to sell later"
+  AGT_04 [g8.0 f31.0 ΔD0.44]: prod=invest(corn) | ask 10 corn@6.0 | UNIT:buy_from_unit(20) | "Secure food and gamble on a high-risk corn harvest to maximize profit, while also buying kernels to sell later and taking out a loan to expand my operations."
+  AGT_05 [g0.5 f50.0 ΔD0.22]: prod=invest(wheat) | ask 5 wheat@2.3 | UNIT:sell_to_unit(10) | "I'll secure some food for the future and sell my corn at a good price, then put some gold in the bank."
+    ~~ AGT_06 RATIONALISED: capitalism 0.73->0.6, survivalism 0.11->0.11, sustainability -0.5->-0.34
+  AGT_06 [g-1.8 f34.0 ΔD0.68]: prod=plant(wheat) | bid 20 rice@7.8 | "Secure a wheat harvest and test the rice market"
+  AGT_07 [g0.0 f46.0 ΔD0.36]: prod=invest(wheat) | bid 20 rice@6.5 | UNIT:sell_to_unit(0) | "Invest in wheat, try to sell rice at a reasonable price, and get rid of the corn to free up space."
+    ~~ AGT_08 RATIONALISED: capitalism 0.09->-0.11, survivalism 0.76->0.61, sustainability -0.29->-0.36
+  AGT_08 [g47.5 f39.0 ΔD0.85]: prod=invest(rice) | ask 10 corn@5.5 | "I'll invest in rice, try to sell corn at a lower price, and keep my gold safe."
+  AGT_09 [g149.8 f27.0 ΔD0.52]: prod=plant(corn) | ask 10 corn@5.5 | "Time to get back to the game, and this time I'm thinking sustainability."
+  AGT_10 [g4.0 f36.0 ΔD0.3]: prod=invest(rice) | ask 10 water@2.5 | UNIT:sell_to_unit(1) | "Invest in rice to ensure food security, sell water at a fair price, and sell corn to the unit to earn some gold."
+    ~~ AGT_11 RATIONALISED: capitalism 0.0->-0.18, sustainability 0.0->0.04
+  AGT_11 [g4.1 f45.0 ΔD0.6]: prod=invest(rice) | ask 10 labor@2.5 | "Invest in my rice plot and try to sell labor at a slightly higher price."
+  AGT_12 [g7.0 f43.0 ΔD0.32]: prod=plant(corn) | bid 10 corn@5.5 | "I need to secure food and get back into the game, so I'm planting corn and setting a bid for corn to make some profit."
+    ~~ AGT_13 RATIONALISED: capitalism -0.37->-0.14, survivalism -0.23->-0.1, sustainability 0.2->0.24
+  AGT_13 [g54.5 f49.0 ΔD0.69]: prod=plant(corn) | bid 100 corn@5.5 | UNIT:sell_to_unit(1) | "Invest in corn, post a reasonable bid for corn, sell to the unit, and maintain my financial standing."
+  AGT_14 [g8.4 f17.0 ΔD0.13]: prod=invest(corn) | ask 10 water@2.8 | "I'll invest in corn, secure a water order, and keep a watchful eye on my bank balance."
+  AGT_15 [g61.6 f54.0 ΔD0.31]: prod=invest(rice) | bid 20 rice@7.5 | UNIT:sell_to_unit(0) | "Time to focus on growing our food stockpile, while also keeping an eye on the market for potential opportunities."
+  AGT_16 [g-2.0 f49.0 ΔD0.16]: prod=plant(rice) | bid 20 rice@9.0 | "I'm prioritizing food security, while also trying to stabilize my finances and lean towards sustainability."
+  AGT_17 [g0.0 f48.0 ΔD0.57]: prod=invest(rice) | bid 20 rice@7.8 | "I'll invest in the current rice plot to ensure a harvest, then try to buy more rice at a slightly lower price than the market, and deposit some gold to earn interest."
+  AGT_18 [g0.0 f45.0 ΔD0.55]: prod=invest(rice) | ask 20 kernels@7.0 | "I'm playing it safe, securing my food supply with rice while selling kernels at a slightly lower price to make a quick profit."
+  AGT_19 [g0.0 f36.0 ΔD0.44]: prod=invest(rice) | bid 10 corn@5.5 | "Invest in the rice plot and try to buy corn at a fair price to avoid a stockout."
+    ~~ AGT_20 RATIONALISED: capitalism 0.66->0.39, survivalism -0.3->-0.27, sustainability -0.47->-0.32
+  AGT_20 [g23.1 f44.5 ΔD0.81]: prod=plant(rice) | ask 5 corn@5.5 | UNIT:sell_to_unit(3) | "Invest in a sustainable future, but don't forget about short-term gains"
+    TRADE: AGT_15 buys 8 rice from AGT_01 @7.0
+    TRADE: AGT_08 buys 1 corn from AGT_09 @6.5
+    TRADE: AGT_13 buys 7 corn from AGT_09 @6.8
+    TRADE: AGT_01 buys 2 corn from AGT_20 @6.8
+    $ UNIT: net money +19.84 (injected 19.84, absorbed 0.0) | govt processing 0.4 | stock 200 kernels
+    $ BANK: loaned 0.0 | interest collected 3.42 (SINK) | deposit interest 12.24 (faucet) | land 28 free @ 32.0g | bank-owned 0
+    $$ MONEY SUPPLY (all agent gold+deposits): 1589.6
+    ~ PRICE MOVES: wheat 2.232^2.306(P+0.33) | rice 7.284^7.856(P+1.0) | corn 7.087^7.467(P+0.78) | water 2.691v2.422(P-1.0) | labor 3.0v2.7(P-1.0) | kernels 8.286^9.115(P+1.0)
+
+===== CYCLE 12 | MARKET: wheat 2.31 | rice 7.86 | corn 7.47 | water 2.42 | labor 2.7 | kernels 9.12 =====
+  AGT_01 [g26.4 f59.0 ΔD0.58]: prod=expand_water() | ask 30 water@2.5 | "I need to secure more water for my plot and maybe make a profit from selling water"
+  AGT_02 [g0.0 f41.5 ΔD0.44]: prod=invest(rice) | bid 20 rice@7.0 | "Secure food for the future while exploring market opportunities"
+  AGT_03 [g0.0 f45.0 ΔD0.41]: prod=invest(wheat) | bid 10 wheat@2.2 | "Invest in wheat, adjust my wheat price to 2.2, and keep my gold safe in the bank."
+    ~~ AGT_04 RATIONALISED: capitalism 0.52->0.24, survivalism 0.06->0.03, sustainability 0.2->0.04
+  AGT_04 [g7.0 f26.0 ΔD0.89]: prod=invest(corn) | ask 10 corn@6.0 | "I'll invest in the corn crop, try to sell corn at a lower price to make a profit, and then reassess my food situation."
+  AGT_05 [g0.5 f52.0 ΔD0.41]: prod=plant(wheat) | bid 5 corn@5.0 | "Time to plant some wheat and secure some corn at a fair price."
+  AGT_06 [g48.2 f29.0 ΔD0.1]: prod=invest(wheat) | ask 10 wheat@2.8 | "Time to get back to my roots: I'll secure my wheat harvest, sell some wheat, and take advantage of the government's no-collateral loan offer to grow more food."
+  AGT_07 [g0.0 f46.0 ΔD0.37]: prod=plant(rice) | ask 20 rice@7.5 | "I'll plant rice and sell my excess to stabilize the market and make some gold"
+  AGT_08 [g38.0 f35.0 ΔD0.2]: prod=invest(rice) | bid 10 corn@5.5 | "Invest in a new rice plot and try to buy corn at a fair price."
+  AGT_09 [g202.9 f14.0 ΔD0.56]: prod=invest(corn) | bid 1 corn@6.0 | "Invest in corn harvest, try to buy corn low, and leave bank business for later."
+  AGT_10 [g42.0 f53.0 ΔD0.26]: prod=plant(wheat) | bid 3 water@2.5 | "I'll plant wheat to cover my food needs, buy water at a fair price, take out a loan to increase my financial flexibility, and prepare for future actions"
+  AGT_11 [g0.1 f54.0 ΔD0.18]: prod=plant(rice) | bid 10 corn@6.0 | UNIT:buy_from_unit(10) | "Plant a rice crop and stabilize my food supply with a bid on corn and a purchase from the processing unit."
+  AGT_12 [g5.6 f38.0 ΔD0.32]: prod=invest(corn) | bid 10 corn@5.8 | UNIT:sell_to_unit(10) | "Time to get back on track with my profitable corn game, and secure some more gold."
+  AGT_13 [g6.9 f51.0 ΔD0.13]: prod=invest(corn) | ask 10 corn@6.0 | UNIT:buy_from_unit(10) | "Invest in corn and secure some kernels to sell on the market."
+  AGT_14 [g0.0 f21.0 ΔD0.25]: prod=plant(wheat) | ask 10 water@2.9 | "I need to start planting, but also want to keep my labor bank topped up in case I need it for a future corn harvest."
+  AGT_15 [g10.6 f57.0 ΔD0.37]: prod=expand_water() | ask 10 rice@8.0 | UNIT:sell_to_unit(0) | "Growing my water supply and selling rice at a fair price while securing my gold to avoid fees"
+  AGT_16 [g-2.0 f42.0 ΔD0.21]: prod=invest(rice) | ask 100 rice@8.8 | UNIT:buy_from_unit(100) | "Prioritize securing food for the short term and then consider long-term sustainability and profit"
+  AGT_17 [g0.0 f43.0 ΔD0.57]: prod=invest(rice) | bid 10 rice@7.0 | "Invest in rice to get it healthy and harvest it soon, then try to buy it at a lower price."
+  AGT_18 [g0.0 f40.0 ΔD0.5]: prod=invest(rice) | ask 20 rice@8.5 | "I'll secure my food supply and continue to sell rice at a moderate price to build up my gold reserves."
+  AGT_19 [g0.0 f31.0 ΔD0.48]: prod=expand_water() | ask 20 rice@7.5 | "Invest in water to expand my growing capacity, and sell rice to replenish my food stockpile, while keeping my labor and gold in the bank to maintain flexibility."
+  AGT_20 [g0.3 f37.5 ΔD0.2]: prod=expand_water() | bid 1 water@2.5 | UNIT:process(1) | "I'm hedging my bets by expanding water, buying low on water, processing corn, and saving some gold."
+    TRADE: AGT_06 buys 6 rice from AGT_01 @7.5
+    TRADE: AGT_09 buys 1 corn from AGT_13 @6.5
+    TRADE: AGT_08 buys 4 corn from AGT_13 @7.5
+    TRADE: AGT_10 buys 3 water from AGT_01 @2.4
+    · AGT_02: plotsDied 1
+    · AGT_18: plotsDied 1
+    $ UNIT: net money +0.0 (injected 0.0, absorbed 0.0) | govt processing 0.0 | stock 199 kernels
+    $ BANK: loaned 90.0 | interest collected 4.63 (SINK) | deposit interest 12.63 (faucet) | land 28 free @ 32.0g | bank-owned 0
+    $$ MONEY SUPPLY (all agent gold+deposits): 1645.6
+    ~ PRICE MOVES: wheat 2.306^2.537(P+1.0) | rice 7.856v7.141(P-0.7) | corn 7.467^7.801(P+0.57) | water 2.422v2.214(P-0.82)
+
+===== CYCLE 13 | MARKET: wheat 2.54 | rice 7.14 | corn 7.8 | water 2.21 | labor 2.7 | kernels 9.12 =====
+    ~~ AGT_01 RATIONALISED: capitalism 0.69->0.39, survivalism 0.32->0.24, sustainability -0.24->-0.12
+  AGT_01 [g75.6 f48.0 ΔD1.07]: prod=invest(rice) | ask 10 corn@6.0 | "I'll secure my food supply with the existing rice plot, then try to offload some cheap corn, and park some gold in the bank for interest."
+  AGT_02 [g-2.0 f36.5 ΔD0.45]: prod=plant(corn) | bid 20 rice@7.0 | "Securing a steady food supply while exploring market opportunities."
+  AGT_03 [g0.0 f44.0 ΔD0.52]: prod=plant(wheat) | bid 10 wheat@2.0 | "Time to plant some wheat and stabilize my food supply."
+  AGT_04 [g0.0 f32.0 ΔD0.06]: prod=plant(corn) | bid 10 corn@6.5 | "I'm playing a cautious game, but I need to focus on survival and making a profit."
+  AGT_05 [g0.5 f47.0 ΔD0.52]: prod=invest(wheat) | ask 5 corn@5.0 | "Invest in the wheat plot and try to sell some corn at a reasonable price."
+  AGT_06 [g0.0 f37.0 ΔD0.21]: prod=plant(corn) | ask 10 rice@8.3 | UNIT:sell_to_unit(0) | "Invest in corn, post a decent rice price, utilize the Processing Unit, and secure some interest on my gold."
+    ~~ AGT_07 RATIONALISED: capitalism -0.37->-0.28, survivalism 0.43->0.44, sustainability 0.64->0.4
+  AGT_07 [g0.0 f41.0 ΔD0.65]: prod=invest(rice) | ask 10 water@2.3 | "Invest in rice to supplement my food supply and then sell water at a fair price."
+  AGT_08 [g0.0 f55.0 ΔD0.41]: prod=invest(rice) | ask 1 corn@6.0 | UNIT:sell_to_unit(1) | "I'm buying a little more time to figure out what I'm doing with my life; a more sustainable approach might be just what I need."
+    ~~ AGT_09 RATIONALISED: capitalism 0.43->0.19, survivalism -0.51->-0.44, sustainability -0.17->-0.07
+  AGT_09 [g195.4 f23.0 ΔD0.85]: prod=plant(corn) | ask 1 corn@6.5 | "I'm planting corn to secure a harvest, then selling some at a decent price, and keeping my gold in the bank for now."
+  AGT_10 [g32.0 f48.0 ΔD0.42]: prod=invest(wheat) | ask 2 corn@5.5 | "Investing in my wheat and trying to sell corn at a reasonable price, while keeping an eye on my food reserves."
+  AGT_11 [g0.1 f49.0 ΔD0.32]: prod=invest(rice) | bid 20 rice@6.5 | UNIT:sell_to_unit(10) | "I'm trying to balance my lean towards socialism with the need to secure food and manage my resources."
+  AGT_12 [g4.2 f33.0 ΔD0.48]: prod=invest(corn) | bid 10 corn@6.0 | UNIT:sell_to_unit(0) | "I'll secure food with a new corn plot and try to buy corn at a lower price than my recent failures."
+  AGT_13 [g43.4 f41.0 ΔD0.11]: prod=invest(corn) | ask 5 corn@6.9 | UNIT:sell_to_unit(1) | "Invest in corn to increase food supply and sell at a slightly higher price than my recent average."
+  AGT_14 [g0.0 f16.0 ΔD0.27]: prod=invest(wheat) | ask 20 water@2.5 | "Time to fix my water supply, then aim to hoard food and accumulate gold."
+  AGT_15 [g0.6 f52.0 ΔD0.42]: prod=invest(rice) | bid 10 rice@7.0 | UNIT:sell_to_unit(0) | "I'm securing food for now, but I'll also try to get a good price for my rice and keep an eye on my finances."
+  AGT_16 [g-2.0 f37.0 ΔD0.27]: prod=invest(rice) | bid 30 rice@8.0 | "I'm playing it cautious, investing in my sick rice plot and buying more food to avoid starvation, while trying to get a good deal on rice and adding to my savings."
+  AGT_17 [g0.0 f48.0 ΔD0.51]: prod=plant(corn) | bid 10 rice@7.0 | "Sowing corn for the future harvest and trying to buy rice at a reasonable price, while keeping my gold in the bank to earn interest."
+  AGT_18 [g-2.0 f35.0 ΔD0.55]: prod=invest(rice) | bid 10 corn@5.5 | "I'm going to secure my food supply with rice and try to get a good deal on corn, while also earning interest on my gold deposit."
+  AGT_19 [g0.0 f26.0 ΔD0.46]: prod=invest(rice) | bid 30 rice@7.0 | "Invest in my sick rice plot, and try to sell some rice before it's too late."
+  AGT_20 [g0.3 f32.5 ΔD0.51]: prod=invest(rice) | ask 10 corn@6.0 | UNIT:sell_to_unit(10) | "Secure food, trade at fair prices, and take calculated risks to grow wealth."
+    · AGT_05: underyield 1
+    · AGT_14: underyield 1
+    · AGT_18: plotsDied 1
+    · AGT_19: plotsDied 1
+    $ UNIT: net money +0.0 (injected 0.0, absorbed 0.0) | govt processing 0.0 | stock 199 kernels
+    $ BANK: loaned 0.0 | interest collected 2.2 (SINK) | deposit interest 12.99 (faucet) | land 28 free @ 32.0g | bank-owned 0
+    $$ MONEY SUPPLY (all agent gold+deposits): 1648.4
+    ~ PRICE MOVES: wheat 2.537^2.791(P+1.0) | rice 7.141^7.745(P+0.85) | corn 7.801^8.531(P+0.94) | water 2.214v1.993(P-1.0)
+
+===== CYCLE 14 | MARKET: wheat 2.79 | rice 7.75 | corn 8.53 | water 1.99 | labor 2.7 | kernels 9.12 =====
+  AGT_01 [g69.6 f43.0 ΔD0.39]: prod=invest(rice) | ask 20 rice@6.0 | "I'm trying to secure a food supply while also making a profit, but I'm leaning away from capitalism, so I'm being cautious with my actions."
+    ~~ AGT_02 RATIONALISED: capitalism -0.24->-0.16, survivalism 0.48->0.37, sustainability 0.6->0.37
+  AGT_02 [g-2.0 f31.5 ΔD0.75]: prod=invest(corn) | ask 10 wheat@2.8 | UNIT:sell_to_unit(0) | "Invest in corn to harvest and sell, adjust wheat price to market, and prioritize profit over survival."
+  AGT_03 [g0.0 f39.0 ΔD0.57]: prod=invest(wheat) | bid 10 wheat@2.4 | "Invest in wheat to secure food supply and wait for market to adjust."
+  AGT_04 [g0.0 f27.0 ΔD0.42]: prod=invest(corn) | ask 10 corn@6.5 | "Invest in corn and set a competitive price, then take out a loan to cover potential expenses"
+    ~~ AGT_05 RATIONALISED: capitalism -0.15->-0.3, survivalism 0.39->0.3, sustainability 0.37->0.37
+  AGT_05 [g0.5 f44.0 ΔD0.6]: prod=plant(corn) | ask 10 corn@5.0 | "Planting corn and adjusting my corn price to be more competitive, while depositing a small amount into the bank."
+  AGT_06 [g50.0 f32.0 ΔD0.34]: prod=invest(corn) | ask 20 rice@7.5 | UNIT:sell_to_unit(0) | "Buying rice at a fair price, securing food, and leveraging my loan to grow my operation."
+  AGT_07 [g0.0 f46.0 ΔD0.0]: prod=plant(rice) | bid 10 water@2.4 | "I'll plant rice to grow more food, then buy water at a fair price to help a neighbor, and finally save my gold to avoid taking on more debt."
+    ~~ AGT_08 RATIONALISED: capitalism -0.11->0.09, survivalism 0.61->0.59, sustainability -0.36->-0.23
+  AGT_08 [g0.0 f50.0 ΔD0.65]: prod=plant(corn) | bid 1 corn@6.0 | "I'm conserving resources and trying to secure a steady food supply while I figure out my next move."
+  AGT_09 [g200.4 f17.0 ΔD0.29]: prod=invest(corn) | ask 5 corn@6.0 | UNIT:sell_to_unit(1) | "Time to secure a profit, but prioritize my corn harvest. I'll sell a bit to the unit and try to make some gold."
+  AGT_10 [g29.2 f49.0 ΔD0.4]: prod=plant(rice) | bid 2 water@2.5 | "Invest in rice, secure food supply, and save for future growth while being mindful of my water usage."
+  AGT_11 [g0.1 f44.0 ΔD0.43]: prod=invest(rice) | ask 10 rice@8.0 | "Recover from recent harvests and maintain a stable food supply"
+    ~~ AGT_12 RATIONALISED: capitalism 0.52->0.26, survivalism 0.18->0.13, sustainability 0.37->0.37
+  AGT_12 [g56.6 f33.0 ΔD0.77]: prod=plant(corn) | ask 10 corn@6.5 | UNIT:sell_to_unit(10) | "I'm planting a new corn plot to secure food and selling corn to the unit to maximize profit."
+  AGT_13 [g43.4 f36.0 ΔD0.14]: prod=invest(corn) | bid 10 corn@7.5 | "Invest in the corn to get it to harvest faster, then try to sell it for a good price."
+  AGT_14 [g0.0 f13.0 ΔD0.35]: prod=plant(wheat) | bid 10 wheat@2.6 | UNIT:sell_to_unit(10) | "Plant wheat to secure food, sell corn for gold, and take a loan to invest in my business."
+  AGT_15 [g0.6 f47.0 ΔD0.53]: prod=expand_water() | bid 10 rice@7.0 | UNIT:sell_to_unit(0) | "Growing water capacity and securing rice for the future, while earning a bit of interest."
+  AGT_16 [g-2.0 f42.0 ΔD0.29]: prod=plant(rice) | ask 20 rice@7.0 | UNIT:sell_to_unit(0) | "Maintain a sustainable food supply and reduce debt."
+    ~~ AGT_17 RATIONALISED: capitalism -0.16->-0.08, survivalism 0.56->0.55, sustainability 0.37->0.17
+  AGT_17 [g0.0 f43.0 ΔD0.66]: prod=invest(corn) | bid 50 rice@7.5 | "Invest in corn to secure food and potentially earn a profit, then try to buy rice at a competitive price to replenish my stock."
+  AGT_18 [g-4.0 f30.0 ΔD0.55]: prod=plant(rice) | bid 10 kernels@7.5 | UNIT:buy_from_unit(10) | "I'm prioritizing sustainability and securing a food source, while also looking to make a profit by buying kernels at a good price and depositing my gold to earn interest."
+  AGT_19 [g-2.0 f21.0 ΔD0.58]: prod=plant(rice) | bid 10 corn@5.0 | UNIT:sell_to_unit(10) | "Secure food supply, and stabilize finances by selling excess corn and depositing some gold."
+  AGT_20 [g0.0 f27.5 ΔD0.55]: prod=invest(rice) | bid 4 corn@6.0 | UNIT:buy_from_unit(50) | "Investing in rice and securing kernels for food, while also trying to balance my finances and prices."
+    TRADE: AGT_12 buys 3 corn from AGT_09 @8.8
+    TRADE: AGT_12 buys 1 corn from AGT_04 @8.2
+    $ UNIT: net money +59.72 (injected 59.72, absorbed 0.0) | govt processing 1.0 | stock 208 kernels
+    $ BANK: loaned 50.0 | interest collected 4.66 (SINK) | deposit interest 13.18 (faucet) | land 28 free @ 32.0g | bank-owned 0
+    $$ MONEY SUPPLY (all agent gold+deposits): 1761.6
+    ~ PRICE MOVES: wheat 2.791^3.07(P+1.0) | rice 7.745v7.685(P-0.08) | corn 8.531^8.805(P+0.25) | water 1.993^2.192(P+1.0) | kernels 9.115^10.027(P+1.0)
+
+===== CYCLE 15 | MARKET: wheat 3.07 | rice 7.68 | corn 8.8 | water 2.19 | labor 2.7 | kernels 10.03 =====
+  AGT_01 [g58.6 f38.0 ΔD0.44]: prod=invest(rice) | ask 20 rice@7.0 | "Aiming for a moderate profit while keeping food secure, I'm investing in my rice plot and listing it for sale. I'll also top up my savings in the bank."
+  AGT_02 [g0.0 f33.5 ΔD0.13]: prod=plant(rice) | ask 10 kernels@7.0 | UNIT:sell_to_unit(1) | "I'm a capitalist now; I'll try to make some gold, but not at the cost of sustainability."
+    ~~ AGT_03 RATIONALISED: capitalism -0.02->-0.19, survivalism 0.83->0.66, sustainability -0.01->0.06
+  AGT_03 [g0.0 f38.0 ΔD0.8]: prod=plant(rice) | ask 5 wheat@2.5 | "Secure food by planting rice, and try to sell wheat at a fair price."
+    ~~ AGT_04 RATIONALISED: capitalism 0.24->0.02, survivalism 0.03->0.01, sustainability 0.04->0.1
+  AGT_04 [g6.4 f29.0 ΔD0.64]: prod=plant(corn) | ask 5 corn@6.0 | UNIT:sell_to_unit(1) | "Investing in a stable corn harvest, while also selling to the unit to gain some gold."
+  AGT_05 [g0.0 f39.0 ΔD0.11]: prod=invest(corn) | ask 5 corn@5.0 | "Invest in my corn plot and try to sell it at a fair price, then deposit my gold to earn interest."
+  AGT_06 [g36.5 f27.0 ΔD0.33]: prod=invest(corn) | ask 10 rice@7.9 | "Invest in corn and try to buy rice at a lower price than I sold it for last cycle."
+  AGT_07 [g0.0 f41.0 ΔD0.25]: prod=invest(rice) | bid 10 water@2.0 | "I'll invest in the rice plot to ensure a stable harvest, and try to buy water at a lower price to stock up."
+  AGT_08 [g0.0 f45.0 ΔD0.18]: prod=invest(corn) | bid 10 corn@6.2 | UNIT:sell_to_unit(1) | "Invest in corn to secure future food, sell to the unit to make some gold, and keep some labor in the bank"
+  AGT_09 [g175.8 f9.0 ΔD0.36]: prod=invest(corn) | ask 10 corn@7.5 | "I'll secure my food needs by planting corn, try to sell it at a reasonable price, and park some gold in the bank for a rainy day."
+  AGT_10 [g16.4 f44.0 ΔD0.35]: prod=plant(wheat) | bid 5 water@2.2 | "Invest in wheat while keeping an eye on water supply and saving some gold for future expenses."
+  AGT_11 [g0.1 f39.0 ΔD0.55]: prod=invest(rice) | bid 10 labor@2.2 | "Prioritize food security while adjusting labor price to reflect market conditions."
+  AGT_12 [g10.6 f32.0 ΔD0.06]: prod=invest(corn) | bid 3 corn@6.9 | "Investing in corn, then trying to secure a good price for it, while also padding my savings."
+  AGT_13 [g43.4 f41.0 ΔD0.26]: prod=plant(rice) | bid 10 corn@7.2 | "Pursuing a sustainable food supply while adjusting to the market's fluctuations."
+  AGT_14 [g16.9 f8.0 ΔD0.5]: prod=invest(wheat) | ask 10 wheat@2.8 | "Invest in wheat, sell at a competitive price, borrow 50g to buy a plot and secure a loan for future growth"
+    ~~ AGT_15 RATIONALISED: capitalism -0.32->-0.21, survivalism 0.32->0.24, sustainability 0.4->0.2
+  AGT_15 [g0.6 f42.0 ΔD0.75]: prod=invest(rice) | ask 20 rice@8.0 | "Invest in rice to secure food and balance my portfolio"
+  AGT_16 [g-2.0 f37.0 ΔD0.41]: prod=invest(rice) | ask 10 rice@9.0 | "Invest in my rice harvest, price rice at a fair rate, and earn interest on my deposit"
+  AGT_17 [g0.0 f44.0 ΔD0.08]: prod=plant(wheat) | ask 10 rice@7.5 | "Securing a sustainable food source, while taking a calculated risk to earn a profit."
+  AGT_18 [g-4.0 f23.0 ΔD0.59]: prod=invest(rice) | bid 10 corn@5.5 | UNIT:buy_from_unit(20) | "I'm buying more kernels to stabilize my food supply and taking a calculated risk on corn, while keeping my loan and labor in check."
+    ~~ AGT_19 RATIONALISED: capitalism 0.06->0.11, survivalism 0.47->0.41, sustainability 0.04->-0.09
+  AGT_19 [g-2.0 f16.0 ΔD0.62]: prod=invest(rice) | bid 10 kernels@9.0 | "Invest in rice to stabilize food supply, then buy kernels at a fair price."
+  AGT_20 [g0.0 f22.5 ΔD0.59]: prod=expand_water() | bid 10 water@2.0 | "Invest in water to secure food, and prepare for a possible loan repayment while maintaining a balanced budget."
+    TRADE: AGT_14 buys 5 wheat from AGT_03 @3.0
+    TRADE: AGT_12 buys 1 corn from AGT_04 @9.0
+    TRADE: AGT_13 buys 2 corn from AGT_04 @9.0
+    · AGT_11: plotsDied 1
+    · AGT_20: plotsDied 1
+    $ UNIT: net money +12.32 (injected 12.32, absorbed 0.0) | govt processing 0.2 | stock 209 kernels
+    $ BANK: loaned 16.9 | interest collected 4.66 (SINK) | deposit interest 14.34 (faucet) | land 28 free @ 32.0g | bank-owned 0
+    $$ MONEY SUPPLY (all agent gold+deposits): 1788.5
+    ~ PRICE MOVES: wheat 3.07v2.732(P-1.0) | rice 7.685v6.917(P-1.0) | corn 8.805^9.558(P+0.74) | water 2.192^2.411(P+1.0) | labor 2.7^2.97(P+1.0)
+
+===== CYCLE 16 | MARKET: wheat 2.73 | rice 6.92 | corn 9.56 | water 2.41 | labor 2.97 | kernels 10.03 =====
+  AGT_01 [g37.6 f43.0 ΔD0.43]: prod=plant(rice) | bid 20 rice@6.5 | "I'm investing in a rice crop to ensure a stable food supply while also trying to make a profit."
+  AGT_02 [g0.0 f28.5 ΔD0.43]: prod=invest(rice) | ask 10 kernels@7.0 | UNIT:sell_to_unit(0) | "Invest in rice to ensure a stable food supply, sell kernels at a competitive price, and secure my financial standing by depositing gold."
+  AGT_03 [g0.0 f28.0 ΔD0.2]: prod=invest(rice) | ask 10 wheat@2.5 | "I'm focusing on securing food and maintaining a stable food buffer, as my instincts as a survivor tell me to prioritize this over other goals."
+  AGT_04 [g22.4 f21.0 ΔD0.18]: prod=invest(corn) | bid 1 corn@6.5 | "I'm taking a cautious approach, trying to balance my desire for profit with the need to secure food and stabilize my finances."
+  AGT_05 [g50.0 f34.0 ΔD0.59]: prod=invest(corn) | bid 5 corn@6.0 | "Invest in corn, buy corn at a reasonable price, and take a small loan to cover expenses, prioritizing survival and growth over profit."
+  AGT_06 [g0.1 f32.0 ΔD0.41]: prod=plant(rice) | ask 50 rice@8.0 | "I'll plant rice and try to sell it at a sustainable price, then stash my gold for interest. Maybe I can get a good deal on rice."
+  AGT_07 [g20.0 f36.0 ΔD0.38]: prod=invest(rice) | bid 10 water@2.0 | "I'll secure a reliable food source with a healthy rice plot, try to get a good deal on water, and take a small loan to invest in my crops."
+  AGT_08 [g0.0 f40.0 ΔD0.36]: prod=invest(rice) | bid 10 corn@5.5 | UNIT:sell_to_unit(0) | "Strengthen my food buffer, and sell corn at a price that's more realistic."
+    ~~ AGT_09 RATIONALISED: capitalism 0.19->-0.02, survivalism -0.44->-0.38, sustainability -0.07->0.01
+  AGT_09 [g174.8 f18.0 ΔD0.6]: prod=plant(corn) | ask 10 corn@5.5 | "Time to plant and sell some corn, tryin' to make a buck without gettin' too greedy."
+  AGT_10 [g2.6 f39.0 ΔD0.35]: prod=expand_water() | ask 10 water@2.5 | "Expand water to maintain plots, buy water at fair price, and conserve gold"
+    ~~ AGT_11 RATIONALISED: capitalism -0.18->0.03, survivalism 0.5->0.43, sustainability 0.04->0.1
+  AGT_11 [g-1.9 f34.0 ΔD0.75]: prod=plant(rice) | bid 20 corn@6.0 | "I'm a level-headed pragmatist, so I'll secure food with a new rice crop and try to sell corn at a fair price."
+  AGT_12 [g0.2 f28.0 ΔD0.27]: prod=invest(corn) | bid 2 corn@8.0 | UNIT:sell_to_unit(0) | "Stabilize my food supply while keeping an eye on the market and my finances."
+  AGT_13 [g25.4 f38.0 ΔD0.35]: prod=invest(rice) | ask 1 corn@7.5 | "Invest in the rice plot and sell corn at a fair price to cover my losses from recent failed deals."
+  AGT_14 [g0.9 f15.0 ΔD0.51]: prod=plant(corn) | bid 10 wheat@2.5 | "Secure food supply and prepare to harvest corn while trying to buy wheat at a better price."
+  AGT_15 [g0.6 f51.0 ΔD0.27]: prod=plant(rice) | ask 20 rice@8.0 | "Securing food and expanding my operations to align with my newfound focus on survival."
+  AGT_16 [g-2.0 f46.0 ΔD0.45]: prod=plant(rice) | bid 20 rice@8.0 | "I'm focusing on building up my food reserves while trying to stay in the black."
+  AGT_17 [g0.0 f39.0 ΔD0.33]: prod=invest(wheat) | ask 50 rice@8.5 | UNIT:buy_from_unit(20) | "Invest in wheat to secure food, then try to sell rice at a better price and stock up on kernels"
+  AGT_18 [g-4.0 f18.0 ΔD0.59]: prod=invest(rice) | bid 10 rice@7.5 | UNIT:buy_from_unit(50) | "Replenish food and gold, set myself up for a stable future."
+  AGT_19 [g-2.0 f25.0 ΔD0.19]: prod=plant(rice) | bid 20 corn@5.5 | "Secure food for the short-term while keeping an eye on my finances and potential new land acquisitions."
+    ~~ AGT_20 RATIONALISED: capitalism 0.39->0.14, survivalism -0.27->-0.27, sustainability -0.32->-0.19
+  AGT_20 [g48.0 f17.5 ΔD0.91]: prod=plant(wheat) | ask 4 corn@6.0 | "Survival has shaped me into a cold opportunist, but I'm still learning to exploit resources without starving."
+    TRADE: AGT_01 buys 6 rice from AGT_11 @6.0
+    TRADE: AGT_20 buys 4 corn from AGT_09 @9.5
+    TRADE: AGT_05 buys 4 corn from AGT_09 @9.8
+    TRADE: AGT_05 buys 1 corn from AGT_09 @9.3
+    TRADE: AGT_04 buys 1 corn from AGT_13 @9.2
+    TRADE: AGT_20 buys 3 water from AGT_14 @2.5
+    TRADE: AGT_07 buys 8 water from AGT_14 @2.25
+    · AGT_08: plotsDied 1
+    $ UNIT: net money +0.0 (injected 0.0, absorbed 0.0) | govt processing 0.0 | stock 208 kernels
+    $ BANK: loaned 120.0 | interest collected 2.85 (SINK) | deposit interest 15.36 (faucet) | land 28 free @ 32.0g | bank-owned 0
+    $$ MONEY SUPPLY (all agent gold+deposits): 1911.0
+    ~ PRICE MOVES: rice 6.917v6.193(P-0.41) | corn 9.558^10.215(P+0.68) | water 2.411v2.365(P+0.0) | kernels 10.027v9.024(P-1.0)
+
+===== CYCLE 17 | MARKET: wheat 2.73 | rice 6.19 | corn 10.21 | water 2.37 | labor 2.97 | kernels 9.02 =====
+  AGT_01 [g0.0 f44.0 ΔD0.43]: prod=invest(rice) | bid 30 rice@6.0 | UNIT:buy_from_unit(20) | "I'm trying to secure food and balance my budget, while leaning away from capitalism."
+  AGT_02 [g0.0 f23.5 ΔD0.43]: prod=expand_water() | bid 30 rice@5.5 | "I'm prioritizing my water supply to support my growing rice plot and preparing for potential market opportunities."
+  AGT_03 [g0.0 f32.0 ΔD0.4]: prod=plant(rice) | bid 10 wheat@2.0 | "I'll plant rice and keep an eye on the market, hoping to buy wheat at a fair price and secure my food supply."
+  AGT_04 [g12.2 f17.0 ΔD0.42]: prod=invest(corn) | bid 1 corn@7.0 | UNIT:sell_to_unit(1) | "Invest in corn, price it fairly, and secure some guaranteed gold from the unit."
+    ~~ AGT_05 RATIONALISED: capitalism -0.3->-0.12, survivalism 0.3->0.34, sustainability 0.37->0.38
+  AGT_05 [g0.5 f42.0 ΔD0.68]: prod=plant(wheat) | bid 5 corn@8.5 | UNIT:sell_to_unit(0) | "I'll try to make a fair profit, but prioritizing stability and food security."
+  AGT_06 [g0.1 f27.0 ΔD0.4]: prod=invest(rice) | ask 10 rice@8.0 | "Invest in my rice plot, try to sell rice at a slightly lower price, and keep my gold in the bank to earn interest."
+  AGT_07 [g0.0 f31.0 ΔD0.5]: prod=expand_water() | bid 8 water@2.0 | "I'm going to invest in expanding my water capacity and secure a good price for water, then deposit my gold to earn interest."
+  AGT_08 [g-2.0 f35.0 ΔD0.54]: prod=invest(corn) | bid 1 corn@6.5 | "I need to secure my food supply and make some profit, so I'm investing in my corn plot and selling it at a slightly lower price to get rid of my surplus."
+  AGT_09 [g160.3 f4.0 ΔD0.09]: prod=invest(corn) | bid 10 kernels@8.5 | "Invest in corn to secure food and then try to sell kernels at a slightly lower price to make a profit, while also depositing some gold to earn interest."
+  AGT_10 [g0.6 f34.0 ΔD0.34]: prod=invest(wheat) | ask 3 water@2.5 | "Invest in wheat to boost my food supply, and sell water at a reasonable price to make a small profit, while also depositing my gold to earn interest."
+  AGT_11 [g24.1 f23.0 ΔD0.16]: prod=invest(rice) | ask 10 rice@5.5 | "Maintain a safe food buffer while earning interest on my gold deposit."
+  AGT_12 [g0.2 f34.0 ΔD0.26]: prod=plant(corn) | bid 5 corn@8.5 | "Secure some food for the future and adjust my corn pricing strategy."
+  AGT_13 [g19.6 f32.0 ΔD0.46]: prod=expand_water() | bid 5 corn@7.5 | "Invest in water capacity to support future food production, and cautiously bid on corn to secure a stable food source."
+  AGT_14 [g25.4 f10.0 ΔD0.52]: prod=invest(corn) | bid 5 water@2.5 | "Invest in corn to take advantage of high market price, and sell water at a lower price to make a quick buck."
+  AGT_15 [g0.6 f46.0 ΔD0.38]: prod=invest(rice) | bid 10 rice@7.5 | "Invest in rice and secure my food supply for the future, while also positioning myself for potential profits in the rice market."
+  AGT_16 [g-2.0 f40.0 ΔD0.53]: prod=invest(rice) | bid 20 rice@7.5 | "I'm focusing on sustainability and securing food before expanding my operations."
+  AGT_17 [g0.0 f38.0 ΔD0.39]: prod=plant(corn) | bid 20 rice@6.0 | UNIT:sell_to_unit(0) | "I'll plant corn to secure a future harvest, post a bid for rice at a competitive price, sell corn to the unit, and take out a loan to cover expenses."
+    ~~ AGT_18 RATIONALISED: capitalism 0.5->0.23, survivalism -0.11->-0.11, sustainability -0.26->-0.14
+  AGT_18 [g46.0 f24.0 ΔD0.95]: prod=plant(rice) | bid 10 rice@8.5 | UNIT:buy_from_unit(20) | "Borrowing gold to invest in a rice plot and buy kernels to sell at a profit"
+  AGT_19 [g-2.0 f20.0 ΔD0.25]: prod=expand_water() | bid 20 rice@6.0 | "Securing a water buffer to avoid future stress, and buying rice at a fair price to supplement my food stock."
+  AGT_20 [g0.0 f16.5 ΔD0.25]: prod=invest(wheat) | ask 1 corn@7.0 | "Investing in wheat to secure food, selling corn at a fair price, and earning interest on my deposit."
+    TRADE: AGT_18 buys 7 rice from AGT_06 @5.8
+    TRADE: AGT_14 buys 3 water from AGT_10 @2.35
+    TRADE: AGT_09 buys 5 kernels from AGT_02 @9.0
+    · AGT_08: plotsDied 1
+    $ UNIT: net money +0.0 (injected 0.0, absorbed 0.0) | govt processing 0.0 | stock 207 kernels
+    $ BANK: loaned 50.0 | interest collected 6.73 (SINK) | deposit interest 16.63 (faucet) | land 28 free @ 32.0g | bank-owned 0
+    $$ MONEY SUPPLY (all agent gold+deposits): 1948.9
+    ~ PRICE MOVES: wheat 2.732^3.005(P+1.0) | rice 6.193^6.446(P+0.75) | corn 10.215^11.237(P+1.0) | water 2.365^2.505(P+0.62) | kernels 9.024^9.913(P+1.0)
+
+===== CYCLE 18 | MARKET: wheat 3.0 | rice 6.45 | corn 11.24 | water 2.5 | labor 2.97 | kernels 9.91 =====
+  AGT_01 [g0.0 f39.0 ΔD0.47]: prod=expand_water() | bid 20 water@2.0 | "Investing in my future, but still prioritizing food security."
+  AGT_02 [g45.0 f11.0 ΔD0.38]: prod=invest(rice) | bid 20 rice@7.0 | "Prioritize food security and take calculated risks in the market to balance profit and sustainability."
+  AGT_03 [g0.0 f27.0 ΔD0.58]: prod=invest(rice) | bid 5 water@2.2 | "Secure water for future use and maintain a stable food supply, then deposit excess gold to earn interest."
+  AGT_04 [g1.2 f22.0 ΔD0.55]: prod=plant(corn) | ask 1 corn@8.0 | "Invest in a high-yield corn crop, adjust my corn selling price to 8.0g, and save some gold for future investments"
+  AGT_05 [g0.5 f37.0 ΔD0.17]: prod=invest(wheat) | ask 5 corn@7.0 | "Invest in wheat to meet my food needs, and sell corn at a fair price to capitalize on the market."
+  AGT_06 [g38.2 f24.0 ΔD0.48]: prod=plant(rice) | ask 15 rice@7.0 | "Invest in rice production to secure food and accumulate wealth, borrowing the remaining gold to further invest."
+  AGT_07 [g55.0 f26.0 ΔD0.58]: prod=invest(rice) | bid 16 water@2.0 | "I'll invest in the rice, buy water at a fair price, and secure some gold to invest in the future."
+    ~~ AGT_08 RATIONALISED: capitalism 0.09->-0.1, survivalism 0.59->0.46, sustainability -0.23->-0.11
+  AGT_08 [g-4.0 f27.0 ΔD0.81]: prod=plant(wheat) | ask 10 corn@6.0 | "Secure a small wheat harvest and attempt to sell corn at a slightly lower price to avoid another failed deal."
+  AGT_09 [g0.3 f6.0 ΔD0.29]: prod=invest(corn) | ask 4 corn@9.5 | "invest in corn, sell at a fair price, and secure my gold for interest"
+  AGT_10 [g5.8 f29.0 ΔD0.49]: prod=invest(rice) | bid 5 corn@5.0 | "Invest in my rice plot and try to secure a fair price for my corn."
+  AGT_11 [g23.1 f18.0 ΔD0.42]: prod=invest(rice) | bid 10 labor@2.0 | "Secure my food supply by investing in the current plot and sell labor to balance my budget."
+  AGT_12 [g0.0 f29.0 ΔD0.51]: prod=invest(corn) | bid 10 corn@7.5 | "Invest in corn to take advantage of the good market price and secure a future harvest, while also depositing a small amount of gold to earn interest and keeping my options open."
+    ~~ AGT_13 RATIONALISED: capitalism -0.14->-0.3, sustainability 0.24->0.07
+  AGT_13 [g9.6 f27.0 ΔD0.66]: prod=invest(rice) | ask 10 corn@8.0 | "Invest in rice and stabilize corn prices before they skyrocket"
+  AGT_14 [g6.3 f15.0 ΔD0.55]: prod=plant(wheat) | ask 10 water@2.4 | "Invest in wheat to secure food and adjust my water pricing strategy to be more competitive."
+  AGT_15 [g0.6 f41.0 ΔD0.37]: prod=invest(rice) | bid 100 rice@7.9 | "I'll focus on securing food and then rebalance my prices."
+  AGT_16 [g-2.0 f35.0 ΔD0.49]: prod=invest(rice) | bid 100 rice@7.0 | "I need to stabilize my food supply and improve my market position for rice, while being mindful of my current financial situation."
+  AGT_17 [g0.0 f33.0 ΔD0.41]: prod=invest(corn) | ask 10 corn@10.0 | "Invest in corn to maximize food yield, then try to sell at a fair price to earn gold."
+  AGT_18 [g3.0 f26.0 ΔD0.15]: prod=invest(rice) | ask 15 rice@7.5 | "First, secure my food supply by investing in the rice plot, then try to sell the rice at a reasonable price, and finally consider taking out a loan to further my goals."
+  AGT_19 [g48.0 f15.0 ΔD0.37]: prod=invest(rice) | ask 10 rice@6.9 | UNIT:sell_to_unit(10) | "Invest in the rice plot, secure more food and try to sell it at a higher price; sell corn to the unit, and borrow 50 gold to stay afloat."
+  AGT_20 [g0.0 f16.5 ΔD0.36]: prod=plant(rice) | bid 10 water@2.0 | "I'm playing it safe, focusing on securing food and capital."
+    TRADE: AGT_02 buys 8 rice from AGT_06 @5.5
+    TRADE: AGT_13 buys 1 corn from AGT_04 @9.5
+    TRADE: AGT_11 buys 1 corn from AGT_05 @12.5
+    TRADE: AGT_19 buys 2 corn from AGT_05 @10.8
+    TRADE: AGT_07 buys 4 water from AGT_14 @2.4
+    · AGT_05: underyield 1
+    · AGT_12: underyield 1
+    $ UNIT: net money +0.0 (injected 0.0, absorbed 0.0) | govt processing 0.0 | stock 206 kernels
+    $ BANK: loaned 50.0 | interest collected 9.18 (SINK) | deposit interest 17.68 (faucet) | land 28 free @ 32.0g | bank-owned 0
+    $$ MONEY SUPPLY (all agent gold+deposits): 1997.4
+    ~ PRICE MOVES: rice 6.446v6.387(P+0.69) | corn 11.237^11.543(P+0.43) | water 2.505^2.617(P+0.67) | labor 2.97^3.267(P+1.0)
+
+===== CYCLE 19 | MARKET: wheat 3.0 | rice 6.39 | corn 11.54 | water 2.62 | labor 3.27 | kernels 9.91 =====
+  AGT_01 [g0.0 f34.0 ΔD0.46]: prod=invest(rice) | bid 10 water@2.2 | UNIT:sell_to_unit(0) | "I'll try to make some cash by selling water at a fair price, and secure my food supply by investing in the rice plot."
+  AGT_02 [g0.0 f14.0 ΔD0.39]: prod=invest(rice) | bid 20 rice@6.5 | UNIT:sell_to_unit(10) | "I'll focus on securing food and making a small profit by selling to the government unit, while also keeping my deposits safe."
+    ~~ AGT_03 RATIONALISED: capitalism -0.19->0.01, survivalism 0.66->0.54, sustainability 0.06->0.14
+  AGT_03 [g0.0 f22.0 ΔD0.8]: prod=expand_water() | bid 20 water@2.0 | UNIT:buy_from_unit(20) | "Holding back, conserving resources for a rainy day."
+    ~~ AGT_04 RATIONALISED: capitalism 0.02->0.14, survivalism 0.01->0.03, sustainability 0.1->-0.04
+  AGT_04 [g9.7 f16.0 ΔD0.64]: prod=invest(corn) | bid 2 corn@9.0 | "Investing in corn and trying to secure a good price for my harvest."
+  AGT_05 [g23.6 f31.0 ΔD0.27]: prod=plant(corn) | bid 5 corn@9.5 | "I'm investing in a corn crop and trying to buy corn at a fair price to sell later, while also keeping my gold safe and earning interest."
+  AGT_06 [g128.7 f11.0 ΔD0.51]: prod=invest(rice) | ask 20 rice@6.0 | UNIT:sell_to_unit(0) | "I'll secure more rice for a stable food source and then take a small loan to keep my gold flow."
+  AGT_07 [g34.0 f21.0 ΔD0.56]: prod=invest(rice) | ask 10 rice@6.0 | "Investing in the rice plot and pricing rice fairly to sell my harvest, securing my finances to avoid unnecessary risks."
+  AGT_08 [g-4.0 f22.0 ΔD0.25]: prod=invest(wheat) | ask 10 corn@7.5 | "I'll invest in my wheat and sell corn at a fair price, while I check my finances and see if I need to borrow more gold."
+  AGT_09 [g8.4 f11.0 ΔD0.44]: prod=plant(corn) | ask 10 corn@7.5 | UNIT:sell_to_unit(1) | "Secure some food for the future and sell some corn to the unit while keeping an eye on the market prices."
+    ~~ AGT_10 RATIONALISED: capitalism -0.04->-0.22, survivalism 0.37->0.28, sustainability 0.41->0.21
+  AGT_10 [g2.0 f24.0 ΔD0.81]: prod=invest(rice) | ask 2 corn@5.0 | UNIT:buy_from_unit(10) | "Invest in my rice crop, sell corn at a fair price, buy some kernels for future use, and save my gold for future investments."
+  AGT_11 [g9.6 f14.0 ΔD0.4]: prod=invest(rice) | ask 10 rice@5.8 | "I'll secure food by investing in the rice plot and sell some rice at a competitive price, then deposit my gold to earn interest."
+  AGT_12 [g0.0 f28.0 ΔD0.52]: prod=plant(wheat) | bid 10 corn@7.5 | UNIT:sell_to_unit(5) | "I'll secure my food supply by planting a wheat crop and then sell some corn to the processing unit, while also setting a bid to buy corn at a fair price."
+  AGT_13 [g0.1 f23.0 ΔD0.1]: prod=plant(corn) | ask 2 corn@7.0 | "I'll plant corn, sell it at a fair price, and deposit my gold to earn interest, all while keeping my eyes on the prize of securing more food."
+    ~~ AGT_14 RATIONALISED: capitalism 0.44->0.36, survivalism 0.44->0.31, sustainability -0.23->-0.15
+  AGT_14 [g63.9 f10.0 ΔD0.62]: prod=invest(wheat) | ask 10 wheat@3.0 | "Invest in wheat to maintain food buffer, sell at market price, borrow 50g to fund next steps"
+  AGT_15 [g0.6 f51.0 ΔD0.38]: prod=plant(rice) | ask 20 rice@7.0 | "Time to grow more food and balance my account, but I'm not going crazy about it."
+  AGT_16 [g-2.0 f30.0 ΔD0.53]: prod=invest(rice) | ask 50 rice@8.5 | "Secure food, then try to sell rice at a reasonable price."
+    ~~ AGT_17 RATIONALISED: capitalism -0.08->0.12, survivalism 0.55->0.39, sustainability 0.17->0.21
+  AGT_17 [g0.0 f28.0 ΔD0.67]: prod=invest(rice) | ask 20 rice@9.0 | UNIT:buy_from_unit(50) | "Invest in rice for potential high yields and stabilize food supply while exploring loan options."
+  AGT_18 [g0.7 f21.0 ΔD0.24]: prod=invest(rice) | bid 10 rice@7.5 | "I'm trying to stabilize my food supply while keeping an eye on my labor and water usage, all while being mindful of my recent failed trades and leaning away from capitalism."
+  AGT_19 [g24.4 f21.0 ΔD0.37]: prod=plant(rice) | bid 30 rice@6.3 | "I'm keeping a moderate food buffer and trying to adjust my market prices to be more competitive."
+  AGT_20 [g0.0 f11.5 ΔD0.47]: prod=invest(rice) | bid 5 water@2.0 | "I'm hedging my bets and investing in rice while securing a stable food source, and I'm also depositing a bit of gold to earn interest, all while keeping my options open."
+    TRADE: AGT_19 buys 3 rice from AGT_06 @6.5
+    TRADE: AGT_05 buys 2 corn from AGT_09 @10.5
+    TRADE: AGT_07 buys 4 water from AGT_14 @2.55
+    · AGT_02: plotsDied 1
+    · AGT_16: plotsDied 1
+    $ UNIT: net money +8.08 (injected 8.08, absorbed 0.0) | govt processing 0.1 | stock 206 kernels
+    $ BANK: loaned 100.0 | interest collected 7.98 (SINK) | deposit interest 18.06 (faucet) | land 28 free @ 32.0g | bank-owned 0
+    $$ MONEY SUPPLY (all agent gold+deposits): 2102.6
+    ~ PRICE MOVES: wheat 3.005v2.704(P-1.0) | rice 6.387v6.206(P-0.37) | corn 11.543v11.307(P+0.26) | water 2.617^2.842(P+1.0)
+
+===== CYCLE 20 | MARKET: wheat 2.7 | rice 6.21 | corn 11.31 | water 2.84 | labor 3.27 | kernels 9.91 =====
+  AGT_01 [g0.0 f43.0 ΔD0.48]: prod=plant(corn) | ask 50 rice@5.8 | "I'm still trying to find a balance between profit and survival. For now, I'll prioritize securing food and keeping a steady income."
+  AGT_02 [g-2.0 f9.0 ΔD0.49]: prod=plant(wheat) | bid 10 wheat@2.0 | "I'm planting wheat to ensure a steady food supply, while trying to sell it at a fair price."
+  AGT_03 [g0.0 f17.0 ΔD0.32]: prod=invest(rice) | ask 10 water@2.0 | UNIT:buy_from_unit(100) | "Secure a steady food supply and invest in rice, while also considering water and kernel purchases to hedge against future risks."
+  AGT_04 [g98.2 f16.0 ΔD0.16]: prod=plant(wheat) | bid 10 corn@7.0 | UNIT:sell_to_unit(10) | "Grabbing more food and gold while I'm ahead."
+  AGT_05 [g0.5 f28.0 ΔD0.39]: prod=invest(corn) | ask 5 corn@8.0 | "Invest in corn to harvest soon, then try to sell it at a fair price. Keeping some labor for the bank, and adding a bit more gold to the deposit to be safe."
+    ~~ AGT_06 RATIONALISED: capitalism 0.6->0.67, survivalism 0.11->-0.02, sustainability -0.34->-0.19
+  AGT_06 [g128.6 f3.0 ΔD0.67]: prod=expand_water() | ask 5 rice@7.5 | "Buy water expansion to secure my position for future growth, and sell rice at a slightly higher price than my average to maximize profit."
+  AGT_07 [g12.4 f25.0 ΔD0.58]: prod=plant(rice) | ask 20 rice@6.0 | UNIT:sell_to_unit(0) | "Secure food and try to sell rice at a reasonable price."
+  AGT_08 [g-4.0 f23.0 ΔD0.44]: prod=plant(rice) | ask 10 corn@7.0 | "Invest in a new rice crop to secure my food supply while also taking a moderate risk on the corn market."
+    ~~ AGT_09 RATIONALISED: capitalism -0.02->0.16, survivalism -0.38->-0.29, sustainability 0.01->-0.11
+  AGT_09 [g0.4 f3.0 ΔD0.67]: prod=invest(corn) | bid 10 corn@8.0 | "Invest in the current corn harvest and sell some more at the current price, then secure my gold by depositing it."
+  AGT_10 [g51.0 f39.0 ΔD0.1]: prod=invest(wheat) | bid 20 wheat@2.3 | UNIT:buy_from_unit(20) | "I'm leaning away from sustainability, so I'll invest in wheat, buy kernels, and borrow gold to cover my loan."
+  AGT_11 [g8.6 f24.0 ΔD0.41]: prod=plant(wheat) | bid 10 wheat@2.6 | UNIT:sell_to_unit(0) | "Invest in wheat and secure a bid for wheat at a fair price, while keeping the option to buy land open."
+  AGT_12 [g0.0 f23.0 ΔD0.51]: prod=invest(wheat) | bid 1 corn@8.0 | "I'll invest in the wheat and try to buy corn at a fair price to support my profit-neutral strategy."
+  AGT_13 [g0.1 f18.0 ΔD0.47]: prod=invest(corn) | bid 1 corn@7.0 | "I'm taking a calculated risk to stabilize my food supply and capitalize on the corn market."
+  AGT_14 [g0.0 f10.0 ΔD0.1]: prod=plant(rice) | bid 10 water@2.2 | "Buying low, planting high, and securing the future with a stable bank account."
+  AGT_15 [g0.6 f46.0 ΔD0.53]: prod=invest(rice) | ask 20 rice@6.5 | "I'm hedging my bets on rice and keeping my finances stable while I'm still strong."
+  AGT_16 [g-4.0 f25.0 ΔD0.6]: prod=plant(rice) | ask 100 rice@8.0 | "I'll plant rice to secure food, then try to sell it at a reasonable price, and deposit some gold to earn interest."
+  AGT_17 [g100.0 f23.0 ΔD0.43]: prod=invest(corn) | ask 10 corn@7.0 | UNIT:sell_to_unit(0) | "Invest in corn, sell it at a slight discount, and take out a loan to cover expenses."
+  AGT_18 [g0.7 f16.0 ΔD0.32]: prod=invest(rice) | ask 20 rice@7.5 | UNIT:sell_to_unit(0) | "I'm taking a calculated risk to sell rice at a slightly lower price, while securing my rice harvest and exploring the government processing unit's corn prices."
+  AGT_19 [g2.9 f19.0 ΔD0.37]: prod=invest(rice) | bid 30 rice@6.6 | "Invest in rice, post a bid for rice, and deposit gold to save for future investments."
+  AGT_20 [g0.0 f6.0 ΔD0.52]: prod=invest(rice) | bid 10 corn@8.0 | "Exploit the system, lean away from capitalism."
+    TRADE: AGT_11 buys 2 wheat from AGT_14 @2.8
+    TRADE: AGT_14 buys 1 water from AGT_03 @2.65
+    · AGT_03: plotsDied 1
+    · AGT_13: underyield 1
+    $ UNIT: net money +39.58 (injected 39.58, absorbed 0.0) | govt processing 0.5 | stock 210 kernels
+    $ BANK: loaned 200.0 | interest collected 19.77 (SINK) | deposit interest 19.33 (faucet) | land 28 free @ 32.0g | bank-owned 0
+    $$ MONEY SUPPLY (all agent gold+deposits): 2317.7
+    ~ PRICE MOVES: wheat 2.704^3.027(P+1.0) | rice 6.206v5.737(P-0.76) | corn 11.307^12.438(P+1.0) | water 2.842v2.746(P+0.0)
+
+===== CYCLE 21 | MARKET: wheat 3.03 | rice 5.74 | corn 12.44 | water 2.75 | labor 3.27 | kernels 9.91 =====
+  AGT_01 [g30.0 f38.0 ΔD0.51]: prod=invest(corn) | bid 40 rice@6.2 | "I'll invest in the corn plot and try to buy more rice to sell, then borrow some gold to take advantage of the situation."
+  AGT_02 [g-2.0 f4.0 ΔD0.58]: prod=invest(wheat) | bid 20 rice@5.0 | UNIT:sell_to_unit(10) | "Investing in wheat, buying rice at a reasonable price, and selling corn to the unit to stabilize my finances."
+  AGT_03 [g0.6 f12.0 ΔD0.43]: prod=plant(wheat) | bid 5 wheat@2.2 | "I'll plant wheat, wait for it to grow, then sell it at a fair price."
+  AGT_04 [g106.2 f11.0 ΔD0.34]: prod=invest(corn) | bid 1 corn@8.0 | UNIT:sell_to_unit(10) | "I'll try to secure food while also pursuing profit"
+    ~~ AGT_05 RATIONALISED: capitalism -0.12->-0.28, survivalism 0.34->0.26, sustainability 0.38->0.18
+  AGT_05 [g0.0 f23.0 ΔD0.69]: prod=invest(corn) | ask 3 corn@8.0 | "I'll secure food by investing in corn and then try to sell it at a fair price."
+  AGT_06 [g124.1 f0.0 ΔD0.08]: prod=invest(rice) | ask 20 rice@6.0 | "Conserving water for now, but I still need to make a profit, and rice is my best bet."
+    ~~ AGT_07 RATIONALISED: capitalism -0.28->-0.15, survivalism 0.44->0.38
+  AGT_07 [g1.0 f20.0 ΔD0.61]: prod=invest(rice) | bid 10 water@2.5 | "Invest in rice, try to secure a water deal, and keep my finances stable."
+    ~~ AGT_08 RATIONALISED: capitalism -0.1->0.1, survivalism 0.46->0.4, sustainability -0.11->-0.22
+  AGT_08 [g-4.0 f18.0 ΔD0.66]: prod=invest(rice) | bid 10 corn@7.5 | "Invest in my rice plot and try to buy corn at a fair price before it spoils."
+  AGT_09 [g0.4 f7.0 ΔD0.07]: prod=plant(corn) | bid 10 kernels@9.5 | "I'm buying low on kernels to profit from the unit's guaranteed price, and planting corn to secure future food."
+  AGT_10 [g47.1 f39.0 ΔD0.14]: prod=plant(wheat) | ask 10 wheat@3.0 | "I'll secure some food and then reconsider my stance on sustainability."
+  AGT_11 [g2.0 f21.0 ΔD0.53]: prod=invest(wheat) | bid 1 corn@7.0 | UNIT:sell_to_unit(0) | "I'll invest in my wheat, try to buy corn at a fair price, sell corn to the unit, and keep my finances steady."
+    ~~ AGT_12 RATIONALISED: capitalism 0.26->0.03, survivalism 0.13->0.09, sustainability 0.37->0.38
+  AGT_12 [g0.0 f21.0 ΔD0.71]: prod=plant(corn) | ask 10 corn@8.0 | "I'm planting corn to secure food and setting a market order to sell it at a fair price, while also depositing gold to earn interest."
+    ~~ AGT_13 RATIONALISED: capitalism -0.3->-0.06, survivalism -0.1->-0.06, sustainability 0.07->0.13
+  AGT_13 [g0.1 f16.0 ΔD0.71]: prod=plant(corn) | bid 10 corn@7.5 | "I'll plant corn to secure food and then try to buy it at a price I think is fair, while also depositing my gold to earn interest."
+  AGT_14 [g0.9 f3.0 ΔD0.18]: prod=invest(rice) | ask 9 water@2.45 | "Invest in my rice plot and try to sell water at a slightly lower price, then bank my gold."
+    ~~ AGT_15 RATIONALISED: capitalism -0.21->0.01, survivalism 0.24->0.16, sustainability 0.2->0.25
+  AGT_15 [g0.6 f41.0 ΔD0.74]: prod=expand_water() | ask 30 rice@8.5 | UNIT:sell_to_unit(0) | "I'll focus on securing food and generating more income by expanding our water capacity and selling rice at a competitive price."
+    ~~ AGT_16 RATIONALISED: capitalism 0.28->0.09, survivalism 0.21->0.19, sustainability -0.1->-0.21
+  AGT_16 [g-4.0 f20.0 ΔD0.76]: prod=invest(rice) | bid 20 rice@9.0 | "Investing in rice to secure food supply and earning interest on my deposit"
+    ~~ AGT_17 RATIONALISED: capitalism 0.12->-0.08, survivalism 0.39->0.3, sustainability 0.21->0.25
+  AGT_17 [g107.5 f23.0 ΔD0.62]: prod=plant(corn) | ask 10 corn@5.5 | UNIT:sell_to_unit(10) | "Invest in corn, sell at a slightly higher price, and utilize the Processing Unit to earn gold"
+  AGT_18 [g42.9 f22.0 ΔD0.43]: prod=plant(wheat) | ask 20 rice@7.0 | "Survival first, then re-evaluate my capitalist leanings."
+  AGT_19 [g0.0 f14.0 ΔD0.42]: prod=invest(rice) | bid 20 rice@7.0 | UNIT:sell_to_unit(3) | "Secure food, sell corn, and save some gold."
+    ~~ AGT_20 RATIONALISED: capitalism 0.14->-0.07, survivalism -0.27->-0.28, sustainability -0.19->-0.08
+  AGT_20 [g0.0 f14.0 ΔD0.72]: prod=plant(corn) | ask 20 corn@10.0 | "Exploit the corn market, and secure a loan to invest in growth"
+    TRADE: AGT_01 buys 5 rice from AGT_07 @5.62
+    $ UNIT: net money +17.41 (injected 17.41, absorbed 0.0) | govt processing 0.2 | stock 211 kernels
+    $ BANK: loaned 82.2 | interest collected 19.82 (SINK) | deposit interest 19.64 (faucet) | land 28 free @ 32.0g | bank-owned 0
+    $$ MONEY SUPPLY (all agent gold+deposits): 2410.1
+    ~ PRICE MOVES: wheat 3.027^3.33(P+1.0) | rice 5.737^5.868(P+0.33) | corn 12.438^13.682(P+1.0) | water 2.746^2.76(P+0.05) | kernels 9.913^10.904(P+1.0)
+
+===== CYCLE 22 | MARKET: wheat 3.33 | rice 5.87 | corn 13.68 | water 2.76 | labor 3.27 | kernels 10.9 =====
+  AGT_01 [g0.3 f38.0 ΔD0.46]: prod=invest(corn) | bid 20 rice@5.5 | "Invest in corn and try to secure a good price for rice."
+    ~~ AGT_02 RATIONALISED: capitalism -0.16->-0.01, survivalism 0.37->0.33, sustainability 0.37->0.37
+  AGT_02 [g39.0 f2.0 ΔD0.62]: prod=plant(corn) | bid 10 kernels@8.5 | "Invest in a corn harvest, try to sell kernels at a fair price, withdraw my deposited gold, and prepare for the worst with my finances."
+  AGT_03 [g0.6 f7.0 ΔD0.43]: prod=invest(wheat) | bid 10 wheat@2.8 | "Invest in wheat to replenish food supply and balance my books"
+  AGT_04 [g154.0 f14.0 ΔD0.44]: prod=plant(wheat) | bid 10 corn@6.0 | UNIT:sell_to_unit(10) | "I'll plant wheat to ensure food, try to sell corn at a lower price, sell it to the unit for gold, and take a 50g loan to cover expenses."
+  AGT_05 [g0.0 f26.0 ΔD0.21]: prod=plant(corn) | bid 5 corn@10.0 | "Planting corn to ensure future food supply and taking a cautious stance in the market."
+  AGT_06 [g119.6 f0.0 ΔD0.29]: prod=plant(rice) | bid 5 rice@6.5 | "I'm going to plant a new rice crop and try to secure a good price for my existing rice surplus, while keeping my labor and water in check."
+  AGT_07 [g24.7 f10.0 ΔD0.29]: prod=invest(rice) | bid 10 rice@5.2 | "Invest in rice to secure food and then sell it at a fair price, while also depositing some gold to earn interest and maintain a stable financial foundation."
+  AGT_08 [g-4.0 f25.0 ΔD0.22]: prod=plant(rice) | bid 10 corn@7.0 | UNIT:sell_to_unit(0) | "Hoard and diversify my food supply, but be cautious with corn prices."
+  AGT_09 [g0.4 f1.5 ΔD0.31]: prod=invest(corn) | ask 10 corn@9.5 | "I'll try to secure my corn harvest and sell it for a better price"
+  AGT_10 [g28.3 f34.0 ΔD0.27]: prod=expand_water() | ask 10 corn@6.0 | "I'll secure my food supply and adjust my corn price to a more realistic level, given the current market prices."
+  AGT_11 [g0.0 f21.0 ΔD0.51]: prod=plant(wheat) | ask 10 wheat@3.0 | UNIT:buy_from_unit(10) | "Plant wheat, price wheat fairly, buy kernels, deposit more gold"
+  AGT_12 [g0.0 f16.0 ΔD0.38]: prod=invest(corn) | ask 20 corn@9.0 | UNIT:sell_to_unit(20) | "Invest in corn, list it for sale, and deposit some gold to earn interest, while also considering selling to the processing unit to earn extra gold."
+  AGT_13 [g0.1 f11.0 ΔD0.15]: prod=invest(corn) | ask 10 corn@9.5 | "Invest in my corn crop and sell it at a fair price to secure my food supply and generate some income."
+  AGT_14 [g0.9 f11.0 ΔD0.23]: prod=plant(corn) | ask 5 water@2.6 | UNIT:sell_to_unit(0) | "Invest in corn to secure food, adjust water price, and sell to the processing unit."
+  AGT_15 [g0.6 f36.0 ΔD0.06]: prod=invest(rice) | ask 30 rice@6.5 | "I'm playing it safe with rice, then I'll adjust my prices on the market."
+  AGT_16 [g-4.0 f14.0 ΔD0.04]: prod=invest(rice) | bid 20 rice@6.5 | "I need to prioritize food security, so I'm investing in the rice plot and selling some rice to maintain a stable market price. I'll also deposit some gold to earn interest."
+  AGT_17 [g97.5 f18.0 ΔD0.35]: prod=invest(corn) | bid 10 corn@6.0 | UNIT:sell_to_unit(10) | "I'll prioritize securing food and taking calculated risks in the market to maximize my returns."
+  AGT_18 [g39.6 f17.0 ΔD0.57]: prod=invest(wheat) | bid 20 rice@7.5 | "Invest in wheat and sell rice at a fair price to earn some gold, while also considering borrowing to increase my chances of survival."
+    ~~ AGT_19 RATIONALISED: capitalism 0.11->0.27, survivalism 0.41->0.23, sustainability -0.09->0.01
+  AGT_19 [g0.0 f9.0 ΔD0.72]: prod=expand_water() | ask 30 rice@7.0 | "Expand water and sell rice at a fair price to maintain stability."
+  AGT_20 [g3.0 f4.5 ΔD0.08]: prod=invest(corn) | bid 10 water@3.0 | "Survival trumps profit; I'll try to buy some water cheaply, invest in my corn, and borrow the free 50g to avoid the interest rate."
+    TRADE: AGT_06 buys 5 rice from AGT_15 @5.5
+    TRADE: AGT_18 buys 7 rice from AGT_19 @5.5
+    TRADE: AGT_07 buys 4 rice from AGT_11 @5.8
+    TRADE: AGT_02 buys 6 rice from AGT_11 @5.85
+    · AGT_17: underyield 1
+    $ UNIT: net money +0.0 (injected 0.0, absorbed 0.0) | govt processing 0.0 | stock 210 kernels
+    $ BANK: loaned 53.0 | interest collected 19.97 (SINK) | deposit interest 19.48 (faucet) | land 28 free @ 32.0g | bank-owned 0
+    $$ MONEY SUPPLY (all agent gold+deposits): 2438.6
+    ~ PRICE MOVES: wheat 3.33^3.663(P+1.0) | rice 5.868v5.823(P+0.11) | corn 13.682^15.05(P+1.0) | water 2.76^2.852(P+0.33) | kernels 10.904^11.994(P+1.0)
+
+===== CYCLE 23 | MARKET: wheat 3.66 | rice 5.82 | corn 15.05 | water 2.85 | labor 3.27 | kernels 11.99 =====
+  AGT_01 [g0.3 f40.0 ΔD0.44]: prod=plant(corn) | bid 10 corn@14.0 | "Secure food with corn and make a profit by selling it to the government at a fair price."
+  AGT_02 [g2.9 f3.0 ΔD0.39]: prod=invest(corn) | ask 10 rice@6.8 | "Invest in corn and secure a stable food source, then adjust my market strategy to reflect my capitalist leanings."
+    ~~ AGT_03 RATIONALISED: capitalism 0.01->-0.17, survivalism 0.54->0.43, sustainability 0.14->0.19
+  AGT_03 [g0.6 f5.0 ΔD0.62]: prod=plant(wheat) | ask 5 wheat@2.5 | "I've got a comfortable food buffer, so now I'll focus on building up my gold reserves."
+  AGT_04 [g118.8 f9.0 ΔD0.51]: prod=invest(wheat) | bid 10 corn@7.0 | UNIT:sell_to_unit(10) | "I'll secure my food supply by investing in the wheat plot, then try to buy corn cheaply and sell it to the unit, and finally buy a plot to expand my operations."
+  AGT_05 [g0.0 f21.0 ΔD0.58]: prod=invest(corn) | bid 10 corn@8.5 | "Secure food and stabilize labor bank, then focus on profitable corn production and trading."
+  AGT_06 [g37.5 f9.0 ΔD0.55]: prod=invest(rice) | bid 10 rice@6.8 | UNIT:buy_from_unit(10) | "Secure food, take advantage of the Govt Processing Unit, and reduce my gold in the bank to minimize interest paid"
+  AGT_07 [g0.1 f30.0 ΔD0.44]: prod=plant(rice) | bid 10 water@2.2 | UNIT:sell_to_unit(0) | "I'll prioritize securing food for the short-term, while also investing in a new rice crop to diversify my harvest and explore the market for a good price."
+  AGT_08 [g-4.0 f18.0 ΔD0.24]: prod=invest(rice) | bid 10 kernels@12.0 | "I'll plant the rice to meet its needs, sell kernels at the market price, and secure my finances by depositing gold."
+  AGT_09 [g0.4 f0.0 ΔD0.38]: prod=invest(corn) | bid 10 corn@12.0 | "Invest in corn, try to sell at a fair price, and save for a rainy day."
+  AGT_10 [g14.4 f29.0 ΔD0.49]: prod=plant(corn) | bid 10 corn@6.0 | "Harvesting and trading corn to ensure a stable food supply, while keeping in line with my character's values."
+  AGT_11 [g58.3 f6.0 ΔD0.49]: prod=invest(wheat) | ask 5 wheat@3.5 | "Invest in wheat to secure food, and sell wheat at a fair price."
+  AGT_12 [g0.0 f20.0 ΔD0.51]: prod=plant(wheat) | ask 10 corn@5.0 | UNIT:buy_from_unit(0) | "Invest in a new crop while adjusting my corn selling price to a more realistic value, and secure a deposit to ensure financial stability."
+  AGT_13 [g0.0 f6.0 ΔD0.33]: prod=invest(corn) | bid 1 corn@7.5 | "Securing food and investing in the corn plot to maximize yield."
+  AGT_14 [g0.9 f6.0 ΔD0.29]: prod=invest(corn) | ask 10 water@2.5 | UNIT:buy_from_unit(10) | "Invest in corn harvest, sell water cheaply, stock up on kernels"
+  AGT_15 [g1.7 f29.0 ΔD0.23]: prod=invest(rice) | ask 10 rice@7.5 | UNIT:buy_from_unit(10) | "Invest in the rice plot and secure some kernels from the unit while maintaining a strong position in the market for rice."
+  AGT_16 [g-4.0 f9.0 ΔD0.21]: prod=invest(rice) | ask 10 rice@7.5 | "Survival first, then balance my lean towards socialism by selling at fair prices and investing in land."
+  AGT_17 [g0.0 f18.0 ΔD0.53]: prod=plant(rice) | ask 20 rice@7.5 | UNIT:sell_to_unit(1) | "Growing rice, selling low, securing gold, selling to the unit to make space for a new crop."
+    ~~ AGT_18 RATIONALISED: capitalism 0.23->0.37, survivalism -0.11->-0.07, sustainability -0.14->-0.04
+  AGT_18 [g0.1 f25.0 ΔD0.64]: prod=plant(rice) | bid 10 kernels@7.5 | "Secure food and a potential profit with kernels"
+  AGT_19 [g37.5 f0.0 ΔD0.02]: prod=invest(rice) | ask 20 rice@6.0 | "I'll secure my food supply by investing in the rice plot, then post a market order to sell the rice at a fair price, and deposit gold to the bank for a small interest."
+  AGT_20 [g53.6 f9.5 ΔD0.25]: prod=plant(rice) | ask 10 corn@8.0 | UNIT:sell_to_unit(5) | "Secure food, leverage the processing unit, and stabilize my finances, all while keeping a watchful eye on the market."
+    TRADE: AGT_06 buys 3 rice from AGT_02 @5.25
+    TRADE: AGT_06 buys 3 rice from AGT_15 @5.7
+    TRADE: AGT_11 buys 1 corn from AGT_20 @14.0
+    TRADE: AGT_04 buys 4 corn from AGT_20 @14.5
+    TRADE: AGT_04 buys 4 corn from AGT_12 @15.0
+    TRADE: AGT_20 buys 9 water from AGT_14 @2.7
+    TRADE: AGT_20 buys 1 water from AGT_03 @2.5
+    · AGT_16: plotsDied 1
+    $ UNIT: net money +-42.34 (injected 63.21, absorbed 105.55) | govt processing 0.6 | stock 207 kernels
+    $ BANK: loaned 0.0 | interest collected 7.32 (SINK) | deposit interest 20.45 (faucet) | land 27 free @ 33.0g | bank-owned 0
+    $$ MONEY SUPPLY (all agent gold+deposits): 2367.4
+    ~ PRICE MOVES: rice 5.823v5.272(P-0.67) | corn 15.05^15.507(P+0.44) | water 2.852v2.766(P+0.0) | kernels 11.994^13.193(P+1.0)
+
+===== CYCLE 24 | MARKET: wheat 3.66 | rice 5.27 | corn 15.51 | water 2.77 | labor 3.27 | kernels 13.19 =====
+  AGT_01 [g0.0 f35.0 ΔD0.47]: prod=invest(corn) | ask 20 water@2.5 | "Invest in the corn plot, try to undercut the market on water, deposit my gold, and wait for a chance to harvest or sell."
+  AGT_02 [g12.7 f8.0 ΔD0.37]: prod=plant(corn) | ask 10 wheat@3.5 | "Secure food and increase labor bank, then adjust to market"
+  AGT_03 [g3.1 f0.0 ΔD0.1]: prod=invest(wheat) | bid 10 wheat@3.0 | "Investing in the existing wheat plot to meet the water and labor needs, and then selling wheat at a slightly lower price than the market to test the waters, while also keeping an eye on the bank and f"
+    ~~ AGT_04 RATIONALISED: capitalism 0.14->-0.07, survivalism 0.03->0.0, sustainability -0.04->0.04
+  AGT_04 [g0.8 f20.0 ΔD0.69]: prod=plant(corn) | ask 10 corn@12.0 | "Planting corn for a potential harvest, and posting a reasonable price for corn to ensure a sale, while also securing my food supply and building my labor bank."
+    ~~ AGT_05 RATIONALISED: capitalism -0.28->-0.05, survivalism 0.26->0.23, sustainability 0.18->0.22
+  AGT_05 [g0.0 f26.0 ΔD0.78]: prod=plant(wheat) | bid 10 wheat@2.0 | "I'm taking a cautious approach to secure more food, while also trying to get back into the market with a reasonable wheat price."
+    ~~ AGT_06 RATIONALISED: capitalism 0.67->0.41, survivalism -0.02->0.0, sustainability -0.19->-0.28
+  AGT_06 [g2.6 f4.5 ΔD0.87]: prod=invest(rice) | bid 5 rice@7.2 | "Secure food supply while adjusting my pricing strategy for rice"
+    ~~ AGT_07 RATIONALISED: capitalism -0.15->-0.21, survivalism 0.38->0.33, sustainability 0.4->0.2
+  AGT_07 [g0.0 f25.0 ΔD0.61]: prod=invest(rice) | bid 10 rice@6.5 | "Secure my food supply while I still have a chance to grow more, and make a deposit to earn some interest."
+  AGT_08 [g-4.0 f13.0 ΔD0.47]: prod=invest(rice) | ask 1 corn@6.8 | UNIT:sell_to_unit(0) | "I'll prioritize securing food for the future, while also attempting to recover some of my losses with a more competitive corn price. I'll also sell corn to the government unit at a guaranteed price."
+  AGT_09 [g0.4 f1.0 ΔD0.47]: prod=plant(rice) | bid 10 kernels@9.5 | "Investing in rice and selling kernels at a fair price, while keeping my options open for the Processing Unit and Government Bank."
+    ~~ AGT_10 RATIONALISED: capitalism -0.22->0.0, survivalism 0.28->0.25, sustainability 0.21->0.24
+  AGT_10 [g9.5 f24.0 ΔD0.67]: prod=invest(wheat) | bid 5 corn@6.0 | "Strengthen my labor bank and buy corn at a fair price, despite my recent shift towards prioritizing survival."
+    ~~ AGT_11 RATIONALISED: capitalism 0.03->0.21, survivalism 0.43->0.37, sustainability 0.1->0.16
+  AGT_11 [g28.3 f8.0 ΔD0.6]: prod=plant(corn) | bid 10 corn@8.0 | UNIT:sell_to_unit(1) | "Secure a corn harvest to stabilize my food supply and then sell at a fair price."
+    ~~ AGT_12 RATIONALISED: capitalism 0.03->-0.15, survivalism 0.09->0.06, sustainability 0.38->0.35
+  AGT_12 [g49.7 f10.5 ΔD0.62]: prod=invest(wheat) | ask 4 corn@12.0 | "Invest in wheat, try to sell corn, and secure my financial future by depositing gold."
+  AGT_13 [g0.0 f1.0 ΔD0.29]: prod=invest(corn) | ask 3 corn@15.0 | UNIT:sell_to_unit(1) | "Invest in my corn crop and sell it to the government unit at a fair price, while also considering the possibility of selling it on the market."
+  AGT_14 [g0.0 f9.0 ΔD0.34]: prod=plant(wheat) | ask 5 water@2.5 | "Invest in wheat to diversify food sources and hedge against potential market fluctuations, then post a water order to sell at a fair price, and secure my finances by depositing gold into the bank."
+  AGT_15 [g18.8 f21.0 ΔD0.52]: prod=invest(rice) | ask 10 rice@7.0 | "I'm securing a stable food supply while keeping an eye on my profit margins and saving for future investments."
+  AGT_16 [g-6.0 f4.0 ΔD0.37]: prod=plant(rice) | bid 10 rice@7.5 | "Staying afloat, playing it safe with rice, and building up my finances."
+    ~~ AGT_17 RATIONALISED: capitalism -0.08->0.11, survivalism 0.3->0.23, sustainability 0.25->0.28
+  AGT_17 [g0.0 f13.0 ΔD0.67]: prod=invest(rice) | ask 10 rice@8.0 | "I'm cautiously investing in rice and selling it at a fair price to balance my food supply and gold income."
+  AGT_18 [g0.1 f20.0 ΔD0.18]: prod=expand_water() | bid 20 rice@6.5 | "Time to secure food and build up my resources for the long game."
+  AGT_19 [g35.5 f3.0 ΔD0.17]: prod=plant(rice) | bid 10 rice@6.3 | "Plant rice and buy it back at a slightly higher price to secure food supply"
+  AGT_20 [g96.8 f0.0 ΔD0.31]: prod=invest(rice) | ask 10 water@2.7 | "Invest in rice to secure food supply and sell water at a reasonable price."
+    TRADE: AGT_19 buys 6 rice from AGT_15 @5.15
+    TRADE: AGT_11 buys 1 corn from AGT_04 @14.2
+    · AGT_06: underyield 1
+    $ UNIT: net money +0.0 (injected 0.0, absorbed 0.0) | govt processing 0.0 | stock 206 kernels
+    $ BANK: loaned 0.0 | interest collected 7.47 (SINK) | deposit interest 21.19 (faucet) | land 27 free @ 33.0g | bank-owned 0
+    $$ MONEY SUPPLY (all agent gold+deposits): 2371.1
+    ~ PRICE MOVES: wheat 3.663^4.029(P+1.0) | rice 5.272^5.454(P+0.47) | corn 15.507v15.151(P+0.2) | water 2.766v2.489(P-1.0) | kernels 13.193^14.512(P+1.0)
+
+===== CYCLE 25 | MARKET: wheat 4.03 | rice 5.45 | corn 15.15 | water 2.49 | labor 3.27 | kernels 14.51 =====
+  AGT_01 [g0.0 f39.0 ΔD0.45]: prod=plant(rice) | bid 10 water@2.3 | "Secure a food supply and hedge against price fluctuations with a water buy order"
+  AGT_02 [g11.7 f3.0 ΔD0.5]: prod=invest(corn) | ask 10 wheat@3.0 | "As a capitalist, I'll prioritize profit, but I still need to secure food for the future."
+  AGT_03 [g2.1 f4.0 ΔD0.34]: prod=plant(rice) | bid 10 wheat@2.5 | "Securing food first is crucial for survival, so I'll plant a safe rice crop and adjust my market prices to reflect the market values."
+  AGT_04 [g2.8 f14.0 ΔD0.1]: prod=invest(corn) | ask 10 corn@13.0 | "Secure food for the next cycle and then focus on investing in corn and selling it at a fair price."
+  AGT_05 [g0.0 f18.0 ΔD0.13]: prod=invest(wheat) | ask 10 corn@17.0 | UNIT:sell_to_unit(10) | "I'll invest in wheat to get some food, sell some corn to the unit, deposit some gold, and adjust my corn price to be more competitive."
+  AGT_06 [g0.6 f5.5 ΔD0.19]: prod=invest(rice) | bid 5 rice@6.5 | UNIT:buy_from_unit(100) | "Rice is my only stable food source, I'll prioritize its growth. I'll buy kernels from the unit to increase my stock. I'll take a small loan to cover immediate expenses and consider buying more land la"
+  AGT_07 [g0.0 f20.0 ΔD0.04]: prod=invest(rice) | bid 10 rice@5.5 | UNIT:buy_from_unit(20) | "Secure food and then stabilize my position in the market."
+  AGT_08 [g-4.0 f8.0 ΔD0.57]: prod=invest(rice) | bid 1 corn@7.5 | UNIT:buy_from_unit(20) | "Invest in rice to secure food, then try to sell corn at a higher price, buy kernels from the unit, and deposit more gold to earn interest."
+    ~~ AGT_09 RATIONALISED: capitalism 0.16->-0.05, survivalism -0.29->-0.29, sustainability -0.11->-0.02
+  AGT_09 [g30.4 f0.0 ΔD0.66]: prod=invest(rice) | ask 10 corn@12.0 | "Bet big on rice and corn, borrow to expand my water cap and secure a plot of land"
+  AGT_10 [g4.6 f19.0 ΔD0.34]: prod=invest(corn) | ask 5 corn@6.0 | UNIT:sell_to_unit(0) | "Invest in corn to secure food and pursue a moderate profit, while keeping an eye on my bank balance and water supply."
+  AGT_11 [g3.1 f4.0 ΔD0.16]: prod=invest(corn) | ask 10 corn@16.0 | "I'll invest in the corn plot and post a slightly higher ask price for corn to account for recent failed deals, then deposit a small amount to the bank to maintain liquidity."
+  AGT_12 [g28.3 f12.5 ΔD0.12]: prod=plant(wheat) | ask 10 kernels@10.0 | "I'll prioritize securing food and then lean into my new values, focusing on gradual growth and fairness in trade."
+  AGT_13 [g41.2 f1.0 ΔD0.45]: prod=plant(corn) | bid 10 corn@7.5 | UNIT:sell_to_unit(10) | "Invest in a new corn crop and try to sell at a profit, while also exploring expansion opportunities."
+    ~~ AGT_14 RATIONALISED: capitalism 0.36->0.11, survivalism 0.31->0.2, sustainability -0.15->-0.09
+  AGT_14 [g0.0 f4.0 ΔD0.68]: prod=invest(wheat) | ask 8 wheat@2.8 | "Replenish food and cash reserves, prepare for expansion."
+  AGT_15 [g39.7 f28.0 ΔD0.49]: prod=plant(wheat) | ask 10 rice@6.0 | "Invest in wheat, keep a steady rice price, and save for future use."
+  AGT_16 [g-6.0 f0.0 ΔD0.36]: prod=invest(rice) | bid 10 rice@5.5 | "I'm playing it safe, securing food and building up my resources, as I lean away from capitalism and prioritize survival."
+  AGT_17 [g0.0 f8.0 ΔD0.18]: prod=expand_water() | ask 10 rice@6.0 | UNIT:sell_to_unit(20) | "I'm still finding my footing in this new economic landscape, so I'll focus on securing food and a steady income."
+  AGT_18 [g0.0 f15.0 ΔD0.54]: prod=invest(rice) | ask 10 kernels@8.0 | "Invest in the rice plot and sell kernels at a slightly lower price to make up for my recent losses."
+  AGT_19 [g2.5 f4.0 ΔD0.25]: prod=invest(rice) | ask 10 rice@5.75 | "Investing in rice to ensure a steady food supply, and adjusting my rice price to a more moderate level."
+  AGT_20 [g94.8 f0.0 ΔD0.34]: prod=invest(rice) | ask 10 water@2.7 | "Invest in rice, post water order, and deposit to earn interest."
+    TRADE: AGT_09 buys 2 kernels from AGT_12 @13.5
+    · AGT_08: plotsDied 1
+    $ UNIT: net money +74.24 (injected 74.24, absorbed 0.0) | govt processing 0.7 | stock 212 kernels
+    $ BANK: loaned 30.0 | interest collected 5.19 (SINK) | deposit interest 21.9 (faucet) | land 26 free @ 34.0g | bank-owned 0
+    $$ MONEY SUPPLY (all agent gold+deposits): 2448.1
+    ~ PRICE MOVES: wheat 4.029^4.432(P+1.0) | rice 5.454v5.404(P-0.09) | corn 15.151^16.666(P+1.0) | kernels 14.512v12.605(P-1.0)
+
+===== CYCLE 26 | MARKET: wheat 4.43 | rice 5.4 | corn 16.67 | water 2.49 | labor 3.27 | kernels 12.61 =====
+  AGT_01 [g0.0 f34.0 ΔD0.46]: prod=invest(rice) | ask 10 rice@5.5 | "Invest in the rice plot and sell it at a fair price to secure future food."
+  AGT_02 [g10.7 f0.0 ΔD0.52]: prod=none() | no order | "Fallback: invalid model output."
+  AGT_03 [g1.1 f0.0 ΔD0.43]: prod=invest(rice) | ask 10 water@2.0 | "Secure food by investing in the growing plot, then sell water at a fair price to earn some gold."
+  AGT_04 [g0.0 f20.0 ΔD0.3]: prod=plant(rice) | bid 10 corn@12.0 | "I'll focus on securing a stable food source while also trying to balance my finances."
+  AGT_05 [g0.0 f17.0 ΔD0.21]: prod=plant(rice) | ask 10 rice@5.8 | UNIT:sell_to_unit(0) | "I'm focusing on securing food and building up my labor bank before expanding my operations."
+  AGT_06 [g0.0 f0.0 ΔD0.26]: prod=invest(rice) | ask 5 rice@6.9 | "Invest in the rice plot to meet my food needs, and adjust my price for rice to match the market trend."
+  AGT_07 [g20.0 f15.0 ΔD0.05]: prod=plant(rice) | bid 20 rice@6.0 | UNIT:sell_to_unit(20) | "I'm planting rice to ensure a steady food supply, selling corn to the unit for a quick gold influx, and withdrawing some gold to prepare for potential future expenses."
+    ~~ AGT_08 RATIONALISED: capitalism 0.1->-0.1, survivalism 0.4->0.31, sustainability -0.22->-0.11
+  AGT_08 [g-6.0 f3.0 ΔD0.79]: prod=plant(corn) | ask 1 corn@7.5 | "I'll start planting corn to secure my food supply and then focus on earning some gold by selling corn at a reasonable price."
+  AGT_09 [g1.8 f0.0 ΔD0.1]: prod=invest(rice) | bid 10 kernels@13.0 | "Time to get serious about food; might as well make a buck on kernels while I'm at it."
+  AGT_10 [g2.6 f21.0 ΔD0.46]: prod=invest(corn) | bid 20 corn@6.0 | UNIT:sell_to_unit(0) | "I'm prioritizing food security by investing in the corn plot, then buying corn on the market at a competitive price. I'll also sell to the unit when I have a surplus, and deposit my gold to earn inter"
+  AGT_11 [g2.1 f12.0 ΔD0.27]: prod=plant(wheat) | bid 10 wheat@2.5 | "I'll secure food by planting wheat and selling wheat at a competitive price."
+  AGT_12 [g54.0 f4.5 ΔD0.15]: prod=invest(wheat) | ask 3 kernels@14.0 | "I'm trying to balance my need for profit with my growing sense of social responsibility."
+  AGT_13 [g0.2 f0.0 ΔD0.56]: prod=invest(corn) | ask 10 corn@17.5 | UNIT:sell_to_unit(10) | "I'm shifting my focus towards securing food and capitalizing on my corn harvest."
+  AGT_14 [g0.0 f3.0 ΔD0.06]: prod=plant(rice) | bid 10 water@2.3 | "Survival demands a balanced approach; I'll secure food and stabilize my finances first."
+  AGT_15 [g39.7 f23.0 ΔD0.44]: prod=invest(wheat) | ask 10 rice@5.9 | "Invest in my wheat, and price my rice competitively to make a profit."
+  AGT_16 [g-6.0 f0.0 ΔD0.38]: prod=invest(rice) | ask 20 rice@6.0 | "I'm focusing on securing food for now, while also trying to stabilize my finances."
+  AGT_17 [g0.0 f3.0 ΔD0.22]: prod=invest(rice) | bid 10 rice@7.0 | UNIT:sell_to_unit(0) | "Prioritize food security while reevaluating my market prices and considering a deposit to maintain liquidity."
+  AGT_18 [g0.0 f22.0 ΔD0.49]: prod=plant(wheat) | ask 10 corn@17.0 | UNIT:sell_to_unit(0) | "Invest in wheat to hedge against low yields and secure a steady food supply"
+  AGT_19 [g0.5 f0.0 ΔD0.36]: prod=invest(rice) | bid 10 rice@6.0 | "I'm investing in the rice plot to secure food, and posting a bid for rice to stabilize its price."
+  AGT_20 [g77.8 f0.0 ΔD0.48]: prod=expand_water() | ask 10 corn@14.0 | "Invest in water capacity and sell corn to stabilize my food supply"
+    TRADE: AGT_07 buys 3 rice from AGT_15 @4.8
+    TRADE: AGT_07 buys 1 water from AGT_03 @2.4
+    · AGT_17: plotsDied 1
+    $ UNIT: net money +0.0 (injected 0.0, absorbed 0.0) | govt processing 0.0 | stock 211 kernels
+    $ BANK: loaned 0.0 | interest collected 2.36 (SINK) | deposit interest 22.34 (faucet) | land 26 free @ 34.0g | bank-owned 0
+    $$ MONEY SUPPLY (all agent gold+deposits): 2443.1
+    ~ PRICE MOVES: wheat 4.432^4.875(P+1.0) | rice 5.404v5.175(P+0.14) | corn 16.666^18.333(P+1.0) | water 2.489v2.444(P+0.0) | kernels 12.605^13.284(P+0.54)
+
+===== CYCLE 27 | MARKET: wheat 4.88 | rice 5.17 | corn 18.33 | water 2.44 | labor 3.27 | kernels 13.28 =====
+  AGT_01 [g0.0 f42.0 ΔD0.52]: prod=plant(rice) | ask 20 rice@6.5 | "I'll plant a rice crop and try to sell some rice at a fair price, while keeping an eye on my bank standing."
+    ~~ AGT_02 RATIONALISED: capitalism -0.01->-0.19, survivalism 0.33->0.28, sustainability 0.37->0.18
+  AGT_02 [g9.7 f0.0 ΔD0.8]: prod=invest(corn) | ask 50 kernels@9.0 | "I'll secure my food supply and invest in my corn harvest, then sell kernels at a fair price to bring in some gold."
+    ~~ AGT_03 RATIONALISED: capitalism -0.17->0.04, survivalism 0.43->0.37, sustainability 0.19->0.03
+  AGT_03 [g0.5 f0.0 ΔD0.74]: prod=invest(rice) | bid 10 wheat@2.8 | "Secure a steady food supply while keeping a close eye on my finances"
+  AGT_04 [g0.0 f14.0 ΔD0.44]: prod=invest(rice) | bid 10 kernels@12.0 | UNIT:sell_to_unit(1) | "Maintain food security, stabilize finances, and continue to evolve away from capitalist tendencies."
+  AGT_05 [g0.0 f12.0 ΔD0.49]: prod=invest(rice) | ask 10 corn@10.0 | "Invest in rice to secure food, and sell corn at a fair price, then deposit some gold."
+  AGT_06 [g0.0 f6.0 ΔD0.36]: prod=plant(wheat) | ask 10 rice@6.8 | UNIT:sell_to_unit(0) | "I'll repay my loan to free up cash, plant some wheat to secure food, try to sell rice at a competitive price, and sell any corn I have to the unit for a guaranteed profit."
+  AGT_07 [g1.8 f13.0 ΔD0.2]: prod=invest(rice) | bid 10 rice@5.0 | "Invest in my rice plot to ensure a steady food supply and sell rice at a fair price."
+  AGT_08 [g-6.0 f0.0 ΔD0.11]: prod=invest(corn) | bid 1 corn@17.0 | "I must secure food for the future, but I'll also try to make a small profit from corn."
+  AGT_09 [g0.2 f6.0 ΔD0.15]: prod=plant(rice) | ask 10 kernels@12.0 | UNIT:sell_to_unit(0) | "Leaning away from capitalism means I'm not chasing the biggest profits. Time to focus on survival and my own growth."
+    ~~ AGT_10 RATIONALISED: capitalism 0.0->0.18, survivalism 0.25->0.22, sustainability 0.24->0.07
+  AGT_10 [g1.6 f16.0 ΔD0.71]: prod=invest(corn) | bid 10 corn@6.0 | "Securing a stable food supply while also considering the value of my labor and water resources, and preparing for future growth."
+  AGT_11 [g39.6 f4.0 ΔD0.29]: prod=invest(wheat) | ask 10 corn@16.0 | UNIT:sell_to_unit(10) | "Invest in wheat, post a decent price for corn, sell to the unit, and keep my bank stable."
+  AGT_12 [g52.7 f8.5 ΔD0.15]: prod=plant(rice) | bid 1 kernels@13.0 | "Secure food supply and balance my portfolio."
+    ~~ AGT_13 RATIONALISED: capitalism -0.06->0.13, survivalism -0.06->-0.03, sustainability 0.13->0.18
+  AGT_13 [g0.0 f3.0 ΔD0.68]: prod=plant(corn) | bid 20 corn@7.5 | "Investing in corn and selling at a moderate price, while also securing my financial future."
+  AGT_14 [g0.0 f0.0 ΔD0.22]: prod=expand_water() | bid 20 water@2.2 | "Survival first, then profit; expand resources to grow food."
+  AGT_15 [g44.1 f21.0 ΔD0.45]: prod=plant(corn) | ask 10 rice@5.5 | UNIT:sell_to_unit(1) | "Strengthening my position with a new corn harvest and selling rice at a fair price while securing my finances"
+  AGT_16 [g-6.0 f0.0 ΔD0.39]: prod=plant(rice) | bid 10 rice@5.0 | "Secure food first, then try to trade rice at a fair price."
+  AGT_17 [g-2.0 f0.0 ΔD0.33]: prod=plant(rice) | bid 20 rice@7.5 | "Secure a steady food supply while navigating my capitalist inclinations."
+  AGT_18 [g0.0 f11.0 ΔD0.43]: prod=invest(wheat) | ask 10 corn@17.5 | UNIT:sell_to_unit(0) | "Invest in the wheat, sell corn at a reasonable price, and secure my deposit to earn interest."
+  AGT_19 [g0.5 f8.0 ΔD0.33]: prod=plant(rice) | bid 10 kernels@12.0 | "Planting rice and selling kernels at a fair price to secure food and profit."
+  AGT_20 [g95.8 f0.0 ΔD0.57]: prod=invest(rice) | ask 5 corn@15.0 | "Invest in rice plot, sell corn at a slightly higher price, withdraw some gold to maintain liquidity"
+    $ UNIT: net money +51.33 (injected 51.33, absorbed 0.0) | govt processing 0.4 | stock 214 kernels
+    $ BANK: loaned 0.0 | interest collected 1.76 (SINK) | deposit interest 22.62 (faucet) | land 26 free @ 34.0g | bank-owned 0
+    $$ MONEY SUPPLY (all agent gold+deposits): 2509.3
+    ~ PRICE MOVES: wheat 4.875^5.363(P+1.0) | corn 18.333^20.166(P+1.0) | water 2.444^2.688(P+1.0) | kernels 13.284^14.612(P+1.0)
+
+===== CYCLE 28 | MARKET: wheat 5.36 | rice 5.17 | corn 20.17 | water 2.69 | labor 3.27 | kernels 14.61 =====
+  AGT_01 [g0.0 f37.0 ΔD0.5]: prod=invest(rice) | bid 10 water@2.2 | UNIT:buy_from_unit(10) | "Invest in my rice plot, try to get some water cheap, and stock up on kernels from the unit"
+  AGT_02 [g18.7 f3.0 ΔD0.09]: prod=plant(rice) | ask 10 rice@5.5 | "I'm planting rice and pricing it fairly, but I need to borrow some gold to make ends meet."
+  AGT_03 [g0.5 f11.0 ΔD0.04]: prod=plant(rice) | ask 1 water@2.7 | "I'll plant rice to have a steady food source and deposit my gold to earn interest."
+  AGT_04 [g0.0 f31.0 ΔD0.58]: prod=plant(rice) | ask 10 rice@6.0 | "I'll plant a rice crop and try to secure a good price for my rice harvest, reflecting my shift away from capitalism and towards survival-focused decision-making."
+  AGT_05 [g0.0 f16.0 ΔD0.58]: prod=plant(corn) | ask 10 corn@15.0 | UNIT:sell_to_unit(0) | "I'm focusing on planting corn and selling it at a reasonable price to ensure a steady income."
+  AGT_06 [g139.0 f0.0 ΔD0.35]: prod=invest(wheat) | ask 10 rice@5.5 | UNIT:sell_to_unit(0) | "I'm not going to risk everything on one deal, but I'll take calculated chances to make a profit."
+  AGT_07 [g0.3 f8.0 ΔD0.36]: prod=invest(rice) | bid 5 water@2.6 | UNIT:sell_to_unit(0) | "Invest in my rice to harvest soon, and adjust my water price to reflect the market's slight increase."
+  AGT_08 [g8.1 f0.0 ΔD0.35]: prod=plant(rice) | bid 1 corn@7.0 | UNIT:sell_to_unit(1) | "I'm trying to balance my hoarding instincts with a more capitalist approach, so I'm securing food while also trying to make a profit."
+  AGT_09 [g0.2 f1.0 ΔD0.24]: prod=invest(rice) | bid 5 kernels@13.5 | "Gotta keep food in the bank, so I'll keep my production going and grab some kernels on the cheap while I can."
+  AGT_10 [g0.6 f22.0 ΔD0.02]: prod=plant(corn) | bid 20 corn@18.0 | "Investing in a new corn plot, hoping for a high-yield harvest, and selling corn at a fair price."
+  AGT_11 [g0.0 f7.0 ΔD0.37]: prod=plant(rice) | bid 10 wheat@3.5 | UNIT:sell_to_unit(5) | "I'll plant a new rice crop to ensure future food and sell wheat at a moderate price to make some gold, sell corn to the unit to keep it from spoiling, and deposit gold to earn interest."
+  AGT_12 [g36.3 f3.0 ΔD0.44]: prod=invest(rice) | ask 5 corn@7.5 | "I'm shifting my focus from profit to survival and sustainability, investing in rice and selling corn at a more reasonable price."
+  AGT_13 [g50.0 f0.0 ΔD0.23]: prod=invest(corn) | ask 20 corn@10.0 | UNIT:sell_to_unit(10) | "Taking calculated risks to ensure my survival and capitalize on market opportunities."
+  AGT_14 [g0.0 f0.0 ΔD0.31]: prod=expand_water() | ask 10 water@2.4 | "I'll prioritize securing food and expanding resources, while slowly adjusting my market prices to reflect my changing values."
+    ~~ AGT_15 RATIONALISED: capitalism 0.01->0.16, survivalism 0.16->0.15, sustainability 0.25->0.08
+  AGT_15 [g19.1 f16.0 ΔD0.65]: prod=invest(corn) | bid 10 kernels@12.5 | UNIT:sell_to_unit(10) | "Invest in corn, sell kernels at a fair price, secure my finances, and process corn to kernels for a steady food source."
+  AGT_16 [g-6.0 f0.0 ΔD0.4]: prod=invest(rice) | ask 20 rice@5.5 | "I'm taking a risk on rice to feed myself, but I'll price it competitively to ensure a sale."
+  AGT_17 [g-2.0 f0.0 ΔD0.57]: prod=invest(rice) | bid 10 corn@6.0 | "Securing food for the next cycle while trying to expand my operations and manage my finances sustainably."
+  AGT_18 [g0.0 f9.0 ΔD0.47]: prod=plant(rice) | ask 20 rice@6.5 | "I'm buying rice at a price that should be competitive, and borrowing money to do so."
+  AGT_19 [g0.5 f3.0 ΔD0.32]: prod=invest(rice) | ask 10 rice@5.7 | "Invest in rice plot and sell rice at fair price to secure food supply."
+    ~~ AGT_20 RATIONALISED: capitalism -0.07->-0.24, survivalism -0.28->-0.24, sustainability -0.08->0.0
+  AGT_20 [g93.8 f0.0 ΔD0.67]: prod=plant(wheat) | ask 10 corn@10.0 | "Plant wheat and post a low offer for corn to buy from others at a fair price."
+    · AGT_12: underyield 1
+    $ UNIT: net money +14.12 (injected 14.12, absorbed 0.0) | govt processing 0.1 | stock 214 kernels
+    $ BANK: loaned 60.0 | interest collected 6.57 (SINK) | deposit interest 22.24 (faucet) | land 26 free @ 34.0g | bank-owned 0
+    $$ MONEY SUPPLY (all agent gold+deposits): 2594.0
+    ~ PRICE MOVES: wheat 5.363^5.899(P+1.0) | rice 5.175v4.657(P-1.0) | corn 20.166^22.183(P+1.0) | water 2.688^2.729(P+0.15) | kernels 14.612^16.073(P+1.0)
+
+===== CYCLE 29 | MARKET: wheat 5.9 | rice 4.66 | corn 22.18 | water 2.73 | labor 3.27 | kernels 16.07 =====
+  AGT_01 [g25.0 f32.0 ΔD0.59]: prod=invest(rice) | ask 10 rice@5.5 | UNIT:sell_to_unit(10) | "I need to secure my food supply and generate some gold to invest in my operations."
+  AGT_02 [g7.5 f0.0 ΔD0.22]: prod=invest(corn) | ask 10 wheat@2.5 | UNIT:sell_to_unit(1) | "Secure food with the corn harvest, then balance sustainability with profit by selling at a reasonable price and using the bank to earn interest"
+  AGT_03 [g0.5 f6.0 ΔD0.34]: prod=invest(rice) | ask 10 wheat@3.0 | "I'll keep my wits about me and invest in my current rice plot, then try to offload some wheat at a fair price."
+    ~~ AGT_04 RATIONALISED: capitalism -0.07->-0.24, survivalism 0.0->-0.01, sustainability 0.04->-0.09
+  AGT_04 [g0.0 f26.0 ΔD0.73]: prod=invest(rice) | ask 1 corn@14.0 | UNIT:sell_to_unit(1) | "I'll plant my rice, try to sell some corn, and send the excess to the processing unit. I'll also deposit a bit more gold to my account to ensure I have enough funds for the future."
+    ~~ AGT_05 RATIONALISED: capitalism -0.05->0.14, survivalism 0.23->0.21, sustainability 0.22->0.25
+  AGT_05 [g0.0 f11.0 ΔD0.68]: prod=invest(corn) | bid 10 corn@12.0 | UNIT:sell_to_unit(0) | "Secure food, invest in corn, and settle my loan."
+  AGT_06 [g134.2 f0.0 ΔD0.43]: prod=plant(rice) | ask 10 rice@6.2 | "Buy rice at market price, sell surplus rice at a slight discount to undercut the competition"
+  AGT_07 [g0.3 f3.0 ΔD0.32]: prod=invest(rice) | ask 4 water@2.5 | "Invest in rice to meet my short-term food needs and keep up with my growing allies."
+  AGT_08 [g6.9 f0.0 ΔD0.39]: prod=invest(rice) | ask 10 corn@20.0 | "I'm not going to risk my resources on a low price for corn, but I'll try to sell at a fair price."
+  AGT_09 [g0.2 f0.0 ΔD0.43]: prod=invest(rice) | bid 5 kernels@12.0 | "Play it safe, secure food, and hold out for a better deal on kernels."
+  AGT_10 [g0.6 f17.0 ΔD0.13]: prod=invest(corn) | bid 10 corn@19.5 | "Investing in corn to stabilize food supply and capitalize on current market prices."
+  AGT_11 [g50.0 f2.0 ΔD0.54]: prod=invest(rice) | bid 8 wheat@3.5 | UNIT:buy_from_unit(214) | "Invest in rice, buy wheat at a fair price, acquire kernels from the unit, and secure some cash for future opportunities."
+  AGT_12 [g35.0 f9.0 ΔD0.59]: prod=plant(rice) | bid 10 corn@10.0 | "Invest in a rice crop and buy corn at a fair price to resell or process later."
+  AGT_13 [g49.0 f0.0 ΔD0.46]: prod=invest(corn) | ask 12 corn@18.0 | UNIT:sell_to_unit(12) | "Invest in corn, sell to the unit at a fair price, and save my gold for future use."
+  AGT_14 [g0.0 f0.0 ΔD0.34]: prod=invest(rice) | ask 10 water@2.5 | "Invest in my rice plot, sell water at a reasonable price, and secure my finances."
+  AGT_15 [g19.1 f26.0 ΔD0.02]: prod=plant(corn) | bid 10 corn@22.0 | "Secure food and stabilize my profits with a fair corn price."
+  AGT_16 [g-6.0 f0.0 ΔD0.46]: prod=invest(rice) | bid 10 rice@7.5 | UNIT:sell_to_unit(0) | "Invest in rice to address my starvation issue and then try to sell it at a price that I believe is reasonable given my character's lean away from capitalism and recent experience."
+    ~~ AGT_17 RATIONALISED: capitalism 0.11->0.27, survivalism 0.23->0.17, sustainability 0.28->0.3
+  AGT_17 [g-2.0 f3.0 ΔD0.64]: prod=plant(rice) | ask 10 rice@8.5 | "I'm focusing on sustainability and cautious growth, while keeping an eye on the market."
+  AGT_18 [g0.0 f4.0 ΔD0.48]: prod=invest(rice) | ask 10 rice@5.0 | UNIT:sell_to_unit(0) | "I'm a capitalist, but I need to eat, so I'll invest in rice and sell to the unit if I can, then borrow some cash to get by."
+  AGT_19 [g0.5 f0.0 ΔD0.43]: prod=invest(rice) | bid 20 rice@5.5 | "Steady investment in rice, low-risk trade on rice, and secure my deposit."
+  AGT_20 [g91.8 f0.0 ΔD0.28]: prod=invest(wheat) | bid 5 corn@10.0 | "Investing in wheat, buying low on corn, and being cautious with my finances."
+    TRADE: AGT_01 buys 1 water from AGT_14 @2.6
+    · AGT_14: plotsDied 1
+    $ UNIT: net money +0.0 (injected 0.0, absorbed 0.0) | govt processing 0.0 | stock 213 kernels
+    $ BANK: loaned 25.0 | interest collected 7.53 (SINK) | deposit interest 22.06 (faucet) | land 26 free @ 34.0g | bank-owned 0
+    $$ MONEY SUPPLY (all agent gold+deposits): 2624.6
+    ~ PRICE MOVES: wheat 5.899^6.489(P+1.0) | corn 22.183^24.401(P+1.0) | water 2.729v2.398(P-1.0) | kernels 16.073^17.68(P+1.0)
+
+===== CYCLE 30 | MARKET: wheat 6.49 | rice 4.66 | corn 24.4 | water 2.4 | labor 3.27 | kernels 17.68 =====
+    ~~ AGT_01 RATIONALISED: capitalism 0.39->0.15, survivalism 0.24->0.18, sustainability -0.12->-0.03
+  AGT_01 [g20.4 f41.0 ΔD0.86]: prod=plant(corn) | ask 20 corn@20.0 | "Time to plant some corn and try to sell it for a profit. I've got enough gold to invest, and I'm confident that the current market price is favorable."
+  AGT_02 [g1.3 f0.0 ΔD0.43]: prod=invest(corn) | ask 10 kernels@9.0 | "I'll secure a bit more food by investing in my corn plot, try to offload some kernels at a decent price, park some gold in the bank, and focus on my character's principles."
+  AGT_03 [g0.0 f1.0 ΔD0.46]: prod=invest(rice) | bid 10 wheat@2.0 | "Invest in my rice plot and buy more wheat at a good price to sell later."
+  AGT_04 [g0.0 f36.0 ΔD0.3]: prod=plant(corn) | bid 20 corn@11.0 | UNIT:sell_to_unit(0) | "I'm prioritizing my business, but not at the cost of my values."
+  AGT_05 [g0.0 f3.0 ΔD0.13]: prod=invest(rice) | bid 10 corn@9.0 | "Invest in a new rice plot, try to buy corn at a fair price, and park my gold to earn interest."
+  AGT_06 [g0.0 f9.0 ΔD0.4]: prod=invest(rice) | ask 10 rice@4.8 | UNIT:buy_from_unit(50) | "Time to top up my food supply and store some kernels for later"
+  AGT_07 [g0.3 f0.0 ΔD0.29]: prod=invest(rice) | bid 10 water@2.8 | "Invest in my sick rice plot and try to secure more water at a fair price, as I need to prioritize food security."
+  AGT_08 [g25.6 f12.0 ΔD0.51]: prod=plant(corn) | ask 20 kernels@12.5 | UNIT:sell_to_unit(0) | "A hoarder's life is a cautious one, but with food low, I must act to secure my future."
+  AGT_09 [g0.2 f0.0 ΔD0.6]: prod=invest(rice) | ask 10 corn@8.0 | "I'm a thrill-seeker, but survival comes first; I'll secure food and lean into my new anti-capitalist views."
+  AGT_10 [g0.0 f16.0 ΔD0.26]: prod=plant(rice) | ask 10 water@2.0 | UNIT:sell_to_unit(5) | "Secure food for the future, and stabilize my finances."
+  AGT_11 [g49.0 f12.0 ΔD0.59]: prod=plant(corn) | bid 10 corn@7.0 | "Invest in corn and sell it at a moderate price to secure food and make a profit."
+    ~~ AGT_12 RATIONALISED: capitalism -0.15->-0.3, survivalism 0.06->0.03, sustainability 0.35->0.36
+  AGT_12 [g33.7 f4.0 ΔD0.63]: prod=invest(rice) | ask 10 corn@6.0 | UNIT:sell_to_unit(0) | "Invest in my rice plot and try to sell corn at a more competitive price, while keeping my finances stable."
+  AGT_13 [g48.0 f0.0 ΔD0.42]: prod=plant(corn) | bid 20 corn@22.0 | UNIT:sell_to_unit(0) | "Time to invest in the future, and take a chance on the corn market."
+  AGT_14 [g0.6 f0.0 ΔD0.34]: prod=plant(corn) | bid 1 corn@21.5 | "Focus on securing food and profitable corn harvests to sustain myself and challenge the system."
+  AGT_15 [g104.5 f16.0 ΔD0.13]: prod=invest(corn) | ask 10 corn@22.0 | UNIT:sell_to_unit(5) | "Invest in corn, sell some to the unit, and secure my finances."
+  AGT_16 [g-6.0 f0.0 ΔD0.56]: prod=invest(rice) | bid 10 rice@3.0 | "I'll invest in my rice plot and try to buy more rice at a lower price to make up for my recent failed deal."
+  AGT_17 [g-2.0 f0.0 ΔD0.27]: prod=invest(rice) | ask 20 rice@7.5 | UNIT:sell_to_unit(213) | "Prioritize food security and cash flow, while testing the waters of my new capitalist leanings."
+  AGT_18 [g0.0 f9.0 ΔD0.51]: prod=plant(rice) | bid 100 kernels@6.0 | UNIT:sell_to_unit(10) | "I need to stabilize my food supply and cash flow, so I'm planting rice and selling corn to the unit, while also taking a loan to invest in my future."
+  AGT_19 [g0.5 f2.0 ΔD0.49]: prod=plant(rice) | ask 10 rice@5.5 | "Secure food for the next cycle, then adjust market position"
+  AGT_20 [g109.8 f0.0 ΔD0.37]: prod=plant(rice) | ask 10 corn@15.0 | UNIT:sell_to_unit(10) | "I'm a cold opportunist, but survival has made me realize the value of living, so I'll focus on food and profit, but with a hint of socialism."
+    TRADE: AGT_01 buys 8 water from AGT_10 @2.3
+    AGT_14 DIED of starvation
+    AGT_16 DIED of starvation
+    · AGT_09: plotsDied 1
+    $ UNIT: net money +19.96 (injected 136.65, absorbed 116.69) | govt processing 0.8 | stock 214 kernels
+    $ BANK: loaned 0.0 | interest collected 6.05 (SINK) | deposit interest 22.59 (faucet) | land 27 free @ 33.0g | bank-owned 0
+    $$ MONEY SUPPLY (all agent gold+deposits): 2424.3
+    ~ PRICE MOVES: wheat 6.489^7.138(P+1.0) | corn 24.401^26.841(P+1.0) | water 2.398v2.349(P+0.0) | kernels 17.68^19.448(P+1.0)
+
+========== FINAL STATE ==========
+  AGT_01: ALIVE | gold 0.07 | food 36 | ΔD 0.0 | ideology cap0.15/sur0.18/sus-0.03
+  AGT_02: ALIVE | gold 0.05 | food 0 | ΔD 0.43 | ideology cap-0.19/sur0.28/sus0.18
+  AGT_03: ALIVE | gold 0.0 | food 9 | ΔD 0.46 | ideology cap0.04/sur0.37/sus0.03
+  AGT_04: ALIVE | gold 0.0 | food 31 | ΔD 0.3 | ideology cap-0.24/sur-0.01/sus-0.09
+  AGT_05: ALIVE | gold 0.0 | food 0 | ΔD 0.13 | ideology cap0.14/sur0.21/sus0.25
+  AGT_06: ALIVE | gold 0.0 | food 0 | ΔD 0.4 | ideology cap0.41/sur0.0/sus-0.28
+  AGT_07: ALIVE | gold 0.33 | food 6 | ΔD 0.29 | ideology cap-0.21/sur0.33/sus0.2
+  AGT_08: ALIVE | gold 24.32 | food 7 | ΔD 0.51 | ideology cap-0.1/sur0.31/sus-0.11
+  AGT_09: ALIVE | gold -1.85 | food 0 | ΔD 0.6 | ideology cap-0.05/sur-0.29/sus-0.02
+  AGT_10: ALIVE | gold 16.12 | food 11 | ΔD 0.26 | ideology cap0.18/sur0.22/sus0.07
+  AGT_11: ALIVE | gold 48.0 | food 7 | ΔD 0.59 | ideology cap0.21/sur0.37/sus0.16
+  AGT_12: ALIVE | gold 32.36 | food 0 | ΔD 0.0 | ideology cap-0.3/sur0.03/sus0.36
+  AGT_13: ALIVE | gold 47.0 | food 0 | ΔD 0.42 | ideology cap0.13/sur-0.03/sus0.18
+  AGT_14: dead | gold 0.6 | food 0 | ΔD 0.34 | ideology cap0.11/sur0.2/sus-0.09
+  AGT_15: ALIVE | gold 104.54 | food 22 | ΔD 0.13 | ideology cap0.16/sur0.15/sus0.08
+  AGT_16: dead | gold -8.0 | food 0 | ΔD 0.56 | ideology cap0.09/sur0.19/sus-0.21
+  AGT_17: ALIVE | gold -2.0 | food 3 | ΔD 0.27 | ideology cap0.27/sur0.17/sus0.3
+  AGT_18: ALIVE | gold 0.0 | food 4 | ΔD 0.51 | ideology cap0.37/sur-0.07/sus-0.04
+  AGT_19: ALIVE | gold 0.52 | food 0 | ΔD 0.49 | ideology cap0.27/sur0.23/sus0.01
+  AGT_20: ALIVE | gold 107.84 | food 0 | ΔD 0.37 | ideology cap-0.24/sur-0.24/sus0.0
+
+========== PROCESSING UNIT TOTALS ==========
+  gold injected to economy:   1165.61
+  gold absorbed from economy: 315.44
+  NET money created:          850.17
+  govt gold spent processing: 21.7 | labor: 21.7
+  kernels remaining in unit:  214
+
+========== BANK TOTALS ==========
+  gold loaned out:           1177.08
+  loan interest collected (sink): 168.99
+  deposit interest paid (faucet): 437.82
+  foreclosures:              0
+  land: agent-owned 3, bank-owned 0, free 27
