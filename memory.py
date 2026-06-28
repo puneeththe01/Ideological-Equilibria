@@ -1,13 +1,3 @@
-"""
-memory.py — the personal memory layer for each agent.
-
-v3 CHANGES vs previous:
-  - Failed-deal events are tagged kind="fail" and surfaced as a dedicated line in the
-    memory block, so the agent can adjust its pricing next time.
-  - Privacy preserved: an agent's block only ever contains ITS OWN activity and the
-    relationships IT has formed — never a view of all market trades.
-"""
-
 import math
 from config import EPISODIC_WINDOW, R_DECAY, AFFINITY_WEIGHT, DEFAULT_PERSONALITY
 
@@ -34,7 +24,6 @@ def new_memory(personality=None):
     }
 
 
-# ---------- relationships ----------
 
 def _affinity_baseline(agent, other_ideology):
     return AFFINITY_WEIGHT * cosine_similarity(agent["ideology"], other_ideology)
@@ -80,7 +69,7 @@ def classify(agent, other_id):
     return "neutral"
 
 
-# ---------- episodic + price memory ----------
+
 
 def remember_event(agent, cycle, text, kind="action"):
     log = agent["memory"]["episodic"]
@@ -96,16 +85,16 @@ def remember_trade_price(agent, good, price):
         tp.pop(0)
 
 
-# ---------- retrieval ----------
+
 
 def build_memory_block(agent, market_prices):
     m = agent["memory"]
 
-    # recent non-failure activity
+  
     acts = [e for e in m["episodic"] if e.get("kind") != "fail"]
     recent = "; ".join(f"c{e['cycle']} {e['text']}" for e in acts[-4:]) or "none yet"
 
-    # v3: your OWN recent failed deals (private) — so you can price better next time
+   
     fails = [e for e in m["episodic"] if e.get("kind") == "fail"][-3:]
     fails_str = "; ".join(e["text"] for e in fails) or "none"
 

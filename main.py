@@ -4,12 +4,12 @@ from agent import decide
 agent = {
     "id": "AGT_007",
     "ideology": {
-        "capitalism":      0.8,   # +1 = profit-maximising, -1 = anti-market
-        "survivalism":     0.3,   # +1 = self-preservation at all costs
-        "sustainability": -0.4,   # +1 = conserves shared resources, -1 = exploits them
+        "capitalism":      0.8,   
+        "survivalism":     0.3,   
+        "sustainability": -0.4,   
     },
     "gold": 40,
-    "food": 12,                   # below threshold -> creates pressure
+    "food": 12,                   
 }
 
 if __name__ == "__main__":

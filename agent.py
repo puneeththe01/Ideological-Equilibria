@@ -1,15 +1,3 @@
-"""
-agent.py — per-agent decision prompt, LLM call, parse + validate.
-
-v3 CHANGES vs previous:
-  - Injects the agent's persona `description` at the top of the system prompt, so each
-    agent has a unique voice/backstory on top of its numeric ideology directive.
-v7 CHANGES:
-  - Threads `bank_line` (live bank/land status) through build_user_prompt,
-    get_raw_decision, and decide — so agents can actually see and use the bank.
-  - Adds the `bank` action channel to the schema and validation.
-"""
-
 import json
 import re
 import time
@@ -169,7 +157,7 @@ def get_raw_decision(agent, market_prices, unit_line="", bank_line="", max_retri
                 temperature=0.7,
                 max_tokens=350,
             )
-            time.sleep(1.6)
+            time.sleep(0.1)
             return resp.choices[0].message.content.strip()
         except Exception as e:
             if "429" in str(e) or "RateLimit" in type(e).__name__:

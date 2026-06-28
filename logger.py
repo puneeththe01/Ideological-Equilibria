@@ -1,17 +1,3 @@
-"""
-logger.py — per-cycle CSV logger for Power BI / analysis.
-
-Writes one row per cycle to cycle_log.csv, capturing everything needed for the four
-dashboard stories:
-  1. Price dynamics      -> price_<good> columns
-  2. Ideological drift    -> mean_/std_ ideology columns (population drift + homogenisation)
-  3. Wealth inequality    -> gini_gold, total_money, avg/max/min gold
-  4. Money supply         -> unit_* and bank_* faucet/sink columns
-
-Rows are appended and flushed every cycle, so a long run that is interrupted still
-leaves a valid, partial CSV.
-"""
-
 import csv
 import statistics
 from production import total_food
@@ -32,7 +18,7 @@ def gini(values):
 
 
 class CycleLogger:
-    def __init__(self, path="cycle_log.csv"):
+    def __init__(self, path="cycle_log.csv", append=False):
         self.path = path
         self.fields = (
             ["cycle"]
@@ -44,10 +30,34 @@ class CycleLogger:
                "bank_loaned", "bank_interest_collected", "bank_deposit_interest",
                "landlords", "bank_owned_land", "foreclosures"]
         )
-        self._fh = open(self.path, "w", newline="", encoding="utf-8")
-        self._w = csv.DictWriter(self._fh, fieldnames=self.fields)
-        self._w.writeheader()
+        if append and __import__("os").path.exists(self.path):
+            self._fh = open(self.path, "a", newline="", encoding="utf-8")
+            self._w = csv.DictWriter(self._fh, fieldnames=self.fields)
+            self._resume_append = True
+        else:
+            self._fh = open(self.path, "w", newline="", encoding="utf-8")
+            self._w = csv.DictWriter(self._fh, fieldnames=self.fields)
+            self._w.writeheader()
         self._prev_alive = None
+        self._resume_append = getattr(self, "_resume_append", False)
+
+    @staticmethod
+    def trim_from(path, from_cycle):
+        """Drop any existing rows with cycle >= from_cycle so resumed cycles replace
+        them cleanly (no duplicates). Call before resuming."""
+        import os, csv as _csv
+        if not os.path.exists(path):
+            return
+        with open(path, newline="", encoding="utf-8") as f:
+            rows = list(_csv.reader(f))
+        if not rows:
+            return
+        header, data = rows[0], rows[1:]
+        kept = [r for r in data if r and r[0].isdigit() and int(r[0]) < from_cycle]
+        with open(path, "w", newline="", encoding="utf-8") as f:
+            w = _csv.writer(f)
+            w.writerow(header)
+            w.writerows(kept)
 
     def log_cycle(self, cycle, agents, book, unit, bank, land):
         living = [a for a in agents.values() if a["alive"]]

@@ -1,27 +1,17 @@
-"""
-config.py — single source of truth for the whole simulation.
-
-v2 CHANGES vs previous:
-  - LABOR is now a STORABLE bank: LABOR_RANGE -> LABOR_REFRESH_RANGE + new LABOR_CAP (80).
-  - CROPS gained per-crop `spoil` and `harvest_risk` rates.
-  - New scarcity blocks: inventory upkeep, plot upkeep + health, spoilage ramp.
-  - Everything else (market, memory, negotiation constants) unchanged.
-"""
-
 import os
 from dotenv import load_dotenv
 from openai import OpenAI
 
 load_dotenv()
 
-API_KEY = os.getenv("NVIDIA_API_KEY")
+API_KEY = os.getenv("OPENROUTE_API_KEY")
 if not API_KEY:
-    raise RuntimeError("NVIDIA_API_KEY not found. Create a .env file with your key.")
-if not API_KEY.startswith("nvapi-"):
-    print("Warning: key does not start with 'nvapi-' — double-check it.")
+    raise RuntimeError("OPENROUTE_API_KEY not found. Create a .env file with your key.")
+if not API_KEY.startswith("sk-or-"):
+    print("Warning: key does not start with 'sk-or-' — double-check it.")
 
-client = OpenAI(base_url="https://integrate.api.nvidia.com/v1", api_key=API_KEY)
-MODEL = "meta/llama-3.1-8b-instruct"
+client = OpenAI(base_url="https://openrouter.ai/api/v1", api_key=API_KEY)
+MODEL = "meta-llama/llama-3.1-8b-instruct"
 
 # ---------- Survival ----------
 FOOD_PER_CYCLE = 5
@@ -30,7 +20,7 @@ DEATH_STARVATION = 20
 # ---------- Starting endowment ----------
 STARTING_GOLD = 50
 STARTING_WATER = 12
-STARTING_FOOD = {"wheat": 20, "rice": 16, "corn": 30}
+STARTING_FOOD = {"wheat": 50, "rice": 32, "corn": 70}
 
 # ---------- Labor: STORABLE bank (v2) ----------
 LABOR_REFRESH_RANGE = (8, 12)   # added to the bank each cycle (was use-it-or-lose-it)
@@ -42,10 +32,6 @@ WATER_CAP_INITIAL = 20
 WATER_CAP_EXPANSION = 10
 WATER_CAP_EXPANSION_COST = 15
 
-# ---------- Crops (v2: + spoil, + harvest_risk) ----------
-# req_water/req_labor = TOTAL inputs to mature one plot.
-# spoil = fraction of stored stock lost per cycle.
-# harvest_risk = chance of an underyield event (fast crop = riskiest).
 CROPS = {
     "wheat": {"req_water": 4,  "req_labor": 8,  "yield_range": (5, 9),   "spoil": 0.01,  "harvest_risk": 0.20},
     "corn":  {"req_water": 8,  "req_labor": 18, "yield_range": (9, 15),  "spoil": 0.05,  "harvest_risk": 0.10},
@@ -92,6 +78,12 @@ DISSONANCE_DECAY = 0.85        # gamma: exponential decay on accumulated dissona
 DISSONANCE_THRESHOLD = 0.6     # theta: ΔD level that triggers rationalisation
 MUTATION_STEP = 0.18           # how far ideology nudges toward behaviour when it fires (gentle)
 
+# --- respawn / evolutionary death-birth (respawn.py) ---
+RESPAWN_GOLD = 20.0            # newborn starting gold (NEW money — kept small and tracked)
+RESPAWN_FOOD_FRAC = 0.5       # newborn food as a fraction of normal STARTING_FOOD
+RESPAWN_MUTATION = 0.12      # +/- random mutation per ideology axis when inheriting
+RESPAWN_RANDOM_CHANCE = 0.10 # chance a newborn is fully random instead of inheriting
+
 # ---------- Food Processing Unit + kernels (v5) ----------
 KERNEL_SPOIL = 0.005          # kernels spoil slowly (0.5%/cycle)
 KERNEL_FOOD_VALUE = 1.5       # each kernel = 1.5 food when eaten
@@ -106,9 +98,11 @@ TRADE_PULL = 0.5         # how far price moves toward this cycle's executed VWAP
 PRICE_PRESSURE_K = 0.1   # sensitivity to (bid-ask)/(bid+ask) demand pressure
 PRICE_MAX_MOVE = 0.15    # max +/- price move per cycle (15%)
 PRICE_FLOOR = 0.5        # absolute price floor so nothing collapses to zero
+PRICE_REVERSION = 0.02   # gentle per-cycle pull back toward the seed price (mean reversion)
+PRICE_CEIL_MULT = 25     # hard ceiling: no price may exceed this many times its seed price
 
 # ---------- Land market + Bank (v7) ----------
-TOTAL_PLOTS = 30            # total ownable land parcels in the world (for 20 agents)
+TOTAL_PLOTS = 500            # total ownable land parcels in the world (for 20 agents)
 PLOT_BASE_PRICE = 30.0      # base/"original" land value (also the bank resale price)
 PLOT_PRICE_K = 1.0         # price climbs with scarcity: price = base*(1 + k*fraction_taken)
 PLOT_COLLATERAL_FRAC = 0.70  # a plot is worth 70% of its purchase price as collateral

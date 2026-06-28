@@ -1,29 +1,14 @@
-"""
-market.py — the limit-order ledger, matching, settlement, and price tracking.
-
-v3 CHANGES vs previous:
-  - match_and_settle now records FAILED negotiations into self.last_failures so each
-    agent can later learn from its OWN failed deals (privacy preserved: an agent only
-    ever sees the deals it was personally part of, never the whole market's flow).
-  - _try_trade distinguishes a price disagreement ("no_deal") from an infeasible trade.
-
-v6 CHANGES:
-  - Live per-cycle price (replaces the old lifetime cumulative average that froze prices).
-  - update_prices_from_pressure(): at end of each cycle, blend this cycle's executed-trade
-    VWAP (weighted more) with total bid-vs-ask demand pressure, clamped to +/-25%/cycle.
-    Prices now move even when no trade executes.
-"""
-
+from concurrent.futures import ThreadPoolExecutor
 from config import (
     SEED_PRICES, ORDER_EXPIRY, MATCH_TOLERANCE,
     DEFAULT_ALLOW_PARTIAL, TRADABLE_GOODS,
     TRADE_PULL, PRICE_PRESSURE_K, PRICE_MAX_MOVE, PRICE_FLOOR,
+    PRICE_REVERSION, PRICE_CEIL_MULT, SEED_PRICES,
 )
 
-CROP_GOODS = ("wheat", "rice", "corn", "kernels")  # all inventory-stored goods
+CROP_GOODS = ("wheat", "rice", "corn", "kernels")  
 
 
-# ---------- resource access helpers ----------
 
 def supply_available(agent, good):
     if good in CROP_GOODS:
@@ -68,16 +53,16 @@ class Ledger:
     def __init__(self):
         self.orders = []
         self._next_id = 1
-        self.price = {g: float(SEED_PRICES[g]) for g in TRADABLE_GOODS}  # live price
+        self.price = {g: float(SEED_PRICES[g]) for g in TRADABLE_GOODS} 
         self.trade_log = []
         self.last_failures = []
-        # per-cycle accumulators (reset at the start of each match_and_settle)
-        self._c_tval = {g: 0.0 for g in TRADABLE_GOODS}   # sum(price*qty) of this cycle's trades
-        self._c_tqty = {g: 0 for g in TRADABLE_GOODS}     # sum(qty) of this cycle's trades
-        self._c_bid = {g: 0 for g in TRADABLE_GOODS}      # total bid qty resting this cycle
-        self._c_ask = {g: 0 for g in TRADABLE_GOODS}      # total ask qty resting this cycle
+     
+        self._c_tval = {g: 0.0 for g in TRADABLE_GOODS}   
+        self._c_tqty = {g: 0 for g in TRADABLE_GOODS}     
+        self._c_bid = {g: 0 for g in TRADABLE_GOODS}      
+        self._c_ask = {g: 0 for g in TRADABLE_GOODS}     
 
-    # --- pricing ---
+  
     def market_price(self, good):
         return self.price[good]
 
@@ -85,7 +70,7 @@ class Ledger:
         self._c_tval[good] += price * qty
         self._c_tqty[good] += qty
 
-    # --- posting ---
+   
     def post_order(self, agent_id, side, good, price, quantity,
                    current_cycle, allow_partial=DEFAULT_ALLOW_PARTIAL):
         if side not in ("bid", "ask") or good not in TRADABLE_GOODS:
@@ -104,7 +89,7 @@ class Ledger:
         self.orders.append(order)
         return order
 
-    # --- matching ---
+   
     def _candidate_pairs(self, good):
         bids = [o for o in self.orders if o["good"] == good and o["side"] == "bid"]
         asks = [o for o in self.orders if o["good"] == good and o["side"] == "ask"]
@@ -122,60 +107,67 @@ class Ledger:
             return True
         return abs(b["price"] - a["price"]) <= MATCH_TOLERANCE * self.market_price(good)
 
-    def match_and_settle(self, agents_by_id, current_cycle, negotiate_fn=stub_negotiate):
-        # reset this cycle's trade tallies and snapshot demand/supply pressure
-        # (all resting orders on the book count toward pressure, per design)
+    def match_and_settle(self, agents_by_id, current_cycle, negotiate_fn=stub_negotiate,
+                         max_workers=8):
+
         self._c_tval = {g: 0.0 for g in TRADABLE_GOODS}
         self._c_tqty = {g: 0 for g in TRADABLE_GOODS}
         self._c_bid = {g: 0 for g in TRADABLE_GOODS}
         self._c_ask = {g: 0 for g in TRADABLE_GOODS}
         for o in self.orders:
             if o["created"] != current_cycle:
-                continue  # only THIS cycle's fresh orders count toward pressure (no stale double-count)
+                continue
             if o["side"] == "bid":
                 self._c_bid[o["good"]] += o["quantity"]
             else:
                 self._c_ask[o["good"]] += o["quantity"]
 
+        committed = set()
+        selected = []
+        for good in TRADABLE_GOODS:
+            for gap, b, a in self._candidate_pairs(good):
+                if b["agent_id"] in committed or a["agent_id"] in committed:
+                    continue
+                if not self._is_matchable(b, a, good):
+                    continue
+                selected.append((good, b, a))
+                committed.add(b["agent_id"])
+                committed.add(a["agent_id"])
+
+        def _negotiate(item):
+            good, b, a = item
+            buyer, seller = agents_by_id[b["agent_id"]], agents_by_id[a["agent_id"]]
+            qty = min(b["quantity"], a["quantity"])
+            agreed = negotiate_fn(buyer, seller, good, b["price"], a["price"],
+                                  self.market_price(good), qty)
+            return (good, b, a, agreed)
+
+        results = []
+        if selected:
+            with ThreadPoolExecutor(max_workers=max_workers) as pool:
+                results = list(pool.map(_negotiate, selected))
+
         realised = []
         failures = []
-        for good in TRADABLE_GOODS:
-            attempted_fail = set()
-            while True:
-                pair = None
-                for gap, b, a in self._candidate_pairs(good):
-                    if (b["id"], a["id"]) in attempted_fail:
-                        continue
-                    if self._is_matchable(b, a, good):
-                        pair = (b, a)
-                        break
-                if pair is None:
-                    break
-                b, a = pair
-                trade, status = self._try_trade(b, a, good, agents_by_id, negotiate_fn, current_cycle)
-                if trade:
-                    realised.append(trade)
-                    self.orders = [o for o in self.orders if o["quantity"] > 0]
-                else:
-                    attempted_fail.add((b["id"], a["id"]))
-                    if status == "no_deal":
-                        failures.append({
-                            "cycle": current_cycle, "good": good,
-                            "buyer": b["agent_id"], "seller": a["agent_id"],
-                            "bid_price": b["price"], "ask_price": a["price"],
-                        })
+        for good, b, a, agreed in results:
+            trade = self._settle_pair(b, a, good, agents_by_id, agreed, current_cycle)
+            if trade:
+                realised.append(trade)
+            elif agreed is None:
+                failures.append({
+                    "cycle": current_cycle, "good": good,
+                    "buyer": b["agent_id"], "seller": a["agent_id"],
+                    "bid_price": b["price"], "ask_price": a["price"],
+                })
+        self.orders = [o for o in self.orders if o["quantity"] > 0]
         self.last_failures = failures
         return realised
 
-    def _try_trade(self, bid, ask, good, agents, negotiate_fn, current_cycle):
-        """Returns (trade_dict_or_None, status). status in {'ok','no_deal','infeasible'}."""
+    def _settle_pair(self, bid, ask, good, agents, agreed, current_cycle):
+        if agreed is None:
+            return None
         buyer, seller = agents[bid["agent_id"]], agents[ask["agent_id"]]
         qty = min(bid["quantity"], ask["quantity"])
-
-        agreed = negotiate_fn(buyer, seller, good, bid["price"], ask["price"],
-                              self.market_price(good), qty)
-        if agreed is None:
-            return None, "no_deal"          # price disagreement -> learnable failure
 
         feasible = min(qty, supply_available(seller, good))
         cap = receive_capacity(buyer, good)
@@ -185,11 +177,11 @@ class Ledger:
             feasible = min(feasible, int(buyer["gold"] // agreed))
         feasible = int(feasible)
         if feasible <= 0:
-            return None, "infeasible"
+            return None
         if feasible < bid["quantity"] and not bid["allow_partial"]:
-            return None, "infeasible"
+            return None
         if feasible < ask["quantity"] and not ask["allow_partial"]:
-            return None, "infeasible"
+            return None
 
         cost = agreed * feasible
         buyer["gold"] -= cost
@@ -203,9 +195,8 @@ class Ledger:
         trade = {"cycle": current_cycle, "good": good, "buyer": buyer["id"],
                  "seller": seller["id"], "price": agreed, "qty": feasible}
         self.trade_log.append(trade)
-        return trade, "ok"
+        return trade
 
-    # --- end-of-cycle price update (the demand/supply mechanism) ---
     def update_prices_from_pressure(self):
         """Blend this cycle's executed-trade VWAP (weighted more) with bid/ask demand
         pressure; move the price even if nothing traded. Clamp to +/-PRICE_MAX_MOVE/cycle.
@@ -214,7 +205,7 @@ class Ledger:
         for g in TRADABLE_GOODS:
             p_old = self.price[g]
 
-            # (a) executed-trade pull: move part-way toward this cycle's volume-weighted price
+           
             if self._c_tqty[g] > 0:
                 vwap = self._c_tval[g] / self._c_tqty[g]
                 p_after = p_old + TRADE_PULL * (vwap - p_old)
@@ -222,15 +213,17 @@ class Ledger:
                 vwap = None
                 p_after = p_old
 
-            # (b) demand pressure from ALL resting bid vs ask quantities this cycle
+            
             tb, ta = self._c_bid[g], self._c_ask[g]
             pressure = (tb - ta) / (tb + ta) if (tb + ta) > 0 else 0.0
             p_new = p_after * (1 + PRICE_PRESSURE_K * pressure)
 
-            # (c) clamp the per-cycle move and keep a floor
+            seed = float(SEED_PRICES[g])
+            p_new = p_new + PRICE_REVERSION * (seed - p_new)
+
             lo, hi = p_old * (1 - PRICE_MAX_MOVE), p_old * (1 + PRICE_MAX_MOVE)
             p_new = max(lo, min(hi, p_new))
-            p_new = max(PRICE_FLOOR, p_new)
+            p_new = max(PRICE_FLOOR, min(seed * PRICE_CEIL_MULT, p_new))
 
             self.price[g] = round(p_new, 3)
             report[g] = {"old": round(p_old, 3), "new": self.price[g],
@@ -238,7 +231,7 @@ class Ledger:
                          "pressure": round(pressure, 2), "bid": tb, "ask": ta}
         return report
 
-    # --- housekeeping ---
+   
     def expire_orders(self, current_cycle):
         """Drop expired orders and RETURN the unfilled ones so their owners can learn
         their price was off-market (this is the dominant failed-deal case)."""

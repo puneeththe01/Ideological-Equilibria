@@ -1,17 +1,3 @@
-"""
-production.py — the resource engine (crops, water, labor, harvest, consumption).
-
-v2 CHANGES vs previous:
-  - new_agent: labor is a bank; plots carry health/scarred; added labor_debt_cycles,
-    spoil_penalty fields.
-  - refresh_inputs: labor ACCUMULATES (capped at LABOR_CAP) instead of resetting.
-  - NEW inventory_upkeep(): charges labor for stockpiles; unpaid -> labor debt + ramping spoilage.
-  - NEW plot_upkeep(): charges labor+gold per growing plot; unpaid -> health decay -> death; scarring.
-  - NEW spoilage(): per-crop decay (+ any ramped penalty).
-  - advance_growth: applies harvest_risk (variance, rare total loss) and the scar penalty.
-  - NEW new_log(): per-cycle per-agent diagnostic counters.
-"""
-
 import random
 from config import (
     KERNEL_SPOIL, KERNEL_FOOD_VALUE,
@@ -23,9 +9,9 @@ from config import (
     PLOT_SCAR_THRESHOLD, PLOT_SCAR_PENALTY, DEAD_PLOT_CLEAR_GOLD,
 )
 
-CROP_KEYS = ("wheat", "rice", "corn")        # growable crops
-FOOD_KEYS = ("wheat", "rice", "corn", "kernels")  # all edible stores
-# eat fastest-spoiling first; kernels (0.5%) are the stable reserve, eaten last
+CROP_KEYS = ("wheat", "rice", "corn")        
+FOOD_KEYS = ("wheat", "rice", "corn", "kernels")  
+
 EAT_ORDER = ("corn", "wheat", "rice", "kernels")
 FOOD_VALUE = {"wheat": 1.0, "rice": 1.0, "corn": 1.0, "kernels": KERNEL_FOOD_VALUE}
 
@@ -36,16 +22,16 @@ def new_agent(agent_id, ideology, gold=None):
         "ideology": ideology,
         "gold": STARTING_GOLD if gold is None else gold,
         "inventory": {**dict(STARTING_FOOD), "kernels": 0},
-        "labor": 0,                       # storable bank (v2)
+        "labor": 0,                       
         "water": STARTING_WATER,
         "water_cap": WATER_CAP_INITIAL,
-        "plots": [],                      # active plantings {crop, water, labor, health, scarred}
-        "owned_plots": [],                # list of prices paid for owned LAND (collateral); covers gold upkeep
-        "loan": None,                     # bank loan record (set by bank.py)
-        "deposit": 0.0,                   # bank deposit balance
+        "plots": [],                     
+        "owned_plots": [],               
+        "loan": None,                   
+        "deposit": 0.0,                  
         "starvation": 0,
-        "labor_debt_cycles": 0,           # consecutive unpaid inventory-upkeep cycles
-        "spoil_penalty": 0.0,             # extra spoilage from unpaid upkeep (ramps)
+        "labor_debt_cycles": 0,           
+        "spoil_penalty": 0.0,            
         "alive": True,
     }
 
@@ -53,16 +39,12 @@ def new_agent(agent_id, ideology, gold=None):
 def total_food(agent):
     return sum(agent["inventory"].get(c, 0) * FOOD_VALUE[c] for c in FOOD_KEYS)
 
-
 def new_log():
     return {k: 0 for k in (
         "eaten", "spoiled", "upkeep_inv_labor", "upkeep_unpaid",
         "upkeep_plot_labor", "upkeep_plot_gold", "plots_died",
         "harvest_underyields", "harvest_failures",
     )}
-
-
-# ---------- start-of-cycle mechanics ----------
 
 def refresh_inputs(agent, rng):
     """Labor accumulates up to LABOR_CAP; water regenerates up to its cap."""
@@ -84,7 +66,7 @@ def inventory_upkeep(agent, log):
         log["upkeep_inv_labor"] += cost
     else:
         paid = max(0, agent["labor"])
-        agent["labor"] -= cost                 # can go negative
+        agent["labor"] -= cost                 
         agent["labor_debt_cycles"] += 1
         agent["spoil_penalty"] += SPOIL_RAMP_PER_CYCLE
         log["upkeep_inv_labor"] += paid
@@ -101,9 +83,6 @@ def spoilage(agent, log):
             agent["inventory"][c] -= lost
             log["spoiled"] += lost
 
-
-# ---------- production actions ----------
-
 def plant(agent, crop):
     if crop not in CROPS:
         return False
@@ -116,7 +95,7 @@ def invest(agent, idx, water_amt, labor_amt):
     if not (0 <= idx < len(agent["plots"])):
         return False
     water_amt = max(0, min(water_amt, agent["water"]))
-    labor_amt = max(0, min(labor_amt, max(0, agent["labor"])))  # can't spend negative labor
+    labor_amt = max(0, min(labor_amt, max(0, agent["labor"]))) 
     p = agent["plots"][idx]
     p["water"] += water_amt
     p["labor"] += labor_amt
@@ -133,14 +112,13 @@ def expand_water_cap(agent):
     return False
 
 
-# ---------- end-of-cycle mechanics ----------
 
 def plot_upkeep(agent, log):
     """Charge labor+gold per active planting. OWNED land covers the GOLD portion for that
     many plantings (you don't rent land you own); labor upkeep is always charged.
     Unpaid -> health decays; <70 scars; 0 kills it."""
     survivors = []
-    owned_cover = len(agent.get("owned_plots", []))   # plantings whose gold upkeep is waived
+    owned_cover = len(agent.get("owned_plots", []))  
     for idx, plot in enumerate(agent["plots"]):
         gold_due = 0 if idx < owned_cover else PLOT_UPKEEP_GOLD
         if agent["labor"] >= PLOT_UPKEEP_LABOR and agent["gold"] >= gold_due:
@@ -156,7 +134,7 @@ def plot_upkeep(agent, log):
                 agent["gold"] -= DEAD_PLOT_CLEAR_GOLD
                 log["plots_died"] += 1
                 log["upkeep_plot_gold"] += DEAD_PLOT_CLEAR_GOLD
-                continue   # plot removed
+                continue  
         survivors.append(plot)
     agent["plots"] = survivors
 
@@ -169,10 +147,10 @@ def advance_growth(agent, rng, log):
         if p["water"] >= spec["req_water"] and p["labor"] >= spec["req_labor"]:
             amount = rng.randint(*spec["yield_range"])
             if rng.random() < spec["harvest_risk"]:
-                if rng.random() < 0.05:                 # very rare total loss
+                if rng.random() < 0.05:                 
                     amount = 0
                     log["harvest_failures"] += 1
-                else:                                   # ordinary underyield (variance)
+                else:                                   
                     amount = int(amount * rng.uniform(0.3, 0.7))
                     log["harvest_underyields"] += 1
             if p["scarred"]:
@@ -209,7 +187,6 @@ def consume(agent, log):
     if need > 0:
         agent["starvation"] += int(round(need))
 
-    # recover starvation with any remaining food
     while agent["starvation"] > 0 and total_food(agent) > 0:
         v = _eat_one_point(agent)
         if v == 0:
@@ -220,11 +197,11 @@ def consume(agent, log):
         agent["alive"] = False
 
 
-# ---------- offline self-test (no API) ----------
+
 if __name__ == "__main__":
     rng = random.Random(7)
     a = new_agent("AGT", {"capitalism": 0.5, "survivalism": 0.5, "sustainability": 0.0})
-    plant(a, "corn")  # needs 18 labor -> only possible because labor now banks
+    plant(a, "corn")  
     for cycle in range(1, 9):
         log = new_log()
         refresh_inputs(a, rng)

@@ -1,26 +1,3 @@
-"""
-bank.py — the government Bank and Land Registry.
-
-LAND (LandRegistry):
-  - TOTAL_PLOTS ownable parcels in the world. Price rises with demand:
-        price = PLOT_BASE_PRICE * (1 + PLOT_PRICE_K * fraction_taken)
-  - buy_plot(): an agent buys land (its own choice). Owning land waives that plot's GOLD upkeep.
-  - foreclosed land returns to the bank and is resold at the ORIGINAL value (PLOT_BASE_PRICE).
-
-BANK:
-  - deposit/withdraw; deposits earn DEPOSIT_RATE/cycle (created from thin air -> inequality engine).
-  - borrow(): risk-rated interest. Any agent may take up to FREE_LOAN_LIMIT (50) with no checks.
-    With a plot as collateral -> can borrow against it. Without collateral -> up to 5x assets.
-  - Loan interest COMPOUNDS each cycle. PAYING is the agent's choice (the LLM decides to `repay`).
-  - Default ladder: MISSED_PAYMENTS_TO_SEIZE (5) cycles with no payment -> bank SEIZES a plot.
-    The agent may REDEEM it within FORECLOSURE_CYCLES (10) by clearing the debt. Otherwise the
-    plot becomes the bank's permanently and the debt is WIPED (bank absorbs any loss).
-    A defaulter with NO plot has food seized (up to FOOD_SEIZE_FRAC = 25% of the loan).
-
-All gold the bank pays (loans, deposit interest) is newly created; interest it collects and
-food/plots it seizes are sinks. Tracked for the report.
-"""
-
 from config import (
     TOTAL_PLOTS, PLOT_BASE_PRICE, PLOT_PRICE_K, PLOT_COLLATERAL_FRAC,
     DEPOSIT_RATE, LOAN_BASE_RATE, LOAN_MAX_RATE, FREE_LOAN_LIMIT,
@@ -42,8 +19,8 @@ def assets_value(agent):
 class LandRegistry:
     def __init__(self):
         self.total = TOTAL_PLOTS
-        self.agent_owned = 0     # parcels currently owned by agents
-        self.bank_owned = 0      # parcels foreclosed, held by the bank for resale
+        self.agent_owned = 0    
+        self.bank_owned = 0      
 
     def taken_fraction(self):
         return (self.agent_owned + self.bank_owned) / self.total
@@ -85,9 +62,9 @@ class Bank:
         # totals
         self.gold_loaned = 0.0
         self.gold_repaid = 0.0
-        self.interest_created = 0.0       # unpaid loan interest that compounded onto debt
-        self.interest_collected = 0.0     # loan interest actually PAID by borrowers (a money sink)
-        self.deposit_interest_paid = 0.0  # deposit interest created from thin air
+        self.interest_created = 0.0       
+        self.interest_collected = 0.0     
+        self.deposit_interest_paid = 0.0  
         self.foreclosures = 0
         # per cycle
         self.c_loaned = 0.0
@@ -122,7 +99,7 @@ class Bank:
         if collateralized or amount <= FREE_LOAN_LIMIT:
             return LOAN_BASE_RATE
         assets = max(assets_value(agent), 1.0)
-        stretch = min(1.0, (amount / assets) / ASSET_LOAN_MULTIPLE)  # 0..1 toward the 5x ceiling
+        stretch = min(1.0, (amount / assets) / ASSET_LOAN_MULTIPLE)  
         return round(LOAN_BASE_RATE + (LOAN_MAX_RATE - LOAN_BASE_RATE) * stretch, 4)
 
     def max_borrow(self, agent, use_collateral):
@@ -151,7 +128,7 @@ class Bank:
                              "collateral": use_collateral, "seized": False,
                              "seized_cycles": 0, "paid_this_cycle": False}
         agent["loan"]["principal"] += amount
-        agent["loan"]["rate"] = rate            # re-rate to the latest draw
+        agent["loan"]["rate"] = rate           
         if use_collateral:
             agent["loan"]["collateral"] = True
         agent["gold"] += amount
@@ -174,14 +151,13 @@ class Bank:
         if loan["principal"] <= 0.01:
             # cleared: redeem any seized plot
             if loan["seized"]:
-                agent["owned_plots"].append(PLOT_BASE_PRICE)  # land returns to the agent
-                self.land.bank_owned  # (plot was never moved to bank_owned until foreclosure)
+                agent["owned_plots"].append(PLOT_BASE_PRICE)  
+                self.land.bank_owned  
             agent["loan"] = None
         return {"ok": True, "amount": round(amount, 2)}
 
-    # ---------- end-of-cycle: deposit interest, loan interest, foreclosure ----------
+
     def accrue(self, agents, market_prices, cycle):
-        # deposit interest (created from thin air)
         for a in agents.values():
             if a.get("deposit", 0) > 0:
                 i = a["deposit"] * DEPOSIT_RATE
@@ -189,21 +165,18 @@ class Bank:
                 self.deposit_interest_paid += i
                 self.c_deposit_interest += i
 
-        # loan interest is AUTO-COLLECTED each cycle (a real money SINK).
-        # If the borrower can pay, gold leaves the economy; if not, it compounds
-        # onto the principal and counts as a missed payment.
         for a in agents.values():
             loan = a.get("loan")
             if not loan:
                 continue
             interest = loan["principal"] * loan["rate"]
             if a["gold"] >= interest:
-                a["gold"] -= interest                # SINK: gold leaves circulation
+                a["gold"] -= interest               
                 self.interest_collected += interest
                 self.c_interest_collected += interest
                 loan["missed"] = 0
             else:
-                loan["principal"] += interest        # can't pay -> compounds onto debt
+                loan["principal"] += interest       
                 self.interest_created += interest
                 self.c_interest += interest
                 loan["missed"] += 1
@@ -221,13 +194,11 @@ class Bank:
         """First default action at 5 misses: take a plot if any; else seize food (<=25% of loan)."""
         loan = agent["loan"]
         if agent["owned_plots"]:
-            # hold the highest-value plot as security (removed from agent, not yet bank's)
             agent["owned_plots"].remove(max(agent["owned_plots"]))
             self.land.agent_owned -= 1
             loan["seized"] = True
             loan["seized_cycles"] = 0
             return {"seized": "plot"}
-        # no land -> seize food worth up to 25% of the loan at market price
         target = FOOD_SEIZE_FRAC * loan["principal"]
         recovered = 0.0
         for g in ("corn", "wheat", "rice", "kernels"):
@@ -248,8 +219,8 @@ class Bank:
 
     def _foreclose(self, agent):
         """10 cycles after seizure with debt still unpaid: bank keeps the plot, wipes the debt."""
-        self.land.bank_owned += 1          # plot is now the bank's, resellable at base price
-        agent["loan"] = None               # debt wiped; bank absorbs any shortfall
+        self.land.bank_owned += 1         
+        agent["loan"] = None               
         self.foreclosures += 1
 
     def status_line(self):
